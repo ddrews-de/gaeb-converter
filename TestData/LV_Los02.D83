@@ -1,0 +1,1141 @@
+00        83L                                                 1122PPPPI90 000001
+01Los 2 - Geo- und umwelttechnische Unters01.04.26                        000002
+02Los 2 - Geo- und umwelttechnische Untersuchungen                        000003
+03Landesbetrieb fr Hochwasserschutz und Wasserwirtschaft                 000004
+08EUR   Euro                                                              000005
+11 1       N    Bereich                                                   000006
+12Bauvorbereitende und baubegleitende                                     000007
+12Leistungen                                                              000008
+11 1 1     N    Abschnitt                                                 000009
+12Ablaufplanung                                                           000010
+21 1 1  10 NNN         00000001000St                                      000011
+25Anlaufberatung, Baufeldbergabe                                         000012
+26   Teilnahme des Bauleiters / Verantwortlichen Fachmanns                000013
+26   an einem ganzt„gigen Ortstermin zur Bauanlaufberatung                000014
+26   und Baufeldbergabe.                                                 000015
+21 1 1  20 NNN         00000004000St                                      000016
+25Ortsbegehung / Bauberatung                                              000017
+26   Teilnahme des Bauleiters / Verantwortlichen Fachmanns                000018
+26   oder seines Stellvertreters an einem halbt„gigen                     000019
+26   Ortstermin im Untersuchungsgebiet.                                   000020
+26   Ortsbegehung/Bauberatung in Abstimmungmit dem AG und                 000021
+26   dem geotechnischen Sachverst„ndigen.                                 000022
+31 1 1                                                                    000023
+11 1 2     N    Abschnitt                                                 000024
+12Anzeigen und Genehmigungen                                              000025
+21 1 2  10 NNN         00000001000psch                                    000026
+25Erlaubnisscheine fr Erd-/Bohrarbeiten                                  000027
+26   Einholen der Erlaubnisscheine fr Erd-/Bohrarbeiten bei              000028
+26   den zust„ndigen Medientr„gern / T™B.                                 000029
+26   Koordinierung der Einweisungstermine vor Ort.                        000030
+26   Eventuell anfallende Gebhren werden gesondert auf                   000031
+26   Nachweis vergtet.                                                   000032
+21 1 2  20 NNN         00000001000psch                                    000033
+25R„umstellenanzeige Kampfmittel                                          000034
+26   R„umstellenanzeige / Anmeldung der geplanten                         000035
+26   Kampfmittel- untersuchungen bei der zust„ndigen                      000036
+26   Ordnungsbeh”rde.                                                     000037
+21 1 2  30 NNN         00000001000psch                                    000038
+25Aufgrabegenehmigungen / Sondernutzungen                                 000039
+26   Einholen von Aufgrabegenehmigungen fr Sondernutzungen               000040
+26   im ”ffentlichen Verkehrsraum nach õ 18 StrG LSA, inkl.               000041
+26   Abstimmung und Abnahme der Fl„chen nach Ausfhrung der               000042
+26   Erkundungsarbeiten.                                                  000043
+26   Vorlage Abnahmeprotokoll.                                            000044
+26   Straáe "Silberberg" in Z”schen (Stadt Leuna),                        000045
+26   "Luppeweg" in Wallendorf (Stadt Leuna).                              000046
+26   Eventuell anfallende Gebhren werden gesondert auf                   000047
+26   Nachweis vergtet.                                                   000048
+21 1 2  40 NNN         00000001000psch                                    000049
+25Verkehrsrechtliche Anordnungen                                          000050
+26   Einholen von verkehrsrechtlichen Anordnungen auf                     000051
+26   Grundlage von õ 45 StVO.                                             000052
+26   Abstimmen von RSA-Regelpl„nen (Teilsperrung fr                      000053
+26   Arbeiten von kurzzeitiger Dauer) zur Durchfhrung der                000054
+26   Baumaánahmen bei den zust„ndigen Verkehrs- und                       000055
+26   Ordnungsbeh”rden.                                                    000056
+26   - Straáe "Silberberg" in Z”schen (Stadt Leuna),                      000057
+26   - "Luppeweg" in Wallendorf (Stadt Leuna).                            000058
+26   Eventuell anfallende Gebhren werden gesondert auf                   000059
+26   Nachweis vergtet.                                                   000060
+21 1 2  50 NNN         00000001000psch                                    000061
+25Verkehrsrechtliche Ausnahmegenehmigungen                                000062
+26   Einholen von verkehrsrechtlichen Erlaubnissen fr die                000063
+26   ber- m„áige Straáenbenutzung nach õ 29 Abs. 3 StVO.                 000064
+26   šberschreitung der zul„ssigen Achslasten bzw.                        000065
+26   Gesamtmassen fr Drucksondier- und Bohrger„te.                       000066
+26   - Elsterbrcken Oberthau und Raánitz,                                000067
+26   - Luppebrcken Z”schen und Zweimen.                                  000068
+26   Eventuell anfallende Gebhren werden gesondert auf                   000069
+26   Nachweis vergtet.                                                   000070
+31 1 2                                                                    000071
+11 1 3     N    Abschnitt                                                 000072
+12Beweissicherung                                                         000073
+21 1 3  10 NNN         00000001000psch                                    000074
+25Beweissicherung                                                         000075
+26   Feststellen des Zustandes von Verkehrswegen, Gel„nde-                000076
+26   oberfl„chen, Vorflutern und baulichen Anlagen im                     000077
+26   Untersuchungsgebiet unmittelbar vor Beginn sowie nach                000078
+26   Beendigung der Felduntersuchungen.                                   000079
+26   Anfertigen einer Beweisdokumentation sowie von Nieder-               000080
+26   schriften zur Vorlage beim AG.                                       000081
+31 1 3                                                                    000082
+11 1 4     N    Abschnitt                                                 000083
+12Bauvermessung                                                           000084
+21 1 4  10 NNN         00000931000St                                      000085
+25Abstecken Ansatzpunkt                                                   000086
+26   Bauvorbereitende Vermessung,                                         000087
+26   Abstecken eines Bohr- und Sondieransatzpunktes im                    000088
+26   Gel„nde auf Grundlage einer Koordinatenliste des                     000089
+26   Objektplaners in Vorbereitung der                                    000090
+26   Kampfmittelfreimessung.                                              000091
+26   Die Absteckung der Ansatzpunkte erfolgt im Beisein des               000092
+26   geotechnischen Sachverst„ndigen.                                     000093
+21 1 4  20 NNN         00001174000St                                      000094
+25Einmessen geotechnischer Aufschluss                                     000095
+26   Bauausfhrungsvermessung,                                            000096
+26   Einmessen eines Bohr-, Schurf- oder                                  000097
+26   Sondieransatzpunktes nach Lage und H”he.                             000098
+26   Lagebezug: ETRS89, UTM32 (LS 489),                                   000099
+26   H”henbezug: DHHN2016 (HS 170).                                       000100
+26   Lage- und H”hengenauigkeit:  2 cm.                                   000101
+26   Koordinaten- und H”henangaben in die geotechnische                   000102
+26   Aufschlussdokumentation einarbeiten.                                 000103
+31 1 4                                                                    000104
+11 1 5     N    Abschnitt                                                 000105
+12Bauvorbereitung                                                         000106
+21 1 5  10 NNN         00000001000psch                                    000107
+25Abstimmung mit Eigentmern/P„chtern/Bewirtschaftern                     000108
+26   Operative Information und Abstimmung mit Eigentmern,                000109
+26   P„chtern sowie Bewirtschaftern der von den                           000110
+26   geotechnischen Feldarbeiten betroffenen Grundstcke.                 000111
+26   Zu kalkulieren sind ca. 30 Eigentmer/P„chter.                       000112
+26   šbergabe der Kontaktdaten durch den AG.                              000113
+21 1 5  20 NNN         00009000000m2                                      000114
+25Freischnitt- und F„llarbeiten                                           000115
+26   Ausfhrung von Freischnitt- und F„llarbeiten im Bereich              000116
+26   der Zuwegungen und Arbeitsstellen.                                   000117
+26   Position beinhaltet das Freischneiden von bodennahem                 000118
+26   Aufwuchs und sten sowie die Beseitigung von schwachen               000119
+26   Laubb„umen bis 25 cm Stammdurchmesser.                               000120
+26   Die zu beseitigenden B„ume werden im Vorfeld durch den               000121
+26   AG mit den Eigentmern und Bewirtschaftern sowie der                 000122
+26   unteren Naturschutzbeh”rde abgestimmt.                               000123
+26   Durchfahrtsbreite je nach Erfordernis, max. 3,50 m.                  000124
+26   Fl„chen fr Arbeitsstellen max. 10x15 m.                             000125
+26   Schnittgut soll zu Zwecken des bauzeitlichen                         000126
+26   Bodenschutzes verwendet werden und vor Ort verbleiben.               000127
+21 1 5  30 NNN         00000003000St                                      000128
+25Vorschachten                                                            000129
+26   Vorschachten zum Aufsuchen von erdverlegten Leitungen.               000130
+26   Ausfhrung als Handschachtung bei unklarem Leitungs-                 000131
+26   bestand.                                                             000132
+26   Schachtungstiefe bis 1,50 m, ohne Verbau.                            000133
+26   Boden zur Wiederverwendung seitlich lagern.                          000134
+26   Vorschachtung mit seitlich gelagertem Boden verfllen.               000135
+26   Verdichten und Wiederherstellen des Ursprungszustandes.              000136
+26   Vorschriften der Ver- und Entsorgungsunternehmen                     000137
+26   beachten.                                                            000138
+21 1 5  40 NNN         00000001000psch                                    000139
+25Verkehrssicherungsmaánahmen                                             000140
+26   Maánahmen zur Verkehrssicherung an Arbeitsstellen im                 000141
+26   Bereich des ”ffentlichen Verkehrsraums gem„á den                     000142
+26   Bestimmungen der verkehrrechtlichen Anordnungen fr die              000143
+26   Dauer der Erkundungsarbeiten (Teilsperrung bei                       000144
+26   Arbeitsstellen von krzerer Dauer).                                  000145
+26   Vorhalten, Auf- und Abbauen sowie Umsetzen von                       000146
+26   Arbeitstelle zu Arbeitstelle.                                        000147
+26   - Straáe "Silberberg" in Z”schen (Stadt Leuna),                      000148
+26   - "Luppeweg" in Wallendorf (Stadt Leuna).                            000149
+31 1 5                                                                    000150
+31 1                                                                      000151
+11 2       N    Bereich                                                   000152
+12Kampfmitteluntersuchung                                                 000153
+11 2 1     N    Abschnitt                                                 000154
+12Kampfmitteluntersuchung                                                 000155
+21 2 1  10 NNN         00000001000psch                                    000156
+25Mobilisierung/Demobilisierung                                           000157
+26   Bohr-, Sondier- und Messger„te, Zubeh”r, Werkzeuge und               000158
+26   sonstige Betriebsmittel, die zur vertragsgem„áen                     000159
+26   Ausfhrung der Leistungen erforderlich sind,                         000160
+26   bereitstellen und antrans- portieren.                                000161
+26   Kosten fr Vorhalten, Unterhalten und Betreiben der                  000162
+26   Bohr-, Sondier- und Messger„te werden nicht mit dieser               000163
+26   Pauschale, sondern mit den Einheitspreisen der                       000164
+26   betreffenden Teilleistungen vergtet.                                000165
+26   Abtransport aller Ger„tschaften nach Beendigung der                  000166
+26   Arbeiten.                                                            000167
+26   Benutzte Fl„chen und Wege sind entsprechend dem                      000168
+26   ursprng- lichen Zustand wieder herzurichten.                        000169
+21 2 1  20 NNN         00000199000St                                      000170
+25Auf-/Abbau und Umsetzen Bohrger„t bis 100 m                             000171
+26   Auf- und Abbau sowie Umsetzen der Bohr- und Messger„te               000172
+26   fr die Ausfhrung von Tiefensondierungen zur                        000173
+26   Kampfmittel- untersuchung.                                           000174
+26   Umsetzen innerhalb von Bauwerksstandorten sowie von                  000175
+26   Deich- und Wegebauabschnitten.                                       000176
+26   Transportentfernung von Bohrpunkt zu Bohrpunkt bis 100               000177
+26   m.                                                                   000178
+21 2 1  30 NNN         00000090000St                                      000179
+25Umsetzen ber 100 m bis 250 m                                           000180
+26   wie Pos. 2.1.20, jedoch                                              000181
+26   Umsetzen ber 100 m bis 250 m                                        000182
+21 2 1  40 NNN         00000005000St                                      000183
+25Umsetzen ber 250 m bis 2 km                                            000184
+26   wie Pos. 2.1.20, jedoch                                              000185
+26   Umsetzen von Untersuchungsstandort zu Untersuchungs-                 000186
+26   standort. Umsetzen ber 250 m bis 2 km                               000187
+21 2 1  50 NNN         00000005000St                                      000188
+25Umsetzen ber 2 km bis 10 km                                            000189
+26   wie Pos. 2.1.20, jedoch                                              000190
+26   Umsetzen von Untersuchungsstandort zu Untersuchungs-                 000191
+26   standort. Umsetzen ber 2 km bis 10 km                               000192
+21 2 1  60 NNN         00000001000St                                      000193
+25Umsetzen ber 10 km bis 25 km                                           000194
+26   wie Pos. 2.1.20, jedoch                                              000195
+26   Umsetzen von Untersuchungsstandort zu Untersuchungs-                 000196
+26   standort. Umsetzen ber 10 km bis 25 km.                             000197
+21 2 1  70 NNN         00000300000St                                      000198
+25Herstellung und Sicherung Bohrloch                                      000199
+26   Herstellung und Sicherung eines Bohrlochs zur                        000200
+26   Kampfmittel- untersuchung.                                           000201
+26   Bohr-/Ausbautiefe bis 6,00 m unter GOK.                              000202
+26   Bohrverfahren nach Wahl des AN, einschl. aller                       000203
+26   Nebenarbeiten.                                                       000204
+26   Alternativ ist eine CPT-gesttzte                                    000205
+26   Kampfmittelfreimessung zul„ssig.                                     000206
+21 2 1  80 NNN         00000300000St                                      000207
+25Computergesttzte Sondierung                                            000208
+26   Computergesttzte Bohrlochsondierung,                                000209
+26   Messverfahren und Messger„te nach Wahl des AN.                       000210
+26   Messtiefe entspricht Bohrtiefe.                                      000211
+26   Fr die Visualisierung der Ergebnisse ist dem AG auf                 000212
+26   Anforderung ein geeigneter Viewer zu liefern.                        000213
+21 2 1  90 NNN         00000300000St                                      000214
+25Verfllen Bohrloch                                                      000215
+26   Verrohrung ziehen und Bohrloch schichtengerecht mit                  000216
+26   Bohrgut verfllen. Tiefe entsprechend Bohrtiefe.                     000217
+21 2 1 100 NNN         00000010000m                                       000218
+25Vertiefen Tiefensondierung                                              000219
+26   Vertiefen einer Kampfmittelsondierung bei Erfordernis,               000220
+26   z. B. aufgrund Vorgaben der R„umstellenanzeige oder                  000221
+26   nicht erfolgtem Nachweis geogener Schichtenfolge.                    000222
+26   Inkl. Bohren, Sichern, Messen und Verfllen.                         000223
+26   Ausfhrung in Abstimmung mit dem geotechnischen Sach-                000224
+26   verst„ndigen.                                                        000225
+26   Ausfhrung / Abrechnung in 1-m-Schritten ab 6,00 m                   000226
+26   unter GOK.                                                           000227
+21 2 1 110 NNN         00000303000St                                      000228
+25Oberfl„chensondierung und Umsetzen bis 100 m                            000229
+26   Kampfmitteluntersuchung eines                                        000230
+26   Bohr-/Sondieransatzpunktes mittels                                   000231
+26   Oberfl„chensondierung, Wirkungstiefe bis 4,00 m,                     000232
+26   Messverfahren und Messger„te nach Wahl des AN.                       000233
+26   inkl. Umsetzen von Sondierpunkt zu Sondierpunkt auf                  000234
+26   Erkundungsquerprofilen,                                              000235
+26   Entfernung von Sondierpunkt zu Sondierpunkt bis 100 m.               000236
+26   Erschwerte Zuwegung durch Waldbewuchs im Bereich der                 000237
+26   Altarme und Deichtrassen.                                            000238
+21 2 1 120 NNN         00000162000St                                      000239
+25Umsetzen ber 100 bis 250 m                                             000240
+26   wie Pos. 2.1.110, jedoch                                             000241
+26   Umsetzen ber 100 m bis 250 m.                                       000242
+21 2 1 130 NNN         00000064000St                                      000243
+25Umsetzen ber 250 m bis 2 km                                            000244
+26   wie Pos. 2.1.110, jedoch                                             000245
+26   Umsetzen ber 250 m bis 2 km.                                        000246
+21 2 1 140 NNN         00000009000St                                      000247
+25Umsetzen ber 2 km bis 10 km                                            000248
+26   wie Pos. 2.1.110, jedoch                                             000249
+26   Umsetzen ber 2 km bis 10 km.                                        000250
+21 2 1 150 NNN         00000001000St                                      000251
+25Umsetzen ber 10 km bis 25 km                                           000252
+26   wie Pos. 2.1.110, jedoch                                             000253
+26   Umsetzen ber 10 km bis 25 km.                                       000254
+21 2 1 160 NNN         00000005000St                                      000255
+25Dauerhafte Markierung                                                   000256
+26   Dauerhafte Markierung eines Verdachtspunktes auf Kampf-              000257
+26   mittel / Bombenblindg„nger an der Oberfl„che in                      000258
+26   Vorbereitung weiterer Kampfmittelr„umarbeiten.                       000259
+21 2 1 170 NNN         00000001000psch                                    000260
+25Dokumentation der Kampfmitteluntersuchungen                             000261
+26   Zusammenstellung der Ergebnisse aller Kampfmittelunter-              000262
+26   suchungen in einem Abschlussbericht.                                 000263
+26   Erstellen der erforderlichen Nachweise fr die Freigabe              000264
+26   und Einholung der Freigabeerkl„rung beim zust„ndigen                 000265
+26   Kampf- mittelbeseitigungsdienst.                                     000266
+31 2 1                                                                    000267
+31 2                                                                      000268
+11 3       N    Bereich                                                   000269
+12Baustelleneinrichtung                                                   000270
+11 3 1     N    Abschnitt                                                 000271
+12Baustelleneinrichtung und -r„umung                                      000272
+20                                                                        000273
+26   Die Betretungs- und Befahrgenehmigungen fr die von den              000274
+26   Untersuchungen in Anspruch zu nehmenden Fl„chen werden               000275
+26   im Vorfeld vom Auftraggeber bzw. dessen Liegenschafts-               000276
+26   beauftragten eingeholt.                                              000277
+26   Die Arbeiten und Zufahrten sind entsprechend der                     000278
+26   ”rtlichen Verh„ltnisse so durchzufhren, dass keinerlei              000279
+26   Sch„den an Grundstcken, baulichen Anlagen oder                      000280
+26   sonstigen Einrichtungen entstehen. Der AN haftet auch                000281
+26   gegenber Dritten fr alle Sch„den, die durch seine                  000282
+26   T„tigkeit entstanden sind und die bei fachgem„áer                    000283
+26   Ausfhrung der Arbeiten vermeidbar gewesen w„ren.                    000284
+26   Entstandene Sch„den sind dem AG unverzglich                         000285
+26   anzuzeigen.                                                          000286
+26   Unvermeidbare Flursch„den, die durch das Herstellen                  000287
+26   provisorischer Zuwegungen zu den Arbeitsstellen                      000288
+26   entstehen, sind auf das unbedingt erforderliche                      000289
+26   Mindestmaá zu beschr„nken.                                           000290
+26   Im Bereich von Grn- und Ackerfl„chen sind vorrangig                 000291
+26   bereits vorhandene Fahrspuren zu nutzen.                             000292
+26   Aufgeweichte Fl„chen drfen nicht befahren werden.                   000293
+21 3 1  10 NNN         00000001000psch                                    000294
+25Einrichten der Baustelle                                                000295
+26   Baustelle (Arbeitsstellen) fr die vertragsgem„áe                    000296
+26   Durchfhrung der Bauleistungen einrichten.                           000297
+26   Vorhalten und Antransport des Personals sowie aller fr              000298
+26   die Bauleistung erforderlichen Ger„tschaften, Bau- und               000299
+26   Hilfsstoffe.                                                         000300
+26   Ver- und Entsorgungseinrichtungen fr die Dauer der                  000301
+26   Bauzeit herstellen.                                                  000302
+26   Sofern erforderlich, Lagerfl„chen fr Bohr- und                      000303
+26   Sondiertechnik beschaffen.                                           000304
+26   S„mtliche Aufwendungen fr die Einrichtung der Fl„chen               000305
+26   sind in diese Position einzurechnen.                                 000306
+26   Die Aufwendungen fr Vorhalten, Unterhalten und                      000307
+26   Betreiben der Baustelleneinrichtung einschlieálich der               000308
+26   Ger„te und dergleichen w„hrend der Bauzeit sind in die               000309
+26   Einheitspreise der betreffenden Teilleistungen                       000310
+26   einzurechnen.                                                        000311
+21 3 1  20 NNN         00000001000psch                                    000312
+25Kernlager                                                               000313
+26   Ausreichend groáes, beleucht- und beheizbares Kernlager              000314
+26   einrichten, Wasser- und Stromanschluss herstellen.                   000315
+26   Maximaler Abstand 10 km zum Untersuchungsgebiet.                     000316
+26   Kernlager fr den gesamten Zeitraum der Feld- und                    000317
+26   Labor- untersuchungen vorhalten und betreiben, inkl.                 000318
+26   Nebenkosten                                                          000319
+26   fr Pacht, Miete, Strom, Wasser, Heizung usw.                        000320
+26   Kernliner, Kernkisten sowie Einzel- und Sonderproben                 000321
+26   arbeits- t„gig in das Kernlager transportieren und dort              000322
+26   geordnet lagern.                                                     000323
+26   Kernkisten zum Schutz vor Austrocknung mit Folie                     000324
+26   auslegen und abdecken.                                               000325
+26   Kernlager r„umen.                                                    000326
+21 3 1  30 NNN         00000001000St                                      000327
+25Zwischenzeitliches R„umen auf Anordnung des AG                          000328
+26   R„umen der Baustelle aufgrund unvorhergesehener                      000329
+26   Ereignisse (z. B. Hochwasser), R„umen der Baustelle von              000330
+26   allen Materialien, Werkzeugen und beweglichen                        000331
+26   Ger„tschaften auf Anordnung des AG, einschl. aller                   000332
+26   Personal- und                                                        000333
+26   Ger„tekosten.                                                        000334
+21 3 1  40 NNN         00000001000St                                      000335
+25Zwischenzeitliches Wiedereinrichten auf Anordnung des AG                000336
+26   Wiedereinrichten der Baustelle nach zwischenzeitlichem               000337
+26   R„umen. Einzukalkulieren sind alle Aufwendungen fr das              000338
+26   Wiedereinrichten aufgrund von Bauruhe, einschl. aller                000339
+26   Kosten zur Bereitstellung von Material, Werkzeugen,                  000340
+26   Ger„te und Personal zur Fertigstellung der Bauleistung,              000341
+26   einschl. aller Aufwendungen zur Herrichtung der                      000342
+26   Zufahrtswege, Baustraáen, Lager- und Arbeitspl„tze.                  000343
+21 3 1  50 NNN         00000001000psch                                    000344
+25R„umen der Baustelle                                                    000345
+26   Baustelle (Arbeitsstellen) rckstandslos r„umen.                     000346
+26   Abtransport des Personals sowie aller fr die                        000347
+26   Bauleistung erforderlichen Ger„tschaften, Abfall- und                000348
+26   Hilfsstoffe.                                                         000349
+26   Herrichten der Fl„chen gem„á ursprnglichem Zustand.                 000350
+26   S„mtliche Aufwendungen fr die Wiederherstellung der                 000351
+26   Fl„chen sind in diese Position einzurechnen.                         000352
+26   Die R„umung des Kernlagers wird gesondert vergtet                   000353
+26   (Pos. 3.1.20).                                                       000354
+31 3 1                                                                    000355
+31 3                                                                      000356
+11 4       N    Bereich                                                   000357
+12Felduntersuchungen                                                      000358
+11 4 1     N    Abschnitt                                                 000359
+12Elektrische Drucksondierungen (CPT-U)                                   000360
+20                                                                        000361
+26   Sondierger„te nach Wahl des AN.                                      000362
+26   Gesamtkraft bis 200 kN.                                              000363
+26   Muss eine Drucksondierung vor Erreichen der                          000364
+26   vorgesehenen Endtiefe wegen eines Hindernisses                       000365
+26   abgebrochen und in unmittelbarer N„he neu angesetzt                  000366
+26   werden, wird das Umsetzen bis zu einer Entfernung von                000367
+26   10 m nicht gesondert vergtet.                                       000368
+26   Nach Beendigung der Drucksondierung sind Endteufe und                000369
+26   Wasserstand im Sondierloch zu loten. Die Angaben sind                000370
+26   im Sondierprotokoll zu dokumentieren.                                000371
+26   Die Hinweise der Leistungsbeschreibung, Kap. 3.12, sind              000372
+26   zu beachten.                                                         000373
+21 4 1  10 NNN         00000101000St                                      000374
+25Drucksondierger„t umsetzen bis 100 m                                    000375
+26   Drucksondierger„t von Sondierpunkt zu Sondierpunkt                   000376
+26   umsetzen und einrichten,                                             000377
+26   Umsetzen innerhalb von Bauwerksstandorten,                           000378
+26   Transportentfernung ber 10 bis 100 m.                               000379
+21 4 1  20 NNN         00000001000St                                      000380
+25Umsetzen ber 100 bis 250 m                                             000381
+26   wie Pos. 4.1.10, jedoch                                              000382
+26   Umsetzen von Bauwerksstandort zu Bauwerksstandort,                   000383
+26   Transportentfernung ber 100 m bis 250 m.                            000384
+21 4 1  30 NNN         00000003000St                                      000385
+25Umsetzen ber 250 m bis 2 km                                            000386
+26   wie Pos. 4.1.10, jedoch                                              000387
+26   Umsetzen von Bauwerksstandort zu Bauwerksstandort,                   000388
+26   Transportentfernung ber 250 m bis 2 km.                             000389
+26                                                                        000390
+21 4 1  40 NNN         00000007000St                                      000391
+25Umsetzen ber 2 km bis 10 km                                            000392
+26   wie Pos. 4.1.10, jedoch                                              000393
+26   Umsetzen von Bauwerksstandort zu Bauwerksstandort,                   000394
+26   Transportentfernung ber 2 km bis 10 km.                             000395
+21 4 1  50 NNN         00000001000St                                      000396
+25Umsetzen ber 10 km bis 25 km                                           000397
+26   wie Pos. 4.1.10, jedoch                                              000398
+26   Umsetzen von Bauwerksstandort zu Bauwerksstandort,                   000399
+26   Transportentfernung ber 10 km bis 25 km.                            000400
+21 4 1  60 NNN         00002235000m                                       000401
+25Drucksondierung ausfhren, Tiefe 0 - 20 m                               000402
+26   Drucksondierung nach DIN EN ISO 22476-1 gem„á                        000403
+26   Baubeschreibung und Lageplan ausfhren.                              000404
+26   Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.                     000405
+26   Kontinuierliche Messung, Aufzeichnung, Korrektur sowie               000406
+26   grafische Darstellung von Sondierl„nge,                              000407
+26   Spitzenwiderstand, Mantelreibung, Reibungsverh„ltnis,                000408
+26   Porenwasserdruck und Neigung der Sondierspitze.                      000409
+26   Angaben zur Gesamtkraft.                                             000410
+26   Endtiefe 15 bis 40 m.                                                000411
+26   Sondiertiefe 0 bis 20 m.                                             000412
+21 4 1  70 NNN         00000520000m                                       000413
+25Tiefe ber 20 bis 40 m                                                  000414
+26   wie Pos. 4.1.60, jedoch                                              000415
+26   Sondiertiefe ber 20 bis 40 m.                                       000416
+21 4 1  80 NNN         00000565000m                                       000417
+25Sondierloch mit Quellton verfllen                                      000418
+26   Sondierloch im standfesten Abschnitt mit Quellton                    000419
+26   verfllen. Verfllmaterial = Tonpellets/-granulat,                   000420
+26   m„áig quellf„hig.                                                    000421
+26   Liefermaterial des AN, Produktdatenblatt vorlegen.                   000422
+26   Verfllprotokoll fhren und bergeben.                               000423
+26   Oberfl„che wieder herstellen (Urzustand).                            000424
+31 4 1                                                                    000425
+11 4 2     N    Abschnitt                                                 000426
+12Schwere Rammsondierungen (DPH)                                          000427
+20                                                                        000428
+26   Sondierger„te nach Wahl des AN.                                      000429
+26   Muss eine Rammsondierung vor Erreichen der vorgesehenen              000430
+26   Endtiefe wegen eines Hindernisses abgebrochen und in                 000431
+26   unmittelbarer N„he neu angesetzt werden, wird das                    000432
+26   Umsetzen bis zu einer Entfernung von 10 m nicht                      000433
+26   gesondert vergtet.                                                  000434
+26   Nach Beendigung der Sondierung sind Endteufe und                     000435
+26   Wasser- stand im Sondierloch zu loten. Die Angaben sind              000436
+26   im Sondier- protokoll zu dokumentieren.                              000437
+26   Die Hinweise in der Leistungsbeschreibung, Kap. 3.14,                000438
+26   sind zu beachten.                                                    000439
+21 4 2  10 NNN         00000036000St                                      000440
+25Rammsondierger„t umsetzen bis 1000 m                                    000441
+26   Rammsondierger„t einrichten und von Ansatzpunkt                      000442
+26   zu Ansatzpunkt umsetzen,                                             000443
+26   Transportentfernung ber 10 bis 1000 m.                              000444
+21 4 2  20 NNN         00000013000St                                      000445
+25Umsetzen ber 1 km bis 5 km                                             000446
+26   wie Pos. 4.2.10, jedoch                                              000447
+26   Transportentfernung ber 1 km bis 5 km.                              000448
+21 4 2  30 NNN         00000002000St                                      000449
+25Umsetzen ber 5 km bis 10 km                                            000450
+26   wie Pos. 4.2.10, jedoch                                              000451
+26   Transportentfernung ber 5 km bis 10 km.                             000452
+21 4 2  40 NNN         00000001000St                                      000453
+25Umsetzen ber 10 km bis 25 km                                           000454
+26   wie Pos. 4.2.10, jedoch                                              000455
+26   Transportentfernung ber 10 km bis 25 km.                            000456
+21 4 2  50 NNN         00000265000m                                       000457
+25Schwere Rammsondierung ausfhren                                        000458
+26   Schwere Rammsondierung nach DIN EN ISO 22476-2 gem„á                 000459
+26   Baubeschreibung und Lageplan ausfhren.                              000460
+26   Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.                     000461
+26   Messung, Aufzeichnung und grafische Darstellung von                  000462
+26   Sondierl„nge und Schlagzahlen N10.                                   000463
+26   Endtiefe 4 bis 8 m.                                                  000464
+26   Sondierbereich 0 bis 8 m.                                            000465
+21 4 2  60 NNN         00000265000m                                       000466
+25Sondierloch mit Quellton verfllen                                      000467
+26   Sondierloch im standfesten Abschnitt mit Quellton                    000468
+26   verfllen. Verfllmaterial = Tonpellets/-granulat,                   000469
+26   m„áig quellf„hig.                                                    000470
+26   Liefermaterial des AN, Produktdatenblatt vorlegen.                   000471
+26   Verfllprotokoll fhren und bergeben.                               000472
+26   Oberfl„che wieder gem„á Urzustand herstellen.                        000473
+31 4 2                                                                    000474
+11 4 3     N    Abschnitt                                                 000475
+12Kernbohrungen (BKF)                                                     000476
+20                                                                        000477
+26   Schlagende oder drehende Trockenbohrverfahren sowie                  000478
+26   Bohr- ger„te nach Wahl des AN.                                       000479
+26   Festlegung von Endtiefe, Probenahmehorizonten und Art                000480
+26   des Ausbaus durch den geotechnischen Sachverst„ndigen                000481
+26   auf Grundlage der Ergebnisse der Drucksondierungen.                  000482
+26   Einbringen des Bohrkerns in                                          000483
+26   - Kernhllen (hohe Kerngte) bzw.                                    000484
+26   - Kernkisten (mittlere Kerngte).                                    000485
+26   Durchmesser Bohrwerkzeug mindestens 100 mm.                          000486
+26   Durchmesser Verrohrung:                                              000487
+26   - mind. 273 mm fr tempor„ren Ausbau zum                             000488
+26   Versuchsbrunnen                                                      000489
+26   - mind. 219 mm fr sonstige Bohrungen.                               000490
+26   Bohrwerkzeuge: Einfachkernrohr, Schappe oder                         000491
+26   vergleichbar. Das Einsetzen von Bohrschnecken ist nur                000492
+26   zum Zweck der Nachr„umung gestattet.                                 000493
+26   Muss eine Bohrung vor Erreichen der vorgesehenen                     000494
+26   Endtiefe wegen eines Hindernisses abgebrochen und in                 000495
+26   unmittelbarer N„he neu angesetzt werden, wird das                    000496
+26   Umsetzen bis zu einer Entfernung von 10 m nicht                      000497
+26   gesondert vergtet.                                                  000498
+26   Die Hinweise in der Leistungsbeschreibung, Kap. 3.13,                000499
+26   sind zu beachten.                                                    000500
+26   Beachtung der beengten Zufahrts- und Platzverh„ltnisse               000501
+26   im Bereich von Arbeitsstellen in Waldgebieten.                       000502
+21 4 3  10 NNN         00000101000St                                      000503
+25Bohrger„t einrichten, Umsetzen bis 100 m                                000504
+26   Bohrger„t einrichten und nach Lageplan von Bohrpunkt                 000505
+26   zu Bohrpunkt umsetzen,                                               000506
+26   Umsetzen innerhalb von Bauwerksstandorten,                           000507
+26   Transportentfernung ber 10 bis 100 m.                               000508
+21 4 3  20 NNN         00000001000St                                      000509
+25Umsetzen ber 100 m bis 250 m                                           000510
+26   Umsetzen ber 100 m bis 250 m                                        000511
+21 4 3  30 NNN         00000003000St                                      000512
+25Umsetzen ber 250 m bis 2 km                                            000513
+26   wie Pos. 4.3.10, jedoch                                              000514
+26   Transportentfernung ber 250 m bis 2 km.                             000515
+21 4 3  40 NNN         00000007000St                                      000516
+25Umsetzen ber 2 km bis 10 km                                            000517
+26   wie Pos. 4.3.10, jedoch                                              000518
+26   Transportentfernung ber 2 km bis 10 km.                             000519
+21 4 3  50 NNN         00000001000St                                      000520
+25Umsetzen ber 10 km bis 25 km                                           000521
+26   wie Pos. 4.3.10, jedoch                                              000522
+26   Transportentfernung ber 10 km bis 25 km                             000523
+21 4 3  60 NNN         00000100000m                                       000524
+25Kernbohrung ausfhren, 273 mm, Bohrbereich 0 bis 10 m                   000525
+26   Kernbohrung nach DIN EN ISO 22475-1 gem„á Bau-                       000526
+26   beschreibung und Lageplan ausfhren.                                 000527
+26   Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.                     000528
+26   Bohrverfahren = Trockenbohrverfahren mit Einbringen der              000529
+26   Bohrkerne in Kernliner und Kernkisten.                               000530
+26   Endtiefe der Gesamtbohrung 15 bis 30 m.                              000531
+26   Enddurchmesser der Gesamtbohrung mind. 273 mm fr                    000532
+26   tempor„ren Ausbau zum Versuchsbrunnen DN 125,                        000533
+26   Verrohrung bis zur Endtiefe einbringen und nach                      000534
+26   Beendigung der Bohrung ziehen.                                       000535
+26   Bohrgut aus der Nachr„umung nach Bodenarten getrennt                 000536
+26   seitlich lagern.                                                     000537
+26   Die Entnahme von ungest”rten Proben (Stutzen) sowie das              000538
+26   Einbringen der Bohrkerne in Kernliner und Kernkisten                 000539
+26   wird gesondert vergtet.                                             000540
+26   Fhren des Feldberichtes / Schichtenverzeichnisses wird              000541
+26   nicht gesondert vergtet.                                            000542
+26   Bohrbereich 0 bis 10 m.                                              000543
+21 4 3  70 NNN         00000050000m                                       000544
+25Kernbohrung ausfhren, 273 mm, Bohrbereich ber 10 bis 20 m             000545
+26   wie Pos. 4.3.60, jedoch                                              000546
+26   Bohrbereich ber 10 bis 20 m.                                        000547
+21 4 3  80 NNN         00000010000m                                       000548
+25Kernbohrung ausfhren, 273 mm, Bohrbereich ber 20 bis 30 m             000549
+26   wie Pos. 4.3.60, jedoch                                              000550
+26   Bohrbereich ber 20 bis 30 m.                                        000551
+21 4 3  90 NNN         00001030000m                                       000552
+25Kernbohrung ausfhren, 219 mm, Bohrbereich 0 bis 10 m                   000553
+26   Kernbohrung nach DIN EN ISO 22475-1 gem„á Bau-                       000554
+26   beschreibung und Lageplan ausfhren.                                 000555
+26   Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.                     000556
+26   Bohrverfahren = Trockenbohrverfahren mit Einbringen der              000557
+26   Bohrkerne in Kernliner und Kernkisten.                               000558
+26   Endtiefe der Gesamtbohrung 15 bis 70 m.                              000559
+26   Enddurchmesser der Gesamtbohrung mind. 219 mm fr                    000560
+26   tempor„ren Ausbau zur GW-Messstelle DN 80,                           000561
+26   Verrohrung bis zur Endtiefe einbringen und nach                      000562
+26   Beendigung der Bohrung ziehen.                                       000563
+26   Bohrgut aus der Nachr„umung nach Bodenarten getrennt                 000564
+26   seitlich lagern.                                                     000565
+26   Die Entnahme von ungest”rten Proben (Stutzen) sowie das              000566
+26   Einbringen der Bohrkerne in Kernliner und Kernkisten                 000567
+26   wird gesondert vergtet.                                             000568
+26   Fhren des Feldberichtes / Schichtenverzeichnisses                   000569
+26   wird nicht gesondert vergtet.                                       000570
+26   Bohrbereich 0 bis 10 m.                                              000571
+21 4 3 100 NNN         00001055000m                                       000572
+25Kernbohrung ausfhren, 219 mm, Bohrbereich ber 10 bis 20 m             000573
+26   wie Pos. 4.3.90, jedoch                                              000574
+26   Bohrbereich ber 10 bis 20 m.                                        000575
+21 4 3 110 NNN         00000490000m                                       000576
+25Kernbohrung ausfhren, 219 mm, Bohrbereich ber 20 bis 30 m             000577
+26   wie Pos. 4.3.90, jedoch                                              000578
+26   Bohrbereich ber 20 bis 30 m.                                        000579
+21 4 3 120 NNN         00000030000m                                       000580
+25Kernbohrung ausfhren, 219 mm, Bohrbereich ber 30 bis 40 m             000581
+26   wie Pos. 4.3.90, jedoch                                              000582
+26   Bohrbereich ber 30 bis 40 m.                                        000583
+21 4 3 130 NNN         00000010000m                                       000584
+25Kernbohrung ausfhren, 219 mm, Bohrbereich ber 40 bis 50 m             000585
+26   wie Pos. 4.3.90, jedoch                                              000586
+26   Bohrbereich ber 40 bis 50 m.                                        000587
+21 4 3 140 NNN         00000010000m                                       000588
+25Kernbohrung ausfhren, 219 mm, Bohrbereich ber 50 bis 60 m             000589
+26   wie Pos. 4.3.90, jedoch                                              000590
+26   Bohrbereich ber 50 bis 60 m.                                        000591
+21 4 3 150 NNN         00000010000m                                       000592
+25Kernbohrung ausfhren, 219 mm, Bohrbereich ber 60 bis 70 m             000593
+26   wie Pos. 4.3.90, jedoch                                              000594
+26   Bohrbereich ber 60 bis 70 m.                                        000595
+21 4 3 160 NNN         00000005000h                                       000596
+25Beseitigen von Bohrhindernissen                                         000597
+26   Beseitigen von Bohrhindernissen durch Meisseln                       000598
+26   und Fangen im Bohrloch.                                              000599
+26   Arbeiten nur mit Zustimmung des geotechnischen                       000600
+26   Sachverst„ndigen.                                                    000601
+21 4 3 170 NNN         00000565000m                                       000602
+25Bohrkern in Kernliner                                                   000603
+26   Einbringen des Bohrkerns in Kernliner aus PVC,                       000604
+26   Durchmesser 100 mm, Kernl„nge 1,00 m.                                000605
+26   Auftrennen der Kernhllen in Abstimmung mit dem                      000606
+26   geotechnischen Sachverst„ndigen.                                     000607
+26   Entleerung und Entsorgung der Kernhllen und des                     000608
+26   Bohrkerns erfolgt durch den AN nach Freigabe durch den               000609
+26   geotechnischen Sachverst„ndigen.                                     000610
+26   Das Liefern und Beschriften der Kernhllen wird nicht                000611
+26   gesondert vergtet.                                                  000612
+21 4 3 180 NNN         00002230000m                                       000613
+25Bohrkern in Kernkisten                                                  000614
+26   Einbringen des Bohrkerns in Kernkisten.                              000615
+26   Die Kernkisten sind wirksam gegen Austrocknung zu                    000616
+26   schtzen (Folienauslage bzw. Abdeckung).                             000617
+26   Entleerung und Entsorgung der Kernkisten und des                     000618
+26   Bohrkerns erfolgt durch den AN nach Freigabe durch den               000619
+26   geotechnischen Sachverst„ndigen.                                     000620
+26   Das Liefern und das Beschriften der Kernkisten wird                  000621
+26   nicht gesondert vergtet.                                            000622
+21 4 3 190 NNN         00000010000St                                      000623
+25Bohrlochrammsondierung (BDP)                                            000624
+26   Ausfhren einer Bohrlochrammsondierung (BDP) nach                    000625
+26   DIN EN ISO 22476-14, inkl. Versuchsauswertung und                    000626
+26   Ergebnisdarstellung.                                                 000627
+26   Versuchstiefe bis 25 m.                                              000628
+26   Festlegung der Versuchsbohrungen und -tiefen durch den               000629
+26   geotechnischen Sachverst„ndigen in Abh„ngigkeit von den              000630
+26   Ergebnissen und Endtiefen der Drucksondierungen.                     000631
+21 4 3 200 NNN         00000113000St                                      000632
+25Kernfotodokumentation                                                   000633
+26   Die gewonnenen Bohrkerne (aufgetrennte Kernliner,                    000634
+26   offene Kernkisten) sind m”glichst kurzfristig nach                   000635
+26   Fertigstellung jeder Bohrung im Kernlager gem„á                      000636
+26   folgender Vorgaben fotografisch zu dokumentieren:                    000637
+26   - Orthogonalaufnahme,                                                000638
+26   - Darstellung der vollst„ndigen Bohrung von GOK bis                  000639
+26   Endtiefe,                                                            000640
+26   - Herstellung eines "frischen Anschnitts" an den                     000641
+26   Bohrkernen                                                           000642
+26     unmittelbar vor der Aufnahme,                                      000643
+26   - Aufnahme bei vergleichbaren Bedingungen wie                        000644
+26   Objektivh”he,                                                        000645
+26     Bildhintergrund sowie Tages- oder Blitzlicht,                      000646
+26   - Aufnahme im digitalen Format, mind. 300 dpi,                       000647
+26   - Mitdarstellung einer Farbtafel und des                             000648
+26   Tiefenmaástabs.                                                      000649
+21 4 3 210 NNN         00000010000St                                      000650
+25Tempor„rer Ausbau GW-Versuchsbrunnen                                    000651
+26   Ausbau einer Kernbohrung 273 mm zu einem tempor„ren                  000652
+26   Grundwasserversuchsbrunnen mit folgenden Kenndaten:                  000653
+26   - Ausbaudurchmesser DN 125,                                          000654
+26   - Ausbaumaterial PVC-U gem„á DIN 4925-2,                             000655
+26   - Ausbautiefe bis 10 m unter GOK,                                    000656
+26   - Bodenkappe als unterer Abschluss,                                  000657
+26   - Filterl„nge 4 m, SW = 0,75 mm,                                     000658
+26   - Vollrohr von OK Filter bis GOK,                                    000659
+26   - Filterkies 2-3,15 mm                                               000660
+26   - Kiesschttung bis 1,00 m ber OK Filter.                           000661
+26   Protokollfhrung und grafische Darstellung des Brunnen-              000662
+26   ausbaus.                                                             000663
+26   Rckbau des kompletten Rohrstrangs nach Pumpversuch und              000664
+26   Grundwasserprobenahme.                                               000665
+26   Material verbleibt in Eigentum des AN.                               000666
+26   Verfllung des Bohrlochs wird gesondert vergtet.                    000667
+26   Der Aus- und Rckbau erfolgt in Abstimmung mit dem                   000668
+26   geotechnischen Sachverst„ndigen.                                     000669
+21 4 3 220 NNN         00000020000St                                      000670
+25Tempor„rer Ausbau GW-Messstellen                                        000671
+26   Ausbau einer Kernbohrung 219 mm zu einer tempor„ren                  000672
+26   Grundwassermessstelle mit folgenden Kenndaten:                       000673
+26   - Ausbaudurchmesser DN 80,                                           000674
+26   - Ausbaumaterial PVC-U gem„á DIN 4925-2,                             000675
+26   - Ausbautiefe bis 8 m unter GOK,                                     000676
+26   - Bodenkappe als unterer Abschluss,                                  000677
+26   - Filterl„nge 2 m, SW = 0,5 mm,                                      000678
+26   - Vollrohr von OK Filter bis GOK,                                    000679
+26   - Filterkies 2-3,15 mm                                               000680
+26   - Kiesschttung bis 1,00 m ber OK Filter.                           000681
+26   Protokollfhrung und grafische Darstellung des                       000682
+26   Messstellenausbaus.                                                  000683
+26   Rckbau des kompletten Rohrstrangs nach Pumpversuch.                 000684
+26   Material verbleibt in Eigentum des AN.                               000685
+26   Verfllung des Bohrlochs wird gesondert vergtet.                    000686
+26   Der Aus- und Rckbau erfolgt in Abstimmung mit dem                   000687
+26   geotechnischen Sachverst„ndigen                                      000688
+21 4 3 230 NNN         00000030000St                                      000689
+25Klarpumpen GW-Versuchsbrunnen und Messstellen                           000690
+26   Klarpumpen eines tempor„ren GW-Versuchsbrunnens DN 125               000691
+26   bzw. einer GW-Messstelle DN 80.                                      000692
+26   Klarpumpen sp„testens 1 Tag nach der Errichtung.                     000693
+26   Abpumpdauer mindestens 2 Stunden,                                    000694
+26   Volumenstrom an hydrogeologische Verh„ltnisse anpassen,              000695
+26                                                                        000696
+26   mit Protokollfhrung.                                                000697
+26   Pumpwasser auf angrenzenden Fl„chen versickern.                      000698
+21 4 3 240 NNN         00001900000m                                       000699
+25Bohrloch mit Bohrgut verfllen                                          000700
+26   Bohrloch mit seitlich gelagertem Bohrgut aus der                     000701
+26   Nachr„umung gem„á angetroffenem Schichtenprofil                      000702
+26   verfllen.                                                           000703
+26   Verfllprotokoll fhren und bergeben.                               000704
+21 4 3 250 NNN         00000330000m                                       000705
+25Bohrloch mit Fllsand/Fllkies verfllen                                000706
+26   Bohrloch mit sauberem Fllsand bzw. Fllkies gem„á                   000707
+26   angetroffenem Schichtenprofil verfllen.                             000708
+26   Liefermaterial des AN, Produktdatenblatt mit Angaben                 000709
+26   zur chemischen Unbedenklichkeit vorlegen.                            000710
+26   Verfllprotokoll fhren.                                             000711
+21 4 3 260 NNN         00000565000m                                       000712
+25Bohrloch mit Quellton verfllen                                         000713
+26   Bohrloch mit Quellton verfllen.                                     000714
+26   Grundwasserdeck- und -trennschichten gem„á                           000715
+26   angetroffenem Schichtenprofil wiederherstellen.                      000716
+26   Verfllmaterial = Tonpellets/-granulat, m„áig                        000717
+26   quellf„hig.                                                          000718
+26   Liefermaterial des AN, Produktdatenblatt mit Angaben                 000719
+26   zur chemischen Unbedenklichkeit vorlegen.                            000720
+26   Verfllprotokoll fhren.                                             000721
+26   Oberfl„che wieder herstellen (Urzustand).                            000722
+21 4 3 270 NNN         00000001000psch                                    000723
+25šberschssiges Bohrgut entsorgen                                        000724
+26   šberschssiges Bohrgut aus Bohrungen und Bodenproben in              000725
+26   Eigentum des AN bernehmen und fachgerecht entsorgen.                000726
+26   Abfallschlssel AVV = 17 05 04 (nicht gef„hrlich).                   000727
+26   Erkl„rung / Nachweis zum Verbleib des Abfalls.                       000728
+31 4 3                                                                    000729
+11 4 4     N    Abschnitt                                                 000730
+12Hydrologische Pumpversuche (PV)                                         000731
+20                                                                        000732
+26   Betreiben einer Pumpversuchseinrichtung,                             000733
+26   Einsatz einer regelbaren Pumpe mit entsprechenden                    000734
+26   Schl„uchen und Rohrleitungen,                                        000735
+26   max. 3 % Konstanz in Bezug auf die F”rderleistung.                   000736
+26   F”rderleistung max. 25m3/h, abzuleiten aus dem                       000737
+26   jeweiligen Klarpumpversuch.                                          000738
+26   Ableitung und Einleitung des abgepumpten Grundwassers                000739
+26   in einen Vorfluter bzw. Versickerung auf geeigneten                  000740
+26   Fl„chen.                                                             000741
+26   Entfernung zum Einleitpunkt bis 100 m.                               000742
+26   Die Hinweise in der Leistungsbeschreibung, Kap. 3.13,                000743
+26   sind zu beachten.                                                    000744
+21 4 4  10 NNN         00000010000St                                      000745
+25Auf-/Abbau und Umsetzen                                                 000746
+26   Auf-/Abbauen sowie Umsetzen der Pumpversuchseinrichtung              000747
+26   und s„mtlicher fr die Versuchsausfhrung                            000748
+26   erforderlicher Ger„tschaften und Materialien.                        000749
+26   Einbautiefe der Pumpe max. 10 m u. GOK.                              000750
+21 4 4  20 NNN         00000010000St                                      000751
+25Hydrologischer Pumpversuch (PV)                                         000752
+26   Hydrologischen Pumpversuch ausfhren und auswerten                   000753
+26   (kf-Wert).                                                           000754
+26   Durchfhrung und Dokumentation nach DVGW-Arbeitsblatt                000755
+26   W 111.                                                               000756
+26   Versuchsdurchfhrung mit einer Pumpstufe.                            000757
+26   F”rderzeitraum mind. 6 Stunden,                                      000758
+26   Beobachtung GW-Wiederanstieg bis zum Erreichen                       000759
+26   des Ausgangsniveaus, max. 3 Stunden.                                 000760
+26   Versuchsmessstelle DN 125 und 2 GW-Beobachtungs-                     000761
+26   messtellen GWM DN 80 fr Ausrstung mit Datenlogger.                 000762
+26   Messger„te vorhalten und betreiben.                                  000763
+31 4 4                                                                    000764
+11 4 5     N    Abschnitt                                                 000765
+12Kleinbohrungen (RKB)                                                    000766
+20                                                                        000767
+26   Bohrger„te nach Wahl des AN.                                         000768
+26   Muss eine Kleinbohrung vor Erreichen der vorgesehenen                000769
+26   Endtiefe wegen eines Hindernisses abgebrochen und in                 000770
+26   unmittelbarer N„he neu angesetzt werden, wird das                    000771
+26   Umsetzen bis zu einer Entfernung von 10 m nicht                      000772
+26   gesondert gesondert vergtet.                                        000773
+26   Das Umsetzen erfolgt in Absprache mit dem                            000774
+26   geotechnischen Sachverst„ndigen.                                     000775
+26   Die Hinweise in der Leistungsbeschreibung, Kap. 3.15,                000776
+26   sind zu beachten.                                                    000777
+21 4 5  10 NNN         00000543000St                                      000778
+25Bohrausrstung umsetzen bis 100 m                                       000779
+26   Kleinbohrausrstung von Ansatzpunkt zu Ansatzpunkt                   000780
+26   umsetzen und einrichten.                                             000781
+26   Umsetzen innerhalb von Erkundungsquerprofilen, Deich-                000782
+26   und Verkehrswegeabschnitten, Altarmen und                            000783
+26   Bauwerksstandorten.                                                  000784
+26   Transportentfernung ber 10 m bis 100 m.                             000785
+21 4 5  20 NNN         00000135000St                                      000786
+25Umsetzen ber 100 m bis 500 m                                           000787
+26   wie Pos. 4.5.10, jedoch                                              000788
+26   Transportentfernung ber 100 bis 500 m.                              000789
+21 4 5  30 NNN         00000025000St                                      000790
+25Umsetzen ber 500 m bis 2 km                                            000791
+26   wie Pos. 4.5.10, jedoch                                              000792
+26   Transportentfernung ber 500 m bis 2 km.                             000793
+21 4 5  40 NNN         00000002000St                                      000794
+25Umsetzen ber 2 km bis 10 km                                            000795
+26   wie Pos. 4.5.10., jedoch                                             000796
+26   Transportentfernung ber 2 bis 10 km.                                000797
+21 4 5  50 NNN         00000001000St                                      000798
+25Umsetzen ber 10 km bis 25 km                                           000799
+26   wie Pos. 4.5.10., jedoch                                             000800
+26   Transportentfernung ber 10 bis 25 km.                               000801
+21 4 5  60 NNN         00002558000m                                       000802
+25Kleinbohrung ausfhren, 0 bis 5 m                                       000803
+26   Kleinrammbohrung nach DIN EN ISO 22475-1 gem„á                       000804
+26   Baubeschreibung und Lageplan ausfhren.                              000805
+26   Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.                     000806
+26   Endtiefe der Gesamtbohrung 2,00 m bis 7,00 m.                        000807
+26   Durchmesser der Bohrung                                              000808
+26   - bis 2,00 m Bohrtiefe mind. 60 - 80 mm,                             000809
+26   - bis 5,00 m Bohrtiefe mind. 36 - 50 mm,                             000810
+26   - ber 5,00 m Bohrtiefe mind. 30 - 36 mm.                            000811
+26   Bohrgut nach Bodenarten getrennt seitlich lagern.                    000812
+26   Grundwasseranschnitt beim Ausfhren der Bohrarbeiten                 000813
+26   sowie die nderung des Wasserspiegels nach Erreichen                 000814
+26   der Endtiefe feststellen und protokollieren.                         000815
+26   Fhren des Feldberichtes wird nicht gesondert vergtet.              000816
+26   Probenentnahme Einzelproben wird gesondert vergtet.                 000817
+26   Verfllen wird gesondert vergtet.                                   000818
+26   Bohrbereich 0,00 bis 5,00 m.                                         000819
+21 4 5  70 NNN         00000115000m                                       000820
+25Kleinbohrung ausfhren, ber 5 bis 7 m                                  000821
+26   wie Position 4.5.60, jedoch                                          000822
+26   Bohrbereich ber 5,00 bis 7,00 m.                                    000823
+21 4 5  80 NNN         00002673000m                                       000824
+25Bohrloch mit Quellton verfllen                                         000825
+26   Bohrloch im standfesten Abschnitt mit Quellton                       000826
+26   verfllen. Verfllmaterial = Tonpellets/-granulat,                   000827
+26   m„áig quellf„hig.                                                    000828
+26   Liefermaterial des AN, Produktdatenblatt vorlegen.                   000829
+26   Verfllprotokoll fhren.                                             000830
+26   Oberfl„che wieder gem„á Urzustand herstellen.                        000831
+31 4 5                                                                    000832
+11 4 6     N    Abschnitt                                                 000833
+12Peilstangensondierungen / Probensampler                                 000834
+12(PS)                                                                    000835
+21 4 6  10 NNN         00000110000St                                      000836
+25Peilstangensondierung / Probensampler                                   000837
+26   Peilstangensondierung ausfhren.                                     000838
+26   Probenahme von Gew„ssersedimenten mittels                            000839
+26   Probensampler.                                                       000840
+26   Bestimmung der Sedimentm„chtigkeit in Bereich der                    000841
+26   Altarme Ost und West sowie der Flieágew„sser.                        000842
+26   Tiefe Peilstangensondierung mindestens 1 m, maximal 2                000843
+26   m.                                                                   000844
+26   Ausfhrung auf Querprofilen.                                         000845
+26   In diese Position sind erschwerte Bedingungen fr die                000846
+26   Zu- wegung und das Umsetzen zu den Sondierpunkten                    000847
+26   aufgrund der Lage in Waldgebieten einzukalkulieren.                  000848
+31 4 6                                                                    000849
+11 4 7     N    Abschnitt                                                 000850
+12Probenahmeschrfe (SCH)                                                 000851
+21 4 7  10 NNN         00000077000St                                      000852
+25Herstellen eines Probenahmeschurfes                                     000853
+26   Herstellen eines Probenahmeschurfs.                                  000854
+26   Abgrabungstiefe mindestens 0,70 m bis 1,25 m nach                    000855
+26   Vorgabe des geotechnischen Sachverst„ndigen.                         000856
+26   Boden zur Wiederverwendung seitlich lagern.                          000857
+26   Schurfdokumentation anfertigen.                                      000858
+26   Schurf mit seitlich gelagertem Boden gem„á                           000859
+26   angetroffener Schichtenabfolge verfllen.                            000860
+26   Verdichten und Wiederherstellen des Ursprungszustandes.              000861
+26   Die Anforderungen der DIN 4124 sind zu beachten.                     000862
+26   Probenentnahme wird gesondert vergtet.                              000863
+26   In diese Position sind erschwerte Bedingungen fr die                000864
+26   Zu- wegung und das Umsetzen zu den Schurfstellen                     000865
+26   aufgrund der teilweisen Lage in Waldgebieten                         000866
+26   einzukalkulieren.                                                    000867
+31 4 7                                                                    000868
+11 4 8     N    Abschnitt                                                 000869
+12Probenentnahme                                                          000870
+20                                                                        000871
+26   Die nachstehenden Positionen zur Probenentnahme                      000872
+26   verstehen sich inkl. Liefern, Befllen und Beschriften               000873
+26   der jeweiligen Probenbeh„ltnisse sowie Entnehmen,                    000874
+26   Behandeln, Trans- portieren und Aufbewahren der Proben.              000875
+26   Auáerdem sind Probenentnahmeprotokolle zu fhren.                    000876
+26   Die Hinweise in der Leistungsbeschreibung sind zu                    000877
+26   beachten.                                                            000878
+21 4 8  10 NNN         00000030000St                                      000879
+25Entnehmen einer Bodenprobe, Entnahmekategorie A, Bohrung                000880
+26   Entnehmen einer Sonderprobe aus einer Kernbohrung.                   000881
+26   Probenahmeverfahren der Kategorie A  nach                            000882
+26   DIN EN ISO 22475-1, Gteklasse 1-2.                                  000883
+26   Homogenbereiche A2 und BB2 nach Baubeschreibung.                     000884
+26   Entnahme mittels dnnwandigem, offenen Entnahmeger„t                 000885
+26   (OS-T/W),  Durchmesser 100 mm, L„nge mindestens 250 mm.              000886
+26   Entnahmetiefe bis 20 m unter GOK.                                    000887
+21 4 8  20 NNN         00000020000St                                      000888
+25Entnehmen einer Bodenprobe, Entnahmekategorie A, Schurf                 000889
+26   Entnehmen einer ungest”rten Bodenprobe aus einem Probe-              000890
+26   nahmeschurf.                                                         000891
+26   Probenahmeverfahren der Kategorie A nach                             000892
+26   DIN EN ISO 22475-1, Gteklasse 1-2.                                  000893
+26   Homogenbereiche A2 und BB2 nach Baubeschreibung.                     000894
+26   Entnahmetiefe bis 1,25 m unter GOK. Entnahme mittels                 000895
+26   Stutzen. Durchmesser mind. 100 mm.                                   000896
+26   Es werden nur vollst„ndig gefllte Stutzen vergtet.                 000897
+26   Die Herstellung des Probenahmeschurfes wird gesondert                000898
+26   vergtet (Pos. 4.7.10).                                              000899
+21 4 8  30 NNN         00002500000St                                      000900
+25Einzelprobe aus Kern-/Kleinbohrung, PVC 1 l                             000901
+26   Entnehmen einer Bodenprobe als Einzelprobe aus einer                 000902
+26   Kern- oder Kleinbohrung.                                             000903
+26   Probenahmeverfahren der Kategorie B nach DIN EN ISO                  000904
+26   22475-1, Gteklasse 3 (bindige B”den) bis Gteklasse 4               000905
+26   (nichtbindige B”den).                                                000906
+26   Entnahme in PVC-Beh„lter 1 Liter.                                    000907
+26   Entnahme fr bodenmechanische sowie boden- und abfall-               000908
+26   technische Untersuchungen nach Vorgaben des geotech-                 000909
+26   nischen Sachverst„ndigen.                                            000910
+21 4 8  40 NNN         00000190000St                                      000911
+25Einzelprobe aus Bohrung / Schurf, PVC 5 l                               000912
+26   Entnehmen einer Bodenprobe als Einzelprobe aus einer                 000913
+26   Kernbohrung bzw. einem Schurf.                                       000914
+26   Probenahmeverfahren der Kategorie B nach DIN EN ISO                  000915
+26   22475-1, Gteklasse 3 (bindige B”den) bis Gteklasse 4               000916
+26   (nichtbindige B”den).                                                000917
+26   Entnahme in PVC-Beh„lter 5 Liter.                                    000918
+26   Entnahme fr bodenmechanische Untersuchungen nach                    000919
+26   Vorgaben des geotechnischen Sachverst„ndigen.                        000920
+21 4 8  50 NNN         00000010000St                                      000921
+25Einzelprobe aus Bohrung / Schurf, PVC 10 l                              000922
+26   wie Pos. 4.8.40, jedoch                                              000923
+26   PVC-Beh„lter 10 l.                                                   000924
+21 4 8  60 NNN         00000003000St                                      000925
+25Bauwerksbohrung und Probenahme Asphalt                                  000926
+26   Ausfhren einer Bauwerksbohrung (Kernbohrung) zur                    000927
+26   Probenahme von asphaltierten Deck- und Tragschichten.                000928
+26   Kerndurchmesser 100 mm, Kernl„nge bis 200 mm.                        000929
+26   Wiederverfllen des Bohrlochs mittels Reparaturasphalt.              000930
+21 4 8  70 NNN         00000001000St                                      000931
+25Zulage Heiáasphalt                                                      000932
+26   Zulage zu Pos. 4.8.60 fr die Wiederverfllen eines                  000933
+26   Bohrlochs mittels Heiáasphalt                                        000934
+21 4 8  80 NNN         00000012000St                                      000935
+25Grundwasser-Probenahme                                                  000936
+26   Fachgerechte Entnahme einer Grundwasserprobe als                     000937
+26   Pumpprobe nach Durchfhrung des hydrologischen                       000938
+26   Pumpversuchs.                                                        000939
+26   Bestimmung der vor-Ort-Parameter elektrische                         000940
+26   Leitf„higkeit, pH-Wert und Temperatur.                               000941
+26   Probenbeh„ltnisse und Konservierungsmittel vorhalten.                000942
+26   Probenahmeprotokoll.                                                 000943
+26   Abgedunkelter und gekhlter Transport innerhalb eines                000944
+26   Temperaturbereichs von 4 bis 12 øC.                                  000945
+26   šbergabe an die Untersuchungsstelle innerhalb von 24                 000946
+26   Stunden nach Entnahme.                                               000947
+26   Regelungen der DIN EN ISO 22475-1, Kap. 8 und  9.4.4                 000948
+26   beachten.                                                            000949
+21 4 8  90 NNN         00000009000St                                      000950
+25Oberfl„chenwasser-Probenahme                                            000951
+26   wie Pos. 4.8.80, jedoch                                              000952
+26   Entnahme einer Oberfl„chenwasserprobe aus einem                      000953
+26   Flieágew„ssers als qualifizierte Sch”pfprobe.                        000954
+21 4 8 100 NNN         00000001000psch                                    000955
+25Probentransport                                                         000956
+26   Transport der Boden- und Wasserproben zu den jeweiligen              000957
+26   Untersuchungsstellen.                                                000958
+26   Alle Proben sind w„hrend des Transports wirksam gegen                000959
+26   „uáere Einflsse zu schtzen (Hitze, Frost, Licht,                   000960
+26   Besch„digung). .                                                     000961
+31 4 8                                                                    000962
+31 4                                                                      000963
+11 5       N    Bereich                                                   000964
+12Laboruntersuchungen                                                     000965
+11 5 1     N    Abschnitt                                                 000966
+12Bodenmechanische Untersuchungen                                         000967
+20                                                                        000968
+26   Die bodenmechanisch zu untersuchenden Proben werden                  000969
+26   nach ingenieurgeologischer Begutachtung der Bohrkerne                000970
+26   und Einzelproben sowie Vorlage der vorl„ufigen                       000971
+26   Schichten- verzeichnisse durch den geotechnischen                    000972
+26   Sachverst„ndigen festgelegt.                                         000973
+26   Die Hinweise in der Leistungsbeschreibung, Kap. 3.16,                000974
+26   sind zu beachten.                                                    000975
+21 5 1  10 NNN         00000070000St                                      000976
+25Siebung                                                                 000977
+26   Bestimmung der Korngr”áenverteilung durch Siebung                    000978
+26   nach DIN EN ISO 17892-4.                                             000979
+21 5 1  20 NNN         00000096000St                                      000980
+25kombinierte Sieb- und Schl„mmanalyse                                    000981
+26   Bestimmung der Korngr”áenverteilung durch                            000982
+26   kombinierte Siebung und Ar„ometerverfahren                           000983
+26   nach DIN EN ISO 17892-4.                                             000984
+21 5 1  30 NNN         00000108000St                                      000985
+25Natrlicher Wassergehalt                                                000986
+26   Bestimmung des natrlichen Wassergehaltes                            000987
+26   nach DIN EN ISO 17892-1.                                             000988
+21 5 1  40 NNN         00000056000St                                      000989
+25Flieá- und Ausrollgrenzen                                               000990
+26   Bestimmung der Flieá- und Ausrollgrenzen                             000991
+26   nach DIN EN ISO 17892-12.                                            000992
+21 5 1  50 NNN         00000105000St                                      000993
+25Glhverlust                                                             000994
+26   Bestimmung des Glhverlusts nach DIN 18128.                          000995
+31 5 1                                                                    000996
+11 5 2     N    Abschnitt                                                 000997
+12Umwelt- und abfalltechnische                                            000998
+12Untersuchungen                                                          000999
+20                                                                        001000
+26   Die umwelt- und abfalltechnisch zu untersuchenden                    001001
+26   Proben werden nach ingenieurgeologischer Begutachtung                001002
+26   der Bohrkerne und Einzelproben sowie Vorlage der                     001003
+26   vorl„ufigen Schichtenverzeichnisse durch den                         001004
+26   geotechnischen Sachverst„ndigen festgelegt.                          001005
+26   Die Hinweise in der Leistungsbeschreibung, Kap. 3.17,                001006
+26   sind zu beachten.                                                    001007
+21 5 2  10 NNN         00000350000St                                      001008
+25Bildung einer Mischprobe                                                001009
+26   Bildung einer Mischprobe aus mehreren Einzelproben.                  001010
+26   Herkunft aus Homogenbereichen gem„á Kap. 2.5.3 der                   001011
+26   Baubeschreibung sowie aus Konstruktionsschichten der                 001012
+26   Wirtschaftswege.                                                     001013
+26   Bei der Mischprobenbildung sind die verschiedenen                    001014
+26   bautechnischen Bereiche und Homogenbereiche zu trennen.              001015
+26   Bildung der Mischprobe auf Anweisung des geotechnischen              001016
+26   Sachverst„ndigen.                                                    001017
+21 5 2  20 NNN         00000099000St                                      001018
+25Oberboden, Vorsorgewerte BBodSchV                                       001019
+26   Untersuchung und Bewertung von Oberboden im Umfang der               001020
+26   Parameter der Vorsorgewerte fr anorganische und                     001021
+26   organische Stoffe gem„á Anlage 1, Tabellen 1 und 2                   001022
+26   BBodSchV,  inkl. TOC-Gehalt und pH-Wert (CaCl2).                     001023
+21 5 2  30 NNN         00000010000St                                      001024
+25Oberboden, Prfwerte Boden-Nutzpflanze BBodSchV                         001025
+26   Erg„nzende Untersuchung und Bewertung von Oberboden                  001026
+26   gem„á Parametern fr Prf- und Maánahmewerte fr den                 001027
+26   Wirkungspfad Boden-Nutzpflanze auf Grnlandfl„chen im                001028
+26   Hinblick auf die Pflanzenqualit„t nach Anlage 1 Tabelle              001029
+26   7 BBodSchV.                                                          001030
+21 5 2  40 NNN         00000059000St                                      001031
+25Oberboden, Qualit„tsparameter Wiederverwendung                          001032
+26   Erg„nzende Untersuchung und Bewertung von Oberboden im               001033
+26   Hinblick auf Qualit„tsparameter fr die                              001034
+26   Wiederverwendung,                                                    001035
+26   - C/N-Verh„ltnis (Sollwert < 14),                                    001036
+26   - organischer Anteil (Sollwert 4-8 %) und                            001037
+26   - Schluffkornanteil (Sollwert > 15 %).                               001038
+21 5 2  50 NNN         00000200000St                                      001039
+25Bodenmaterial/Baggergut, Materialklasse ErsatzbaustoffV                 001040
+26   Untersuchung und Bewertung von Bodenmaterial und                     001041
+26   Bagger- gut im Hinblick auf Materialwerte und                        001042
+26   Materialklassen nach Anlage 1 Tabelle 3                              001043
+26   ErsatzbaustoffV, alle Parameter der Tabelle.                         001044
+26   Elotion im Schttelversuch 2:1 nach DIN 19529.                       001045
+21 5 2  60 NNN         00000040000St                                      001046
+25Zulage S„ulenversuch                                                    001047
+26   Zulage zu Pos. 5.2.50:                                               001048
+26   Elution im S„ulenkurztest nach DIN 19528 anstelle                    001049
+26   Schttelversuch nach DIN 19529.                                      001050
+21 5 2  70 NNN         00000005000St                                      001051
+25Bodenmaterial/Baggergut, Deponieklasse DepV                             001052
+26   Untersuchung und Bewertung von Bodenmaterial und                     001053
+26   Bagger- gut im Hinblick auf Zuordnungswerte und                      001054
+26   Deponieklassen nach Anhang 3 Tabelle 2 Spalte 6-8 DepV,              001055
+26   DK I-III, inkl. Bestimmung Glhverlust und TOC.                      001056
+26   Ohne S„ureneutralisationskapazit„t und Antimon-Co-Wert.              001057
+21 5 2  80 NNN         00000005000St                                      001058
+25S„ureneutralisationskapazit„t                                           001059
+26   Bestimmung der S„ureneutralisationskapazit„t nach DepV.              001060
+21 5 2  90 NNN         00000005000St                                      001061
+25Antimon-Co-Wert                                                         001062
+26   Bestimmung des Antimon-Co-Wertes nach DepV.                          001063
+21 5 2 100 NNN         00000005000St                                      001064
+25Atmungsaktivit„t AT4                                                    001065
+26   Bestimmung der Atmungsaktivit„t AT4 nach DepV.                       001066
+21 5 2 110 NNN         00000005000St                                      001067
+25Brennwert H0                                                            001068
+26   Bestimmung der Brennwertes H0 nach DepV                              001069
+21 5 2 120 NNN         00000003000St                                      001070
+25Asphaltbaustoffe, Verwertungsklasse RuVA-StB                            001071
+26   Untersuchung und Bewertung von asphaltgebundenen                     001072
+26   Straáenbaustoffen im Hinblick auf die Verwertungsklasse              001073
+26                                                                        001074
+26   nach RuVA-StB 01/05 (PAK, Phenolindex).                              001075
+21 5 2 130 NNN         00000018000St                                      001076
+25Boden, Betonaggressivit„t und Stahlkorrosivit„t                         001077
+26   Untersuchung und Bewertung von Boden hinsichtlich                    001078
+26   Betonaggressivit„t nach DIN 4030-2 (Ausgabe 2024) und                001079
+26   Stahlkorrosivit„t nach DIN 50929-3 (Ausgabe 2024).                   001080
+21 5 2 140 NNN         00000021000St                                      001081
+25Grund-/Oberfl„chenwasser, Betonaggressivit„t und Stahlkorrosivit„t      001082
+26   Untersuchung und Bewertung von Grund- und  Oberfl„chen-              001083
+26   wasser hinsichtlich Betonaggressivit„t nach DIN 4030-2               001084
+26   (Ausgabe 2024), Referenzverfahren und Stahlkorrosivit„t              001085
+26   nach DIN 50929-3 (Ausgabe 2024)..                                    001086
+21 5 2 150 NNN         00000010000St                                      001087
+25Grundwasser. Parameter wasserrechtliche Antragsverfahren                001088
+26   Untersuchung von Grundwasser hinsichtlich folgender                  001089
+26   Qualit„tsparameter fr die wasserrechtlichen                         001090
+26   Antragsverfahren:                                                    001091
+26   - F„rbung, Trbung, Geruch, Temperatur bei Entnahme,                 001092
+26   - elektrische  Leitf„higkeit, pH-Wert,                               001093
+26   Sauerstoffgehalt,                                                    001094
+26   - DOC,                                                               001095
+26   - CSV-KMnO4,                                                         001096
+26   - AOX,                                                               001097
+26   - Gesamth„rte,                                                       001098
+26   - Natrium, Kalium, Calc¡um, Magnesium, Ammonium,                     001099
+26     Nitrat, Nitrit, Sulfat, Chlorid, Hydrogencarbonat,                 001100
+26   - Eisen, Mangan,                                                     001101
+26   - Arsen, Blei, Cadmium, Chrom, Kupfer, Nickel,  Zink                 001102
+26   - LHKW, BTEX,                                                        001103
+26   - MWK,                                                               001104
+26   - PAK (EPA),                                                         001105
+26   - Phenole,                                                           001106
+26   - Cyanide.                                                           001107
+31 5 2                                                                    001108
+31 5                                                                      001109
+11 6       N    Bereich                                                   001110
+12Dokumentation                                                           001111
+11 6 1     N    Abschnitt                                                 001112
+12Abschlussdokumentation                                                  001113
+21 6 1  10 NNN         00000001000psch                                    001114
+25šberarbeitung Schichtenprofile                                          001115
+26   šberarbeitung der Schichtenprofile fr Kern- und Klein-              001116
+26   bohrungen nach Vorgaben des geotechnischen                           001117
+26   Sach-verst„ndigen. Einzuarbeiten sind insbesondere                   001118
+26   folgende Daten:                                                      001119
+26   - Ergebnisse der ingenieurgeologischen Bodenanprache,                001120
+26   - Ergebnisse von Laborversuchen zur                                  001121
+26   Bodenklassifikation,                                                 001122
+26   - Schichtenangaben gem„á Baugrundmodell.                             001123
+26   Die Hinweise der Baubeschreibung zu den Datenbergabe-               001124
+26   formaten sind zu beachten (SEP3-kompatibel, z. B.                    001125
+26   GeODin).                                                             001126
+21 6 1  20 NNN         00000001000psch                                    001127
+25Abschlusssbericht Feld- und Laboruntersuchungen                         001128
+26   Nach Untersuchungsobjekten geordnete Zusammenstellung                001129
+26   aller Ergebnisse der Feld- und Laboruntersuchungen.                  001130
+26   Die Abschlussdokumentation ist dem AG in 2-fach                      001131
+26   analoger sowie in digitaler Form auf Datentr„ger zu                  001132
+26   bergeben.                                                           001133
+26   šbergabe sp„testens 4 Wochen nach šbermittlung der                   001134
+26   erg„nzten Schichtenprofile durch den geotechnischen                  001135
+26   Sachverst„ndigen.                                                    001136
+26   Die Hinweise der Baubeschreibung, Kap. 5.2, sind zu                  001137
+26   beachten.                                                            001138
+31 6 1                                                                    001139
+31 6                                                                      001140
+99                   1900                                            00121001141

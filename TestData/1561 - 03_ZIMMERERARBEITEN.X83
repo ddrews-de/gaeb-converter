@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GXML Toolbox V3.3 R20240815;  http://www.gaeb-toolbox.de/ 
+ GAEB TextKonverter used version   -->
+<GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/200407">
+  <GAEBInfo>
+    <Version>3.1</Version>
+    <VersDate>2009-12</VersDate>
+    <Date>2026-04-22</Date>
+    <Time>10:48:32</Time>
+    <ProgSystem>NEVARIS/ GXML Toolbox V3.3 R20240815</ProgSystem>
+    <ProgName>NEVARIS 25.2.0</ProgName>
+  </GAEBInfo>
+  <PrjInfo>
+    <NamePrj>1561</NamePrj>
+    <LblPrj>Aufstockung Aicher-Scholl-Schule</LblPrj>
+    <Cur>EUR</Cur>
+    <CurLbl>EUR</CurLbl>
+    <UPFracDig>2</UPFracDig>
+  </PrjInfo>
+  <Award>
+    <DP>83</DP>
+    <AwardInfo>
+      <Cat>OpenProc</Cat>
+      <Cur>EUR</Cur>
+      <CurLbl>EUR</CurLbl>
+      <OpenDate>2026-05-12</OpenDate>
+      <OpenTime>00:00:00</OpenTime>
+      <EvalEnd>2026-06-12</EvalEnd>
+      <CnstStart>2026-08-31</CnstStart>
+      <CnstEnd>2026-10-28</CnstEnd>
+    </AwardInfo>
+    <OWN>
+      <Address>
+        <Name1>Landkreis Sigmaringen</Name1>
+        <Name2>vert. d. Landrätin Bürkle</Name2>
+        <Name3/>
+        <Name4/>
+        <Street>Leopoldstr. 4</Street>
+        <PCode>72488</PCode>
+        <City>Sigmaringen</City>
+        <Country>Deutschland</Country>
+        <Phone>+49 7571 102-0</Phone>
+        <Fax>+49 7571 102-1234</Fax>
+        <Email>info@lrasig.de</Email>
+      </Address>
+    </OWN>
+    <AddText>
+      <OutlineAddText>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:11pt">Allgemeine Technische Vertragsbestimmungen (ATV) DIN 18299</span>
+        </p>
+      </OutlineAddText>
+      <DetailAddText>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0 Hinweise</span>
+          <br/>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">Die ATV DIN 18299 &#x22;Allgemeine Regelungen für Bauarbeiten jeder Art&#x22; gilt für alle Arbeiten, auch für solche, für die keine ATV in VOB/C - ATV DIN 18300 bis ATV DIN 18459 - bestehen.</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1 Angaben zur Baustelle</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.1 Lage der Baustelle</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Baustellenadresse:</span>
+        </p>
+        <p>
+          <br/>
+          <span style="font-family:Arial;font-size:10pt">Hindenburgstraße 27</span>
+          <br/>
+          <span style="font-family:Arial;font-size:10pt">88348 Bad Saulgau</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Baustellenzufahrt:</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Die Baustellenzufahrt erfolgt über die B32 (Kaiserstraße) in beiden Richtungen und</span>
+          <br/>
+          <span style="font-family:Arial;font-size:10pt">&#x22;Hindenburgstraße&#x22; zur Baustelle und zum Parkplatz in der Gutenbergstraße.</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.2 Besondere Belastungen</span>
+          <br/>
+          <span style="font-family:Arial;font-size:10pt">Der Baubetrieb findet während des Schulbetriebs statt. Besonders wird auf die Beachtung der Sicherheit auf den Verkehrsflächen während des Schulbetriebs hingewiesen. Es kann zu Einschränkungen bei der Anlieferung gemäß Handlungsleitlinie kommen. Diese Einschränkungen sind zu berücksichtigen.</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.3 Art und Lage der baulichen Anlage</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Siehe beigefügte Planunterlagen und unter Allgemeine Bau- / Objektbeschreibung</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.4 Verkehrsverhältnisse auf der Baustelle</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Die geplante Baustelleneinrichtung und Lagermöglichkeiten an der Nordseite des Gebäudes und auf dem öffentlichen Parkplatz in der Gutenbergstraße sind im Baustelleneinrichtungsplan dargestellt und frühzeitig mit der Bau- / Projektleitung abzustimmen. Der Gehweg entlang der Gutenbergstraße ist zu sperren. Die entsprechenden öffentlich-rechtlichen Genehmigungen und verkehrsrechtlichen Anordnungen für die gesamte Bauzeit sind durch das Gewerk &#x22;Rohbau&#x22; zu leisten. Darüber hinausgehende Flächen für Zufahrt und Lagerung werden bauseits nicht bereitgestellt. Falls erforderlich, sind weitere Flächen direkt durch den AN zu beantragen und zu betreiben. Die Kosten werden nicht gesondert vergütet. s.a. Baustelleneinrichtungsplan, Anlage 9.02</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.5 Für den Verkehr freizuhaltende Flächen</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Zufahrten und Stellplätze der Schule und der Nachbargebäude.</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.6 Art, Lage, Maße und Nutzbarkeit von Transporteinrichtungen</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Soweit im Leistungsverzeichnis nicht anders beschrieben, sind die erforderlichen Hebezeuge vom Auftragnehmer zu stellen und in die Einheitspreise einzurechnen. Ein Kran steht für die Gewerke Rohbau, Holzbau, Flachdachabdichtung und Fenster zu Verfügung. Die Nutzung ist mit dem Kranbetreiber abzustimmen. Die eventuell anfallenden Kosten dafür sind zwischen den Beteiligten direkt zu begleichen.</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.7 Lage, Art, Anschlusswert für Energie</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Die für den Baustellenbetrieb erforderlichen Energieanschlüsse werden vom AG in Form einer Baustromversorgung und Bauwasserversorgung vorgesehen, wenn nicht im Leistungsverzeichnis anders beschrieben. Die Kosten trägt der Auftraggeber.</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.8 Mitbenutzung überlassenen Räume und Flächen</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Siehe 0.1.4</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.9 Bodenverhältnisse, Baugrund</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine Angaben</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.10 Hydrologische Werte</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine Angaben</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.11 Besondere Umweltrechtliche Vorschriften</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine Angaben</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.12 Besondere Vorgaben Entsorgung</span>
+        </p>
+        <p>
+          <span style="font-family:Arial">Keine Angabe.</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.13 Schutzgebiete oder Schutzzeiten</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Nicht bekannt</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.14 Schutz von Bäumen usw.</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine Angaben</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.15 Art und Umfang der Regelungen und Sicherung des öffent. Verkehrs</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine Angaben</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold">0</span>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">.1.16 Im Bereich der Baustelle vorhandene Anlagen</span>
+        </p>
+        <p>
+          <span>Stellplätze für Mitarbeiter der Aicher-Scholl-Schule.</span>
+          <br/>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">17 Bekannte oder vermutete Hindernisse im Bereich der</span>
+          <br/>
+          <span>Keine Angaben</span>
+          <br/>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.18 Ver</span>
+          <span style="font-family:Arial;font-weight:bold">mutete Kampfmittel</span>
+        </p>
+        <p>
+          <span style="font-family:Arial">Die Arbeiten werden im Bestandsgebäude durchgeführt. Weiteres ist nicht bekannt.</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold">0.1.19 Baustellenverordnung</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Die SIGEKO ist vom Bauherrn einem Dritten übertragen, s.a. Adressen der Planungsbeteiligten.</span>
+          <br/>
+          <span style="font-family:Arial;font-size:10pt">Der SIGE-Plan wird derzeit entwickelt. </span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.20 Besondere Anordnungen</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">an den Bauablauf im Gebäude, siehe Bauzeitenplan, Anlage  9.01</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.21 Art und Umfang der Schadstoffbelastung</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine Angabe </span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.22 Art und Zeit der vom Auftraggeber veranlassten </span>
+          <span style="font-family:Arial;font-weight:bold">Vorarbeiten</span>
+        </p>
+        <p>
+          <span style="font-family:Arial">siehe Bauzeitenplan</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.1.23 Arbeiten anderer Unternehmer</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">siehe oben</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2 Angaben zur Ausführung</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.1 Vorgesehene Arbeitsabschnitte</span>
+          <br/>
+          <span style="font-family:Arial;font-size:10pt">Die Arbeiten sind in einem Bauabschnitt durchzuführen. Der Betrieb der Aicher-Scholl-Schule und die Belange der Kinder, wie in der Handlungsleitlinie beschrieben, dürfen nicht beeinträchtigt werden. Diese Erschwernisse sind zu berücksichtigen. Siehe Bauzeitenplan.</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.2 Besondere Erschwernisse während der Ausführung</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Der Schulunterricht bleibt außerhalb der Schulferien in Betrieb.</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.3 Vorgaben, die sich aus dem SiGe-Pla</span>
+          <span style="font-family:Arial;font-weight:bold">n gemäß Baustellenverordnung ergeben</span>
+          <br/>
+          <span>Keine Angabe</span>
+        </p>
+        <p>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.4 Art und Umfang von Leistungen zur Unfallverhütung und Gesundheitsschutz für Mitarbeiter</span>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">        anderer Unternehmen</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine Angaben</span>
+          <br/>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.5 Besondere Anforderungen für Arbeiten in kontaminierten Bereichen</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine Angaben</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.6 Besondere Anforderungen an die Baustelleneinrichtung</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Siehe 0.1.4 und Baustelleneinrichtungsplan</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.7 Besondere Anforderungen für das Auf- und Abbauen sowie Vorhalten von Gerüsten</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Erforderliche Arbeits- und Schutzgerüste für die Erbringung der ausgeschriebenen Leistungen werden nicht gesondert vergütet und sind in die Einheitspreise einzurechnen. Dies gilt auch für Gerüste, welche in der VOB Teil C als &#x22;Besondere Leistungen&#x22; aufgeführt sind. </span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.8 Mitbenutzung fremder Gerüste</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Siehe auch 0.2.7</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.9 Wie lange und für welche Arbeiten vom AN vorzuhaltende Baustelleneinrichtung und Gerüste</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">s. Bauzeitenplan </span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.10 Verwendung oder Mitverwendung von wiederaufbereiteten Stoffen</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Siehe LVZ</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.10 - 0.2.12</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">Keine Angabe</span>
+          <br/>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.13 Art und Umfang der vom Auftraggeber verlangten Eignungs- und Gütenachweise. </span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Für den Bau der Erweiterung des Gebäudes wird nach den Nachhaltigkeitskriterien des Landes Baden-Württemberg NBBW angewendet. Seitens des AN ist die Anlage 9.90 einschließlich der enthaltenen Baustoffliste für sein Gewerk bzw. seine zu verwenden Baustoffe zu beachten. Die Kosten sind in die betreffenden Leistungspositionen in den Einheitspreis einzurechnen. Eine zusätzliche Vergütung zur Erfüllung der Qualitätssicherung nach NBBW erfolgt nicht. Der AG hat für die Qualitätssicherung nach NBBW das Ing.-Büro  GSA Körner GmbH, s.a. Adressliste, beauftragt. </span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt"> </span>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.14 - 0.2.19</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">Keine Angabe</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.20 Benutzung von Teilen der Leistung vor der Abnahme</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Die Benutzung erfolgt nach der baurechtlichen Abnahme.</span>
+          <br/>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.2.21 - 0.2.22</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine besonderen Regelungen</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.3 Einzelangaben bei Abweichungen von den ATV</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.3.1 - 0.3.2</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine abweichenden Regelungen</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.4  Einzelangaben zu Nebenleistungen und Besonderen Leistungen</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.4.1 - 0.4.2</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">Keine abweichenden Regelungen, sofern nicht in der ZTV anders beschrieben</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:10pt">0.5  Abrechnungseinheiten</span>
+        </p>
+        <p>
+          <span style="font-family:Arial;font-size:10pt">siehe Positionen, wie im LV angegeben</span>
+        </p>
+        <p/>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:11pt;text-decoration:underline">Allgemeine Bau- / Objektbeschreibung</span>
+        </p>
+        <p/>
+        <p>
+          <span>Der Ostflügel des Gebäudes, Fertigstellung 2015, wird durch ein weiteres Geschoß mit zwei Klassen-, einem Intensivraum und WCs erweitert. Der Rückbau der Dachabdichtung, Blechteile und der Anschlüsse an den Altbau erfolgt Zug um Zug und betrifft im wesentlichen das Rohbau- und Holzbaugewerk sowie die Flachdachabdichtung. Die Tragkonstruktion setzt auf die Bestehende auf und  ist hauptsächlich aus Betonhalbfertigteilen zu erstellen. Nichttragende Innenwände und abgehängte Decken werden im Trockenbau montiert. Die technische Ausrüstungen, der Innenausbau und die Fassade entsprechen der bereits bestehenden Ausführung des Ostflügels.</span>
+        </p>
+        <p/>
+        <p/>
+        <p>
+          <span style="font-family:Arial;font-weight:bold;font-size:11pt;text-decoration:underline">Planunterlagen</span>
+        </p>
+        <p>
+          <span style="font-family:Arial">Die für die Ausführung benötigten Unterlagen werden dem AN digital auf einer Plattform zur Verfügung gestellt. Der AN wird über den aktuellen Planungsstand per Mail informiert. Der AN ist dafür verantwortlich, dass die erforderlichen Unterlagen rechtzeitig in entsprechender Form für die Ausführung seiner Leistung verfügbar sind. Die Kosten für die entsprechenden Plots bzw. Kopien werden nicht gesondert vergütet, und sind in die entsprechenden Einheitspreise einzurechnen.</span>
+        </p>
+        <p>
+          <br/>
+          <span style="font-family:Arial;font-weight:bold">Anlagen zum Leistungsverzeichnis</span>
+        </p>
+        <p/>
+        <p>
+          <span style="font-family:Arial">9.00  Lageplan_27112025</span>
+          <br/>
+          <span style="font-family:Arial">9.01  Bauzeitenplan_260330</span>
+          <br/>
+          <span>9.02  546_Baustelleneinrichtungsplan</span>
+          <br/>
+          <span>9.03  539_Aufstockung Abbruchplan</span>
+          <br/>
+          <span>9.04  532_Aufstockung DG</span>
+          <br/>
+          <span>9.05  534_Aufstockung Dachaufsicht</span>
+          <br/>
+          <span>9.06  533_Aufstockung Schnitt</span>
+          <br/>
+          <span>9.07  536_Aufstockung Ansicht Nord</span>
+          <br/>
+          <span>9.08  537_Aufstockung Ansicht Ost</span>
+          <br/>
+          <span>9.09  538_Aufstockung Ansicht Süd</span>
+          <br/>
+          <span>9.10  535_Fassadenschnitte</span>
+          <br/>
+          <br/>
+          <span>9.90  NBBW NAKR 9 - Anforderungen</span>
+          <br/>
+          <span>         an Baustoffe 2023_25092025</span>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </p>
+      </DetailAddText>
+    </AddText>
+    <AddText>
+      <OutlineAddText>
+        <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+          <span>Handlungsleitlinie für Handwerker und Fremdfirmen </span>
+        </p>
+      </OutlineAddText>
+      <DetailAddText>
+        <p>
+          <span>auf dem Schulgelände der Aicher-Scholl-Schule Bad Saulgau</span>
+          <br/>
+        </p>
+        <p>
+          <span>Die Allgegenwart und Unberechenbarkeit von Kindern, die sich auf dem Gelände der Schule frei, teilweise auch ohne Betreuer bewegen, insbesondere von Kindern mit Behinderungen, erfordert besondere Sorgfalt und Rücksichtnahme. Aufgrund der Deliktunfähigkeit von Kindern können im Schadensfall keine Regress- oder Aufsichtspflichtverletzungsansprüche geltend gemacht werden. Halten Sie sich nur dort auf, wo Sie auf Grund Ihres Arbeitsauftrages Ihren Arbeitsplatz haben.</span>
+          <br/>
+        </p>
+        <p>
+          <span>1. Für die Einhaltung der geltenden Rechtsvorschriften des Arbeits- und Gesundheitsschutzes sind die Fremdfirmen selbst verantwortlich sowie das die von Ihnen eingesetzten Nachunternehmer (SUB) gleiches Sicherheitsniveau gewährleisten.</span>
+          <br/>
+        </p>
+        <p>
+          <span>2. Für die Erstellung und Vorhaltung der Gefährdungsbeurteilungen, Arbeits-, Montage- bzw. Abbruchanweisungen gemäß den staatlichen- und berufsgenossenschaftlichen Vorschriften sind die ausführenden Firmen selbst verantwortlich. ArbSchG §5 und §6.</span>
+          <br/>
+        </p>
+        <p>
+          <span>3. Autos und alle Fenster davon sind beim Verlassen grundsätzlich abzuschließen.</span>
+          <br/>
+        </p>
+        <p>
+          <span>4. Auf dem gesamten Schulgelände gilt: “Fußgänger Zone“. Dies bedeutet Vorrang aller anderen Verkehrsteilnehmern vor Kraftfahrzeugen und Schrittgeschwindigkeit (max. 7 km/h). Parken ist nur auf markierten Flächen erlaubt. Markierte Parkplätze im Schulgelände sind während der Schulzeiten den Mitarbeitern vorbehalten. Nichtmarkierte Flächen sind ständig für Rettungsfahrzeuge freizuhalten.</span>
+          <br/>
+        </p>
+        <p>
+          <span>5. Bei Einsatz von Maschinen, Stromkabeln, gefährlichem Werkzeug und Materialien, insbesondere von Gefahrstoffen, sind diese so zu sichern, dass eine Gefährdung der Kinder und Jugendlichen ausgeschlossen ist. Bei der Verwendung von elektrischen Werkzeugen und Ausrüstungen sind der ordnungsgemäße Zustand und die vorgeschriebenen Prüfungen (Prüffristen) zu beachten.</span>
+          <br/>
+        </p>
+        <p>
+          <span>6. Baustellen, Baugruben, Leitern und Gerüste sind ebenfalls so zu sichern, dass keine Gefährdung durch unbefugtes Besteigen, Betreten oder Hineinfallen für inder entstehen kann. „Flatterband“ und „Trassenband“ ist grundsätzlich zur Gruben- und Gräbensicherung untersagt. Zugelassen sind nur Bauzäune.</span>
+          <br/>
+        </p>
+        <p>
+          <span>7. Rauchen ist in den Gebäuden und Freiflächen der Schule verboten. Raucherzonen müssen vorher mit der Bauleitung abgesprochen werden. Rauchzeugreste dürfen nicht offen liegen gelassen werden (Vergiftungsgefahr bei Aufnahme über den Mund). Feuerzeuge und Streichhölzer, sowie alle offenen Zündquellen sind ebenfalls vor dem Zugriff der Kinder zu sichern.</span>
+          <br/>
+        </p>
+        <p>
+          <span>8. Auf der Baustelle besteht generelles Drogen- und Alkoholverbot!</span>
+          <br/>
+          <br/>
+          <span>9. Die Beschäftigten auf der Baustelle sind verpflichtet, für die eigene und für die Sicherheit und Gesundheit anderer bei der Arbeit Sorge zu tragen. Jede von Ihnen festgestellte unmittelbare Gefahr für Sicherheit und Gesundheit sowie alle festgestellten Sicherheitsmängel müssen Sie unverzüglich Ihrem Vorgesetzten oder der Bauleitung melden. Alle gefährlichen Vorkommnisse sind meldepflichtig! Sie sind auch verpflichtet, für die Sicherheit und Gesundheit der Personen zu sorgen, die von ihren Handlungen oder Unterlassungen bei der Arbeit betroffen sind.</span>
+          <br/>
+        </p>
+        <p>
+          <span>10. Die Firmen haben dafür zu sorgen, dass Ersthelfer und Verbandmaterial entsprechend der Belegschaftsstärke ausreichend vorhanden sind.</span>
+          <br/>
+        </p>
+        <p>
+          <span>11. Heilpädagogische Ruhemaßnahmen: Wir bitten darum, auf die Benutzung von Radiogeräten und anderen Musikträgern zu verzichten, da einige Schüler bereits bei „Zimmerlautstärke“ sehr aufgeregt reagieren.</span>
+          <br/>
+        </p>
+        <p>
+          <span>12. Während der Schulzeit ist insbesondere darauf zu achten, dass kurz vor- und nachher, also während der Hauptschulwegzeiten, An-, und Abfahrt der Schulbusse, möglichst keine Anlieferungen von Material erfolgen. Rückwärtsfahrten müssen grundsätzlich mit Einweiser erfolgen. Außerdem müssen während der Pausenzeiten (9.45 Uhr bis 10.15 Uhr und 13.15 bis 13.30) grundsätzlich die Zufahrten mit Schlössern gesichert sein und können nicht geöffnet werden. </span>
+          <br/>
+        </p>
+        <p>
+          <span>Vielen Dank für Ihr Verständnis und auf eine gute Zusammenarbeit.</span>
+        </p>
+      </DetailAddText>
+    </AddText>
+    <AddText>
+      <OutlineAddText>
+        <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+          <span>Adressen der Planungsbeteiligten</span>
+        </p>
+      </OutlineAddText>
+      <DetailAddText>
+        <p>
+          <span style="text-decoration:underline">Bauherr:</span>
+          <br/>
+          <br/>
+          <span>Landkreis Sigmaringen</span>
+          <br/>
+          <span>vert. d. Landrätin Stefanie Bürkle</span>
+        </p>
+        <p>
+          <span>Leopoldstraße 4</span>
+        </p>
+        <p>
+          <span>72488 Sigmaringen</span>
+        </p>
+        <p>
+          <br/>
+          <span style="text-decoration:underline">Sachbearbeitung</span>
+          <br/>
+          <span>Landratsamt Sigmaringen</span>
+          <br/>
+          <span> -Fachbereich Liegenschaften +Technik</span>
+        </p>
+        <p>
+          <span>Herr Klaus Riegger</span>
+        </p>
+        <p>
+          <span>Leopoldstraße 4</span>
+        </p>
+        <p>
+          <span>72488 Sigmaringen</span>
+        </p>
+        <p/>
+        <p>
+          <span>Fon 1: +49 7571 1022972</span>
+        </p>
+        <p>
+          <span>E-Mail: klaus.riegger@lrasig.de</span>
+        </p>
+        <p/>
+        <p>
+          <br/>
+          <span style="text-decoration:underline">Planung und Bauleitung</span>
+        </p>
+        <p/>
+        <p>
+          <span>bgi Böhler Großhardt  GmbH &#x26; Co.KG</span>
+        </p>
+        <p>
+          <span>Architektur &#x26; Projektmanagement</span>
+        </p>
+        <p>
+          <span>Hochbildstraße 7</span>
+        </p>
+        <p>
+          <span>88662 Überlingen</span>
+        </p>
+        <p/>
+        <p>
+          <span>Fon: +49 7551  94 98 69 0</span>
+          <br/>
+          <span>E-Mail: info@bgi-gmbh.de</span>
+        </p>
+        <p/>
+        <p/>
+        <p>
+          <span style="text-decoration:underline">Tragwerksplanung</span>
+        </p>
+        <p/>
+        <p>
+          <span>Hangleiter Baustatik</span>
+        </p>
+        <p>
+          <span>Kaiserstraße 58a</span>
+        </p>
+        <p>
+          <span>88348 Bad Saulgau</span>
+        </p>
+        <p/>
+        <p>
+          <span>Fon: +49 7581 4809930</span>
+        </p>
+        <p>
+          <span>E-Mail: info@hangleiter-baustatik.de</span>
+        </p>
+        <p/>
+        <p>
+          <br/>
+          <span style="text-decoration:underline">Bautechnische Prüfung</span>
+        </p>
+        <p/>
+        <p>
+          <span>NN</span>
+          <br/>
+          <br/>
+        </p>
+        <p>
+          <span style="text-decoration:underline">Fachplanung Elektroinstallationen</span>
+        </p>
+        <p/>
+        <p>
+          <span>Landratsamt Sigmaringen</span>
+        </p>
+        <p>
+          <span>Herr Marc Scholtyssek</span>
+        </p>
+        <p>
+          <span>Leopoldstraße 4</span>
+        </p>
+        <p>
+          <span>72488 Sigmaringen</span>
+        </p>
+        <p>
+          <br/>
+          <span>Fon 2: +49 7571 102-2985</span>
+        </p>
+        <p>
+          <span>E-Mail: marc.scholtyssek@lrasig.de</span>
+        </p>
+        <p/>
+        <p>
+          <br/>
+          <span style="text-decoration:underline">Fachplanung HLS-Installationen</span>
+        </p>
+        <p/>
+        <p>
+          <span>ibp Knaus + Zentner Ing.-Gesellschaft mbH</span>
+        </p>
+        <p>
+          <span>Herr Gustavo Wagner</span>
+        </p>
+        <p>
+          <span>Am Pfarröschle 50</span>
+        </p>
+        <p>
+          <span>88630 Pfullendorf</span>
+        </p>
+        <p/>
+        <p>
+          <span>Fon: +49 7552 92 15 0</span>
+        </p>
+        <p>
+          <span>E-Mail: g.wagner@knaus-zentner.de</span>
+          <br/>
+          <br/>
+          <br/>
+          <span style="text-decoration:underline">Fachplanung Nachhaltiges Bauen Baden-Württemberg</span>
+        </p>
+        <p/>
+        <p>
+          <span>GSA Körner GmbH</span>
+        </p>
+        <p>
+          <span>Buchbrünnleweg 41</span>
+        </p>
+        <p>
+          <span>78479 Reichenau</span>
+        </p>
+        <p>
+          <br/>
+          <span>Fon: +49 7531 8045 505</span>
+        </p>
+        <p>
+          <span>E-Mail: info@gsa-koerner.de</span>
+        </p>
+        <p/>
+        <p>
+          <br/>
+          <span style="text-decoration:underline">Sicherheits- und Gesundheitsschutzkoordinator</span>
+        </p>
+        <p>
+          <br/>
+          <span>RIGESA Arbeitssicherheit</span>
+        </p>
+        <p>
+          <span>Herr Richard Gentner</span>
+        </p>
+        <p>
+          <span>Sießenerstr. 2</span>
+        </p>
+        <p>
+          <span>88348 Bad Saulgau</span>
+        </p>
+        <p/>
+        <p>
+          <span>Fon: +49 7581 8818</span>
+        </p>
+        <p>
+          <span>E-Mail: arbeitssicherheit@gmx.eu</span>
+        </p>
+        <p/>
+      </DetailAddText>
+    </AddText>
+    <AddText>
+      <OutlineAddText>
+        <p>
+          <span>Zusätzliche Technische Vertragsbedingungen (ZTV)</span>
+        </p>
+      </OutlineAddText>
+      <DetailAddText>
+        <p>
+          <span>1. Ausführungsgrundlage</span>
+          <br/>
+          <br/>
+          <span>- DIN 18299 allg. Regelungen für Bauarbeiten jeder Art</span>
+        </p>
+        <p>
+          <span>- DIN 18334 Zimmerer- und Holzbauarbeiten</span>
+        </p>
+        <p>
+          <span>- DIN 18338 Dachdeckungs- &#x26; Dachabdichtungsarbeiten</span>
+          <br/>
+          <span>- DIN 18339 Klempnerarbeiten</span>
+          <br/>
+          <span>- DIN 18340 Trockenbauarbeiten</span>
+          <br/>
+          <span>- DIN 18351 vorgehängte hinterlüftete Fassade</span>
+        </p>
+        <p>
+          <span>- Fachregeln Deutsches Dachdeckerhandwerk</span>
+        </p>
+        <p>
+          <span>- Regeln der BGBau Fachinfo Prävention  Mineralwolle-Dämmstoffe</span>
+          <br/>
+          <span>- DIN 18451 Gerüstbauarbeiten</span>
+        </p>
+        <p>
+          <span>- DIN 18459 Abbruch- und Rückbauarbeiten</span>
+        </p>
+        <p>
+          <br/>
+          <span>- VOB/C</span>
+          <br/>
+        </p>
+        <p>
+          <span>in der zum Vertragsschluss gültigen Fassung einschließlich der Änderungen, Berichtigungen und Beiblätter</span>
+        </p>
+        <p/>
+        <p>
+          <span>Die Vorleistungen werden nach DIN 18202 &#x22;Maßtoleranzen im Hochbau&#x22; erbracht. Der Ausgleich für Toleranzen nach der DIN 18202 ist in die EP&#x27;s einzurechnen. Die nachfolgenden Leistungen sind mit erhöhten Anforderungen nach DIN 18202 zu erbringen. Leistungen für der Ausgleich der Toleranzen zum Vorgewerk sind in die EPs einzurechnen, wenn nicht in der Leistungsbeschreibung anders vorgesehen.</span>
+          <br/>
+          <br/>
+          <span>Es gelten die Regelungen, sofern nachfolgend oder in der Leistungsbeschreibung nichts anderes festgelegt ist.</span>
+          <br/>
+          <br/>
+          <br/>
+          <span>2. Konstruktionsbeschreibung</span>
+          <br/>
+          <br/>
+          <span>Siehe Leistungsbeschreibung.</span>
+          <br/>
+          <br/>
+          <span>Bei der Angabe von angebotenen Produkten ist beim ggfs. benötigten Zubehör stets das Original-Zubehör der angebotenen Produkte anzubieten, auch wenn bei den einzelnen LV-Zubehör-Positionen das angebotene Produkt nicht mehr abgefragt wird.</span>
+          <br/>
+          <br/>
+          <span>Es dürfen nur bauaufsichtlich zugelassene Baustoffe und Systeme angeboten und verbaut werden.</span>
+          <br/>
+          <br/>
+          <br/>
+          <span>3. Hinweise zur Ausführung</span>
+          <br/>
+          <br/>
+          <span>Die ausgeschriebenen Leistungen sind kleinteilig und auch in Teil-Leistungen zu erbringen.</span>
+          <br/>
+          <br/>
+          <span>Dampfbremsen und Dampfsperren sind konvektionsdicht zu verlegen. Sie dürfen nicht lediglich mit Klammern befestigt werden; sie sind zu kleben oder an den Befestigungsstellen mit Dichtband zu versehen. Auch für die Befestigung an Anschlüssen und Durchdringungen sind im Regelfall Dichtungsbänder zu verwenden. Montageschaum gilt nicht als konvektionsdicht. </span>
+          <br/>
+          <br/>
+          <span>Die Dämmschichten sind an allen Anschlüssen so auszuführen, dass keine Wärmebrücken entstehen. Im unmittelbaren Bereich von Dachabläufen sind die Dämmschichten um ca. 20 mm leicht abzuschrägen. </span>
+          <br/>
+          <br/>
+          <br/>
+          <span>4. Besondere Leistungen</span>
+          <br/>
+          <br/>
+          <span>Baustelleneinrichtung</span>
+        </p>
+        <p>
+          <span>Entgegen der ATVs wird für das mehrfache Aufstellen, Vorhalten und Räumen von Hebezeugen, Aufzügen, Aufenthalts-, Lagerräume, Einrichtungen, Maschinen, Werkzeuge und dergleichen, zur Ausführung der eigenen Leistungen, nicht gesondert vergütet, wenn nicht in der Leistungsbeschreibung anders vorgesehen.</span>
+        </p>
+        <p/>
+        <p>
+          <span>Gerüste </span>
+        </p>
+        <p>
+          <span>Entgegen der ATVs wird für das Erstellen zur Ausführung der eigenen Leistungen notwendiger Gerüste und Traggerüste, deren Vorhalten, Umbauen und Räumen, nicht gesondert vergütet, wenn nicht in der Leistungsbeschreibung anders vorgesehen. Dies gilt auch für Gerüste für Bauteile über 2 Meter Höhe, welche in der VOB Teil C als Besondere Leistungen aufgeführt sind.</span>
+        </p>
+        <p/>
+        <p>
+          <span>Muster</span>
+        </p>
+        <p>
+          <span>Das Anbringen von Mustern auf der Baustelle, auch bereits vor Montagebeginn, ist in die EPs einzurechnen, sofern nicht im Leistungstext anders beschreiben.</span>
+        </p>
+        <p>
+          <br/>
+          <br/>
+          <span>5. Preisinhalte/Nebenleistungen gem. VOB/B DIN 18334 Nr. 4.1</span>
+          <br/>
+          <br/>
+          <span>Ergänzend zu DIN 18334 und Folgende gelten auch als Nebenleistung:</span>
+          <br/>
+          <br/>
+          <span>Das Vorbereiten und Reinigen der Arbeitsflächen vor Beginn der Arbeiten durch Abfegen, lose Teile entfernen, Absaugen und Trocknen von angefallenem Tagwasser, und angefallenen Schmutz entsorgen, sofern nicht separat als Position ausgeschrieben. Das Abdecken/Absperren/Absichern von unfertigen Leistungen so dass durch eindringendes Wasser kein Schaden entstehen kann. Alle Holzabdeckungen sind so zu schützen (z.B. durch Folie), dass keine Holzverfärbungen (Lignin) an fertigen Oberflächen entstehen können. Schräge An- und Abschlüsse von Dachlatten, Folien, Dämmungen, Blechen, Platten, Abdeckungen aller Art etc. an die Bausubstanz bzw. der ausgeschriebenen Leistung untereinander. Das Ausarbeiten aller Leistungen inkl. Innen- und Außenecken, Anarbeitungen, sofern diese Leistungen nicht als Leistungsposition in diesem LV ausgeschrieben worden sind. Das Einarbeiten von bauseitigen Rohrleitungen in die Dämmungsebene.  Alle Verbindungs- und Befestigungsmittel untereinander und an bauseitig vorhandene Konstruktionen sind in die EP´s einzukalkulieren, außer den Befestigungsmitteln, die LV als Leistungsposition ausgewiesen sind. Erstellen von Windsogberechnungen, Berechnung von Schneefanggittern</span>
+          <br/>
+          <br/>
+          <span>6. Sonstiges</span>
+          <br/>
+          <br/>
+          <span>Nachfolgende Punkte müssen vom Bieter eingehalten werden und sind mit den angebotenen Einheitspreisen des Leistungsverzeichnisses abgegolten:</span>
+          <br/>
+          <br/>
+          <span>- alle relevanten Hinweise und Auflagen aus den behördlichen Genehmigungen</span>
+          <br/>
+          <span>- Eventuell erforderliche witterungsbedingte Zusatzmaßnahmen für Arbeiten in der kalten Jahreszeit</span>
+          <br/>
+          <span>- die Koordinationsaufwendungen für parallel arbeitende Fremdgewerke und vorhandene Einbauten und die daraus resultierenden Erschwernisse</span>
+          <br/>
+          <span>- die Untergrundverhältnisse und Untergrundbeschaffenheit sind bekannt und waren Grundlage der Angebotslegung</span>
+          <br/>
+          <span>- Beibehaltung aller Absturzsicherungen und deren täglichen Kontrolle</span>
+          <br/>
+          <br/>
+          <br/>
+        </p>
+      </DetailAddText>
+    </AddText>
+    <BoQ ID="_fd39dfbe-68b1-4327-b604-54b204ab8cf4">
+      <BoQInfo>
+        <Name>1561 - 03</Name>
+        <LblBoQ>ZIMMERERARBEITEN</LblBoQ>
+        <Date>2026-04-22</Date>
+        <OutlCompl>AllTxt</OutlCompl>
+        <BoQBkdn>
+          <Type>BoQLevel</Type>
+          <LblBoQBkdn>Titel</LblBoQBkdn>
+          <Length>1</Length>
+          <Num>Yes</Num>
+        </BoQBkdn>
+        <BoQBkdn>
+          <Type>BoQLevel</Type>
+          <LblBoQBkdn>Untertitel</LblBoQBkdn>
+          <Length>1</Length>
+          <Num>Yes</Num>
+        </BoQBkdn>
+        <BoQBkdn>
+          <Type>Item</Type>
+          <Length>3</Length>
+          <Num>Yes</Num>
+        </BoQBkdn>
+        <NoUPComps>0</NoUPComps>
+        <Totals>
+          <Total>0.00</Total>
+          <VAT>19.00</VAT>
+        </Totals>
+      </BoQInfo>
+      <BoQBody>
+        <BoQCtgy ID="_96286654-8f92-4e60-a7bb-370425fe43b1" RNoPart="1">
+          <LblTx>
+            <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+              <span>Vorbereitung, Rückbau, Verwertung</span>
+            </p>
+          </LblTx>
+          <BoQBody>
+            <Itemlist>
+              <Item ID="_bd8f249b-5e91-4e7b-a62c-9687802d4ad6" RNoPart="10">
+                <Qty>33.000</Qty>
+                <QU>m²</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Dachflächen, Ortgänge, Gaupendachflächen und -ortgänge, Anschlüsse, Blech-, Rinnenteile u.dgl., abschnittsweise in selektiver Rückbauweise bis ca. OK Ringgurt ausbauen, inkl. Separierung, Fraktionierung und Zerkleinerung oder Bereitstellung zur Entsorgung der einzelnen Materialien. Die hierfür erforderlichen Hilfsmittel und Geräte, wie Kosten zur Nutzung der bauseitigen Baustelleneinrichtung, Aufwendungen für Arbeitssicherheitsmaßnahmen und persönlicher Schutzausrüstung u. dgl., sofern nicht in anderen Positionen beschrieben sind mit dieser Position abgegolten.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Dachpfannen, Ortgangziegel und Schneefanggitter sind in ausreichender Anzahl zum Wiedereinbau der verbleibenden Dachflächen auf Paletten und Baugrundstück zu lagern.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Lage		Giebelwand Ost Altbau, Dachflächen</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Gaupendach Süd</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Konstruktion	Dachumbau Bj. 2015, Dachziegel, Ortgangziegel</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Lattungen, Ortgangbretter, -schalungen, Stirn-, </span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Windbretter, Holzwerkstoffplatten u.dgl., </span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Tropf-, Anschluss- , Rinnenbleche, u.dgl.</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Winddichtung, Unterspannbahnen weiche </span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Verwahrungen u. dgl.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Höhe		Ortganglängen gesamt ca.25,50 m, Trauflänge gesamt ca. 6 m.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Abtransport und Entsorgung wird in gesondert Positionen beschrieben und vergütet.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Rückbau Teilflächen Dach</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_5ba8676f-b7d6-4e60-8f98-69dc4857850d" RNoPart="20">
+                <Qty>7.000</Qty>
+                <QU>m²</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gaupenseitenbacke, Teile der Gaupenfront u.dgl., abschnittsweise in selektiver Rückbauweise bis OK Fassadenbahn ausbauen, inkl. Separierung, Fraktionierung und Zerkleinerung oder Bereitstellung zur Entsorgung der einzelnen Materialien. Die hierfür erforderlichen Hilfsmittel und Geräte, wie Kosten zur Nutzung der bauseitigen Baustelleneinrichtung, Aufwendungen für Arbeitssicherheitsmaßnahmen und persönlicher Schutzausrüstung u. dgl., sofern nicht in anderen Positionen beschrieben sind mit dieser Position abgegolten.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Teile der HPL-Platten sind zum Wiedereinbau der geänderten Gaupenfronten zu verwenden. Die fachgerechte Zwischenlagerung obliegt dem AN und wird nicht gesondert vergütet.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Lage		Giebelwand Altbau Ost, Dach</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Gaupe Süd und Ostbacke </span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Konstruktion	Dachumbau Bj. 2015, HPL-Platten</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Unterkonstruktion, Lattungen, Bretter,</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Stirn-, Windbretter u.dgl., </span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Tropf-, Anschluss- , Rinnenbleche u.dgl.</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Abtransport und Entsorgung wird in gesondert Positionen beschrieben und vergütet.</span>
+                        </p>
+                        <p/>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Rückbau Teilflächen Gaupen</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_ee8275ef-df70-4371-85c5-9b635ab57a4a" RNoPart="30">
+                <Qty>3.000</Qty>
+                <QU>m²</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Holzplattenwand, Kleinflächen im Dachraum u.dgl., abschnittsweise in selektiver Rückbauweise bis OK Mauerwerkswand ausbauen, inkl. Separierung, Fraktionierung und Zerkleinerung oder Bereitstellung zur Entsorgung der einzelnen Materialien. Die hierfür erforderlichen Hilfsmittel und Geräte, wie Kosten zur Nutzung der bauseitigen Baustelleneinrichtung, Aufwendungen für Arbeitssicherheitsmaßnahmen und persönlicher Schutzausrüstung u. dgl., sofern nicht in anderen Positionen beschrieben sind mit dieser Position abgegolten.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Dachpfannen und Ortgangziegel sind in ausreichender Anzahl zum Wiedereinbau der verbleibenden Dachflächen auf Paletten und Baugrundstück zu lagern.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Lage		Giebelwand Altbau Ost, DG</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		über Ringanker für Fenster neu </span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Konstruktion	Dachumbau Bj. 2015, OSB-Platten</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Schwelle, Holzständer, WDVS, Trennwand-</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		platten, Winddichtung, Unterspann-</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		bahnen u. dgl.</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Schnittlänge	ca. 3,5 m</span>
+                          <br/>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Abtransport und Entsorgung wird in gesondert Positionen beschrieben und vergütet.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Rückbau Teilflächen Holzplattenwand</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_fdeba7f6-2386-4d79-bb99-4a4c5e3ae59e" RNoPart="40">
+                <Qty>2.000</Qty>
+                <QU>t</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Bauschutt aus Beton, Ziegel, Dachziegel o. dgl., transportieren, verwerten / entsorgen, inkl. Gebühren und ggf. erforderlichen Entsorgungs- / Verwertungsnachweisen.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Bau- und Abbruchabfälle, RC-1  entsorgen AVV-Nr. 170101-170103</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_fe91dc2a-db5b-4751-8f04-00cce459a4f2" RNoPart="50">
+                <Qty>0.200</Qty>
+                <QU>t</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Holz AII-III gemäß der Altholzverordnung und nach Angaben der Bausubstanzuntersuchungen laden, transportieren und entsorgen, inkl. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p>
+                            <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:bold;font-style:normal">Holz AII-III, entsorgen, AVV-Nr. 170201</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_5f260585-11db-46ba-9095-a941ba6e8941" RNoPart="60">
+                <Qty>0.200</Qty>
+                <QU>t</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Holz AIV gemäß der Altholzverordnung und Angaben der Bausubstanzuntersuchungen laden, transportieren und entsorgen, mit Gebühren, inkl. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Holz AIV, entsorgen, AVV-Nr. 170204*</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_8387df57-2031-4ce9-b89d-4630fcafec5a" RNoPart="70">
+                <Qty>0.100</Qty>
+                <QU>t</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Bitumengemischen, nicht teerhaltig, z.B. Bitumenbahnen, Dachpappe, Sperrbahnen u.dgl., laden, transportieren und entsorgen, inkl. Gebühren und ggf. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p>
+                            <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:bold;font-style:normal">Bitumengemische nicht teerhaltig, entsorgen AVV-Nr. 170302</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_6ae7e566-e170-4f24-97b3-89935f86734e" RNoPart="80">
+                <Qty>0.100</Qty>
+                <QU>t</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">tahl- und Metallschrott wie Bewehrungsschrott, Stahlträger, Heizkörper, Stahlrohrleitungen, Blechbauteile u.dgl. laden, transportieren und entsorgen, mit Gebühren, inkl. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.</span>
+                        </p>
+                        <p/>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Metallschrott (Mischschrott) AVV-Nr. 170405</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_d3d2f794-42a4-4d34-8488-51ebcf8d1356" RNoPart="90">
+                <Qty>0.150</Qty>
+                <QU>t</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">von mineralischen und nicht-mineralischen eingebauten Baustoffen wie Kunststofffolien, WDVS Reste, laden, transportieren und entsorgen, inkl. Gebühren und ggf. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Bau- und Abbruchabfälle gemischt, entsorgen, AVV-Nr. 170904</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_d2a8f441-5c27-4886-9bb0-56cd4897902c" RNoPart="100">
+                <Qty>80.000</Qty>
+                <QU>m²</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">als Sicherung der abgedeckten und rückgebauten Dachflächen mit reißfester, UV-beständiger und schwerer Planen, während der gesamten Umbauzeit liefern, vorhalten und wasserdicht und windsicher befestigen und abbauen. </span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Ausführung auch Abschnittsweise und in Teilflächen. </span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Abdeckplanen</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_4e6e8ecc-e6cc-4dc4-a317-c6dc8c5aab96" RNoPart="110">
+                <LumpSumItem>Yes</LumpSumItem>
+                <Qty>1.000</Qty>
+                <QU>psch</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">als Zulage zu Vorposition, für das Öffnen, Entfernen und Wiederverschließen, je nach Erfordernis und Fortschritt des Bauverlaufs im Dachraum.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Zulage Abdeckplanen</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+            </Itemlist>
+          </BoQBody>
+        </BoQCtgy>
+        <BoQCtgy ID="_ba4f0e65-160e-48d4-8af4-2ac5db20ba05" RNoPart="2">
+          <LblTx>
+            <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+              <span>Wiederherstellen, Anarbeiten</span>
+            </p>
+          </LblTx>
+          <BoQBody>
+            <Itemlist>
+              <Item ID="_d03eb613-eaa2-4fbc-a0e1-b4a2d15945fe" RNoPart="10">
+                <LumpSumItem>Yes</LumpSumItem>
+                <Qty>1.000</Qty>
+                <QU>psch</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gaupenbacke der Position 1.20 an neu aufgehende Betonwand fachgerecht verlängern, dämmen und anschließen, einschließlich aller Befestigungsmittel und nachstehender Beschreibung anarbeiten.</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">bestehend aus:</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Aufbau		ca. 240 mm, Steinwolle 035, A1, zwischen</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Wand und Gaupenbacke, ca. 4 m²</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		über der neuen Wand WäDä s.o. mit Aufrippung</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		aus Kanthölzer aus KVH</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Dampfbremse, schwarz</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Unterkonstruktion ca. 50/30 mm</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Lüftungswinkel, Kunststoff, schwarz</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		HPL - Platten aus Rückbau an Restfläche</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		der &#x22;Backenfassade&#x22; anpassen</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		ca. 3 m²</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Längen		Anschluss Wand waagrecht + senkrecht ca. 5,6 m</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Anschluss an Gaupendach ca. 5 m</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Anschluss an Hauptdach ca. 3,5 m</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Anschluss an Attika ca. 2,5 m</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gehrungs- und Schrägschnitte, Anarbeiten, abschnittsweise Herstellung, Kleinflächen und Nischen ohne doppeltes Aufmaß sind einzurechnen und werden nicht gesondert vergütet.</span>
+                          <br/>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Gaupenbacke anarbeiten</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_e86e64d8-1123-4eec-977a-1c7d05e7241b" RNoPart="20">
+                <LumpSumItem>Yes</LumpSumItem>
+                <Qty>1.000</Qty>
+                <QU>psch</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gaupenfront der Position 1.20 bis zur neu aufgehende Betonwand fachgerecht verlängern, dämmen und anschließen, einschließlich aller Befestigungsmittel und nachstehender Beschreibung anarbeiten.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">bestehend aus:</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Aufbau		Dampfbremse, schwarz</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Unterkonstruktion ca. 50/30 mm</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		für HPL neu, s. ges. Pos</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Lüftungswinkel, Kunststoff, schwarz</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		ca. 0,3 -0,4 m verlängern bzw. ca. 0,7 m²</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Längen		Anschluss Wand senkrecht ca. 2,5 m</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Anschluss an Gaupendach ca. 0,3 - 0,4 m</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Anschluss an Hauptdach ca. 0,3 - 0,4 m</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gehrungs- und Schrägschnitte, Anarbeiten, abschnittsweise Herstellung, Kleinflächen und Nischen ohne doppeltes Aufmaß sind einzurechnen und werden nicht gesondert vergütet.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Gaupenfront anarbeiten</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_2057473d-e5dc-4d43-b9e0-d49cea91f97a" RNoPart="30">
+                <Qty>2.700</Qty>
+                <QU>m²</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">aus Schichtpressstoffplatten nach EN 438-4:2016 in Standardqualität- CGS, mit Schichten von natürlichen Fasern, homogenisiert, imprägniert mit thermohärtenden Harzen, Oberflächenbeschichtungen auf beiden Seiten, für Außenanwendungen, Fassaden, Verkleidungen u. dgl, mit veredelten Kanten, rostfreien Edelstahlflachkopfschrauben in Plattenfarbe und nachfolgenden Angaben liefern und montieren.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">bestehend aus:</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Produkt		Trespa Meteon o. glw.</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Farbe 		Uni Colours, Antrazith passend zum, Bestand</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Plattenstärke	8 mm	</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">ang. Produkt	______________________________</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Größe		h ca. 1,70 m, l ca. 1,4 m</span>
+                        </p>
+                        <p>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gehrungs- und Schrägschnitte, Anarbeiten, abschnittsweise Herstellung, Kleinflächen und Nischen ohne doppeltes Aufmaß sind einzurechnen und werden nicht gesondert vergütet.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Fassadenplatte, neu</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_407faa62-fcbf-467c-b01b-74970a9be899" RNoPart="40">
+                <Qty>28.000</Qty>
+                <QU>m²</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Dachflächen und Traufen der Position 1.10 an neu aufgehende Betonwand fachgerecht anschließen, Gaupendachfläche fachgerecht verlängern, einschließlich aller Befestigungsmittel und nachstehender Beschreibung anarbeiten.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">bestehend aus:</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Aufbau		Konterlattung 40/60 mm,</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Lattung  50/30 mm</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Traudiele ca. 140 mm		</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Dampfbremse, schwarz</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Lüftungswinkel, Kunststoff, schwarz</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Dachpfannen und Schneefanggitter,</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		auf Baustelle gelagert, ergänzen</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Ortgangziegel werden übermessen.</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gehrungs- und Schrägschnitte, Anarbeiten, abschnittsweise Herstellung, Kleinflächen und Nischen ohne doppeltes Aufmaß sind einzurechnen und werden nicht gesondert vergütet.</span>
+                          <br/>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Dachfläche wieder herstellen</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_695f2ed5-a5ca-4a99-8b1f-b8abfef46d2e" RNoPart="50">
+                <Qty>10.000</Qty>
+                <QU>m</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Ortgänge der Position 1.10 der fachgerecht wiederherstellen, einschließlich aller Befestigungsmittel und nachstehender Beschreibung anarbeiten.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">bestehend aus:</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Aufbau		Lattung  50/30 mm</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Ortgangbrett Fichte 3S d / b ca. 27 / 300 mm</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Windbrett als UK für Tropfblech ca. 16/70mm</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Dampfbremse Anschlüsse abkleben		</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Ortgangziegel verlegen</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gehrungs- und Schrägschnitte, Anarbeiten, abschnittsweise Herstellung, Kleinflächen und Nischen ohne doppeltes Aufmaß sind einzurechnen und werden nicht gesondert vergütet.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Ortgang wieder herstellen</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_e8ed5326-278a-46a8-bb50-2c211e6da24a" RNoPart="60">
+                <Qty>14.000</Qty>
+                <QU>m</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Wandanschluss an neue Rohbauwand fachgerecht herstellen, einschließlich aller Befestigungsmittel und nachstehender Beschreibung anarbeiten.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">bestehend aus:</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Aufbau		UK aus Fichte 3 S, d / b ca. 27 / 300 mm</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		als UK für hinterlaufsichere, bauseitige</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Flüssigkunststoffabdichtung</span>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">		Anpassen, Schroten der Dachziegel</span>
+                          <br/>
+                          <br/>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Gehrungs- und Schrägschnitte, Anarbeiten, abschnittsweise Herstellung, Kleinflächen und Nischen ohne doppeltes Aufmaß sind einzurechnen und werden nicht gesondert vergütet.</span>
+                          <br/>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Wandanschluss herstellen</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+            </Itemlist>
+          </BoQBody>
+        </BoQCtgy>
+        <BoQCtgy ID="_07c7bfd8-fa85-4228-bafc-9453852279de" RNoPart="3">
+          <LblTx>
+            <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+              <span>Regiearbeiten</span>
+            </p>
+          </LblTx>
+          <BoQBody>
+            <Itemlist>
+              <Remark ID="_ab732aa9-ce76-499b-965a-00c8348345de">
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Stundenlohnarbeiten, die eventuell anfallen, müssen vor Arbeitsbeginn von der Bauleitung genehmigt werden. Rapportzettel sind innerhalb einer Woche an die Bauleitung zu schicken. Später vorgelegte Rapportzettel können nicht anerkannt werden.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">1. Arbeitskräfte:</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Anzubieten ist ein gemittelter Verrechnungslohn pro Arbeitsstunde bezogen auf sämtliche Arbeitskräfte, die der Bieter beabsichtigt einzusetzen. Ausgenommen hiervon sind Aufsichtskräfte und Auszubildende. Sollen solche Arbeitskräfte zum Einsatz kommen, sind der Einsatz und die Vergütung (als &#x22;analoger Preis&#x22; zur Angebotskalkulation) zu vereinbaren.</span>
+                        </p>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Der unten aufgeführte Verrechnungslohn pro Arbeitsstunde enthält sämtliche Aufwendungen, wie z.B. die Lohn- und Gehaltskosten (einschl. Zulagen, Zuschläge und vermögenswirksame Leistungen), die Lohn- und Gehaltszusatz- und -Nebenkosten, die Gemeinkosten sowie Wagnis und Gewinn.</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Zuschläge für Arbeiten außerhalb der regelmäßigen Arbeitszeit sind gesondert nachzuweisen.</span>
+                        </p>
+                        <p/>
+                        <p/>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">2. Baugeräte:</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Die Kosten für den Einsatz von Kleingeräten, Werkzeugen und Gerüsten bis zu 2.000 € Anschaffungswert (netto) sind im Verrechnungslohn pro Arbeitsstunde eingerechnet (siehe hierzu auch DIN 18299 Nr. 4.1.8).</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Werden Geräte benötigt, die zur Erbringung der vertraglichen Leistung bereits vorgehalten werden, so werden für diese Geräte nur die Kosten für Bedienung und ggf. für Energie vergütet. Eine doppelte Vorhaltevergütung entfällt somit.</span>
+                        </p>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Kann der Neuwert nicht einvernehmlich festgestellt werden, so ist die Baugeräteliste (BGL) heranzuziehen. Nicht aufgeführte Geräte sind entsprechend den technischen Angaben zu katalogisieren.</span>
+                        </p>
+                        <p/>
+                        <p/>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p>
+                            <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:bold;font-style:normal">Hinweis Stundenlohnarbeiten</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Remark>
+              <Item ID="_6dfd951a-f43e-48ac-b007-30666b92cdaf" RNoPart="10">
+                <Qty>50.000</Qty>
+                <QU>h</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Stundenverrechnungslohn siehe Vorbemerkung</span>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Stundenverrechnungslohn</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_bb548faf-7885-45a3-85b1-9ee347a24f2c" RNoPart="20">
+                <Qty>1.000</Qty>
+                <QU>h</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Stundenverechnungslohn für Aufsichtspersonen</span>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Stundenverrechnungslohn für Aufsichtspersonen</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+              <Item ID="_e69273c0-823b-4469-8ec1-cfaf9c795913" RNoPart="30">
+                <Qty>1.000</Qty>
+                <QU>h</QU>
+                <Description>
+                  <CompleteText>
+                    <DetailTxt>
+                      <Text>
+                        <p>
+                          <span style="font-family:Arial;font-size:10pt;color:rgb(0,0,0);font-weight:normal;font-style:normal">Stundenverrechnungslohn für Lehrlinge siehe Vorbemerkungen</span>
+                        </p>
+                      </Text>
+                    </DetailTxt>
+                    <OutlineText>
+                      <OutlTxt>
+                        <TextOutlTxt>
+                          <p style="font-family:Arial;font-style:normal;font-weight:bold;font-size:10pt;color:rgb(0,0,0)">
+                            <span>Stundenverrechnungslohn Lehrlinge</span>
+                          </p>
+                        </TextOutlTxt>
+                      </OutlTxt>
+                    </OutlineText>
+                  </CompleteText>
+                </Description>
+              </Item>
+            </Itemlist>
+          </BoQBody>
+        </BoQCtgy>
+      </BoQBody>
+    </BoQ>
+  </Award>
+</GAEB>

@@ -1,0 +1,168 @@
+00        83L               DRV Buro                          11PPPPI0090 000001
+01Los 1 - Geoelektrische Untersuchungen   31.03.26                        000002
+02Los 1 - Geoelektrische Untersuchungen                                   000003
+03Landesbetrieb fr Hochwasserschutz und Wasserwirtschaft Sach            000004
+08EUR   Euro                                                              000005
+11 1       N    Bereich                                                   000006
+12Vorbereitende Leistungen                                                000007
+21 1  10   NNN         00000001000psch                                    000008
+25Anlaufberatung, Baufeldbergabe                                         000009
+26   Teilnahme des Projektleiters an einem ganzt„gigen                    000010
+26   Ortstermin zur Bauanlaufberatung und Baufeldbergabe.                000011
+21 1  20   NNN         00000002000St                                      000012
+25Bauberatung                                                             000013
+26   Teilnahme des Projektleiters an einem halbt„gigen                    000014
+26   Ortstermin zur Bauberatung im Untersuchungsgebiet                    000015
+21 1  30   NNN         00000001000psch                                    000016
+25Beweissicherung                                                         000017
+26   Feststellen des Zustands der Wege- und                               000018
+26   Gel„ndeoberfl„chen im Untersuchungsgebiet vor Beginn                 000019
+26   und nach Ende der geoelektrischen Feldarbeiten.                      000020
+26   Anfertigen einer Niederschrift zur Vorlage beim AG.                  000021
+31 1                                                                      000022
+11 2       N    Bereich                                                   000023
+12Vorbereitung und Durchfhrung der                                       000024
+12Messungen                                                               000025
+20                                                                        000026
+26   Die Arbeiten und Zufahrten sind entsprechend der                     000027
+26   ”rtlichen Verh„ltnisse so durchzufhren, dass keinerlei              000028
+26   Sch„den an Grundstcken, baulichen Anlagen oder                      000029
+26   sonstigen Einrichtungen entstehen. Der AN haftet auch                000030
+26   gegenber Dritten fr alle Sch„den, die durch seine                  000031
+26   T„tigkeit entstanden sind und die bei fachgem„áer                    000032
+26   Ausfhrung der Arbeiten vermeidbar gewesen w„ren.                    000033
+26   Entstandene Sch„den sind dem AG unverzglich                         000034
+26   anzuzeigen.                                                          000035
+26   Unvermeidbare Flursch„den, die durch das Auslegen der                000036
+26   Kabel und Elektroden entstehen, sind auf das unbedingt               000037
+26   erforderliche Mindestmaá zu beschr„nken. Im Bereich von              000038
+26   Grn- und Ackerfl„chen sind vorrangig bereits                        000039
+26   vorhandene Fahrspuren zu nutzen.                                     000040
+26   Die Arbeiten sind unter Beachtung                                    000041
+26   naturschutzrechtlicher Randbedingungen durchzufhren,                000042
+26   s. Leistungsbeschreibung                                             000043
+26   Kap. 2.7.                                                            000044
+21 2  10   NNN         00000001000psch                                    000045
+25Mobilisierung/ Demobilisierung                                          000046
+26   Messger„te, Zubeh”r, Werkzeuge und sonstige                          000047
+26   Betriebsmittel, die zur vertragsgem„áen Ausfhrung der               000048
+26   Leistungen erforder- lich sind, bereitstellen,                       000049
+26   antransportieren und  betriebsfertig aufstellen,                     000050
+26   einschl. der dafr notwendigen Arbeiten.                             000051
+26   Kosten fr Vorhalten, Unterhalten und Betreiben der                  000052
+26   Mess- ger„te werden nicht mit dieser Pauschale, sondern              000053
+26   mit den Einheitspreisen der betreffenden Teilleistungen              000054
+26   vergtet.                                                            000055
+26   Abtransport aller fr die Ausfhrung der Leistungen                  000056
+26   ben”tigten Ger„tschaften nach Beendigung der                         000057
+26   Leistungen.                                                          000058
+26   Benutzte Fl„chen und Wege entsprechend dem                           000059
+26   ursprnglichen Zustand wieder herrichten.                            000060
+21 2  20   NNN         00000029481km                                      000061
+25Abstecken der Messprofile                                               000062
+26   Abstecken eines geoelektrischen Messprofils nach Lage                000063
+26   und Planungsstationierung auf Grundlage von bergebenen              000064
+26   Pl„nen und shape-Files.                                              000065
+26   Vermarkung charakteristischer Profilpunkte im Gel„nde                000066
+26   in Vor- bereitung der geoelektrischen Kabel- und                     000067
+26   Elektrodenauslage.                                                   000068
+26   Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind               000069
+26   zu beachten.                                                         000070
+21 2  30   NNN         00000029481km                                      000071
+252D-widerstandsgeoelektrische Profilmessung                              000072
+26   Ausfhren einer 2D-widerstandsgeoelektrischen                        000073
+26   Profilmessung                                                        000074
+26   (Multielektrodenmessung) mit Messpunkt- und Elektroden-              000075
+26   abstand von maximal 2,00 m.                                          000076
+26   Elektrodenkonfiguration nach Wenner.                                 000077
+26   Mindestberdeckungsgrad 6-fach, jedoch Wirkungstiefe                 000078
+26   mindestens 6 m unter GOK.                                            000079
+26   Regelm„áige Messung der Kontaktwiderst„nde                           000080
+26   Boden-Elektrode.                                                     000081
+26   Fhren von Tagesberichten mit Angaben zu ausgefhrten                000082
+26   Messungen, meteorologischen Bedingungen, Bodenfeuchte,               000083
+26   Kontaktwiderst„nden, erschwerten Messbedinungen und                  000084
+26   Besonderheiten.                                                      000085
+26   Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind               000086
+26   zu beachten.                                                         000087
+21 2  40   NNN         00000006800km                                      000088
+25Erschwerniszulage fr Messung in Waldgebieten                           000089
+26   Erschwerniszulage zu OZ 2.30                                         000090
+26   fr Ausfhrung der Messungen in erschwerten Bereichen                000091
+26   (Laubwald, Geh”lzstreifen).                                          000092
+26   Freimachen der Messprofile von Unterholz und bodennahen              000093
+26   Aufwuchs fr die Kabel- und Elektrodenauslage.                       000094
+21 2  50   NNN         00000001000km                                      000095
+25Erschwerniszulage fr erh”hte Kontaktwiderst„nde                        000096
+26   Erschwerniszulage zu OZ 2.30                                         000097
+26   fr zus„tzliche Maánahmen zur Verringerung der                       000098
+26   Kontaktwiderst„nde, z. B. Angieáen der Elektroden                    000099
+26   mit Wasser.                                                          000100
+26   Die Ausfhrung erfolgt nur nach Abstimmung mit dem                   000101
+26   geotechnischen Sachverst„ndigen.                                     000102
+21 2  60   NNN         00000800000St                                      000103
+25Einmessen Profilpunkte                                                  000104
+26   Einmessen eines Profilpunktes in einem Abstand                       000105
+26   von ca. 50 m.                                                        000106
+26   Einmessen sonstiger charakteristischer Profilpunkte                  000107
+26   wie Grabenstrukturen, Gel„ndesenken und                              000108
+26   Gel„ndeerh”hungen.                                                   000109
+26   Einmessen nach Lage und H”he.                                        000110
+26   Lagesystem LS 489 (UTM, ETRS89, Zone 32),                            000111
+26   H”hensystem HS 170 (DHHN2016),                                       000112
+26   Lage- und H”hengenauigkeit  2 cm.                                    000113
+31 2                                                                      000114
+11 3       N    Bereich                                                   000115
+12Auswertung, Darstellung und                                             000116
+12Dokumentation                                                           000117
+21 3  10   NNN         00000029481km                                      000118
+25Inversion, Widerstandsvertikalschnitte                                  000119
+26   Inversion der geoelektrischen Messwerte unter Berck-                000120
+26   sichtigung der Elektrodenh”hen.                                      000121
+26   Darstellung der Ergebnisse als                                       000122
+26   Widerstandsvertikalschnitte,                                         000123
+26   Maástab horizontal 1:1.000, vertikal 1:100.                          000124
+21 3  20   NNN         00000001000psch                                    000125
+25Auswertung und Erstinterpretation, Isopachenplan                        000126
+26   Auswertung und Erstinterpretation der geoelektrischen                000127
+26   Messsergebnisse anhand von Sttzbohrungen aus der                    000128
+26   Baugrundvoruntersuchung.                                             000129
+26   Darstellung eines Isopachenplans der deckstauenden                   000130
+26   Schichten auf Grundlage der geoelektrischen  Messungen               000131
+26   unter Einbeziehung von Aufschlssen aus der Baugrund-                000132
+26   voruntersuchung.                                                     000133
+26   Maástab 1:5.000.                                                     000134
+26   Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind               000135
+26   zu beachten.                                                         000136
+21 3  30   NNN         00000001000psch                                    000137
+25Nachinterpretation                                                      000138
+26   Nachinterpretation der geoelektrischen Messergebnisse                000139
+26   nach Vorliegen aller Baugrundaufschlsse aus dem Los 2.              000140
+26                                                                        000141
+26   U. a. šberarbeitung des Isopachenplans der                           000142
+26   deckstauenden Schichten zur Sicherstellung der                       000143
+26   Widerspruchsfreiheit.                                                000144
+21 3  40   NNN         00000001000psch                                    000145
+25Abschlussdokumentation                                                  000146
+26   Geordnete Zusammenstellung aller                                     000147
+26   Untersuchungsergebnisse.                                             000148
+26   Erl„uterungsbericht mit Nachinterpretation und                       000149
+26   Anlagenteil:                                                         000150
+26   - Lageplan Messprofile                                               000151
+26   - Widerstandsvertikalschnitte,                                       000152
+26   - Isopachenplan Deckstauer.                                          000153
+26   šbergabe in digitaler Form                                           000154
+26   - Gesamtunterlage im PDF-Format,                                     000155
+26   - Lage- und Isopachenpl„ne im CAD-Zeichnungsformat                   000156
+26     (dxf/dwg) sowie GIS-Datenformat (shp),                             000157
+26   - Schnittdarstellungen im CAD-Zeichnungsformat                       000158
+26   (dxf/dwg),                                                           000159
+26   - Vermessungsdaten zus„tzlich im als Koordinaten- und                000160
+26     Punktdaten (txt/asc/csv)                                           000161
+26   sowie 2-facher analoger Form.                                        000162
+26   šbergabe sp„testens 4 Wochen nach šbergabe der                       000163
+26   Untersuchungsergebnisse aus Los 2.                                   000164
+26   Die Hinweise der Leistungsbeschreibung, Kap. 5.2, sind               000165
+26   zu beachten.                                                         000166
+31 3                                                                      000167
+99                   1900                                            00013000168

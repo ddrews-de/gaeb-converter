@@ -1,0 +1,246 @@
+#begin[GAEB]
+ #begin[GAEBInfo]
+  [Version]1.2[end]
+  [VersMon]3[end]
+  [VersJahr]2002[end]
+  [Datum]31.03.2026[end]
+  [Uhrzeit]11:21[end]
+  [ProgSystem]/ GAEB Toolbox V3.3 G90 R20230829[end]
+  [ProgName]iTWO_64 V25.0.650[end]
+  [Zeichensatz]ANSI[end]
+ #end[GAEBInfo]
+ #begin[PrjInfo]
+  [Name]11530[end]
+  [Bez]Neubau Flutpolder "Elster-Luppe-Aue" - BHU[end]
+  [Wae]EUR[end]
+  [WaeBez]Euro[end]
+  [_RIB_UPFracDig]2[end]
+ #end[PrjInfo]
+ #begin[Vergabe]
+  [DP]83[end]
+  #begin[VergabeInfo]
+   [Art]7[end]
+   [Wae]EUR[end]
+   [WaeBez]Euro[end]
+   [AbgabeOrt]Potsdam, OT Groß Glienicke[end]
+  #end[VergabeInfo]
+  #begin[AG]
+   #begin[Adresse]
+    [Name1]Landesbetrieb für Hochwasserschutz und Wasserwirtschaft Sachsen-Anhalt[end]
+    [Name2]Vergabestelle Süd[end]
+    [Strasse]Willi-Brundert-Str. 14[end]
+    [PLZ]06132[end]
+    [Ort]Halle (Saale)[end]
+   #end[Adresse]
+   [DVNr]DRV Buro[end]
+  #end[AG]
+  #begin[LV]
+   #begin[LVInfo]
+    [Name]01[end]
+    [Bez]Los 1 - Geoelektrische Untersuchungen[end]
+    [Datum]31.03.2026[end]
+    [KurzLang]1[end]
+    #begin[LVGlied]
+     [Typ]LVStufe[end]
+     [Bez]Bereich[end]
+     [Laenge]2[end]
+    #end[LVGlied]
+    #begin[LVGlied]
+     [Typ]Position[end]
+     [Laenge]4[end]
+    #end[LVGlied]
+    #begin[LVGlied]
+     [Typ]Index[end]
+     [Laenge]1[end]
+    #end[LVGlied]
+    [USt]19,00[end]
+   #end[LVInfo]
+   #begin[LVBereich]
+    [OZ]01[end]
+    [Bez]Vorbereitende Leistungen[end]
+    #begin[Position]
+     [OZ]010010[end]
+     #begin[Beschreibung]
+      [Langtext]Teilnahme des Projektleiters an einem ganztägigen Ortstermin zur Bauanlaufberatung und Baufeldübergabe.[end]
+      [Kurztext]Anlaufberatung, Baufeldübergabe[end]
+     #end[Beschreibung]
+     [ME]psch[end]
+     [Menge]1,000[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]010020[end]
+     #begin[Beschreibung]
+      [Langtext]Teilnahme des Projektleiters an einem halbtägigen Ortstermin zur Bauberatung im Untersuchungsgebiet [end]
+      [Kurztext]Bauberatung[end]
+     #end[Beschreibung]
+     [ME]St[end]
+     [Menge]2,000[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]010030[end]
+     #begin[Beschreibung]
+      [Langtext]Feststellen des Zustands der Wege- und Geländeoberflächen im Untersuchungsgebiet vor Beginn und nach Ende der geoelektrischen Feldarbeiten. 
+      Anfertigen einer Niederschrift zur Vorlage beim AG.[end]
+      [Kurztext]Beweissicherung[end]
+     #end[Beschreibung]
+     [ME]psch[end]
+     [Menge]1,000[end]
+    #end[Position]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]02[end]
+    [Bez]Vorbereitung und Durchführung der Messungen[end]
+    #begin[Hinweis]
+     #begin[Beschreibung]
+      [Langtext]Die Arbeiten und Zufahrten sind entsprechend der örtlichen Verhältnisse so durchzuführen, dass keinerlei Schäden an Grundstücken, baulichen Anlagen oder sonstigen Einrichtungen entstehen. Der AN haftet auch gegenüber Dritten für alle Schäden, die durch seine Tätigkeit entstanden sind und die bei fachgemäßer Ausführung der Arbeiten vermeidbar gewesen wären. Entstandene Schäden sind dem AG unverzüglich anzuzeigen. 
+      Unvermeidbare Flurschäden, die durch das Auslegen der 
+      Kabel und Elektroden entstehen, sind auf das unbedingt erforderliche Mindestmaß zu beschränken. Im Bereich von Grün- und Ackerflächen sind vorrangig bereits vorhandene Fahrspuren zu nutzen. 
+      Die Arbeiten sind unter Beachtung naturschutzrechtlicher Randbedingungen durchzuführen, s. Leistungsbeschreibung 
+      Kap. 2.7.[end]
+      [Kurztext]Vorbemerkungen[end]
+     #end[Beschreibung]
+    #end[Hinweis]
+    #begin[Position]
+     [OZ]020010[end]
+     #begin[Beschreibung]
+      [Langtext]Messgeräte, Zubehör, Werkzeuge und sonstige Betriebsmittel, die zur vertragsgemäßen Ausführung der Leistungen erforder- lich sind, bereitstellen, antransportieren und  betriebsfertig aufstellen, einschl. der dafür notwendigen Arbeiten. 
+      Kosten für Vorhalten, Unterhalten und Betreiben der  Mess- geräte werden nicht mit dieser Pauschale, sondern mit den Einheitspreisen der betreffenden Teilleistungen vergütet. 
+      Abtransport aller für die Ausführung der Leistungen benötigten Gerätschaften nach Beendigung der Leistungen. 
+      Benutzte Flächen und Wege entsprechend dem ursprünglichen Zustand wieder herrichten.[end]
+      [Kurztext]Mobilisierung/ Demobilisierung[end]
+     #end[Beschreibung]
+     [ME]psch[end]
+     [Menge]1,000[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]020020[end]
+     #begin[Beschreibung]
+      [Langtext]Abstecken eines geoelektrischen Messprofils nach Lage und Planungsstationierung auf Grundlage von übergebenen Plänen und shape-Files. 
+      Vermarkung charakteristischer Profilpunkte im Gelände in Vor- bereitung der geoelektrischen Kabel- und Elektrodenauslage. 
+      Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind zu beachten.[end]
+      [Kurztext]Abstecken der Messprofile[end]
+     #end[Beschreibung]
+     [ME]km[end]
+     [Menge]29,481[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]020030[end]
+     #begin[Beschreibung]
+      [Langtext]Ausführen einer 2D-widerstandsgeoelektrischen Profilmessung 
+      (Multielektrodenmessung) mit Messpunkt- und Elektroden-
+      abstand von maximal 2,00 m. 
+      Elektrodenkonfiguration nach Wenner. 
+      Mindestüberdeckungsgrad 6-fach, jedoch Wirkungstiefe 
+      mindestens 6 m unter GOK.  
+      Regelmäßige Messung der Kontaktwiderstände Boden-Elektrode. 
+      Führen von Tagesberichten mit Angaben zu ausgeführten Messungen, meteorologischen Bedingungen, Bodenfeuchte, Kontaktwiderständen, erschwerten Messbedinungen und Besonderheiten. 
+      Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind zu beachten. [end]
+      [Kurztext]2D-widerstandsgeoelektrische Profilmessung[end]
+     #end[Beschreibung]
+     [ME]km[end]
+     [Menge]29,481[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]020040[end]
+     #begin[Beschreibung]
+      [Langtext]Erschwerniszulage zu OZ 2.30 
+      für Ausführung der Messungen in erschwerten Bereichen (Laubwald, Gehölzstreifen). 
+      Freimachen der Messprofile von Unterholz und bodennahen Aufwuchs für die Kabel- und Elektrodenauslage. [end]
+      [Kurztext]Erschwerniszulage für Messung in Waldgebieten[end]
+     #end[Beschreibung]
+     [ME]km[end]
+     [Menge]6,800[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]020050[end]
+     #begin[Beschreibung]
+      [Langtext]Erschwerniszulage zu OZ 2.30 
+      für zusätzliche Maßnahmen zur Verringerung der Kontaktwiderstände, z. B. Angießen der Elektroden
+      mit Wasser. 
+      Die Ausführung erfolgt nur nach Abstimmung mit dem 
+      geotechnischen Sachverständigen. [end]
+      [Kurztext]Erschwerniszulage für erhöhte Kontaktwiderstände[end]
+     #end[Beschreibung]
+     [ME]km[end]
+     [Menge]1,000[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]020060[end]
+     #begin[Beschreibung]
+      [Langtext]Einmessen eines Profilpunktes in einem Abstand 
+      von ca. 50 m.
+      Einmessen sonstiger charakteristischer Profilpunkte 
+      wie Grabenstrukturen, Geländesenken und Geländeerhöhungen. 
+      Einmessen nach Lage und Höhe.
+      Lagesystem LS 489 (UTM, ETRS89, Zone 32), 
+      Höhensystem HS 170 (DHHN2016), 
+      Lage- und Höhengenauigkeit  2 cm.[end]
+      [Kurztext]Einmessen Profilpunkte[end]
+     #end[Beschreibung]
+     [ME]St[end]
+     [Menge]800,000[end]
+    #end[Position]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]03[end]
+    [Bez]Auswertung, Darstellung und Dokumentation[end]
+    #begin[Position]
+     [OZ]030010[end]
+     #begin[Beschreibung]
+      [Langtext]Inversion der geoelektrischen Messwerte unter Berück- sichtigung der Elektrodenhöhen. 
+      Darstellung der Ergebnisse als Widerstandsvertikalschnitte,
+      Maßstab horizontal 1:1.000, vertikal 1:100. [end]
+      [Kurztext]Inversion, Widerstandsvertikalschnitte[end]
+     #end[Beschreibung]
+     [ME]km[end]
+     [Menge]29,481[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]030020[end]
+     #begin[Beschreibung]
+      [Langtext]Auswertung und Erstinterpretation der geoelektrischen Messsergebnisse anhand von Stützbohrungen aus der Baugrundvoruntersuchung.
+      Darstellung eines Isopachenplans der deckstauenden Schichten auf Grundlage der geoelektrischen  Messungen unter Einbeziehung von Aufschlüssen aus der Baugrund- voruntersuchung. 
+      Maßstab 1:5.000.
+      Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind zu beachten. [end]
+      [Kurztext]Auswertung und Erstinterpretation, Isopachenplan[end]
+     #end[Beschreibung]
+     [ME]psch[end]
+     [Menge]1,000[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]030030[end]
+     #begin[Beschreibung]
+      [Langtext]Nachinterpretation der geoelektrischen Messergebnisse nach Vorliegen aller Baugrundaufschlüsse aus dem Los 2. 
+      U. a. Überarbeitung des Isopachenplans der deckstauenden Schichten zur Sicherstellung der Widerspruchsfreiheit. [end]
+      [Kurztext]Nachinterpretation[end]
+     #end[Beschreibung]
+     [ME]psch[end]
+     [Menge]1,000[end]
+    #end[Position]
+    #begin[Position]
+     [OZ]030040[end]
+     #begin[Beschreibung]
+      [Langtext]Geordnete Zusammenstellung aller Untersuchungsergebnisse.
+      Erläuterungsbericht mit Nachinterpretation und Anlagenteil: 
+      - Lageplan Messprofile 
+      - Widerstandsvertikalschnitte, 
+      - Isopachenplan Deckstauer. 
+      Übergabe in digitaler Form 
+      - Gesamtunterlage im PDF-Format, 
+      - Lage- und Isopachenpläne im CAD-Zeichnungsformat 
+        (dxf/dwg) sowie GIS-Datenformat (shp), 
+      - Schnittdarstellungen im CAD-Zeichnungsformat (dxf/dwg), 
+      - Vermessungsdaten zusätzlich im als Koordinaten- und 
+        Punktdaten (txt/asc/csv) 
+      sowie 2-facher analoger Form.
+      Übergabe spätestens 4 Wochen nach Übergabe der Untersuchungsergebnisse aus Los 2. 
+      Die Hinweise der Leistungsbeschreibung, Kap. 5.2, sind zu beachten.[end]
+      [Kurztext]Abschlussdokumentation[end]
+     #end[Beschreibung]
+     [ME]psch[end]
+     [Menge]1,000[end]
+    #end[Position]
+   #end[LVBereich]
+  #end[LV]
+ #end[Vergabe]
+#end[GAEB]43|109

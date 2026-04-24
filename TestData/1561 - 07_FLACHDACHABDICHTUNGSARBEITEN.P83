@@ -1,0 +1,1346 @@
+#begin[GAEB]
+ #begin[GAEBInfo]
+  [Version]1.2a[end]
+  [VersJahr]2002[end]
+  [VersMon]11[end]
+  [Datum]22.04.2026[end]
+  [Uhrzeit]10:59[end]
+  [ProgSystem]NEVARIS/ GXML Toolbox V3.3 R20240815[end]
+  [ProgName]NEVARIS 25.2.0[end]
+  [Zeichensatz]ANSI[end]
+  [_GAEBXML]1[end]
+ #end[GAEBInfo]
+ #begin[PrjInfo]
+  [Name]1561[end]
+  [Bez]Aufstockung Aicher-Scholl-Schule[end]
+  [Wae]EUR[end]
+  [WaeBez]EUR[end]
+  [_GAEBXML_UPFracDig]2[end]
+ #end[PrjInfo]
+ #begin[Vergabe]
+  [DP]83[end]
+  #begin[VergabeInfo]
+   [Art]1[end]
+   [Wae]EUR[end]
+   [WaeBez]EUR[end]
+   [ErDatum]12.05.2026[end]
+   [ErUhrzeit]00:00[end]
+   [ZusEnde]12.06.2026[end]
+   [AusfBeginn]31.08.2026[end]
+   [AusfEnde]10.03.2027[end]
+  #end[VergabeInfo]
+  #begin[AG]
+   #begin[Adresse]
+    [Name1]Landkreis Sigmaringen[end]
+    [Name2]vert. d. Landrätin Bürkle[end]
+    [Strasse]Leopoldstr. 4[end]
+    [PLZ]72488[end]
+    [Ort]Sigmaringen[end]
+    [LandBez]Deutschland[end]
+    [Telefon]+49 7571 102-0[end]
+    [Fax]+49 7571 102-1234[end]
+    [Email]info@lrasig.de[end]
+   #end[Adresse]
+  #end[AG]
+  #begin[ZusText]
+   [Text]Allgemeine Technische Vertragsbestimmungen (ATV) DIN 18299[end]
+   [TextRTF]0 Hinweise
+   
+   Die ATV DIN 18299 "Allgemeine Regelungen für Bauarbeiten jeder Art" gilt für alle Arbeiten, auch für solche, für die keine ATV in VOB/C - ATV DIN 18300 bis ATV DIN 18459 - bestehen.
+   
+   0.1 Angaben zur Baustelle
+   
+   0.1.1 Lage der Baustelle
+   Baustellenadresse:
+   
+   Hindenburgstraße 27
+   88348 Bad Saulgau
+   
+   Baustellenzufahrt:
+   Die Baustellenzufahrt erfolgt über die B32 (Kaiserstraße) in beiden Richtungen und
+   "Hindenburgstraße" zur Baustelle und zum Parkplatz in der Gutenbergstraße.
+   
+   0.1.2 Besondere Belastungen
+   Der Baubetrieb findet während des Schulbetriebs statt. Besonders wird auf die Beachtung der Sicherheit auf den Verkehrsflächen während des Schulbetriebs hingewiesen. Es kann zu Einschränkungen bei der Anlieferung gemäß Handlungsleitlinie kommen. Diese Einschränkungen sind zu berücksichtigen.
+   
+   0.1.3 Art und Lage der baulichen Anlage
+   Siehe beigefügte Planunterlagen und unter Allgemeine Bau- / Objektbeschreibung
+   
+   0.1.4 Verkehrsverhältnisse auf der Baustelle
+   Die geplante Baustelleneinrichtung und Lagermöglichkeiten an der Nordseite des Gebäudes und auf dem öffentlichen Parkplatz in der Gutenbergstraße sind im Baustelleneinrichtungsplan dargestellt und frühzeitig mit der Bau- / Projektleitung abzustimmen. Der Gehweg entlang der Gutenbergstraße ist zu sperren. Die entsprechenden öffentlich-rechtlichen Genehmigungen und verkehrsrechtlichen Anordnungen für die gesamte Bauzeit sind durch das Gewerk "Rohbau" zu leisten. Darüber hinausgehende Flächen für Zufahrt und Lagerung werden bauseits nicht bereitgestellt. Falls erforderlich, sind weitere Flächen direkt durch den AN zu beantragen und zu betreiben. Die Kosten werden nicht gesondert vergütet. s.a. Baustelleneinrichtungsplan, Anlage 9.02
+   
+   0.1.5 Für den Verkehr freizuhaltende Flächen
+   Zufahrten und Stellplätze der Schule und der Nachbargebäude.
+   
+   0.1.6 Art, Lage, Maße und Nutzbarkeit von Transporteinrichtungen
+   Soweit im Leistungsverzeichnis nicht anders beschrieben, sind die erforderlichen Hebezeuge vom Auftragnehmer zu stellen und in die Einheitspreise einzurechnen. Ein Kran steht für die Gewerke Rohbau, Holzbau, Flachdachabdichtung und Fenster zu Verfügung. Die Nutzung ist mit dem Kranbetreiber abzustimmen. Die eventuell anfallenden Kosten dafür sind zwischen den Beteiligten direkt zu begleichen.
+   
+   0.1.7 Lage, Art, Anschlusswert für Energie
+   Die für den Baustellenbetrieb erforderlichen Energieanschlüsse werden vom AG in Form einer Baustromversorgung und Bauwasserversorgung vorgesehen, wenn nicht im Leistungsverzeichnis anders beschrieben. Die Kosten trägt der Auftraggeber.
+   
+   0.1.8 Mitbenutzung überlassenen Räume und Flächen
+   Siehe 0.1.4
+   
+   0.1.9 Bodenverhältnisse, Baugrund
+   Keine Angaben
+   
+   0.1.10 Hydrologische Werte
+   Keine Angaben
+   
+   0.1.11 Besondere Umweltrechtliche Vorschriften
+   Keine Angaben
+   
+   0.1.12 Besondere Vorgaben Entsorgung
+   Keine Angabe.
+   
+   0.1.13 Schutzgebiete oder Schutzzeiten
+   Nicht bekannt
+   
+   0.1.14 Schutz von Bäumen usw.
+   Keine Angaben
+   
+   0.1.15 Art und Umfang der Regelungen und Sicherung des öffent. Verkehrs
+   Keine Angaben
+   
+   0.1.16 Im Bereich der Baustelle vorhandene Anlagen
+   Stellplätze für Mitarbeiter der Aicher-Scholl-Schule.
+   
+   17 Bekannte oder vermutete Hindernisse im Bereich der
+   Keine Angaben
+   
+   0.1.18 Vermutete Kampfmittel
+   Die Arbeiten werden im Bestandsgebäude durchgeführt. Weiteres ist nicht bekannt.
+   
+   0.1.19 Baustellenverordnung
+   Die SIGEKO ist vom Bauherrn einem Dritten übertragen, s.a. Adressen der Planungsbeteiligten.
+   Der SIGE-Plan wird derzeit entwickelt. 
+   
+   0.1.20 Besondere Anordnungen
+   an den Bauablauf im Gebäude, siehe Bauzeitenplan, Anlage  9.01
+   
+   0.1.21 Art und Umfang der Schadstoffbelastung
+   Keine Angabe 
+   
+   0.1.22 Art und Zeit der vom Auftraggeber veranlassten Vorarbeiten
+   siehe Bauzeitenplan
+   
+   0.1.23 Arbeiten anderer Unternehmer
+   siehe oben
+   
+   0.2 Angaben zur Ausführung
+   
+   0.2.1 Vorgesehene Arbeitsabschnitte
+   Die Arbeiten sind in einem Bauabschnitt durchzuführen. Der Betrieb der Aicher-Scholl-Schule und die Belange der Kinder, wie in der Handlungsleitlinie beschrieben, dürfen nicht beeinträchtigt werden. Diese Erschwernisse sind zu berücksichtigen. Siehe Bauzeitenplan.
+   
+   0.2.2 Besondere Erschwernisse während der Ausführung
+   Der Schulunterricht bleibt außerhalb der Schulferien in Betrieb.
+   
+   0.2.3 Vorgaben, die sich aus dem SiGe-Plan gemäß Baustellenverordnung ergeben
+   Keine Angabe
+   
+   0.2.4 Art und Umfang von Leistungen zur Unfallverhütung und Gesundheitsschutz für Mitarbeiter
+           anderer Unternehmen
+   Keine Angaben
+   
+   0.2.5 Besondere Anforderungen für Arbeiten in kontaminierten Bereichen
+   Keine Angaben
+   
+   0.2.6 Besondere Anforderungen an die Baustelleneinrichtung
+   Siehe 0.1.4 und Baustelleneinrichtungsplan
+   
+   0.2.7 Besondere Anforderungen für das Auf- und Abbauen sowie Vorhalten von Gerüsten
+   Erforderliche Arbeits- und Schutzgerüste für die Erbringung der ausgeschriebenen Leistungen werden nicht gesondert vergütet und sind in die Einheitspreise einzurechnen. Dies gilt auch für Gerüste, welche in der VOB Teil C als "Besondere Leistungen" aufgeführt sind. 
+   
+   0.2.8 Mitbenutzung fremder Gerüste
+   Siehe auch 0.2.7
+   
+   0.2.9 Wie lange und für welche Arbeiten vom AN vorzuhaltende Baustelleneinrichtung und Gerüste
+   s. Bauzeitenplan 
+   
+   0.2.10 Verwendung oder Mitverwendung von wiederaufbereiteten Stoffen
+   Siehe LVZ
+   
+   0.2.10 - 0.2.12
+   Keine Angabe
+   
+   0.2.13 Art und Umfang der vom Auftraggeber verlangten Eignungs- und Gütenachweise. 
+   Für den Bau der Erweiterung des Gebäudes wird nach den Nachhaltigkeitskriterien des Landes Baden-Württemberg NBBW angewendet. Seitens des AN ist die Anlage 9.90 einschließlich der enthaltenen Baustoffliste für sein Gewerk bzw. seine zu verwenden Baustoffe zu beachten. Die Kosten sind in die betreffenden Leistungspositionen in den Einheitspreis einzurechnen. Eine zusätzliche Vergütung zur Erfüllung der Qualitätssicherung nach NBBW erfolgt nicht. Der AG hat für die Qualitätssicherung nach NBBW das Ing.-Büro  GSA Körner GmbH, s.a. Adressliste, beauftragt. 
+    
+   0.2.14 - 0.2.19
+   Keine Angabe
+   
+   0.2.20 Benutzung von Teilen der Leistung vor der Abnahme
+   Die Benutzung erfolgt nach der baurechtlichen Abnahme.
+   
+   0.2.21 - 0.2.22
+   Keine besonderen Regelungen
+   
+   0.3 Einzelangaben bei Abweichungen von den ATV
+   
+   0.3.1 - 0.3.2
+   Keine abweichenden Regelungen
+   
+   0.4  Einzelangaben zu Nebenleistungen und Besonderen Leistungen
+   
+   0.4.1 - 0.4.2
+   Keine abweichenden Regelungen, sofern nicht in der ZTV anders beschrieben
+   
+   0.5  Abrechnungseinheiten
+   siehe Positionen, wie im LV angegeben
+   
+   
+   Allgemeine Bau- / Objektbeschreibung
+   
+   Der Ostflügel des Gebäudes, Fertigstellung 2015, wird durch ein weiteres Geschoß mit zwei Klassen-, einem Intensivraum und WCs erweitert. Der Rückbau der Dachabdichtung, Blechteile und der Anschlüsse an den Altbau erfolgt Zug um Zug und betrifft im wesentlichen das Rohbau- und Holzbaugewerk sowie die Flachdachabdichtung. Die Tragkonstruktion setzt auf die Bestehende auf und  ist hauptsächlich aus Betonhalbfertigteilen zu erstellen. Nichttragende Innenwände und abgehängte Decken werden im Trockenbau montiert. Die technische Ausrüstungen, der Innenausbau und die Fassade entsprechen der bereits bestehenden Ausführung des Ostflügels.
+   
+   
+   Planunterlagen
+   Die für die Ausführung benötigten Unterlagen werden dem AN digital auf einer Plattform zur Verfügung gestellt. Der AN wird über den aktuellen Planungsstand per Mail informiert. Der AN ist dafür verantwortlich, dass die erforderlichen Unterlagen rechtzeitig in entsprechender Form für die Ausführung seiner Leistung verfügbar sind. Die Kosten für die entsprechenden Plots bzw. Kopien werden nicht gesondert vergütet, und sind in die entsprechenden Einheitspreise einzurechnen.
+   
+   Anlagen zum Leistungsverzeichnis
+   
+   9.00  Lageplan_27112025
+   9.01  Bauzeitenplan_260330
+   9.02  546_Baustelleneinrichtungsplan
+   9.03  539_Aufstockung Abbruchplan
+   9.04  532_Aufstockung DG
+   9.05  534_Aufstockung Dachaufsicht
+   9.06  533_Aufstockung Schnitt
+   9.07  536_Aufstockung Ansicht Nord
+   9.08  537_Aufstockung Ansicht Ost
+   9.09  538_Aufstockung Ansicht Süd
+   9.10  535_Fassadenschnitte
+   
+   9.90  NBBW NAKR 9 - Anforderungen
+            an Baustoffe 2023_25092025
+   
+   
+   
+   
+   
+   
+   
+   
+   [end]
+  #end[ZusText]
+  #begin[ZusText]
+   [Text]Handlungsleitlinie für Handwerker und Fremdfirmen [end]
+   [TextRTF]auf dem Schulgelände der Aicher-Scholl-Schule Bad Saulgau
+   
+   Die Allgegenwart und Unberechenbarkeit von Kindern, die sich auf dem Gelände der Schule frei, teilweise auch ohne Betreuer bewegen, insbesondere von Kindern mit Behinderungen, erfordert besondere Sorgfalt und Rücksichtnahme. Aufgrund der Deliktunfähigkeit von Kindern können im Schadensfall keine Regress- oder Aufsichtspflichtverletzungsansprüche geltend gemacht werden. Halten Sie sich nur dort auf, wo Sie auf Grund Ihres Arbeitsauftrages Ihren Arbeitsplatz haben.
+   
+   1. Für die Einhaltung der geltenden Rechtsvorschriften des Arbeits- und Gesundheitsschutzes sind die Fremdfirmen selbst verantwortlich sowie das die von Ihnen eingesetzten Nachunternehmer (SUB) gleiches Sicherheitsniveau gewährleisten.
+   
+   2. Für die Erstellung und Vorhaltung der Gefährdungsbeurteilungen, Arbeits-, Montage- bzw. Abbruchanweisungen gemäß den staatlichen- und berufsgenossenschaftlichen Vorschriften sind die ausführenden Firmen selbst verantwortlich. ArbSchG §5 und §6.
+   
+   3. Autos und alle Fenster davon sind beim Verlassen grundsätzlich abzuschließen.
+   
+   4. Auf dem gesamten Schulgelände gilt: Fußgänger Zone. Dies bedeutet Vorrang aller anderen Verkehrsteilnehmern vor Kraftfahrzeugen und Schrittgeschwindigkeit (max. 7 km/h). Parken ist nur auf markierten Flächen erlaubt. Markierte Parkplätze im Schulgelände sind während der Schulzeiten den Mitarbeitern vorbehalten. Nichtmarkierte Flächen sind ständig für Rettungsfahrzeuge freizuhalten.
+   
+   5. Bei Einsatz von Maschinen, Stromkabeln, gefährlichem Werkzeug und Materialien, insbesondere von Gefahrstoffen, sind diese so zu sichern, dass eine Gefährdung der Kinder und Jugendlichen ausgeschlossen ist. Bei der Verwendung von elektrischen Werkzeugen und Ausrüstungen sind der ordnungsgemäße Zustand und die vorgeschriebenen Prüfungen (Prüffristen) zu beachten.
+   
+   6. Baustellen, Baugruben, Leitern und Gerüste sind ebenfalls so zu sichern, dass keine Gefährdung durch unbefugtes Besteigen, Betreten oder Hineinfallen für inder entstehen kann. Flatterband und Trassenband ist grundsätzlich zur Gruben- und Gräbensicherung untersagt. Zugelassen sind nur Bauzäune.
+   
+   7. Rauchen ist in den Gebäuden und Freiflächen der Schule verboten. Raucherzonen müssen vorher mit der Bauleitung abgesprochen werden. Rauchzeugreste dürfen nicht offen liegen gelassen werden (Vergiftungsgefahr bei Aufnahme über den Mund). Feuerzeuge und Streichhölzer, sowie alle offenen Zündquellen sind ebenfalls vor dem Zugriff der Kinder zu sichern.
+   
+   8. Auf der Baustelle besteht generelles Drogen- und Alkoholverbot!
+   
+   9. Die Beschäftigten auf der Baustelle sind verpflichtet, für die eigene und für die Sicherheit und Gesundheit anderer bei der Arbeit Sorge zu tragen. Jede von Ihnen festgestellte unmittelbare Gefahr für Sicherheit und Gesundheit sowie alle festgestellten Sicherheitsmängel müssen Sie unverzüglich Ihrem Vorgesetzten oder der Bauleitung melden. Alle gefährlichen Vorkommnisse sind meldepflichtig! Sie sind auch verpflichtet, für die Sicherheit und Gesundheit der Personen zu sorgen, die von ihren Handlungen oder Unterlassungen bei der Arbeit betroffen sind.
+   
+   10. Die Firmen haben dafür zu sorgen, dass Ersthelfer und Verbandmaterial entsprechend der Belegschaftsstärke ausreichend vorhanden sind.
+   
+   11. Heilpädagogische Ruhemaßnahmen: Wir bitten darum, auf die Benutzung von Radiogeräten und anderen Musikträgern zu verzichten, da einige Schüler bereits bei Zimmerlautstärke sehr aufgeregt reagieren.
+   
+   12. Während der Schulzeit ist insbesondere darauf zu achten, dass kurz vor- und nachher, also während der Hauptschulwegzeiten, An-, und Abfahrt der Schulbusse, möglichst keine Anlieferungen von Material erfolgen. Rückwärtsfahrten müssen grundsätzlich mit Einweiser erfolgen. Außerdem müssen während der Pausenzeiten (9.45 Uhr bis 10.15 Uhr und 13.15 bis 13.30) grundsätzlich die Zufahrten mit Schlössern gesichert sein und können nicht geöffnet werden. 
+   
+   Vielen Dank für Ihr Verständnis und auf eine gute Zusammenarbeit.[end]
+  #end[ZusText]
+  #begin[ZusText]
+   [Text]Adressen der Planungsbeteiligten[end]
+   [TextRTF]Bauherr:
+   
+   Landkreis Sigmaringen
+   vert. d. Landrätin Stefanie Bürkle
+   Leopoldstraße 4
+   72488 Sigmaringen
+   
+   Sachbearbeitung
+   Landratsamt Sigmaringen
+    -Fachbereich Liegenschaften +Technik
+   Herr Klaus Riegger
+   Leopoldstraße 4
+   72488 Sigmaringen
+   
+   Fon 1: +49 7571 1022972
+   E-Mail: klaus.riegger@lrasig.de
+   
+   
+   Planung und Bauleitung
+   
+   bgi Böhler Großhardt  GmbH &#38; Co.KG
+   Architektur &#38; Projektmanagement
+   Hochbildstraße 7
+   88662 Überlingen
+   
+   Fon: +49 7551  94 98 69 0
+   E-Mail: info@bgi-gmbh.de
+   
+   
+   Tragwerksplanung
+   
+   Hangleiter Baustatik
+   Kaiserstraße 58a
+   88348 Bad Saulgau
+   
+   Fon: +49 7581 4809930
+   E-Mail: info@hangleiter-baustatik.de
+   
+   
+   Bautechnische Prüfung
+   
+   NN
+   
+   
+   Fachplanung Elektroinstallationen
+   
+   Landratsamt Sigmaringen
+   Herr Marc Scholtyssek
+   Leopoldstraße 4
+   72488 Sigmaringen
+   
+   Fon 2: +49 7571 102-2985
+   E-Mail: marc.scholtyssek@lrasig.de
+   
+   
+   Fachplanung HLS-Installationen
+   
+   ibp Knaus + Zentner Ing.-Gesellschaft mbH
+   Herr Gustavo Wagner
+   Am Pfarröschle 50
+   88630 Pfullendorf
+   
+   Fon: +49 7552 92 15 0
+   E-Mail: g.wagner@knaus-zentner.de
+   
+   
+   Fachplanung Nachhaltiges Bauen Baden-Württemberg
+   
+   GSA Körner GmbH
+   Buchbrünnleweg 41
+   78479 Reichenau
+   
+   Fon: +49 7531 8045 505
+   E-Mail: info@gsa-koerner.de
+   
+   
+   Sicherheits- und Gesundheitsschutzkoordinator
+   
+   RIGESA Arbeitssicherheit
+   Herr Richard Gentner
+   Sießenerstr. 2
+   88348 Bad Saulgau
+   
+   Fon: +49 7581 8818
+   E-Mail: arbeitssicherheit@gmx.eu
+   [end]
+  #end[ZusText]
+  #begin[ZusText]
+   [Text]Zusätzliche Technische Vertragsbedingungen (ZTV)
+   [end]
+   [TextRTF]1. Ausführungsgrundlage
+   
+   - Allgemein anerkannte Regeln der Technik
+   - VOB/C
+   - DIN    4123 Unterfangung
+   - DIN 18 299 Allgemeine Regelungen für Bauarbeiten jeder Art
+   - DIN 18 300 Erdarbeiten
+   - DIN 18 301 Bohrarbeiten 
+   - DIN 18 303 Verbauarbeiten 
+   - DIN 18 306 Entwässerungskanalarbeiten
+   - DIN 18 309 Einpressarbeiten 
+   - DIN 18 314 Spritzbetonarbeiten 
+   - DIN 18 330 Maurerarbeiten
+   - DIN 18 331 Betonarbeiten
+   - DIN 18 333 Betonwerksteinarbeiten
+   - DIN 18 336 Abdichtungsarbeiten
+   - DIN 18 451 Gerüstbauarbeiten
+   - DIN 18 459 Abbruch- und Rückbauarbeiten
+   - DIN 18 202 Maßtoleranzen im Hochbau
+   
+   in der zum Vertragsschluss gültigen Fassung einschließlich der Änderungen, Berichtigungen und Beiblätter.
+   
+   Die Vorleistungen werden nach DIN 18202 "Toleranzen im Hochbau - Bauwerke" erbracht. 
+   
+   Die nachfolgenden Leistungen sind mit erhöhten Anforderungen nach DIN 18202 zu erbringen.
+   
+   Leistungen für der Ausgleich der Toleranzen zum Vorgewerk sind in die EPs einzurechnen, wenn nicht in der Leistungsbeschreibung anders vorgesehen.
+   
+   Es gelten die Regelungen, sofern nachfolgend oder in der Leistungsbeschreibung nichts anderes festgelegt ist.
+   
+   
+   2. Baustellensicherung
+   
+   2.1 Allgemeine Angaben
+   Der AN ist verpflichtet, geeignete Sicherungsmaßnahmen gegen unbefugtes Betreten der Baustelle durchzuführen. Das gesamte untere Baufeld ist durch einen Bauzaun zu sichern. Der geplante Verlauf des Bauzaunes muss in Abstimmung mit der Bauleitung des AG erfolgen. An geeigneter Stelle ist mindestens ein Tor vorzusehen. Der ordnungsgemäße Zustand der Einzäunung sowie der Verschluss sind arbeitstäglich zu kontrollieren. Defekte Teile sind sofort auszutauschen. Die Lagerung von Materialien, Maschinen, Gerätschaften etc. ist nur innerhalb der Einzäunung möglich. Die Kosten hierfür sind in die jeweiligen Positionen einzurechnen.
+   
+   Die öffentlichen Zufahrtswege zum Aushubbereich sind bedarfsweise je nach Verschmutzungsgrad durch den AN zu reinigen. Sind z. B. durch Witterungsverhältnisse Straßenverschmutzungen vorhersehbar, ist für diesen Zeitraum ständig eine Kehrmaschine inkl. Feuchtreinigung vorzuhalten und bei Bedarf bzw. auf Anweisung der Bauleitung des AG einzusetzen. Die Kosten hierfür sind in der Baustelleneinrichtung einzurechnen.
+   
+   2.2 Verkehrseinschränkungen des öffentlichen Verkehrs
+   Durch die Baumaßnahme verursachte Beschränkungen des öffentlichen Verkehrs hat der AN bei den zuständigen Stellen rechtzeitig anzumelden. Die erforderlichen Genehmigungen sind einzuholen und alle notwendigen Einrichtungen zu beschaffen, vorzuhalten, einzusetzen und zu entfernen. Die Kosten für eventuelle verkehrsrechtliche Genehmigungen sowie für die notwendigen Einrichtungen sind durch den AN in die Baustelleneinrichtung einzurechnen.
+   
+   
+   3. Organisation der Baustelle
+   
+   3.1 Leitung und Aufsicht
+   Die Leitungs- und Aufsichtspersonen stimmen sich ggf. bei vorhandenen Gefährdungsmomenten ab und koordinieren selbstständig die Arbeiten so, dass kein Beschäftigter auf der Baustelle sowie Dritte einer Gefährdung ausgesetzt werden.
+   
+   Der Bauleitung des AG ist mit Baubeginn eine Liste der vorgesehenen Aufsichtspersonen mit Anschrift, Telefon, E-Mail / Fax zu übergeben. Eine Änderung der benannten Personen vor Baubeginn oder während der Baumaßnahme ist beim AG mit den erforderlichen Nachweisen zu beantragen.
+   
+   Die Geschäftsleitung des AN, dessen Bauleiter sowie Aufsichtsführende sind verpflichtet, die Einhaltung der Vorschriften zur Verhütung von Unfällen und zum Gesundheitsschutz zu gewährleisten. Es wird durch den AN sichergestellt, dass dessen Subunternehmer die Anforderungen an die Leitung und Aufsicht im gleichen Maße erfüllen. Während der Durchführung sämtlicher Arbeiten müssen Aufsichtsführende permanent auf der Baustelle anwesend sein.
+   Ein Sicherheits- und Gesundheitsschutzkoordinator wurde bereits vom AG bestellt.
+   
+   
+   3.2 Personal
+   Das Personal des AN sowie das Personal beauftragter Subunternehmer muss zur Durchführung der ihm übertragenen Arbeiten geeignet sein und über ausreichende Erfahrung mit vergleichbaren Arbeiten verfügen.
+   
+   Vor Aufnahme von Tätigkeiten auf der Baustelle wird das gesamte eingesetzte Personal durch ihre jeweiligen Vorgesetzten bezüglich der durchzuführenden Arbeiten sowie der dadurch vorhandenen Gefahrenmomente und der dafür erforderlichen Schutzmaßnahmen eingewiesen. Die Teilnahme an der sicherheitstechnischen Belehrung ist durch jede auf der Baustelle tätige Arbeitskraft mittels Unterschrift auf einem Belehrungsprotokoll zu bestätigen.
+   
+   Das Personal hat eingesetzte Schutzeinrichtungen (z. B. Gerüste etc.) sowie persönliche Arbeitsschutzausrüstungen (z.B. Schutzhelm, -handschuhe, -brille, Sicherheitsschuhwerk, Gehörschutz, Absturzsicherung etc.) ordnungsgemäß zu verwenden. Darüber hinaus sind die Maßgaben der Unfallverhütungsvorschriften, der Betriebs- / Arbeitsanweisungen und der Baustellenordnung einzuhalten. Beschädigungen von Schutzeinrichtungen sind sofort dem Vorgesetzten zu melden, die in diesem Bereich tätigen Arbeitnehmer sind auf Beschädigungen (Gefahren) hinzuweisen.
+   
+   Personen, welche den Betriebs- und Arbeitsanweisungen, der Baustellenordnung, den Unfallverhütungsvorschriften sowie sonstigen Anordnungen nicht Folge leisten, sind umgehend von der Baustelle abzuberufen und zu ersetzen.
+   
+   
+   3.3 Sonstiges
+   Alle Arbeiten und Materialien müssen den einschlägigen Normen und Bestimmungen in ihrer jeweils neuesten gültigen Fassung sowie dem Stand der Technik entsprechen. Sämtliche Arbeiten sowie die Handhabung und Verwertung / Beseitigung von Materialien hat nach den geltenden technischen Richtlinien, Regeln und Unfallverhütungsvorschriften etc. sowie gesetzlichen und untergesetzlichen Vorschriften zu erfolgen, ohne dass im Einzelnen darauf verwiesen wird.
+   
+   Die Rohbauarbeiten sind abschnittsweise auszuführen. Eine Vorgehensweise ist nach Auftragsvergabe mit der Bauleitung abzustimmen. Die entsprechende Planung und Koordination für einen geregelten Bauablauf obliegen dem AN.
+   
+   
+   4.  Allgemeine Hinweise
+   Die Rückbau und Aushubarbeiten sind auf dem Baufeld sowie aus dem Baufeld heraus so auszuführen, dass das nähere Umfeld sowie der öffentliche Verkehr nicht mehr als notwendig beeinträchtigt wird.
+   
+   Die eingesetzten Geräte und Materialien müssen den einschlägigen Normen und Bestimmungen in ihrer jeweils neuesten gültigen Fassung sowie dem Stand der Technik entsprechen. Sämtliche Arbeiten sowie die Handhabung und Verwertung/Beseitigung von Materialien haben nach den geltenden technischen Richtlinien, Regeln und Unfallverhütungsvorschriften sowie gesetzlichen und untergesetzlichen Vorschriften zu erfolgen.
+   
+   
+   4.1 Immissionsschutz
+   Die befestigten Flächen sind entsprechend dem Verschmutzungsgrad regelmäßig zu säubern. Dabei sind Staubaufwirbelungen zu vermeiden. Die unmittelbare Nähe zur benachbarten Bebauung ist zu beachten. Vom AN ist sicherzustellen, dass Verschmutzungen der öffentlichen Straßen und Wege durch Fahrzeuge nach dem Verlassen des Baufeldes vermieden oder beseitigt werden.
+   
+   Lärmintensive Tätigkeiten sind rechtzeitig bei der Bauleitung des AG anzumelden. Die eingesetzten Baumaschinen müssen den Anforderungen der 32. BlmSchV (Baumaschinenlärm-Verordnung), analog den dort angeführten Richtlinien des Rates der Europäischen Gemeinschaft entsprechen, wobei für diese Baumaschinen die Bescheinigung der EG-Baumusterprüfung vorliegen muss. Des Weiteren sollte darauf geachtet werden, dass die eingesetzten Baumaschinen mit dem Umweltzeichen RAL UZ 53 (Blauer Engel, Lärmarme Baumaschinen) versehen sind.
+   
+   Die Baumaßnahme und der Maschineneinsatz sind so zu koordinieren, dass der auf die Nachbarschaft einwirkende Beurteilungspegel für Wohngebiete von 55 dB(A) tagsüber zwischen 7.00 bis 20.00 Uhr gemäß AVV Baulärm nicht überschritten wird. Für Einwirkungen von Erschütterungen auf benachbarte bauliche Anlagen sind die entsprechenden Anhaltswerte der DIN 4150 Blatt 3 einzuhalten. Der AG kann die Einhaltung bei Bedarf vom AN einfordern, dieser hat den Nachweis hierfür kostenlos zu liefern.
+   
+   
+   5. Besondere Leistungen
+   
+   Baustelleneinrichtung
+   Entgegen der ATVs wird für das mehrfache Aufstellen, Vorhalten und Räumen von Hebezeugen, Herstellen von Baggerstandsflächen und Bermen, Aufzügen, Aufenthalts-, Lagerräume, Einrichtungen, Maschinen, Werkzeuge und dergleichen, sowie das Trennen der einzelnen Bodenfraktionen gemäß Bodengutachten, zur Ausführung der eigenen Leistungen, nicht gesondert vergütet, wenn nicht in der Leistungsbeschreibung anders vorgesehen.
+   
+   Gerüste
+   Fassadengerüst siehe ATV. Innengerüste entgegen der ATV. Es wird für das Erstellen zur Ausführung der eigenen Leistungen notwendiger Gerüste und Traggerüste im Gebäudeinnraum, deren Vorhalten, Umbauen und Räumen, nicht gesondert vergütet, wenn nicht in der Leistungsbeschreibung anders vorgesehen. Dies gilt auch für Gerüste, welche in der VOB Teil C als Besondere Leistungen aufgeführt sind.
+   
+   Muster
+   Das Anbringen von Mustern auf der Baustelle, auch bereits vor Montagebeginn, ist in die EPs einzurechnen.
+   [end]
+  #end[ZusText]
+  #begin[LV]
+   #begin[LVInfo]
+    [Name]1561 - 0[end]
+    [Bez]FLACHDACHABDICHTUNGSARBEITEN[end]
+    [Datum]22.04.2026[end]
+    [KurzLang]1[end]
+    #begin[LVGlied]
+     [Typ]LVStufe[end]
+     [Bez]Titel[end]
+     [Laenge]1[end]
+     [Format]N[end]
+    #end[LVGlied]
+    #begin[LVGlied]
+     [Typ]LVStufe[end]
+     [Bez]Untertitel[end]
+     [Laenge]1[end]
+     [Format]N[end]
+    #end[LVGlied]
+    #begin[LVGlied]
+     [Typ]Position[end]
+     [Laenge]3[end]
+     [Format]N[end]
+    #end[LVGlied]
+    [AnzEPAnteile]0[end]
+    [Summe]0[end]
+    [USt]19[end]
+   #end[LVInfo]
+   #begin[LVBereich]
+    [OZ]1[end]
+    [Bez]Rückbauarbeiten, Provisorien, Verwertung[end]
+    #begin[Position]
+     [OZ]1  10[end]
+     [Menge]122[end]
+     [ME]m²[end]
+     #begin[Beschreibung]
+      [Langtext]des bestehenden Flachdachaufbaus, Baujahr 2015, in selektiver Rückbauweise bis Unterkante Dampfsperre, inkl. Rückbau der Notabläufe, Dacheinläufe, Entlüftungsrohre u. dgl. auch wenn diese nicht separat in dieser Pos. aufgeführt sind.
+      
+      Lage		Flachdach Bestand = Dachgeschoß
+      
+      Konstruktion	Dampfsperre, BauderTEC KSA Duo u. / o . Icopal Villatherm
+      		restliche Dampfsperre senkrecht
+      		Gefälledämmung EPS 035, zweilagig, mittlere Dicke ca. 162 mm
+      		Bitumenabdichtungen, 2-lagig, wohl Icopla Polar SK und Eco-activ Therm
+      		ca. 7 Stück Einbauteile bis DN 150
+      		provisorische Attikaabdichtung innen
+      
+      Anschlusslänge	ca. 48 lfm, Höhe ca. 25 cm
+      aufgehende
+      Bauteile	
+      
+      Die Rückbauarbeiten sind nach Fläche anzubieten inkl. Separierung, Fraktionierung und Zerkleinerung oder Bereitstellung zur Entsorgung der einzelnen Materialien. Die hierfür erforderlichen Hilfsmittel und Geräte sind mit dem EP abgegolten.
+      
+      Abrechnung nach m² Rohdachfläche
+      [end]
+      [Kurztext]Rückbau Dachabdichtung[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1  20[end]
+     [Menge]38,5[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]des bestehenden Attikaaufbaus, Baujahr 2015, in selektiver Rückbauweise wie nachfolgend beschrieben. Der Rückbau ist in Abstimmung mit der Bauleitung für den Aufbau der neuen Betonbauteile auf die Beton-Mauerkrone beidseitig herzustellen und Zug um Zug temporär abzudichten.
+      
+      siehe auch Planskizze "  , Anlage 9.nn
+      
+      Lage		Attika Bestand
+      
+      Konstruktion	Titanzinkblech, Deckbreite ca. 650 mm
+      		Bitumenabdichtungen, 2-lagig
+      		Holzplatte ca. 27 mm
+      		Holzunterkonstruktion ca. 9/24 cm
+      		ein Teil der Dampfsperre, siehe Planskizze
+      		Dämmung Aufkantungen, 100 mm, EPS 035 bis Flächendämmung
+      		WDVS ca. 220mm, mit waagrechtem Schnitt, Steinwolle, Silikonharzputz s. Planskizze
+      		
+      Die Rückbauarbeiten sind nach Länge anzubieten inkl. Separierung, Fraktionierung und Zerkleinerung oder Bereitstellung zur Entsorgung der einzelnen Materialien. Die hierfür erforderlichen Hilfsmittel und Geräte sind mit dem EP abgegolten.
+      [end]
+      [Kurztext]Rückbau Attikabauteile[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1  30[end]
+     [Menge]14[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]der bestehenden Wandanschlusses, Baujahr 2015, in selektiver Rückbauweise wie nachfolgend beschrieben.
+      
+      Der Rückbau ist nach Fertigstellung der neuen Dachabdichtung im darüberliegenden Geschoß durchzuführen. Ausnahmen siehe gesonderte Positionen.
+      
+      siehe Planskizze "  , Anlage 9.nn
+      
+      Lage		Wandanschluss Bestand
+      
+      Konstruktion	Titanzinkblech, Deckbreite ca. 250 mm
+      		Bitumenabdichtungen, 2-lagig, auch mit Flüssigkunststoff
+      		Dämmung Aufkantungen,100 mm, EPS 035 bis Flächendämmung
+      		WDVS ca. 220mm, mit waagrechtem Schnitt, s. Planskizze
+      		Dampfsperre
+      		
+      Die Rückbauarbeiten sind nach Länge anzubieten inkl. Separierung, Fraktionierung und Zerkleinerung oder Bereitstellung zur Entsorgung der einzelnen Materialien. Die hierfür erforderlichen Hilfsmittel und Geräte sind mit dem EP abgegolten.
+      [end]
+      [Kurztext]Rückbau Wandanschluss[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1  40[end]
+     [Menge]2[end]
+     [ME]St[end]
+     #begin[Beschreibung]
+      [Langtext]gemäß Position 1.10, Kleinflächen und zeitlich vorab, als Zulage. Der Rückbau ist in Abstimmung mit der Bauleitung für den Aufbau der neuen Betonstützen auf die Betondecke vorab herzustellen und Zug um Zug temporär abzudichten.
+      
+      siehe auch Planskizze "  , Anlage 9.nn
+      
+      Lage		best. Flachdach, Achse C
+      
+      Größe		ca. 110 x 110 cm
+      [end]
+      [Kurztext]Rückbau Dachabdichtung Stützen, Zulage[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1  50[end]
+     [Menge]33[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Attikaanschluss Zug um Zug mit Rückbau der Position 1.20, Eckausbildung Bestandabdichtung - senkrechte Attika bis ca. 5 cm unter die Mauerkrone fachgerecht temporär abdichten einschließlich Vorbereitung, aller Abdichtungsschichten, Befestigungsmittel und Eckausbildungen. Später im Zuge des Rückbaus der Dachabdichtung abrechen und reinigen. Die Wahl der Abdichtungsmaterialien bleibt dem Bieter überlassen.
+      
+      angebotene Ausführung	_________________________________________ 
+      
+      siehe auch Planskizze "  , Anlage 9.nn
+      
+      Lage		Attika Bestand, innenseitig
+      
+      Abwicklung	Abdichtung ca. 40 cm
+      [end]
+      [Kurztext]Attika, Temporäre Abdichtung innenseitig[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1  60[end]
+     [Menge]35[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Attikaanschluss Zug um Zug mit Rückbau der Position 1.20, WDVS-Schnittstelle auf Attika bis ca. 5 cm unter die Mauerkrone fachgerecht temporär abdichten einschließlich Vorbereitung, aller Abdichtungsschichten, Befestigungsmittel und Eckausbildungen. Später im Zuge der Herstellung des neuen WDVS abrechen und reinigen. Die waagrechte Abdichtung auf dem WDVS ist mindestens mit 10 cm Überstand und nach außen geneigt, herzustellen. Die Wahl der Abdichtungsmaterialien bleibt dem Bieter überlassen.
+      
+      angebotene Ausführung	_________________________________________ 
+      
+      siehe auch Planskizze "  , Anlage 9.nn
+      
+      Lage		Attika Bestand, fassadenseitig
+      
+      Abwicklung	Abdichtung ca. 50 cm
+      
+      [end]
+      [Kurztext]Attika, Temporäre Abdichtung fassadenseitig[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1  70[end]
+     [Menge]2[end]
+     [ME]St[end]
+     #begin[Beschreibung]
+      [Langtext]Stützenfelderanschluss Zug um Zug mit Rückbau der Position 1.40, auf Betondecke und senkrechter WäDä bis ca. 5 cm unter die Schalung mit Aufkantung aus Kantholz fachgerecht temporär ein- und abdichten, einschließlich Vorbereitung, aller Abdichtungsschichten, Befestigungsmittel und Eckausbildungen. Später im Zuge des Rückbaus der Dachabdichtung abrechen und reinigen. Die Wahl der Abdichtungsmaterialien bleibt dem Bieter überlassen.
+      
+      angebotene Ausführung	_________________________________________ 
+      
+      siehe auch Planskizze "  , Anlage 9.nn
+      
+      Lage		best. Flachdach, Stützen Achse C
+      
+      Größe		ca. 110 x 110 cm
+      Kantholz		8/14 cm, l ca.4,3 m
+      Abwicklung	Abdichtung ca. 130 cm
+      Ecken		4 St
+      [end]
+      [Kurztext]Stützen, Temporäre Abdichtung[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1  80[end]
+     [Menge]1[end]
+     [ME]t[end]
+     #begin[Beschreibung]
+      [Langtext]Holz AIV, gemäß der Altholzverordnung und Angaben der Bausubstanzuntersuchungen laden, transportieren und entsorgen, mit Gebühren, inkl. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.
+      [end]
+      [Kurztext]Holz AIV, entsorgen, AVV-Nr. 170204*[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1  90[end]
+     [Menge]3[end]
+     [ME]t[end]
+     #begin[Beschreibung]
+      [Langtext]Bitumengemischen, nicht teerhaltig, z.B. Straßenenasphalt, Gussasphalt, Dachpappe, Sperrbahnen u.dgl., laden, transportieren und entsorgen, inkl. Gebühren und ggf. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.
+      [end]
+      [Kurztext]Bitumengemische nicht teerhaltig, entsorgen AVV-Nr. 170302[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1 100[end]
+     [Menge]0,7[end]
+     [ME]t[end]
+     #begin[Beschreibung]
+      [Langtext]künstlicher Mineralfasern (KMF, Kat. 2 und Kat. 3) laden, transportieren und entsorgen, mit Gebühren, inkl. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.
+      
+      Künstliche Mineralfasern sind gemäß TRGS 521 durch eine Firma mit entsprechendem Sachkundenachweis zu separieren, der Kategorie Dämmmaterial, das aus gefährlichen Stoffen besteht (AVV 170603*) zuzuordnen und als "gefährlicher Abfall" zu entsorgen. Die Demontage und Entsorgung hat unter Beachtung der TRGS 521 (Persönliche Schutzausrüstung (PSA) beim Rückbau: mind. Einwegschutzanzug, Halbmaske P2 bzw. FFP2 zu erfolgen.
+      [end]
+      [Kurztext]Künstliche Mineralfasern (KMF), entsorgen AVV-Nr. 170603*[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1 110[end]
+     [Menge]0,5[end]
+     [ME]t[end]
+     #begin[Beschreibung]
+      [Langtext]von nicht-mineralischen eingebauten Dämmstoffen wie PUR, PIR, EPS, XPS, Kunststofffolien, Holzwolleleichtbauplatten, PVC u. Laminatböden, laden, transportieren und entsorgen, inkl. Gebühren und ggf. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.
+      [end]
+      [Kurztext]nichtmineralische Baustoffe gemischt, entsorgen, AVV-Nr. 170904[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]1 120[end]
+     [Menge]0,3[end]
+     [ME]t[end]
+     #begin[Beschreibung]
+      [Langtext]tahl- und Metallschrott wie Bewehrungsschrott, Stahlträger, Heizkörper, Stahlrohrleitungen, Blechbauteile u.dgl. laden, transportieren und entsorgen, mit Gebühren, inkl. erforderlichen Entsorgungs- / Verwertungsnachweisen. Das entsprechende Nachweisverfahren (NachwV) ist einzuhalten, Entsorgungsnachweise sind zur Abrechnung vorzulegen.
+      [end]
+      [Kurztext]Metallschrott (Mischschrott) AVV-Nr. 170405[end]
+     #end[Beschreibung]
+    #end[Position]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]2[end]
+    [Bez]Flachdachabdichtung[end]
+    #begin[LVBereich]
+     [OZ]21[end]
+     [Bez]vorbereitende Arbeiten[end]
+     #begin[Position]
+      [OZ]21 10[end]
+      [Menge]126[end]
+      [ME]m²[end]
+      #begin[Beschreibung]
+       [Langtext]Reinigung der Beton und Holzoberflächen der Flachdächer von grober Verschmutzung, wie Mörtel- oder Gipsreste, Farbreste, Öl, soweit diese von anderen Unternehmen herrührt, nach besonderer Anordnung des AG oder der Bauleitung. Anfallender Schutt laden, abtransportieren und gemäß den Vorschriften des Gesetzgebers entsorgen.
+       
+       Das Reinigen des Untergrundes von Verschmutzungen, die nicht nach Abschnitt 4.2.3 der DIN 18338 zu den groben Verschmutzungen zählen, ist entsprechend VOB eine Nebenleistung und wird nicht gesondert vergütet.
+       [end]
+       [Kurztext]Reinigung von Flächen von grober Verschmutzung[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]21 20[end]
+      [Menge]119[end]
+      [ME]m²[end]
+      #begin[Beschreibung]
+       [Langtext]kaltverarbeitbarer Bitumenvoranstrich, Lösungsmittelfrei, schnelltrocknend, mit Reinigung und Entsorgung loser Verunreinigungen, auf den Untergrund einschl. aller An- und Abschlüsse streichen oder spritzen und durchtrocknen lassen.
+       
+       Verbrauch: ca. 0,3 kg/m²
+       
+       Produkt:	       Bauder BIT EM-VP o. gleichwertig
+       
+       ang. Fabrikat:___________________________
+       [end]
+       [Kurztext]Bitumen-Voranstrich auf Betonflächen[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]21 30[end]
+      [Menge]47[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]gemäß Vorposition. jedoch an aufgehenden Wänden, Brüstungen, Attiken, mit Mauerkrone aus Beton und Stahl, unter Dämmungen
+       
+       Höhe / Abwicklung bis ca. 65 cm
+       [end]
+       [Kurztext]Bitumen-Voranstrich bei aufgehenden Bauteilen[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]21 40[end]
+      [Menge]119[end]
+      [ME]m²[end]
+      #begin[Beschreibung]
+       [Langtext]vollflächig verschweißt als Behelfsabdichtung liefern und gem. Herstellervorgaben auf den Untergrund vollflächig verschweißen. Längsnaht- und Kopfstoßüberdeckung mind. 8 cm breit fachgerecht verschweißen. Stöße versetzt anordnen. 
+       
+       Produkt: BauderFLEX DNA, o. gleichwertig.
+       
+       ang. Produkt_______________________
+        
+       Elastomerbitumen-Schweißbahn als Dampfsperrbahn nach DIN EN 13 970.
+       
+       Leistungs- und Funktionsanforderungen:
+       - Dicke ca. 4 mm
+       - oberseitig: feinbestreut, schwarz mit Nahtstreifen
+       - unterseitig: folienkaschiert
+       - offene Liegezeit bzw. UV-stabil: 6 Monate
+       - Trägereinlage: Kombinationsträger PET/Alu/PET + Glasgewebe
+       - Durchtrittsicher
+       - Maximale Zugkraft nach DIN 12311-1:
+        l: > 1000 N/50 mm, q: > 1000 N/50 mm
+       - Dehnung nach DIN 12311-1: l + q: > 2 %
+       - Diffusionswiderstand (Sd-Wert) nach
+         DIN EN 1931: > 1500 m
+       - Kaltbiegeverhalten nach DIN EN 1109: < -30 °C
+       - Wärmestandfestigkeit nach DIN EN 1110: > + 110 °C
+       - Widerstand gegen stoßartige Belastung nach
+         DIN EN 12691: > 300 mm Verfahren B
+       - kurzfristige Behelfsabdichtung
+       
+       Im Bereich von An- und Abschlüssen sowie Dachdurchdringungen ist die Bahn luftdicht anzuschließen und über die Höhe der Wärmedämmung aufzustellen.
+       
+       Abrechnung in m² belegter Decke
+       [end]
+       [Kurztext]Dampfsperre geschweißt, Behelfsabdichtung[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]21 50[end]
+      [Menge]46,5[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]gemäß Vorposition. jedoch an aufgehenden Wänden, Brüstungen, Attiken, mit Mauerkrone aus Beton und Stahl, unter Dämmungen
+       
+       Höhe / Abwicklung bis ca. 65 cm
+       [end]
+       [Kurztext]Dampfsperre an aufgehenden Bauteilen[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]21 60[end]
+      [Menge]8[end]
+      [ME]St[end]
+      #begin[Beschreibung]
+       [Langtext]Zulage zur Vorposition für das fach- und normgerechte Ausbilden der Ecken, als Innen- und Außenecken, fachgerecht herstellen, einschl. erforderlicher Formteile.
+       [end]
+       [Kurztext]Eckausbildung, Zulage[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]21 70[end]
+      [_GAEBXML_LumpSumItem]Yes[end]
+      [Menge]1[end]
+      [ME]psch[end]
+      #begin[Beschreibung]
+       [Langtext]Erstellen einer prüffähigen objektbezogenen Windsogberechung des gesamten Dachaufbaus und Übergabe in 2-facher Ausfertigung an den Bauherren.
+       [end]
+       [Kurztext]Windsogberechnung[end]
+      #end[Beschreibung]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]22[end]
+     [Bez]Wärmedämmung[end]
+     #begin[Position]
+      [OZ]22 10[end]
+      [Menge]119[end]
+      [ME]m²[end]
+      #begin[Beschreibung]
+       [Langtext]Gefälledämmschicht als Flachdachdämmung für nichtbelüftetes Dach, Neigung über 2 bis 3 % aus Polystyrol-Hartschaum in vorgefertigten Gefälleplatten und Gegengefälledämmplatten incl. Erstellung des Gefälleplans, EPS DIN EN 13163, Anwendungsgebiet DIN 4108-10 DAA dh, hohe Druckbelastbarkeit - dh, mit Verklebung, auch wärmeaktiv, auf Dampfsperre, mit Befestigungsmaterial, nach freigegebenem Gefälleplan dichtgestoßen und versetzt liefern und verlegen.
+       
+       Einbauort:		Dach ü. Dachgeschoß
+       			zwischen aufgehenden Bauteilen
+       Druckspannung, 10% 
+       Stauchung min.:		150kPa
+       Bemessungswert der 
+       Wärmeleitfähigkeit max.:	WLG 032
+       Brandverhalten:		DIN EN 13501-1 E
+       mittlere Dicke:		240 mm
+       
+       Produkt: Isobouw EPS 032 DAA dh 150 IR o. gleichwertig
+       
+       ang. Produkt:______________________
+       [end]
+       [Kurztext]Gefälledämmung EPS 032 DAA dh[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]22 20[end]
+      [Menge]8[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]Wärmedämmung Polyurethan-Hartschaumplatten, nach DIN EN 13165. Anwendungstyp nach 4108-10 DAA dh, beidseitig aluminiumkaschiert. Umweltproduktdeklaration EPD nach ISO 14025, Wasseraufnahme nach DIN EN 12087: < 3 Vol. %. Platten windsogsicher nach DIN EN 1991-1-4 und nach Anordnung nach Herstellervorgabe befestigt.
+       
+       Einbauort:		 aufgehende Wände der Flachdächer
+       
+       Plattenhöhe		incl. Kantholz ca. 65 cm, das Kantholz ist
+       			in diese Position einzurechnen	
+       Plattendicke:		100 mm
+       
+       Druckspannung, 10% 
+       Stauchung min.:		150kPa
+       Bemessungswert der 
+       Wärmeleitfähigkeit max.:	DIN 4108-4: 0,023 W/(mK)
+       Brandverhalten:		DIN EN 13501-1 E, nicht 
+       			brennend abtropfend, nicht glimmend
+       
+       ang. Produkt		______________________
+       [end]
+       [Kurztext]Dämmung Wandanschluss PUR / PIR 023 DAA dh[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]22 30[end]
+      [Menge]38,5[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]gemäß Vorposition, jedoch
+       
+       Einbauort:		Attiken Stahlbetondach
+       Abwicklung
+       senkrecht:		Dämmung ca. 47 cm
+       waagrecht:		Kantholz ca. 24/9 cm
+       			5° geneigt gehobelt
+       
+       Plattendicke senkrecht:	100 mm
+       Plattenbreite Oberseite:	3-S Platte ca. 57 cm, 5° nach innen geneigt
+       Dicke 3-S-Platte:		27 mm
+       
+       ang. Produkt		______________________
+       [end]
+       [Kurztext]Dämmung  Attika PUR / PIR 023 DAA dh[end]
+      #end[Beschreibung]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]23[end]
+     [Bez]Abdichtung[end]
+     #begin[Position]
+      [OZ]23 10[end]
+      [Menge]119[end]
+      [ME]m²[end]
+      #begin[Beschreibung]
+       [Langtext]2-lagige  durchwurzelungsfeste, FLL-geprüfte Bitumendachabdichtung auf vorbeschriebener Dämmung bestehend aus:
+       
+       erste Lage:
+       Elastomerbitumen- Kaltselbstklebebahn
+       Trägereinlage: Glasgittergelege mit Glasvlies
+       Anwendungstype: DU/E1   PYE KTG KSP 3,5
+       Dicke: 3,5 mm
+       
+       Produkt: Bauder  TEC KSA DUO 35 o. gleichwertig
+       
+       angebotenes Produkt:____________________
+       
+       obere Lage:
+       Polymerbitumen-Schweißbahn mit Wurzelschutz
+       Trägereinlage: Polyesterverbund  300 g/m²
+       Anwendungstype: DO/E1   PYE KTP 300 S5
+       Dicke: 5,2 mm
+       
+       Produkt: Bauder  Smaragd o. gleichwertig
+       
+       angebotenes Produkt:____________________
+       
+       liefern und fachgerecht nach Herstellerangaben verlegen.
+       
+       Abrechnung in m² einfacher belegter Dachfläche
+       [end]
+       [Kurztext]Dachabdichtung Bitumen[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]23 20[end]
+      [Menge]8[end]
+      [ME]St[end]
+      #begin[Beschreibung]
+       [Langtext]Zulage zur Vorposition für das fach- und normgerechte Ausbilden der Ecken, als Innen- und Außenecken, fachgerecht herstellen, einschl. erforderlicher Formteile.
+       [end]
+       [Kurztext]Eckausbildung Zulage[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]23 30[end]
+      [Menge]38,5[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]Randanschluss der zuvor beschriebenen 2-lagigen Bitumen Flachdachabdichtung an der Attika und auf 3-S Platte fachgerecht herstellen.
+       
+       - Dämmkeil ca. 3 cm
+       - Randausbildung der Abdichtung auf OK Attika und über Unterlage
+          Abwicklung ca. 83 cm inkl. mech. Fixierung
+       - Eckausbildung (s. a. Vorposition) wird nicht gesondert vergütet
+       [end]
+       [Kurztext]Dachabdichtung Attika [end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]23 40[end]
+      [Menge]8[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]Randanschluss der zuvor beschriebenen 2-lagigen Bitumen Flachdachabdichtung an aufgehenden Wänden auf Beton, Putzen,, unter WDVS
+       
+       - Dämmkeil ca. 3 cm
+       - Randausbildung der Abdichtung auf PUR/PIR Dämmung
+         hinterlaufsicher, Abwicklung ca. 65 cm inkl. mech. Fixierung
+       - Eckausbildung (s. a.Vorposition) wird nicht gesondert vergütet
+       
+       2-K PMMA Flüssigkunststoffabdichtung zur hinterlaufsicheren Abdichtung an Rohwan s. gesonderte Position.[end]
+       [Kurztext]Dachabdichtung Wandanschluss[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]23 50[end]
+      [Menge]3[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]zur vorbeschriebenen 2-lagigen Bitumen-Flachdachabdichtung für das fach- und normgerechte Ein- und Abdichten der Dachoberlichter, bauseitiger Rohre und Aufbauten incl. Ausbilden aller Kanten, Innen- und Aussenecken mit Flüssigkunststoff
+       bestehend aus:
+       
+       - Grundierung
+       -  2-K PMMA Flüssigkunststoffabdichtung, Mindestdicken gemäß Zulassung
+       - Vlies zur Verstärkung, systemkonform  gemäß Herstellerangaben
+         einschl. Laibungen und Eckausbildung. 
+       
+       Abwicklung:	bis ca. 40 cm
+       
+       Ang. Produkt: ______________________
+       [end]
+       [Kurztext]Lüftungskasten, Luken, Durchdringungen Flüssigkunststoff[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]23 60[end]
+      [Menge]8[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]hinterlaufsicherer Anschluss der Bitumenabdichtung unter WDVS Fassaden mit Flüssigkunststoff ein- und abdichten. Die Abdichtung ist min. 5 cm über die Rinne / Belagskante nach oben zu führen.
+       
+       bestehend aus:
+       
+       - Grundierung
+       -  2-K PMMA Flüssigkunststoffabdichtung, Mindestdicken gemäß Zulassung
+       - Vlies zur Verstärkung, systemkonform  gemäß Herstellerangaben
+         einschl. Laibungen und Eckausbildung. 
+       
+       Abwicklung:	ca. 35 cm
+       [end]
+       [Kurztext]Anschluss Flüssigkunststoff, 35 cm[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]23 70[end]
+      [Menge]12[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]hinterlaufsicherer Anschluss unter Steidachdeckung auf 3S-Platte bauseits an aufgehende Wand unter WDVS Fassaden mit Flüssigkunststoff ein- und abdichten. Die Abdichtung ist ca. 10 cm über die Breite des WDVS und ca. 30 cm nach oben zu führen.
+       
+       bestehend aus:
+       
+       - Grundierung
+       -  2-K PMMA Flüssigkunststoffabdichtung, Mindestdicken gemäß Zulassung
+       - Vlies zur Verstärkung, systemkonform  gemäß Herstellerangaben
+         einschl. Laibungen und Eckausbildung. 
+       
+       Abwicklung:	ca. 60 cm
+       [end]
+       [Kurztext]Anschluss Flüssigkunststoff, 60 cm[end]
+      #end[Beschreibung]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]24[end]
+     [Bez]Entwässerung[end]
+     #begin[Position]
+      [OZ]24 10[end]
+      [Menge]1[end]
+      [ME]Stk[end]
+      #begin[Beschreibung]
+       [Langtext]senkrecht, aus Polyurethan, wärmegedämmt, nach DIN EN 1253-2, Abflussmenge 5,6 l/s bei 35 mm Stauhöhe. Zum direkten Anschluss an Rohre mit Steckmuffe, zur Freispiegelentwässerung, mit großer Bitumenanschlussmanschette (495 mm x 495 mm), passend zur Dachabdichtung und mit Fixierring zur zusätzlichen Sicherung der Anschlussmanschette und zur Aufnahme des beiliegenden Kiesfanges, incl. Aufstockelement mit Dämmkörper, Anstauelement Sita More, alles passend zum nachfolgenden Dachbelag und Verlängerungsrohr mit Anschluss an bauseitige PE-Entwässerungsleitung innen, liefern und fachgerecht einbauen.
+       
+       Produkt:  Sita Standard
+       
+       Angebotenes Fabrikat / System:_____________________________
+       
+       Nennweite:	DN 100
+       Manschette:	Bitumen
+       Dämmhöhe ca.	240 mm
+       Oberfläche	Kies ca. 60 mm
+       [end]
+       [Kurztext]Flachdachablauf zweiteilig, senkrecht[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]24 20[end]
+      [Menge]2[end]
+      [ME]Stk[end]
+      #begin[Beschreibung]
+       [Langtext]aus Edelstahl rostfrei, Werkstoffnummer 1.4301, nach DIN EN 1253-2, in als Attikagully/Speier, incl. Systemzubehör Anschlussmanschetten, Dampfsperrplatte und Fassadenabdeckplatte liefern und fachgerecht einbauen.
+       
+       Produkt		Sita Steel oder gleichwertig
+       
+       ang. Produkt	________________________
+       
+       Größe:		100/300 mm
+       Ablaufleistungen:	ca. 3,9 l/s, 40 mm Anstauhöhe.
+       Stutzenlänge: 	ca. 700 mm 
+       [end]
+       [Kurztext]Attika Notablauf[end]
+      #end[Beschreibung]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]25[end]
+     [Bez]Einbauteile, Dachaufbauten[end]
+     #begin[Position]
+      [OZ]25 10[end]
+      [Menge]1[end]
+      [ME]St[end]
+      #begin[Beschreibung]
+       [Langtext]gemäß Vorposition, jedoch für Kabeldurchführung DN 100, ohne Regenabweiser dafür mit Rohrbogen 2 x 87,3° und einer passenden Dampfsperrkappe aus EPDM mit verschraubbarer Befestigung, die Aussparung für die Leitungsmedien erfolgt bauseits incl.  Einbauanleitung, liefern und einbauen.
+       [end]
+       [Kurztext]Kabeldurchführung DN 100[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]25 20[end]
+      [Menge]38,5[end]
+      [ME]m[end]
+      #begin[Beschreibung]
+       [Langtext]Durchdringungsfreier Seitenschutz für Flachdächer mit Zulassung, als Komplett-Geländersystem aus Aluminium zur Kollektivsicherung für Insp.- u. Wartungszwecke nach DIN EN 13374 Klasse A, Ausstattungsklasse A (BG-Bau, DGUV 201-056), höhenverstellbar, mit Ausleger und Betongewichten o. dgl.  einschließlich Werkstattplanung, zum Einbau erforderlichem Zubehör, Befestigungsmaterial u. dgl. liefern und fachgerecht montieren.
+       
+       Produkt:		Bauder Secutec Barrier F75 o. glw. 
+       
+       ang. Produkt	_____________________________
+       
+       weitere Anforderungen:
+       
+       Neigung		75 Grad
+       Sicherung	nach Herstellerangaben
+       Material		Geländer Aluminium
+       Oberkante	min. 1 m über Kiesfläche
+       oberster Holm
+       [end]
+       [Kurztext]Flachdachgeländer[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]25 30[end]
+      [Menge]114[end]
+      [ME]m²[end]
+      #begin[Beschreibung]
+       [Langtext]als Bestandteil einer Systemlösung, zum Schutz der o.a. Dachabdichtungen vor mechanischer Beanspruchung bzw. bei Materialunverträglichkeit gemäß DIN 18531-2, mit 10 cm Überlappung, incl. Hochführen an aufgehenden Bauteilen und Dachab-dichtungen, liefern und einbauen.
+       
+       Produkt		Optigrün Schutzlage RMS 300 oder gleichwertig
+       
+       
+       ang. Produkt	____________________
+       
+       Eigenschaften:
+       Material: 100 % Recycling-Kunststofffasern
+       Festigkeitsklasse: GRK 2
+       Dicke: ca. 3,6 mm
+       Gewicht: mind. 300 g/m²
+       
+       Länge aufgehender Bauteile ca. 41,5 m
+       
+       Lichtkuppelflächen werden abgezogen
+       [end]
+       [Kurztext]Trenn-, Schutz- u. Speichervlies RMS 300[end]
+      #end[Beschreibung]
+     #end[Position]
+     #begin[Position]
+      [OZ]25 40[end]
+      [Menge]114[end]
+      [ME]m²[end]
+      #begin[Beschreibung]
+       [Langtext]Kiesfläche aus gewaschenem Rundkies 16/32 mm, Schüttdicke 6 cm, liefern und einbauen.
+       
+       Abrechnung nach m² bekieste Fläche
+       [end]
+       [Kurztext]Kies 16/32 mm[end]
+      #end[Beschreibung]
+     #end[Position]
+    #end[LVBereich]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]3[end]
+    [Bez]BLECHNERARBEITEN[end]
+    #begin[Position]
+     [OZ]3  10[end]
+     [Menge]44[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Attikaabdeckung mit Umschlag und Tropfkanten, liefern und auf bauseits vorhandenes Attikabrett, nach innen geneigt montieren, einschl. Befestigungsmittel, Haften, Schiebehaften, Falzungen, Lötungen, Ecken, T-Stücke, Wandanschlüsse.
+      
+      Material :  	Titanzinkblech
+      Blechdicke : 	0,7 mm
+      Zuschnitt : 	ca. 6 mm
+      Größe:     	ca. 150/660/70 mm
+      Ecken:		8 Stück
+      Anschluss:	2 Stück an Satteldachgiebel
+      
+      Abrechnung nach lfm Attika, lange Kante
+      [end]
+      [Kurztext]Attikaabdeckung, Titanzinkblech, Z 880[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3  20[end]
+     [Menge]8[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Wandanschluss- und Überhangblech Bestandsgebäude unter WDVS liefern und montieren, inkl. elastischer Dichtungsmasse und Überhangstreifen.
+      
+      Zuschnitt:	ca.200 + 100 mm
+      Kantungen:	je min. 3 
+      Material:		Titanzinkblech
+      Blechdicke:	0,65 mm
+      [end]
+      [Kurztext]Wandanschluss, Titanzinkblech, Z 200 +100[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3  30[end]
+     [Menge]12[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Wandanschluss- und Überhangblech Dachfläche - Bestandsgebäude unter WDVS liefern und montieren, inkl. elastischer Dichtungsmasse und Überhangstreifen.
+      
+      Zuschnitt:	ca.300 + 100 mm
+      Kantungen:	je min. 3 
+      Material:		Titanzinkblech
+      Blechdicke:	0,65 mm
+      [end]
+      [Kurztext]Wandanschluss, Titanzinkblech, Z 300 +100[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3  40[end]
+     [Menge]3[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Traufblech als Rinneneinlaufblech mit Tropfkante, einschl. Befestigungsmittel, liefern und fachgerecht im Bereich Traufe auf Unterkonstruktion (Holz, Metall, etc.), zur Wiedereindeckung, Ergänzung / Erneuerung mit Anarbeiten der geöffneten Dach- und Gaupenflächen liefern und montieren.
+      
+      Das Ausbilden der Stösse und der Bewegungsausgleicher, Anarbeiten an Bestandsblech u. dgl. einschl. aller hierfür erforderlichen Arbeiten und Materialien, sind einzurechnen.
+      
+      Zuschnitt:	333 mm
+      Kantungen:	3 St
+      Material :	Titan-Zinkblech
+      [end]
+      [Kurztext]Traufblech, 3-fach gekantet, Titanzink, Z 333[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3  50[end]
+     [Menge]4[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Dachrinne als halbrunde Hängedachrinne, inkl. Rinnenhalter, Dehnungsausgleicher und Befestigungsmittel, zur Wiedereindeckung, Ergänzung / Erneuerung mit Anarbeiten der geöffneten Dach- und Gaupenflächen liefern und montieren. Die Rinnenhaken sind in die bauseitige Konstruktion Oberkante bündig vertieft einzubauen.
+      
+      Zuschnitt:		333 mm
+      Wulstdurchmesser:	Klasse X
+      Material:			Titanzinkblech
+      Blechdicke:		0,65 mm
+      Rinnenhalter:		verzinkter Stahl
+      [end]
+      [Kurztext]Hängerinne, rund, Titanzink, vorbewittert, Z 333[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3  60[end]
+     [Menge]1[end]
+     [ME]St[end]
+     #begin[Beschreibung]
+      [Langtext]Rinnen-Lötstutzen für Rundrohr an Gaupenrinne als Ablauf, liefern und in Hängedachrinne einlöten.
+      
+      Nenngröße:	DN 100
+      Zuschnitt:	333 mm
+      Kantungen:	3 St
+      Material:		Titan-Zinkblech
+      [end]
+      [Kurztext]Rinnen-Lötstutzen, Titanzink, DN 100[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3  70[end]
+     [Menge]2,5[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Fallrohr, kreisförmig, für Dachentwässerungsanlagen, Dachrinnen, Verbindungen etc., inkl. der Rohrschellen mit doppeltem Scharnier, sowie aller Zubehör- und Befestigungsteile liefern und montieren.
+      
+      Befestigungsuntergrund:	 Holzfassade, Gaupe
+      Material:			Titanzink
+      Blechdicke:		0,65 mm
+      Nenngröße:		DN 100
+      Nahtausführung:		Klasse X
+      [end]
+      [Kurztext]Fallrohr, rund, Titanzink, DN 100[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3  80[end]
+     [Menge]3[end]
+     [ME]St[end]
+     #begin[Beschreibung]
+      [Langtext]Fallrohrbogen, einfach, rund, als Teil der Verbindung zwischen der Dachrinne und dem runden Fallrohr, liefern und montieren.
+      
+      Bogenwinkel : alle Gradzahlen
+      Material : Titanzink
+      Nenngröße : DN 100 + DN 80
+      [end]
+      [Kurztext]Fallrohrbogen, einf.,rund, Titanzink, vorbewittert[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3  90[end]
+     [Menge]1[end]
+     [ME]St[end]
+     #begin[Beschreibung]
+      [Langtext]Laubfangkorb aus Edelstahldraht für Abläufe der vorbeschriebenen Hängedachrinnen.
+      [end]
+      [Kurztext]Laubfangkorb, Edelstahldraht[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3 100[end]
+     [Menge]1[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Brustblech für Gaupe, Kamin u. dgl. mit Umschlag, liefern und montieren, einschl. Befestigungsmittel, Haften, Schiebehaften, Falzungen, Lötungen, Ecken, T-Stücke, Wandanschlüsse, zur Wiedereindeckung, Ergänzung / Erneuerung mit Anarbeiten der geöffneten Dach- und Gaupenflächen, liefern und montieren.
+      
+      Material :	Titanzink
+      Blechdicke :         0,7 mm
+      Zuschnitt :    	ca. 330 mm
+      Größe:		ca. 50/130/80 mm
+      Kantungen:	4 Stück
+      
+      Abrechnung nach lfm[end]
+      [Kurztext]Brustblech, Titanzink, Z 333[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]3 110[end]
+     [Menge]6[end]
+     [ME]m[end]
+     #begin[Beschreibung]
+      [Langtext]Abdeckblech als U-Profil über Windbrett unter Ortgangziegel mit Tropfkante, zur Wiedereindeckung, Ergänzung / Erneuerung mit Anarbeiten der geöffneten Dach- und Gaupenflächen, inkl. elastischer Dichtungsmasse und Eckausbildung liefern und montieren.
+      
+      Zuschnitt:	120 mm
+      Kantungen:	min. 3 
+      Material:		Titanzink, vorbewittert
+      Blechdicke:	0,65 mm
+      [end]
+      [Kurztext]Abdeckblech, U, Titanzink, Z 120[end]
+     #end[Beschreibung]
+    #end[Position]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]4[end]
+    [Bez]Regiearbeiten [end]
+    #begin[Hinweis]
+     #begin[Beschreibung]
+      [Langtext]Stundenlohnarbeiten, die eventuell anfallen, müssen vor Arbeitsbeginn von der Bauleitung genehmigt werden. Rapportzettel sind innerhalb einer Woche an die Bauleitung zu schicken. Später vorgelegte Rapportzettel können nicht anerkannt werden.
+      
+      1. Arbeitskräfte:
+      Anzubieten ist ein gemittelter Verrechnungslohn pro Arbeitsstunde bezogen auf sämtliche Arbeitskräfte, die der Bieter beabsichtigt einzusetzen. Ausgenommen hiervon sind Aufsichtskräfte und Auszubildende. Sollen solche Arbeitskräfte zum Einsatz kommen, sind der Einsatz und die Vergütung (als "analoger Preis" zur Angebotskalkulation) zu vereinbaren.
+      
+      Der unten aufgeführte Verrechnungslohn pro Arbeitsstunde enthält sämtliche Aufwendungen, wie z.B. die Lohn- und Gehaltskosten (einschl. Zulagen, Zuschläge und vermögenswirksame Leistungen), die Lohn- und Gehaltszusatz- und -Nebenkosten, die Gemeinkosten sowie Wagnis und Gewinn.
+      Zuschläge für Arbeiten außerhalb der regelmäßigen Arbeitszeit sind gesondert nachzuweisen.
+      
+      
+      2. Baugeräte:
+      Die Kosten für den Einsatz von Kleingeräten, Werkzeugen und Gerüsten bis zu 2.000 &#8364; Anschaffungswert (netto) sind im Verrechnungslohn pro Arbeitsstunde eingerechnet (siehe hierzu auch DIN 18299 Nr. 4.1.8).
+      Werden Geräte benötigt, die zur Erbringung der vertraglichen Leistung bereits vorgehalten werden, so werden für diese Geräte nur die Kosten für Bedienung und ggf. für Energie vergütet. Eine doppelte Vorhaltevergütung entfällt somit.
+      Kann der Neuwert nicht einvernehmlich festgestellt werden, so ist die Baugeräteliste (BGL) heranzuziehen. Nicht aufgeführte Geräte sind entsprechend den technischen Angaben zu katalogisieren.
+      
+      [end]
+      [Kurztext]Hinweis Stundenlohnarbeiten[end]
+     #end[Beschreibung]
+    #end[Hinweis]
+    #begin[Position]
+     [OZ]4  10[end]
+     [Menge]10[end]
+     [ME]h[end]
+     #begin[Beschreibung]
+      [Langtext]Stundenverrechnungslohn siehe Vorbemerkung[end]
+      [Kurztext]Stundenverechnungslohn[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]4  20[end]
+     [Menge]1[end]
+     [ME]h[end]
+     #begin[Beschreibung]
+      [Langtext]Stundenverechnungslohn für Aufsichtspersonen[end]
+      [Kurztext]Stundenverechnungslohn für Aufsichtspersonen[end]
+     #end[Beschreibung]
+    #end[Position]
+    #begin[Position]
+     [OZ]4  30[end]
+     [Menge]1[end]
+     [ME]h[end]
+     #begin[Beschreibung]
+      [Langtext]Stundenverrechnungslohn für Lehrlinge siehe Vorbemerkungen[end]
+      [Kurztext]Stundenverechnungslohn Lehrlinge[end]
+     #end[Beschreibung]
+    #end[Position]
+   #end[LVBereich]
+  #end[LV]
+ #end[Vergabe]
+#end[GAEB]

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GXML Toolbox V3.3 R20230829;  http://www.gaeb-toolbox.de/ 
+ gtcConverter.dll used version 2024.07.02  -->
+<GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">
+ <GAEBInfo>
+  <Version>3.3</Version>
+  <VersDate>2021-05</VersDate>
+  <Date>2026-03-31</Date>
+  <Time>11:20:18</Time>
+  <ProgSystem>/ GXML Toolbox V3.3 R20230829</ProgSystem>
+  <ProgName>iTWO_64 V25.0.650</ProgName>
+ </GAEBInfo>
+ <PrjInfo>
+  <NamePrj>11530</NamePrj>
+  <LblPrj>Neubau Flutpolder &#x22;Elster-Luppe-Aue&#x22; - BHU</LblPrj>
+  <Cur>EUR</Cur>
+  <CurLbl>Euro</CurLbl>
+  <AlterBidPerm>Yes</AlterBidPerm>
+  <UPFracDig>2</UPFracDig>
+ </PrjInfo>
+ <Award>
+  <DP>83</DP>
+  <AwardInfo>
+   <Cat>IntNATO</Cat>
+   <Cur>EUR</Cur>
+   <CurLbl>Euro</CurLbl>
+   <SubmLoc>Potsdam, OT Groß Glienicke</SubmLoc>
+  </AwardInfo>
+  <OWN>
+   <Address>
+    <Name1>Landesbetrieb für Hochwasserschutz und Wasserwirtschaft Sachsen-Anhalt</Name1>
+    <Name2>Vergabestelle Süd</Name2>
+    <Street>Willi-Brundert-Str. 14</Street>
+    <PCode>06132</PCode>
+    <City>Halle (Saale)</City>
+   </Address>
+   <DPNo>DRV Buro</DPNo>
+  </OWN>
+  <BoQ ID="AAAAAAAAIAGNAAAA">
+   <BoQInfo>
+    <Name>01</Name>
+    <LblBoQ>Los 1 - Geoelektrische Untersuchungen</LblBoQ>
+    <Date>2026-03-31</Date>
+    <OutlCompl>AllTxt</OutlCompl>
+    <BoQBkdn>
+     <Type>BoQLevel</Type>
+     <LblBoQBkdn>Bereich</LblBoQBkdn>
+     <Length>2</Length>
+     <Num>Yes</Num>
+    </BoQBkdn>
+    <BoQBkdn>
+     <Type>Item</Type>
+     <Length>4</Length>
+     <Num>Yes</Num>
+    </BoQBkdn>
+    <BoQBkdn>
+     <Type>Index</Type>
+     <Length>1</Length>
+     <Num>No</Num>
+     <Alignment>left</Alignment>
+    </BoQBkdn>
+   </BoQInfo>
+   <BoQBody>
+    <BoQCtgy ID="AAAAAAAAIAJFAAAA" RNoPart="1">
+     <LblTx>
+      <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+       <span>Vorbereitende Leistungen</span>
+      </p>
+     </LblTx>
+     <BoQBody>
+      <Itemlist>
+       <Item ID="AAAAAAAAIAJFDACI" RNoPart="10">
+        <LumpSumItem>Yes</LumpSumItem>
+        <Qty>1.000</Qty>
+        <QU>psch</QU>
+        <Description ID="R20260227133705978000198">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Teilnahme des Projektleiters an einem ganztägigen Ortstermin zur Bauanlaufberatung und Baufeldübergabe.</span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Anlaufberatung, Baufeldübergabe</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJFFAAA" RNoPart="20">
+        <Qty>2.000</Qty>
+        <QU>St</QU>
+        <Description ID="R20260331080137254000001">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Teilnahme des Projektleiters an einem halbtägigen Ortstermin zur Bauberatung im Untersuchungsgebiet </span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Bauberatung</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJHEDLI" RNoPart="30">
+        <LumpSumItem>Yes</LumpSumItem>
+        <Qty>1.000</Qty>
+        <QU>psch</QU>
+        <Description ID="R20260227110852413000025">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Feststellen des Zustands der Wege- und Geländeoberflächen im Untersuchungsgebiet vor Beginn und nach Ende der geoelektrischen Feldarbeiten. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Anfertigen einer Niederschrift zur Vorlage beim AG.</span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Beweissicherung</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+      </Itemlist>
+     </BoQBody>
+    </BoQCtgy>
+    <BoQCtgy ID="AAAAAAAAIAJHAAAA" RNoPart="2">
+     <LblTx>
+      <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+       <span>Vorbereitung und Durchführung der Messungen</span>
+      </p>
+     </LblTx>
+     <BoQBody>
+      <Itemlist>
+       <Remark ID="AAAAAAAAIAJHBAKA">
+        <Description ID="R20260227110852340000023">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Die Arbeiten und Zufahrten sind entsprechend der örtlichen Verhältnisse so durchzuführen, dass keinerlei Schäden an Grundstücken, baulichen Anlagen oder sonstigen Einrichtungen entstehen. Der AN haftet auch gegenüber Dritten für alle Schäden, die durch seine Tätigkeit entstanden sind und die bei fachgemäßer Ausführung der Arbeiten vermeidbar gewesen wären. Entstandene Schäden sind dem AG unverzüglich anzuzeigen. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Unvermeidbare Flurschäden, die durch das Auslegen der </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Kabel und Elektroden entstehen, sind auf das unbedingt erforderliche Mindestmaß zu beschränken. Im Bereich von Grün- und Ackerflächen sind vorrangig bereits vorhandene Fahrspuren zu nutzen. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Die Arbeiten sind unter Beachtung naturschutzrechtlicher Randbedingungen durchzuführen, s. Leistungsbeschreibung </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Kap. 2.7.</span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Vorbemerkungen</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Remark>
+       <Item ID="AAAAAAAAIAJHCENI" RNoPart="10">
+        <LumpSumItem>Yes</LumpSumItem>
+        <Qty>1.000</Qty>
+        <QU>psch</QU>
+        <Description ID="R20260227110852377000024">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Messgeräte, Zubehör, Werkzeuge und sonstige Betriebsmittel, die zur vertragsgemäßen Ausführung der Leistungen erforder- lich sind, bereitstellen, antransportieren und  betriebsfertig aufstellen, einschl. der dafür notwendigen Arbeiten. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Kosten für Vorhalten, Unterhalten und Betreiben der  Mess- geräte werden nicht mit dieser Pauschale, sondern mit den Einheitspreisen der betreffenden Teilleistungen vergütet. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Abtransport aller für die Ausführung der Leistungen benötigten Gerätschaften nach Beendigung der Leistungen. </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Benutzte Flächen und Wege entsprechend dem ursprünglichen Zustand wieder herrichten.</span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Mobilisierung/ Demobilisierung</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJHGAKA" RNoPart="20">
+        <Qty>29.481</Qty>
+        <QU>km</QU>
+        <Description ID="R20260227110852447000026">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Abstecken eines geoelektrischen Messprofils nach Lage und Planungsstationierung auf Grundlage von übergebenen Plänen und shape-Files. </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Vermarkung charakteristischer Profilpunkte im Gelände in Vor- bereitung der geoelektrischen Kabel- und Elektrodenauslage. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind zu beachten.</span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Abstecken der Messprofile</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJHHOAI" RNoPart="30">
+        <Qty>29.481</Qty>
+        <QU>km</QU>
+        <Description ID="R20260227110852476000027">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Ausführen einer 2D-widerstandsgeoelektrischen Profilmessung </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">(Multielektrodenmessung) mit Messpunkt- und Elektroden-</span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">abstand von maximal 2,00 m. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Elektrodenkonfiguration nach Wenner. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Mindestüberdeckungsgrad 6-fach, jedoch Wirkungstiefe </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">mindestens 6 m unter GOK.  </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Regelmäßige Messung der Kontaktwiderstände Boden-Elektrode. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Führen von Tagesberichten mit Angaben zu ausgeführten Messungen, meteorologischen Bedingungen, Bodenfeuchte, Kontaktwiderständen, erschwerten Messbedinungen und Besonderheiten. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind zu beachten. </span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>2D-widerstandsgeoelektrische Profilmessung</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJHLJKI" RNoPart="40">
+        <Qty>6.800</Qty>
+        <QU>km</QU>
+        <Description ID="R20260227110852538000029">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Erschwerniszulage zu OZ 2.30 </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">für Ausführung der Messungen in erschwerten Bereichen (Laubwald, Gehölzstreifen). </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Freimachen der Messprofile von Unterholz und bodennahen Aufwuchs für die Kabel- und Elektrodenauslage. </span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Erschwerniszulage für Messung in Waldgebieten</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJHJMFI" RNoPart="50">
+        <Qty>1.000</Qty>
+        <QU>km</QU>
+        <Description ID="R20260227110852509000028">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Erschwerniszulage zu OZ 2.30 </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">für zusätzliche Maßnahmen zur Verringerung der Kontaktwiderstände, z. B. Angießen der Elektroden</span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">mit Wasser. </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Die Ausführung erfolgt nur nach Abstimmung mit dem </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">geotechnischen Sachverständigen. </span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Erschwerniszulage für erhöhte Kontaktwiderstände</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJHNFPI" RNoPart="60">
+        <Qty>800.000</Qty>
+        <QU>St</QU>
+        <Description ID="R20260227110852565000030">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Einmessen eines Profilpunktes in einem Abstand </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">von ca. 50 m.</span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Einmessen sonstiger charakteristischer Profilpunkte </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">wie Grabenstrukturen, Geländesenken und Geländeerhöhungen. </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Einmessen nach Lage und Höhe.</span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Lagesystem LS 489 (UTM, ETRS89, Zone 32), </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Höhensystem HS 170 (DHHN2016), </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Lage- und Höhengenauigkeit </span>
+             <span style="font-family:Symbol;font-size:10pt;Color:rgb(0,0,0);">±</span>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);"> 2 cm.</span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Einmessen Profilpunkte</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+      </Itemlist>
+     </BoQBody>
+    </BoQCtgy>
+    <BoQCtgy ID="AAAAAAAAIAJGAAAA" RNoPart="3">
+     <LblTx>
+      <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+       <span>Auswertung, Darstellung und Dokumentation</span>
+      </p>
+     </LblTx>
+     <BoQBody>
+      <Itemlist>
+       <Item ID="AAAAAAAAIAJGBAKA" RNoPart="10">
+        <Qty>29.481</Qty>
+        <QU>km</QU>
+        <Description ID="R20260227110852603000032">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Inversion der geoelektrischen Messwerte unter Berück- sichtigung der Elektrodenhöhen. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Darstellung der Ergebnisse als Widerstandsvertikalschnitte,</span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Maßstab horizontal 1:1.000, vertikal 1:100. </span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Inversion, Widerstandsvertikalschnitte</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJGCNMA" RNoPart="20">
+        <LumpSumItem>Yes</LumpSumItem>
+        <Qty>1.000</Qty>
+        <QU>psch</QU>
+        <Description ID="R20260227110852635000033">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Auswertung und Erstinterpretation der geoelektrischen Messsergebnisse anhand von Stützbohrungen aus der Baugrundvoruntersuchung.</span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Darstellung eines Isopachenplans der deckstauenden Schichten auf Grundlage der geoelektrischen  Messungen unter Einbeziehung von Aufschlüssen aus der Baugrund- voruntersuchung. </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Maßstab 1:5.000.</span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Die Hinweise der Leistungsbeschreibung, Kap. 3.1, sind zu beachten. </span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Auswertung und Erstinterpretation, Isopachenplan</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJGJAAA" RNoPart="30">
+        <LumpSumItem>Yes</LumpSumItem>
+        <Qty>1.000</Qty>
+        <QU>psch</QU>
+        <Description ID="R20260227120055656000036">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Nachinterpretation der geoelektrischen Messergebnisse nach Vorliegen aller Baugrundaufschlüsse aus dem Los 2. </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">U. a. Überarbeitung des Isopachenplans der deckstauenden Schichten zur Sicherstellung der Widerspruchsfreiheit. </span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Nachinterpretation</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+       <Item ID="AAAAAAAAIAJGGIAA" RNoPart="40">
+        <LumpSumItem>Yes</LumpSumItem>
+        <Qty>1.000</Qty>
+        <QU>psch</QU>
+        <Description ID="R20260227110852719000035">
+         <CompleteText>
+          <DetailTxt>
+           <Text>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Geordnete Zusammenstellung aller Untersuchungsergebnisse.</span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Erläuterungsbericht mit Nachinterpretation und Anlagenteil: </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">- Lageplan Messprofile </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">- Widerstandsvertikalschnitte, </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">- Isopachenplan Deckstauer. </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Übergabe in digitaler Form </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">- Gesamtunterlage im PDF-Format, </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">- Lage- und Isopachenpläne im CAD-Zeichnungsformat </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">  (dxf/dwg) sowie GIS-Datenformat (shp), </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">- Schnittdarstellungen im CAD-Zeichnungsformat (dxf/dwg), </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">- Vermessungsdaten zusätzlich im als Koordinaten- und </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">  Punktdaten (txt/asc/csv) </span>
+            </p>
+            <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">sowie 2-facher analoger Form.</span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Übergabe spätestens 4 Wochen nach Übergabe der Untersuchungsergebnisse aus Los 2. </span>
+             <br/>
+             <span style="font-family:Arial;font-size:10pt;Color:rgb(0,0,0);">Die Hinweise der Leistungsbeschreibung, Kap. 5.2, sind zu beachten.</span>
+            </p>
+           </Text>
+          </DetailTxt>
+          <OutlineText>
+           <OutlTxt>
+            <TextOutlTxt>
+             <p style="text-align:left;margin-top:0pt;margin-bottom:0pt;">
+              <span>Abschlussdokumentation</span>
+             </p>
+            </TextOutlTxt>
+           </OutlTxt>
+          </OutlineText>
+          <!-- GAEB version used: 330 -->
+          <!-- GAEB version used: 330 -->
+         </CompleteText>
+        </Description>
+       </Item>
+      </Itemlist>
+     </BoQBody>
+    </BoQCtgy>
+   </BoQBody>
+  </BoQ>
+ </Award>
+</GAEB>

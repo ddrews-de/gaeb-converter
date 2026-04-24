@@ -1,0 +1,1670 @@
+#begin[GAEB]
+ #begin[GAEBInfo]
+  [Version]1.2[end]
+  [VersMon]3[end]
+  [VersJahr]2002[end]
+  [Datum]01.04.2026[end]
+  [Uhrzeit]15:35[end]
+  [ProgSystem]/ GAEB Toolbox V3.3 G90 R20230829[end]
+  [ProgName]iTWO_64 V25.0.650[end]
+  [Zeichensatz]ANSI[end]
+ #end[GAEBInfo]
+ #begin[PrjInfo]
+  [Name]11530[end]
+  [Bez]Neubau Flutpolder "Elster-Luppe-Aue" - BHU[end]
+  [Wae]EUR[end]
+  [WaeBez]Euro[end]
+ #end[PrjInfo]
+ #begin[Vergabe]
+  [DP]83[end]
+  #begin[VergabeInfo]
+   [Wae]EUR[end]
+   [WaeBez]Euro[end]
+  #end[VergabeInfo]
+  #begin[AG]
+   #begin[Adresse]
+    [Name1]Landesbetrieb für Hochwasserschutz und Wasserwirtschaft[end]
+    [Name2]Vergabestelle Süd[end]
+    [Strasse]Willi-Brundert-Str. 14[end]
+    [PLZ]06132[end]
+    [Ort]Halle (Saale)[end]
+    [LandBez]D[end]
+   #end[Adresse]
+  #end[AG]
+  #begin[LV]
+   #begin[LVInfo]
+    [Name]02[end]
+    [Bez]Los 2 - Geo- und umwelttechnische Untersuchungen[end]
+    [Datum]01.04.2026[end]
+    [KurzLang]1[end]
+    #begin[LVGlied]
+     [Typ]LVStufe[end]
+     [Bez]Bereich[end]
+     [Laenge]2[end]
+    #end[LVGlied]
+    #begin[LVGlied]
+     [Typ]LVStufe[end]
+     [Bez]Abschnitt[end]
+     [Laenge]2[end]
+    #end[LVGlied]
+    #begin[LVGlied]
+     [Typ]Position[end]
+     [Laenge]4[end]
+    #end[LVGlied]
+    #begin[LVGlied]
+     [Typ]Index[end]
+     [Laenge]1[end]
+    #end[LVGlied]
+    [USt]19,00[end]
+   #end[LVInfo]
+   #begin[LVBereich]
+    [OZ]01[end]
+    [Bez]Bauvorbereitende und baubegleitende Leistungen[end]
+    #begin[LVBereich]
+     [OZ]0101[end]
+     [Bez]Ablaufplanung[end]
+     #begin[Position]
+      [OZ]01010010[end]
+      #begin[Beschreibung]
+       [Langtext]Teilnahme des Bauleiters / Verantwortlichen Fachmanns an einem ganztägigen Ortstermin zur Bauanlaufberatung und Baufeldübergabe.[end]
+       [Kurztext]Anlaufberatung, Baufeldübergabe[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01010020[end]
+      #begin[Beschreibung]
+       [Langtext]Teilnahme des Bauleiters / Verantwortlichen Fachmanns oder seines Stellvertreters an einem halbtägigen Ortstermin im Untersuchungsgebiet.
+       Ortsbegehung/Bauberatung in Abstimmungmit dem AG und dem geotechnischen Sachverständigen.[end]
+       [Kurztext]Ortsbegehung / Bauberatung[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]4,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0102[end]
+     [Bez]Anzeigen und Genehmigungen[end]
+     #begin[Position]
+      [OZ]01020010[end]
+      #begin[Beschreibung]
+       [Langtext]Einholen der Erlaubnisscheine für Erd-/Bohrarbeiten bei den zuständigen Medienträgern / TÖB. 
+       Koordinierung der Einweisungstermine vor Ort.
+       Eventuell anfallende Gebühren werden gesondert auf Nachweis vergütet.[end]
+       [Kurztext]Erlaubnisscheine für Erd-/Bohrarbeiten[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01020020[end]
+      #begin[Beschreibung]
+       [Langtext]Räumstellenanzeige / Anmeldung der geplanten Kampfmittel- untersuchungen bei der zuständigen Ordnungsbehörde. [end]
+       [Kurztext]Räumstellenanzeige Kampfmittel[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01020030[end]
+      #begin[Beschreibung]
+       [Langtext]Einholen von Aufgrabegenehmigungen für Sondernutzungen im öffentlichen Verkehrsraum nach § 18 StrG LSA, inkl. Abstimmung und Abnahme der Flächen nach Ausführung der Erkundungsarbeiten. 
+       Vorlage Abnahmeprotokoll.
+       Straße "Silberberg" in Zöschen (Stadt Leuna),
+       "Luppeweg" in Wallendorf (Stadt Leuna).
+       Eventuell anfallende Gebühren werden gesondert auf Nachweis vergütet.[end]
+       [Kurztext]Aufgrabegenehmigungen / Sondernutzungen[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01020040[end]
+      #begin[Beschreibung]
+       [Langtext]Einholen von verkehrsrechtlichen Anordnungen auf Grundlage von § 45 StVO.
+       Abstimmen von RSA-Regelplänen (Teilsperrung für Arbeiten von kurzzeitiger Dauer) zur Durchführung der Baumaßnahmen bei den zuständigen Verkehrs- und Ordnungsbehörden.
+       - Straße "Silberberg" in Zöschen (Stadt Leuna),
+       - "Luppeweg" in Wallendorf (Stadt Leuna).
+       Eventuell anfallende Gebühren werden gesondert auf Nachweis vergütet.[end]
+       [Kurztext]Verkehrsrechtliche Anordnungen[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01020050[end]
+      #begin[Beschreibung]
+       [Langtext]Einholen von verkehrsrechtlichen Erlaubnissen für die über- mäßige Straßenbenutzung nach § 29 Abs. 3 StVO. 
+       Überschreitung der zulässigen Achslasten bzw. Gesamtmassen für Drucksondier- und Bohrgeräte. 
+       - Elsterbrücken Oberthau und Raßnitz, 
+       - Luppebrücken Zöschen und Zweimen. 
+       Eventuell anfallende Gebühren werden gesondert auf Nachweis vergütet.[end]
+       [Kurztext]Verkehrsrechtliche Ausnahmegenehmigungen[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0103[end]
+     [Bez]Beweissicherung[end]
+     #begin[Position]
+      [OZ]01030010[end]
+      #begin[Beschreibung]
+       [Langtext]Feststellen des Zustandes von Verkehrswegen, Gelände- oberflächen, Vorflutern und baulichen Anlagen im Untersuchungsgebiet unmittelbar vor Beginn sowie nach Beendigung der Felduntersuchungen.
+       Anfertigen einer Beweisdokumentation sowie von Nieder-
+       schriften zur Vorlage beim AG.[end]
+       [Kurztext]Beweissicherung[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0104[end]
+     [Bez]Bauvermessung[end]
+     #begin[Position]
+      [OZ]01040010[end]
+      #begin[Beschreibung]
+       [Langtext]Bauvorbereitende Vermessung, 
+       Abstecken eines Bohr- und Sondieransatzpunktes im Gelände auf Grundlage einer Koordinatenliste des Objektplaners in Vorbereitung der Kampfmittelfreimessung.
+       Die Absteckung der Ansatzpunkte erfolgt im Beisein des geotechnischen Sachverständigen.[end]
+       [Kurztext]Abstecken Ansatzpunkt[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]931,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01040020[end]
+      #begin[Beschreibung]
+       [Langtext]Bauausführungsvermessung, 
+       Einmessen eines Bohr-, Schurf- oder Sondieransatzpunktes nach Lage und Höhe.
+       Lagebezug: ETRS89, UTM32 (LS 489),
+       Höhenbezug: DHHN2016 (HS 170). 
+       Lage- und Höhengenauigkeit:  2 cm.
+       Koordinaten- und Höhenangaben in die geotechnische Aufschlussdokumentation einarbeiten. [end]
+       [Kurztext]Einmessen geotechnischer Aufschluss[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1174,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0105[end]
+     [Bez]Bauvorbereitung[end]
+     #begin[Position]
+      [OZ]01050010[end]
+      #begin[Beschreibung]
+       [Langtext]Operative Information und Abstimmung mit Eigentümern, Pächtern sowie Bewirtschaftern der von den geotechnischen Feldarbeiten betroffenen Grundstücke. 
+       Zu kalkulieren sind ca. 30 Eigentümer/Pächter.
+       Übergabe der Kontaktdaten durch den AG. [end]
+       [Kurztext]Abstimmung mit Eigentümern/Pächtern/Bewirtschaftern[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01050020[end]
+      #begin[Beschreibung]
+       [Langtext]Ausführung von Freischnitt- und Fällarbeiten im Bereich der Zuwegungen und Arbeitsstellen. 
+       Position beinhaltet das Freischneiden von bodennahem Aufwuchs und Ästen sowie die Beseitigung von schwachen Laubbäumen bis 25 cm Stammdurchmesser. 
+       Die zu beseitigenden Bäume werden im Vorfeld durch den AG mit den Eigentümern und Bewirtschaftern sowie der unteren Naturschutzbehörde abgestimmt. 
+       Durchfahrtsbreite je nach Erfordernis, max. 3,50 m.
+       Flächen für Arbeitsstellen max. 10x15 m. 
+       Schnittgut soll zu Zwecken des bauzeitlichen Bodenschutzes verwendet werden und vor Ort verbleiben. [end]
+       [Kurztext]Freischnitt- und Fällarbeiten[end]
+      #end[Beschreibung]
+      [ME]m2[end]
+      [Menge]9000,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01050030[end]
+      #begin[Beschreibung]
+       [Langtext]Vorschachten zum Aufsuchen von erdverlegten Leitungen.
+       Ausführung als Handschachtung bei unklarem Leitungs- bestand.
+       Schachtungstiefe bis 1,50 m, ohne Verbau.
+       Boden zur Wiederverwendung seitlich lagern. 
+       Vorschachtung mit seitlich gelagertem Boden verfüllen.
+       Verdichten und Wiederherstellen des Ursprungszustandes.
+       Vorschriften der Ver- und Entsorgungsunternehmen beachten.[end]
+       [Kurztext]Vorschachten[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]3,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]01050040[end]
+      #begin[Beschreibung]
+       [Langtext]Maßnahmen zur Verkehrssicherung an Arbeitsstellen im Bereich des öffentlichen Verkehrsraums gemäß den Bestimmungen der verkehrrechtlichen Anordnungen für die Dauer der Erkundungsarbeiten (Teilsperrung bei Arbeitsstellen von kürzerer Dauer).
+       Vorhalten, Auf- und Abbauen sowie Umsetzen von Arbeitstelle zu Arbeitstelle.
+       - Straße "Silberberg" in Zöschen (Stadt Leuna),
+       - "Luppeweg" in Wallendorf (Stadt Leuna).[end]
+       [Kurztext]Verkehrssicherungsmaßnahmen[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+    #end[LVBereich]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]02[end]
+    [Bez]Kampfmitteluntersuchung[end]
+    #begin[LVBereich]
+     [OZ]0201[end]
+     [Bez]Kampfmitteluntersuchung[end]
+     #begin[Position]
+      [OZ]02010010[end]
+      #begin[Beschreibung]
+       [Langtext]Bohr-, Sondier- und Messgeräte, Zubehör, Werkzeuge und sonstige Betriebsmittel, die zur vertragsgemäßen Ausführung der Leistungen erforderlich sind, bereitstellen und antrans- portieren. 
+       Kosten für Vorhalten, Unterhalten und Betreiben der Bohr-, Sondier- und Messgeräte werden nicht mit dieser Pauschale, sondern mit den Einheitspreisen der betreffenden Teilleistungen vergütet. 
+       Abtransport aller Gerätschaften nach Beendigung der Arbeiten.
+       Benutzte Flächen und Wege sind entsprechend dem ursprüng- lichen Zustand wieder herzurichten.[end]
+       [Kurztext]Mobilisierung/Demobilisierung[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010020[end]
+      #begin[Beschreibung]
+       [Langtext]Auf- und Abbau sowie Umsetzen der Bohr- und Messgeräte für die Ausführung von Tiefensondierungen zur Kampfmittel- untersuchung.
+       Umsetzen innerhalb von Bauwerksstandorten sowie von Deich- und Wegebauabschnitten. 
+       Transportentfernung von Bohrpunkt zu Bohrpunkt bis 100 m. [end]
+       [Kurztext]Auf-/Abbau und Umsetzen Bohrgerät bis 100 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]199,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010030[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 2.1.20, jedoch
+       Umsetzen über 100 m bis 250 m[end]
+       [Kurztext]Umsetzen über 100 m bis 250 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]90,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010040[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 2.1.20, jedoch
+       Umsetzen von Untersuchungsstandort zu Untersuchungs- standort. Umsetzen über 250 m bis 2 km[end]
+       [Kurztext]Umsetzen über 250 m bis 2 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010050[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 2.1.20, jedoch
+       Umsetzen von Untersuchungsstandort zu Untersuchungs- standort. Umsetzen über 2 km bis 10 km[end]
+       [Kurztext]Umsetzen über 2 km bis 10 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010060[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 2.1.20, jedoch
+       Umsetzen von Untersuchungsstandort zu Untersuchungs- standort. Umsetzen über 10 km bis 25 km. [end]
+       [Kurztext]Umsetzen über 10 km bis 25 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010070[end]
+      #begin[Beschreibung]
+       [Langtext]Herstellung und Sicherung eines Bohrlochs zur Kampfmittel- untersuchung. 
+       Bohr-/Ausbautiefe bis 6,00 m unter GOK.
+       Bohrverfahren nach Wahl des AN, einschl. aller Nebenarbeiten.
+       Alternativ ist eine CPT-gestützte Kampfmittelfreimessung zulässig. [end]
+       [Kurztext]Herstellung und Sicherung Bohrloch[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]300,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010080[end]
+      #begin[Beschreibung]
+       [Langtext]Computergestützte Bohrlochsondierung,
+       Messverfahren und Messgeräte nach Wahl des AN. 
+       Messtiefe entspricht Bohrtiefe. 
+       Für die Visualisierung der Ergebnisse ist dem AG auf Anforderung ein geeigneter Viewer zu liefern.[end]
+       [Kurztext]Computergestützte Sondierung[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]300,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010090[end]
+      #begin[Beschreibung]
+       [Langtext]Verrohrung ziehen und Bohrloch schichtengerecht mit Bohrgut verfüllen. Tiefe entsprechend Bohrtiefe.[end]
+       [Kurztext]Verfüllen Bohrloch[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]300,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010100[end]
+      #begin[Beschreibung]
+       [Langtext]Vertiefen einer Kampfmittelsondierung bei Erfordernis, z. B. aufgrund Vorgaben der Räumstellenanzeige oder nicht erfolgtem Nachweis geogener Schichtenfolge. 
+       Inkl. Bohren, Sichern, Messen und Verfüllen. 
+       Ausführung in Abstimmung mit dem geotechnischen Sach- verständigen.
+       Ausführung / Abrechnung in 1-m-Schritten ab 6,00 m unter GOK. [end]
+       [Kurztext]Vertiefen Tiefensondierung[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010110[end]
+      #begin[Beschreibung]
+       [Langtext]Kampfmitteluntersuchung eines Bohr-/Sondieransatzpunktes mittels Oberflächensondierung, Wirkungstiefe bis 4,00 m, 
+       Messverfahren und Messgeräte nach Wahl des AN. 
+       inkl. Umsetzen von Sondierpunkt zu Sondierpunkt auf Erkundungsquerprofilen, 
+       Entfernung von Sondierpunkt zu Sondierpunkt bis 100 m. 
+       Erschwerte Zuwegung durch Waldbewuchs im Bereich der Altarme und Deichtrassen. [end]
+       [Kurztext]Oberflächensondierung und Umsetzen bis 100 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]303,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010120[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 2.1.110, jedoch 
+       Umsetzen über 100 m bis 250 m. [end]
+       [Kurztext]Umsetzen über 100 bis 250 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]162,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010130[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 2.1.110, jedoch 
+       Umsetzen über 250 m bis 2 km. [end]
+       [Kurztext]Umsetzen über 250 m bis 2 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]64,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010140[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 2.1.110, jedoch 
+       Umsetzen über 2 km bis 10 km. [end]
+       [Kurztext]Umsetzen über 2 km bis 10 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]9,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010150[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 2.1.110, jedoch 
+       Umsetzen über 10 km bis 25 km. [end]
+       [Kurztext]Umsetzen über 10 km bis 25 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010160[end]
+      #begin[Beschreibung]
+       [Langtext]Dauerhafte Markierung eines Verdachtspunktes auf Kampf- mittel / Bombenblindgänger an der Oberfläche in Vorbereitung weiterer Kampfmittelräumarbeiten.[end]
+       [Kurztext]Dauerhafte Markierung[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]02010170[end]
+      #begin[Beschreibung]
+       [Langtext]Zusammenstellung der Ergebnisse aller Kampfmittelunter- suchungen in einem Abschlussbericht.
+       Erstellen der erforderlichen Nachweise für die Freigabe und Einholung der Freigabeerklärung beim zuständigen Kampf- mittelbeseitigungsdienst. [end]
+       [Kurztext]Dokumentation der Kampfmitteluntersuchungen[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+    #end[LVBereich]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]03[end]
+    [Bez]Baustelleneinrichtung[end]
+    #begin[LVBereich]
+     [OZ]0301[end]
+     [Bez]Baustelleneinrichtung und -räumung[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Die Betretungs- und Befahrgenehmigungen für die von den Untersuchungen in Anspruch zu nehmenden Flächen werden im Vorfeld vom Auftraggeber bzw. dessen Liegenschafts- beauftragten eingeholt.
+       Die Arbeiten und Zufahrten sind entsprechend der örtlichen Verhältnisse so durchzuführen, dass keinerlei Schäden an Grundstücken, baulichen Anlagen oder sonstigen Einrichtungen entstehen. Der AN haftet auch gegenüber Dritten für alle Schäden, die durch seine Tätigkeit entstanden sind und die bei fachgemäßer Ausführung der Arbeiten vermeidbar gewesen wären. 
+       Entstandene Schäden sind dem AG unverzüglich anzuzeigen.
+       Unvermeidbare Flurschäden, die durch das Herstellen provisorischer Zuwegungen zu den Arbeitsstellen entstehen, sind auf das unbedingt erforderliche Mindestmaß zu beschränken. 
+       Im Bereich von Grün- und Ackerflächen sind vorrangig bereits vorhandene Fahrspuren zu nutzen.
+       Aufgeweichte Flächen dürfen nicht befahren werden.[end]
+       [Kurztext]Vorbemerkungen[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]03010010[end]
+      #begin[Beschreibung]
+       [Langtext]Baustelle (Arbeitsstellen) für die vertragsgemäße Durchführung der Bauleistungen einrichten.
+       Vorhalten und Antransport des Personals sowie aller für die Bauleistung erforderlichen Gerätschaften, Bau- und Hilfsstoffe.
+       Ver- und Entsorgungseinrichtungen für die Dauer der Bauzeit herstellen.
+       Sofern erforderlich, Lagerflächen für Bohr- und Sondiertechnik beschaffen.
+       Sämtliche Aufwendungen für die Einrichtung der Flächen sind in diese Position einzurechnen.
+       Die Aufwendungen für Vorhalten, Unterhalten und Betreiben der Baustelleneinrichtung einschließlich der Geräte und dergleichen während der Bauzeit sind in die Einheitspreise der betreffenden Teilleistungen einzurechnen.[end]
+       [Kurztext]Einrichten der Baustelle[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]03010020[end]
+      #begin[Beschreibung]
+       [Langtext]Ausreichend großes, beleucht- und beheizbares Kernlager einrichten, Wasser- und Stromanschluss herstellen.
+       Maximaler Abstand 10 km zum Untersuchungsgebiet.
+       Kernlager für den gesamten Zeitraum der Feld- und Labor- untersuchungen vorhalten und betreiben, inkl. Nebenkosten 
+       für Pacht, Miete, Strom, Wasser, Heizung usw.
+       Kernliner, Kernkisten sowie Einzel- und Sonderproben arbeits- tägig in das Kernlager transportieren und dort geordnet lagern.
+       Kernkisten zum Schutz vor Austrocknung mit Folie auslegen und abdecken.
+       Kernlager räumen.[end]
+       [Kurztext]Kernlager[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]03010030[end]
+      #begin[Beschreibung]
+       [Langtext]Räumen der Baustelle aufgrund unvorhergesehener Ereignisse (z. B. Hochwasser), Räumen der Baustelle von allen Materialien, Werkzeugen und beweglichen Gerätschaften auf Anordnung des AG, einschl. aller Personal- und
+       Gerätekosten.[end]
+       [Kurztext]Zwischenzeitliches Räumen auf Anordnung des AG[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]03010040[end]
+      #begin[Beschreibung]
+       [Langtext]Wiedereinrichten der Baustelle nach zwischenzeitlichem Räumen. Einzukalkulieren sind alle Aufwendungen für das Wiedereinrichten aufgrund von Bauruhe, einschl. aller Kosten zur Bereitstellung von Material, Werkzeugen, Geräte und Personal zur Fertigstellung der Bauleistung, einschl. aller Aufwendungen zur Herrichtung der Zufahrtswege, Baustraßen, Lager- und Arbeitsplätze.[end]
+       [Kurztext]Zwischenzeitliches Wiedereinrichten auf Anordnung des AG[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]03010050[end]
+      #begin[Beschreibung]
+       [Langtext]Baustelle (Arbeitsstellen) rückstandslos räumen.
+       Abtransport des Personals sowie aller für die Bauleistung erforderlichen Gerätschaften, Abfall- und Hilfsstoffe.
+       Herrichten der Flächen gemäß ursprünglichem Zustand.
+       Sämtliche Aufwendungen für die Wiederherstellung der
+       Flächen sind in diese Position einzurechnen.
+       Die Räumung des Kernlagers wird gesondert vergütet
+       (Pos. 3.1.20).[end]
+       [Kurztext]Räumen der Baustelle[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+    #end[LVBereich]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]04[end]
+    [Bez]Felduntersuchungen[end]
+    #begin[LVBereich]
+     [OZ]0401[end]
+     [Bez]Elektrische Drucksondierungen (CPT-U)[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Sondiergeräte nach Wahl des AN.
+       Gesamtkraft bis 200 kN.
+       Muss eine Drucksondierung vor Erreichen der vorgesehenen Endtiefe wegen eines Hindernisses abgebrochen und in unmittelbarer Nähe neu angesetzt werden, wird das Umsetzen bis zu einer Entfernung von 10 m nicht gesondert vergütet.
+       Nach Beendigung der Drucksondierung sind Endteufe und Wasserstand im Sondierloch zu loten. Die Angaben sind im Sondierprotokoll zu dokumentieren.
+       Die Hinweise der Leistungsbeschreibung, Kap. 3.12, sind zu beachten.[end]
+       [Kurztext]Vorbemerkungen[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]04010010[end]
+      #begin[Beschreibung]
+       [Langtext]Drucksondiergerät von Sondierpunkt zu Sondierpunkt umsetzen und einrichten, 
+       Umsetzen innerhalb von Bauwerksstandorten,
+       Transportentfernung über 10 bis 100 m. [end]
+       [Kurztext]Drucksondiergerät umsetzen bis 100 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]101,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04010020[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.1.10, jedoch 
+       Umsetzen von Bauwerksstandort zu Bauwerksstandort,
+       Transportentfernung über 100 m bis 250 m. [end]
+       [Kurztext]Umsetzen über 100 bis 250 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04010030[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.1.10, jedoch 
+       Umsetzen von Bauwerksstandort zu Bauwerksstandort,
+       Transportentfernung über 250 m bis 2 km. 
+       [end]
+       [Kurztext]Umsetzen über 250 m bis 2 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]3,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04010040[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.1.10, jedoch 
+       Umsetzen von Bauwerksstandort zu Bauwerksstandort,
+       Transportentfernung über 2 km bis 10 km. [end]
+       [Kurztext]Umsetzen über 2 km bis 10 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]7,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04010050[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.1.10, jedoch 
+       Umsetzen von Bauwerksstandort zu Bauwerksstandort,
+       Transportentfernung über 10 km bis 25 km. [end]
+       [Kurztext]Umsetzen über 10 km bis 25 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04010060[end]
+      #begin[Beschreibung]
+       [Langtext]Drucksondierung nach DIN EN ISO 22476-1 gemäß Baubeschreibung und Lageplan ausführen.
+       Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.
+       Kontinuierliche Messung, Aufzeichnung, Korrektur sowie grafische Darstellung von Sondierlänge, Spitzenwiderstand, Mantelreibung, Reibungsverhältnis, Porenwasserdruck und Neigung der Sondierspitze.
+       Angaben zur Gesamtkraft.
+       Endtiefe 15 bis 40 m.
+       Sondiertiefe 0 bis 20 m.[end]
+       [Kurztext]Drucksondierung ausführen, Tiefe 0 - 20 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]2235,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04010070[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.1.60, jedoch 
+       Sondiertiefe über 20 bis 40 m. [end]
+       [Kurztext]Tiefe über 20 bis 40 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]520,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04010080[end]
+      #begin[Beschreibung]
+       [Langtext]Sondierloch im standfesten Abschnitt mit Quellton verfüllen. Verfüllmaterial = Tonpellets/-granulat, mäßig quellfähig.
+       Liefermaterial des AN, Produktdatenblatt vorlegen.
+       Verfüllprotokoll führen und übergeben.
+       Oberfläche wieder herstellen (Urzustand).[end]
+       [Kurztext]Sondierloch mit Quellton verfüllen[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]565,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0402[end]
+     [Bez]Schwere Rammsondierungen (DPH)[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Sondiergeräte nach Wahl des AN.
+       Muss eine Rammsondierung vor Erreichen der vorgesehenen Endtiefe wegen eines Hindernisses abgebrochen und in unmittelbarer Nähe neu angesetzt werden, wird das Umsetzen bis zu einer Entfernung von 10 m nicht gesondert vergütet.
+       Nach Beendigung der Sondierung sind Endteufe und Wasser- stand im Sondierloch zu loten. Die Angaben sind im Sondier- protokoll zu dokumentieren.
+       Die Hinweise in der Leistungsbeschreibung, Kap. 3.14, sind zu beachten.[end]
+       [Kurztext]Vorbemerkungen[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]04020010[end]
+      #begin[Beschreibung]
+       [Langtext]Rammsondiergerät einrichten und von Ansatzpunkt 
+       zu Ansatzpunkt umsetzen,
+       Transportentfernung über 10 bis 1000 m.[end]
+       [Kurztext]Rammsondiergerät umsetzen bis 1000 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]36,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04020020[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.2.10, jedoch
+       Transportentfernung über 1 km bis 5 km.[end]
+       [Kurztext]Umsetzen über 1 km bis 5 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]13,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04020030[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.2.10, jedoch
+       Transportentfernung über 5 km bis 10 km.[end]
+       [Kurztext]Umsetzen über 5 km bis 10 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]2,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04020040[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.2.10, jedoch
+       Transportentfernung über 10 km bis 25 km.[end]
+       [Kurztext]Umsetzen über 10 km bis 25 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04020050[end]
+      #begin[Beschreibung]
+       [Langtext]Schwere Rammsondierung nach DIN EN ISO 22476-2 gemäß Baubeschreibung und Lageplan ausführen.
+       Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.
+       Messung, Aufzeichnung und grafische Darstellung von Sondierlänge und Schlagzahlen N10.
+       Endtiefe 4 bis 8 m.
+       Sondierbereich 0 bis 8 m. [end]
+       [Kurztext]Schwere Rammsondierung ausführen[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]265,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04020060[end]
+      #begin[Beschreibung]
+       [Langtext]Sondierloch im standfesten Abschnitt mit Quellton verfüllen. Verfüllmaterial = Tonpellets/-granulat, mäßig quellfähig.
+       Liefermaterial des AN, Produktdatenblatt vorlegen.
+       Verfüllprotokoll führen und übergeben.
+       Oberfläche wieder gemäß Urzustand herstellen. [end]
+       [Kurztext]Sondierloch mit Quellton verfüllen[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]265,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0403[end]
+     [Bez]Kernbohrungen (BKF)[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Schlagende oder drehende Trockenbohrverfahren sowie Bohr- geräte nach Wahl des AN. 
+       Festlegung von Endtiefe, Probenahmehorizonten und Art des Ausbaus durch den geotechnischen Sachverständigen auf Grundlage der Ergebnisse der Drucksondierungen. 
+       Einbringen des Bohrkerns in 
+       - Kernhüllen (hohe Kerngüte) bzw. 
+       - Kernkisten (mittlere Kerngüte).
+       Durchmesser Bohrwerkzeug mindestens 100 mm. 
+       Durchmesser Verrohrung:
+       - mind. 273 mm für temporären Ausbau zum Versuchsbrunnen
+       - mind. 219 mm für sonstige Bohrungen. 
+       Bohrwerkzeuge: Einfachkernrohr, Schappe oder vergleichbar. Das Einsetzen von Bohrschnecken ist nur zum Zweck der Nachräumung gestattet.
+       Muss eine Bohrung vor Erreichen der vorgesehenen Endtiefe wegen eines Hindernisses abgebrochen und in unmittelbarer Nähe neu angesetzt werden, wird das Umsetzen bis zu einer Entfernung von 10 m nicht gesondert vergütet.
+       Die Hinweise in der Leistungsbeschreibung, Kap. 3.13, sind zu beachten.
+       Beachtung der beengten Zufahrts- und Platzverhältnisse im Bereich von Arbeitsstellen in Waldgebieten.[end]
+       [Kurztext]Vorbemerkungen[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]04030010[end]
+      #begin[Beschreibung]
+       [Langtext]Bohrgerät einrichten und nach Lageplan von Bohrpunkt
+       zu Bohrpunkt umsetzen,
+       Umsetzen innerhalb von Bauwerksstandorten, 
+       Transportentfernung über 10 bis 100 m. [end]
+       [Kurztext]Bohrgerät einrichten, Umsetzen bis 100 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]101,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030020[end]
+      #begin[Beschreibung]
+       [Langtext]Umsetzen über 100 m bis 250 m[end]
+       [Kurztext]Umsetzen über 100 m bis 250 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030030[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.10, jedoch 
+       Transportentfernung über 250 m bis 2 km. [end]
+       [Kurztext]Umsetzen über 250 m bis 2 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]3,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030040[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.10, jedoch 
+       Transportentfernung über 2 km bis 10 km. [end]
+       [Kurztext]Umsetzen über 2 km bis 10 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]7,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030050[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.10, jedoch 
+       Transportentfernung über 10 km bis 25 km[end]
+       [Kurztext]Umsetzen über 10 km bis 25 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030060[end]
+      #begin[Beschreibung]
+       [Langtext]Kernbohrung nach DIN EN ISO 22475-1 gemäß Bau- beschreibung und Lageplan ausführen.
+       Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.
+       Bohrverfahren = Trockenbohrverfahren mit Einbringen der Bohrkerne in Kernliner und Kernkisten.
+       Endtiefe der Gesamtbohrung 15 bis 30 m. 
+       Enddurchmesser der Gesamtbohrung mind. 273 mm für temporären Ausbau zum Versuchsbrunnen DN 125, 
+       Verrohrung bis zur Endtiefe einbringen und nach Beendigung der Bohrung ziehen.
+       Bohrgut aus der Nachräumung nach Bodenarten getrennt seitlich lagern.
+       Die Entnahme von ungestörten Proben (Stutzen) sowie das Einbringen der Bohrkerne in Kernliner und Kernkisten wird gesondert vergütet. 
+       Führen des Feldberichtes / Schichtenverzeichnisses wird nicht gesondert vergütet.
+       Bohrbereich 0 bis 10 m.[end]
+       [Kurztext]Kernbohrung ausführen, 273 mm, Bohrbereich 0 bis 10 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]100,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030070[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.60, jedoch 
+       Bohrbereich über 10 bis 20 m.[end]
+       [Kurztext]Kernbohrung ausführen, 273 mm, Bohrbereich über 10 bis 20 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]50,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030080[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.60, jedoch 
+       Bohrbereich über 20 bis 30 m.[end]
+       [Kurztext]Kernbohrung ausführen, 273 mm, Bohrbereich über 20 bis 30 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030090[end]
+      #begin[Beschreibung]
+       [Langtext]Kernbohrung nach DIN EN ISO 22475-1 gemäß Bau- beschreibung und Lageplan ausführen.
+       Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.
+       Bohrverfahren = Trockenbohrverfahren mit Einbringen der Bohrkerne in Kernliner und Kernkisten.
+       Endtiefe der Gesamtbohrung 15 bis 70 m. 
+       Enddurchmesser der Gesamtbohrung mind. 219 mm für temporären Ausbau zur GW-Messstelle DN 80, 
+       Verrohrung bis zur Endtiefe einbringen und nach Beendigung der Bohrung ziehen.
+       Bohrgut aus der Nachräumung nach Bodenarten getrennt seitlich lagern.
+       Die Entnahme von ungestörten Proben (Stutzen) sowie das Einbringen der Bohrkerne in Kernliner und Kernkisten wird gesondert vergütet.
+       Führen des Feldberichtes / Schichtenverzeichnisses  wird nicht gesondert vergütet.
+       Bohrbereich 0 bis 10 m.[end]
+       [Kurztext]Kernbohrung ausführen, 219 mm, Bohrbereich 0 bis 10 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]1030,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030100[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.90, jedoch 
+       Bohrbereich über 10 bis 20 m.[end]
+       [Kurztext]Kernbohrung ausführen, 219 mm, Bohrbereich über 10 bis 20 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]1055,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030110[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.90, jedoch 
+       Bohrbereich über 20 bis 30 m.[end]
+       [Kurztext]Kernbohrung ausführen, 219 mm, Bohrbereich über 20 bis 30 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]490,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030120[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.90, jedoch 
+       Bohrbereich über 30 bis 40 m.[end]
+       [Kurztext]Kernbohrung ausführen, 219 mm, Bohrbereich über 30 bis 40 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]30,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030130[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.90, jedoch 
+       Bohrbereich über 40 bis 50 m.[end]
+       [Kurztext]Kernbohrung ausführen, 219 mm, Bohrbereich über 40 bis 50 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030140[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.90, jedoch 
+       Bohrbereich über 50 bis 60 m.[end]
+       [Kurztext]Kernbohrung ausführen, 219 mm, Bohrbereich über 50 bis 60 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030150[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.3.90, jedoch 
+       Bohrbereich über 60 bis 70 m.[end]
+       [Kurztext]Kernbohrung ausführen, 219 mm, Bohrbereich über 60 bis 70 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030160[end]
+      #begin[Beschreibung]
+       [Langtext]Beseitigen von Bohrhindernissen durch Meisseln 
+       und Fangen im Bohrloch. 
+       Arbeiten nur mit Zustimmung des geotechnischen Sachverständigen. [end]
+       [Kurztext]Beseitigen von Bohrhindernissen[end]
+      #end[Beschreibung]
+      [ME]h[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030170[end]
+      #begin[Beschreibung]
+       [Langtext]Einbringen des Bohrkerns in Kernliner aus PVC, 
+       Durchmesser 100 mm, Kernlänge 1,00 m. 
+       Auftrennen der Kernhüllen in Abstimmung mit dem geotechnischen Sachverständigen. 
+       Entleerung und Entsorgung der Kernhüllen und des Bohrkerns erfolgt durch den AN nach Freigabe durch den geotechnischen Sachverständigen. 
+       Das Liefern und Beschriften der Kernhüllen wird nicht gesondert vergütet. [end]
+       [Kurztext]Bohrkern in Kernliner[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]565,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030180[end]
+      #begin[Beschreibung]
+       [Langtext]Einbringen des Bohrkerns in Kernkisten. 
+       Die Kernkisten sind wirksam gegen Austrocknung zu schützen (Folienauslage bzw. Abdeckung).
+       Entleerung und Entsorgung der Kernkisten und des Bohrkerns erfolgt durch den AN nach Freigabe durch den geotechnischen Sachverständigen. 
+       Das Liefern und das Beschriften der Kernkisten wird nicht gesondert vergütet. [end]
+       [Kurztext]Bohrkern in Kernkisten[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]2230,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030190[end]
+      #begin[Beschreibung]
+       [Langtext]Ausführen einer Bohrlochrammsondierung (BDP) nach 
+       DIN EN ISO 22476-14, inkl. Versuchsauswertung und Ergebnisdarstellung.
+       Versuchstiefe bis 25 m. 
+       Festlegung der Versuchsbohrungen und -tiefen durch den 
+       geotechnischen Sachverständigen in Abhängigkeit von den Ergebnissen und Endtiefen der Drucksondierungen.[end]
+       [Kurztext]Bohrlochrammsondierung (BDP)[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030200[end]
+      #begin[Beschreibung]
+       [Langtext]Die gewonnenen Bohrkerne (aufgetrennte Kernliner, offene Kernkisten) sind möglichst kurzfristig nach Fertigstellung jeder Bohrung im Kernlager gemäß folgender Vorgaben fotografisch zu dokumentieren: 
+       - Orthogonalaufnahme,
+       - Darstellung der vollständigen Bohrung von GOK bis Endtiefe, 
+       - Herstellung eines "frischen Anschnitts" an den Bohrkernen 
+         unmittelbar vor der Aufnahme, 
+       - Aufnahme bei vergleichbaren Bedingungen wie Objektivhöhe,
+         Bildhintergrund sowie Tages- oder Blitzlicht, 
+       - Aufnahme im digitalen Format, mind. 300 dpi, 
+       - Mitdarstellung einer Farbtafel und des Tiefenmaßstabs.[end]
+       [Kurztext]Kernfotodokumentation[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]113,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030210[end]
+      #begin[Beschreibung]
+       [Langtext]Ausbau einer Kernbohrung 273 mm zu einem temporären Grundwasserversuchsbrunnen mit folgenden Kenndaten:
+       - Ausbaudurchmesser DN 125,
+       - Ausbaumaterial PVC-U gemäß DIN 4925-2,
+       - Ausbautiefe bis 10 m unter GOK,
+       - Bodenkappe als unterer Abschluss,
+       - Filterlänge 4 m, SW = 0,75 mm,
+       - Vollrohr von OK Filter bis GOK, 
+       - Filterkies 2-3,15 mm 
+       - Kiesschüttung bis 1,00 m über OK Filter. 
+       Protokollführung und grafische Darstellung des Brunnen- ausbaus.
+       Rückbau des kompletten Rohrstrangs nach Pumpversuch und Grundwasserprobenahme.
+       Material verbleibt in Eigentum des AN.
+       Verfüllung des Bohrlochs wird gesondert vergütet.
+       Der Aus- und Rückbau erfolgt in Abstimmung mit dem geotechnischen Sachverständigen. [end]
+       [Kurztext]Temporärer Ausbau GW-Versuchsbrunnen[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030220[end]
+      #begin[Beschreibung]
+       [Langtext]Ausbau einer Kernbohrung 219 mm zu einer temporären Grundwassermessstelle mit folgenden Kenndaten:
+       - Ausbaudurchmesser DN 80,
+       - Ausbaumaterial PVC-U gemäß DIN 4925-2,
+       - Ausbautiefe bis 8 m unter GOK,
+       - Bodenkappe als unterer Abschluss,
+       - Filterlänge 2 m, SW = 0,5 mm,
+       - Vollrohr von OK Filter bis GOK, 
+       - Filterkies 2-3,15 mm 
+       - Kiesschüttung bis 1,00 m über OK Filter. 
+       Protokollführung und grafische Darstellung des Messstellenausbaus.
+       Rückbau des kompletten Rohrstrangs nach Pumpversuch.
+       Material verbleibt in Eigentum des AN. 
+       Verfüllung des Bohrlochs wird gesondert vergütet.
+       Der Aus- und Rückbau erfolgt in Abstimmung mit dem geotechnischen Sachverständigen [end]
+       [Kurztext]Temporärer Ausbau GW-Messstellen[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]20,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030230[end]
+      #begin[Beschreibung]
+       [Langtext]Klarpumpen eines temporären GW-Versuchsbrunnens DN 125
+       bzw. einer GW-Messstelle DN 80. 
+       Klarpumpen spätestens 1 Tag nach der Errichtung.
+       Abpumpdauer mindestens 2 Stunden,  
+       Volumenstrom an hydrogeologische Verhältnisse anpassen, 
+       mit Protokollführung. 
+       Pumpwasser auf angrenzenden Flächen versickern.[end]
+       [Kurztext]Klarpumpen GW-Versuchsbrunnen und Messstellen[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]30,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030240[end]
+      #begin[Beschreibung]
+       [Langtext]Bohrloch mit seitlich gelagertem Bohrgut aus der Nachräumung gemäß angetroffenem Schichtenprofil verfüllen.
+       Verfüllprotokoll führen und übergeben. [end]
+       [Kurztext]Bohrloch mit Bohrgut verfüllen[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]1900,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030250[end]
+      #begin[Beschreibung]
+       [Langtext]Bohrloch mit sauberem Füllsand bzw. Füllkies gemäß angetroffenem Schichtenprofil verfüllen. 
+       Liefermaterial des AN, Produktdatenblatt mit Angaben
+       zur chemischen Unbedenklichkeit vorlegen.
+       Verfüllprotokoll führen.[end]
+       [Kurztext]Bohrloch mit Füllsand/Füllkies verfüllen[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]330,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030260[end]
+      #begin[Beschreibung]
+       [Langtext]Bohrloch mit Quellton verfüllen.
+       Grundwasserdeck- und -trennschichten gemäß angetroffenem Schichtenprofil wiederherstellen. 
+       Verfüllmaterial = Tonpellets/-granulat, mäßig quellfähig.
+       Liefermaterial des AN, Produktdatenblatt mit Angaben
+       zur chemischen Unbedenklichkeit vorlegen.
+       Verfüllprotokoll führen.
+       Oberfläche wieder herstellen (Urzustand).[end]
+       [Kurztext]Bohrloch mit Quellton verfüllen[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]565,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04030270[end]
+      #begin[Beschreibung]
+       [Langtext]Überschüssiges Bohrgut aus Bohrungen und Bodenproben in Eigentum des AN übernehmen und fachgerecht entsorgen.
+       Abfallschlüssel AVV = 17 05 04 (nicht gefährlich).
+       Erklärung / Nachweis zum Verbleib des Abfalls.[end]
+       [Kurztext]Überschüssiges Bohrgut entsorgen[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0404[end]
+     [Bez]Hydrologische Pumpversuche (PV)[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Betreiben einer Pumpversuchseinrichtung, 
+       Einsatz einer regelbaren Pumpe mit entsprechenden Schläuchen und Rohrleitungen, 
+       max. 3 % Konstanz in Bezug auf die Förderleistung. 
+       Förderleistung max. 25m3/h, abzuleiten aus dem  jeweiligen Klarpumpversuch.
+       Ableitung und Einleitung des abgepumpten Grundwassers in einen Vorfluter bzw. Versickerung auf geeigneten Flächen.
+       Entfernung zum Einleitpunkt bis 100 m. 
+       Die Hinweise in der Leistungsbeschreibung, Kap. 3.13, sind zu beachten.[end]
+       [Kurztext]Vorbemerkungen[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]04040010[end]
+      #begin[Beschreibung]
+       [Langtext]Auf-/Abbauen sowie Umsetzen der Pumpversuchseinrichtung und sämtlicher für die Versuchsausführung erforderlicher Gerätschaften und Materialien. 
+       Einbautiefe der Pumpe max. 10 m u. GOK. [end]
+       [Kurztext]Auf-/Abbau und Umsetzen[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04040020[end]
+      #begin[Beschreibung]
+       [Langtext]Hydrologischen Pumpversuch ausführen und auswerten 
+       (kf-Wert). 
+       Durchführung und Dokumentation nach DVGW-Arbeitsblatt 
+       W 111. 
+       Versuchsdurchführung mit einer Pumpstufe. 
+       Förderzeitraum mind. 6 Stunden, 
+       Beobachtung GW-Wiederanstieg bis zum Erreichen 
+       des Ausgangsniveaus, max. 3 Stunden. 
+       Versuchsmessstelle DN 125 und 2 GW-Beobachtungs-
+       messtellen GWM DN 80 für Ausrüstung mit Datenlogger. 
+       Messgeräte vorhalten und betreiben. [end]
+       [Kurztext]Hydrologischer Pumpversuch (PV)[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]10,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0405[end]
+     [Bez]Kleinbohrungen (RKB)[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Bohrgeräte nach Wahl des AN.
+       Muss eine Kleinbohrung vor Erreichen der vorgesehenen Endtiefe wegen eines Hindernisses abgebrochen und in unmittelbarer Nähe neu angesetzt werden, wird das Umsetzen bis zu einer Entfernung von 10 m nicht gesondert gesondert vergütet.
+       Das Umsetzen erfolgt in Absprache mit dem geotechnischen Sachverständigen.
+       Die Hinweise in der Leistungsbeschreibung, Kap. 3.15, sind zu beachten.[end]
+       [Kurztext]Vorbemerkung[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]04050010[end]
+      #begin[Beschreibung]
+       [Langtext]Kleinbohrausrüstung von Ansatzpunkt zu Ansatzpunkt umsetzen und einrichten. 
+       Umsetzen innerhalb von Erkundungsquerprofilen, Deich- und Verkehrswegeabschnitten, Altarmen und Bauwerksstandorten. 
+       Transportentfernung über 10 m bis 100 m.[end]
+       [Kurztext]Bohrausrüstung umsetzen bis 100 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]543,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04050020[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.5.10, jedoch 
+       Transportentfernung über 100 bis 500 m. [end]
+       [Kurztext]Umsetzen über 100 m bis 500 m[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]135,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04050030[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.5.10, jedoch 
+       Transportentfernung über 500 m bis 2 km. [end]
+       [Kurztext]Umsetzen über 500 m bis 2 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]25,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04050040[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.5.10., jedoch 
+       Transportentfernung über 2 bis 10 km. [end]
+       [Kurztext]Umsetzen über 2 km bis 10 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]2,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04050050[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.5.10., jedoch 
+       Transportentfernung über 10 bis 25 km. [end]
+       [Kurztext]Umsetzen über 10 km bis 25 km[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04050060[end]
+      #begin[Beschreibung]
+       [Langtext]Kleinrammbohrung nach DIN EN ISO 22475-1 gemäß Baubeschreibung und Lageplan ausführen.
+       Homogenbereiche nach Kap. 2.5.3 Baubeschreibung.
+       Endtiefe der Gesamtbohrung 2,00 m bis 7,00 m.
+       Durchmesser der Bohrung 
+       - bis 2,00 m Bohrtiefe mind. 60 - 80 mm, 
+       - bis 5,00 m Bohrtiefe mind. 36 - 50 mm, 
+       - über 5,00 m Bohrtiefe mind. 30 - 36 mm.
+       Bohrgut nach Bodenarten getrennt seitlich lagern.
+       Grundwasseranschnitt beim Ausführen der Bohrarbeiten sowie die Änderung des Wasserspiegels nach Erreichen der Endtiefe feststellen und protokollieren.
+       Führen des Feldberichtes wird nicht gesondert vergütet.
+       Probenentnahme Einzelproben wird gesondert vergütet.
+       Verfüllen wird gesondert vergütet.
+       Bohrbereich 0,00 bis 5,00 m.[end]
+       [Kurztext]Kleinbohrung ausführen, 0 bis 5 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]2558,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04050070[end]
+      #begin[Beschreibung]
+       [Langtext]wie Position 4.5.60, jedoch 
+       Bohrbereich über 5,00 bis 7,00 m.[end]
+       [Kurztext]Kleinbohrung ausführen, über 5 bis 7 m[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]115,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04050080[end]
+      #begin[Beschreibung]
+       [Langtext]Bohrloch im standfesten Abschnitt mit Quellton verfüllen. Verfüllmaterial = Tonpellets/-granulat, mäßig quellfähig. 
+       Liefermaterial des AN, Produktdatenblatt vorlegen.
+       Verfüllprotokoll führen. 
+       Oberfläche wieder gemäß Urzustand herstellen. [end]
+       [Kurztext]Bohrloch mit Quellton verfüllen[end]
+      #end[Beschreibung]
+      [ME]m[end]
+      [Menge]2673,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0406[end]
+     [Bez]Peilstangensondierungen / Probensampler (PS)[end]
+     #begin[Position]
+      [OZ]04060010[end]
+      #begin[Beschreibung]
+       [Langtext]Peilstangensondierung ausführen.
+       Probenahme von Gewässersedimenten mittels Probensampler. 
+       Bestimmung der Sedimentmächtigkeit in Bereich der Altarme Ost und West sowie der Fließgewässer. 
+       Tiefe Peilstangensondierung mindestens 1 m, maximal 2 m. 
+       Ausführung auf Querprofilen. 
+       In diese Position sind erschwerte Bedingungen für die Zu- wegung und das Umsetzen zu den Sondierpunkten aufgrund der Lage in Waldgebieten einzukalkulieren.[end]
+       [Kurztext]Peilstangensondierung / Probensampler[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]110,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0407[end]
+     [Bez]Probenahmeschürfe (SCH)[end]
+     #begin[Position]
+      [OZ]04070010[end]
+      #begin[Beschreibung]
+       [Langtext]Herstellen eines Probenahmeschurfs. 
+       Abgrabungstiefe mindestens 0,70 m bis 1,25 m nach Vorgabe des geotechnischen Sachverständigen.
+       Boden zur Wiederverwendung seitlich lagern.
+       Schurfdokumentation anfertigen.
+       Schurf mit seitlich gelagertem Boden gemäß angetroffener Schichtenabfolge verfüllen.
+       Verdichten und Wiederherstellen des Ursprungszustandes.
+       Die Anforderungen der DIN 4124 sind zu beachten.
+       Probenentnahme wird gesondert vergütet.
+       In diese Position sind erschwerte Bedingungen für die Zu- wegung und das Umsetzen zu den Schurfstellen aufgrund der teilweisen Lage in Waldgebieten einzukalkulieren.[end]
+       [Kurztext]Herstellen eines Probenahmeschurfes[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]77,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0408[end]
+     [Bez]Probenentnahme[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Die nachstehenden Positionen zur Probenentnahme verstehen sich inkl. Liefern, Befüllen und Beschriften der jeweiligen Probenbehältnisse sowie Entnehmen, Behandeln, Trans- portieren und Aufbewahren der Proben.
+       Außerdem sind Probenentnahmeprotokolle zu führen.
+       Die Hinweise in der Leistungsbeschreibung sind zu beachten.[end]
+       [Kurztext]Vorbemerkung[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]04080010[end]
+      #begin[Beschreibung]
+       [Langtext]Entnehmen einer Sonderprobe aus einer Kernbohrung.
+       Probenahmeverfahren der Kategorie A  nach 
+       DIN EN ISO 22475-1, Güteklasse 1-2.
+       Homogenbereiche A2 und BB2 nach Baubeschreibung.
+       Entnahme mittels dünnwandigem, offenen Entnahmegerät 
+       (OS-T/W),  Durchmesser 100 mm, Länge mindestens 250 mm.
+       Entnahmetiefe bis 20 m unter GOK.[end]
+       [Kurztext]Entnehmen einer Bodenprobe, Entnahmekategorie A, Bohrung[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]30,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080020[end]
+      #begin[Beschreibung]
+       [Langtext]Entnehmen einer ungestörten Bodenprobe aus einem Probe- nahmeschurf.
+       Probenahmeverfahren der Kategorie A nach 
+       DIN EN ISO 22475-1, Güteklasse 1-2.
+       Homogenbereiche A2 und BB2 nach Baubeschreibung.
+       Entnahmetiefe bis 1,25 m unter GOK. Entnahme mittels Stutzen. Durchmesser mind. 100 mm. 
+       Es werden nur vollständig gefüllte Stutzen vergütet.
+       Die Herstellung des Probenahmeschurfes wird gesondert vergütet (Pos. 4.7.10).[end]
+       [Kurztext]Entnehmen einer Bodenprobe, Entnahmekategorie A, Schurf[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]20,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080030[end]
+      #begin[Beschreibung]
+       [Langtext]Entnehmen einer Bodenprobe als Einzelprobe aus einer 
+       Kern- oder Kleinbohrung.
+       Probenahmeverfahren der Kategorie B nach DIN EN ISO 22475-1, Güteklasse 3 (bindige Böden) bis Güteklasse 4
+       (nichtbindige Böden). 
+       Entnahme in PVC-Behälter 1 Liter.
+       Entnahme für bodenmechanische sowie boden- und abfall- technische Untersuchungen nach Vorgaben des geotech- nischen Sachverständigen.[end]
+       [Kurztext]Einzelprobe aus Kern-/Kleinbohrung, PVC 1 l[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]2500,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080040[end]
+      #begin[Beschreibung]
+       [Langtext]Entnehmen einer Bodenprobe als Einzelprobe aus einer
+       Kernbohrung bzw. einem Schurf.
+       Probenahmeverfahren der Kategorie B nach DIN EN ISO 22475-1, Güteklasse 3 (bindige Böden) bis Güteklasse 4
+       (nichtbindige Böden). 
+       Entnahme in PVC-Behälter 5 Liter.
+       Entnahme für bodenmechanische Untersuchungen nach Vorgaben des geotechnischen Sachverständigen. [end]
+       [Kurztext]Einzelprobe aus Bohrung / Schurf, PVC 5 l[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]190,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080050[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.8.40, jedoch
+       PVC-Behälter 10 l.[end]
+       [Kurztext]Einzelprobe aus Bohrung / Schurf, PVC 10 l[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080060[end]
+      #begin[Beschreibung]
+       [Langtext]Ausführen einer Bauwerksbohrung (Kernbohrung) zur Probenahme von asphaltierten Deck- und Tragschichten.
+       Kerndurchmesser 100 mm, Kernlänge bis 200 mm.
+       Wiederverfüllen des Bohrlochs mittels Reparaturasphalt.[end]
+       [Kurztext]Bauwerksbohrung und Probenahme Asphalt[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]3,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080070[end]
+      #begin[Beschreibung]
+       [Langtext]Zulage zu Pos. 4.8.60 für die Wiederverfüllen eines Bohrlochs mittels Heißasphalt [end]
+       [Kurztext]Zulage Heißasphalt[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080080[end]
+      #begin[Beschreibung]
+       [Langtext]Fachgerechte Entnahme einer Grundwasserprobe als Pumpprobe nach Durchführung des hydrologischen Pumpversuchs. 
+       Bestimmung der vor-Ort-Parameter elektrische Leitfähigkeit, pH-Wert und Temperatur. 
+       Probenbehältnisse und Konservierungsmittel vorhalten. 
+       Probenahmeprotokoll. 
+       Abgedunkelter und gekühlter Transport innerhalb eines Temperaturbereichs von 4 bis 12 °C. 
+       Übergabe an die Untersuchungsstelle innerhalb von 24 Stunden nach Entnahme. 
+       Regelungen der DIN EN ISO 22475-1, Kap. 8 und  9.4.4 beachten. [end]
+       [Kurztext]Grundwasser-Probenahme[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]12,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080090[end]
+      #begin[Beschreibung]
+       [Langtext]wie Pos. 4.8.80, jedoch 
+       Entnahme einer Oberflächenwasserprobe aus einem Fließgewässers als qualifizierte Schöpfprobe. [end]
+       [Kurztext]Oberflächenwasser-Probenahme[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]9,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]04080100[end]
+      #begin[Beschreibung]
+       [Langtext]Transport der Boden- und Wasserproben zu den jeweiligen Untersuchungsstellen.
+       Alle Proben sind während des Transports wirksam gegen äußere Einflüsse zu schützen (Hitze, Frost, Licht, Beschädigung). .[end]
+       [Kurztext]Probentransport[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+    #end[LVBereich]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]05[end]
+    [Bez]Laboruntersuchungen[end]
+    #begin[LVBereich]
+     [OZ]0501[end]
+     [Bez]Bodenmechanische Untersuchungen[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Die bodenmechanisch zu untersuchenden Proben werden 
+       nach ingenieurgeologischer Begutachtung der Bohrkerne und Einzelproben sowie Vorlage der vorläufigen Schichten- verzeichnisse durch den geotechnischen Sachverständigen festgelegt. 
+       Die Hinweise in der Leistungsbeschreibung, Kap. 3.16, sind zu beachten.[end]
+       [Kurztext]Vorbemerkungen[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]05010010[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung der Korngrößenverteilung durch Siebung 
+       nach DIN EN ISO 17892-4.[end]
+       [Kurztext]Siebung[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]70,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05010020[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung der Korngrößenverteilung durch 
+       kombinierte Siebung und Aräometerverfahren 
+       nach DIN EN ISO 17892-4.[end]
+       [Kurztext]kombinierte Sieb- und Schlämmanalyse[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]96,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05010030[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung des natürlichen Wassergehaltes
+       nach DIN EN ISO 17892-1.[end]
+       [Kurztext]Natürlicher Wassergehalt[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]108,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05010040[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung der Fließ- und Ausrollgrenzen 
+       nach DIN EN ISO 17892-12.[end]
+       [Kurztext]Fließ- und Ausrollgrenzen[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]56,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05010050[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung des Glühverlusts nach DIN 18128.[end]
+       [Kurztext]Glühverlust[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]105,000[end]
+     #end[Position]
+    #end[LVBereich]
+    #begin[LVBereich]
+     [OZ]0502[end]
+     [Bez]Umwelt- und abfalltechnische Untersuchungen[end]
+     #begin[Hinweis]
+      #begin[Beschreibung]
+       [Langtext]Die umwelt- und abfalltechnisch zu untersuchenden Proben werden nach ingenieurgeologischer Begutachtung der Bohrkerne und Einzelproben sowie Vorlage der vorläufigen Schichtenverzeichnisse durch den geotechnischen Sachverständigen festgelegt. 
+       Die Hinweise in der Leistungsbeschreibung, Kap. 3.17, sind zu beachten.[end]
+       [Kurztext]Vorbemerkungen[end]
+      #end[Beschreibung]
+     #end[Hinweis]
+     #begin[Position]
+      [OZ]05020010[end]
+      #begin[Beschreibung]
+       [Langtext]Bildung einer Mischprobe aus mehreren Einzelproben. 
+       Herkunft aus Homogenbereichen gemäß Kap. 2.5.3 der Baubeschreibung sowie aus Konstruktionsschichten der Wirtschaftswege. 
+       Bei der Mischprobenbildung sind die verschiedenen bautechnischen Bereiche und Homogenbereiche zu trennen.
+       Bildung der Mischprobe auf Anweisung des geotechnischen Sachverständigen. [end]
+       [Kurztext]Bildung einer Mischprobe[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]350,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020020[end]
+      #begin[Beschreibung]
+       [Langtext]Untersuchung und Bewertung von Oberboden im Umfang der Parameter der Vorsorgewerte für anorganische und organische Stoffe gemäß Anlage 1, Tabellen 1 und 2 BBodSchV,  inkl. TOC-Gehalt und pH-Wert (CaCl2). [end]
+       [Kurztext]Oberboden, Vorsorgewerte BBodSchV[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]99,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020030[end]
+      #begin[Beschreibung]
+       [Langtext]Ergänzende Untersuchung und Bewertung von Oberboden gemäß Parametern für Prüf- und Maßnahmewerte für den Wirkungspfad Boden-Nutzpflanze auf Grünlandflächen im Hinblick auf die Pflanzenqualität nach Anlage 1 Tabelle 7 BBodSchV. [end]
+       [Kurztext]Oberboden, Prüfwerte Boden-Nutzpflanze BBodSchV[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]10,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020040[end]
+      #begin[Beschreibung]
+       [Langtext]Ergänzende Untersuchung und Bewertung von Oberboden im Hinblick auf Qualitätsparameter für die Wiederverwendung,
+       - C/N-Verhältnis (Sollwert < 14), 
+       - organischer Anteil (Sollwert 4-8 %) und
+       - Schluffkornanteil (Sollwert > 15 %).[end]
+       [Kurztext]Oberboden, Qualitätsparameter Wiederverwendung[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]59,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020050[end]
+      #begin[Beschreibung]
+       [Langtext]Untersuchung und Bewertung von Bodenmaterial und Bagger- gut im Hinblick auf Materialwerte und Materialklassen nach Anlage 1 Tabelle 3 ErsatzbaustoffV, alle Parameter der Tabelle.
+       Elotion im Schüttelversuch 2:1 nach DIN 19529. [end]
+       [Kurztext]Bodenmaterial/Baggergut, Materialklasse ErsatzbaustoffV[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]200,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020060[end]
+      #begin[Beschreibung]
+       [Langtext]Zulage zu Pos. 5.2.50: 
+       Elution im Säulenkurztest nach DIN 19528 anstelle Schüttelversuch nach DIN 19529. [end]
+       [Kurztext]Zulage Säulenversuch[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]40,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020070[end]
+      #begin[Beschreibung]
+       [Langtext]Untersuchung und Bewertung von Bodenmaterial und Bagger- gut im Hinblick auf Zuordnungswerte und Deponieklassen nach Anhang 3 Tabelle 2 Spalte 6-8 DepV, DK I-III, inkl. Bestimmung Glühverlust und TOC.
+       Ohne Säureneutralisationskapazität und Antimon-Co-Wert. [end]
+       [Kurztext]Bodenmaterial/Baggergut, Deponieklasse DepV[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020080[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung der Säureneutralisationskapazität nach DepV. [end]
+       [Kurztext]Säureneutralisationskapazität[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020090[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung des Antimon-Co-Wertes nach DepV. [end]
+       [Kurztext]Antimon-Co-Wert[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020100[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung der Atmungsaktivität AT4 nach DepV. [end]
+       [Kurztext]Atmungsaktivität AT4[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020110[end]
+      #begin[Beschreibung]
+       [Langtext]Bestimmung der Brennwertes H0 nach DepV[end]
+       [Kurztext]Brennwert H0[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]5,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020120[end]
+      #begin[Beschreibung]
+       [Langtext]Untersuchung und Bewertung von asphaltgebundenen Straßenbaustoffen im Hinblick auf die Verwertungsklasse 
+       nach RuVA-StB 01/05 (PAK, Phenolindex). [end]
+       [Kurztext]Asphaltbaustoffe, Verwertungsklasse RuVA-StB[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]3,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020130[end]
+      #begin[Beschreibung]
+       [Langtext]Untersuchung und Bewertung von Boden hinsichtlich Betonaggressivität nach DIN 4030-2 (Ausgabe 2024) und
+       Stahlkorrosivität nach DIN 50929-3 (Ausgabe 2024).[end]
+       [Kurztext]Boden, Betonaggressivität und Stahlkorrosivität[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]18,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020140[end]
+      #begin[Beschreibung]
+       [Langtext]Untersuchung und Bewertung von Grund- und  Oberflächen- wasser hinsichtlich Betonaggressivität nach DIN 4030-2 (Ausgabe 2024), Referenzverfahren und Stahlkorrosivität nach DIN 50929-3 (Ausgabe 2024)..[end]
+       [Kurztext]Grund-/Oberflächenwasser, Betonaggressivität und Stahlkorrosivität[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]21,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]05020150[end]
+      #begin[Beschreibung]
+       [Langtext]Untersuchung von Grundwasser hinsichtlich folgender Qualitätsparameter für die wasserrechtlichen Antragsverfahren:
+       - Färbung, Trübung, Geruch, Temperatur bei Entnahme, 
+       - elektrische  Leitfähigkeit, pH-Wert, Sauerstoffgehalt,
+       - DOC, 
+       - CSV-KMnO4, 
+       - AOX, 
+       - Gesamthärte,
+       - Natrium, Kalium, Calcíum, Magnesium, Ammonium,
+         Nitrat, Nitrit, Sulfat, Chlorid, Hydrogencarbonat,
+       - Eisen, Mangan,
+       - Arsen, Blei, Cadmium, Chrom, Kupfer, Nickel,  Zink
+       - LHKW, BTEX, 
+       - MWK, 
+       - PAK (EPA), 
+       - Phenole, 
+       - Cyanide.[end]
+       [Kurztext]Grundwasser. Parameter wasserrechtliche Antragsverfahren[end]
+      #end[Beschreibung]
+      [ME]St[end]
+      [Menge]10,000[end]
+     #end[Position]
+    #end[LVBereich]
+   #end[LVBereich]
+   #begin[LVBereich]
+    [OZ]06[end]
+    [Bez]Dokumentation[end]
+    #begin[LVBereich]
+     [OZ]0601[end]
+     [Bez]Abschlussdokumentation[end]
+     #begin[Position]
+      [OZ]06010010[end]
+      #begin[Beschreibung]
+       [Langtext]Überarbeitung der Schichtenprofile für Kern- und Klein- bohrungen nach Vorgaben des geotechnischen Sach-verständigen. Einzuarbeiten sind insbesondere folgende Daten:
+       - Ergebnisse der ingenieurgeologischen Bodenanprache,
+       - Ergebnisse von Laborversuchen zur Bodenklassifikation,
+       - Schichtenangaben gemäß Baugrundmodell. 
+       Die Hinweise der Baubeschreibung zu den Datenübergabe- formaten sind zu beachten (SEP3-kompatibel, z. B. GeODin).[end]
+       [Kurztext]Überarbeitung Schichtenprofile[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+     #begin[Position]
+      [OZ]06010020[end]
+      #begin[Beschreibung]
+       [Langtext]Nach Untersuchungsobjekten geordnete Zusammenstellung aller Ergebnisse der Feld- und Laboruntersuchungen. 
+       Die Abschlussdokumentation ist dem AG in 2-fach analoger sowie in digitaler Form auf Datenträger zu übergeben.
+       Übergabe spätestens 4 Wochen nach Übermittlung der ergänzten Schichtenprofile durch den geotechnischen Sachverständigen.
+       Die Hinweise der Baubeschreibung, Kap. 5.2, sind zu beachten.[end]
+       [Kurztext]Abschlusssbericht Feld- und Laboruntersuchungen[end]
+      #end[Beschreibung]
+      [ME]psch[end]
+      [Menge]1,000[end]
+     #end[Position]
+    #end[LVBereich]
+   #end[LVBereich]
+  #end[LV]
+ #end[Vergabe]
+#end[GAEB]297|707
