@@ -6,9 +6,12 @@
  * so that UI wiring and tests can be implemented against it incrementally.
  */
 
-import type { DANumber, GaebDocument, Generation } from './types';
+import type { GaebDocument } from './types';
+import { detectFormat as detectFormatImpl } from './detect';
 
 export * from './types';
+export { FormatDetectionError } from './detect';
+export type { DetectResult } from './detect';
 
 export interface ConvertResult {
   doc: GaebDocument;
@@ -16,17 +19,7 @@ export interface ConvertResult {
   targetFileName: string;
 }
 
-export interface DetectResult {
-  generation: Generation;
-  da: DANumber;
-}
-
-export function detectFormat(
-  _fileName: string,
-  _firstBytes: Uint8Array,
-): DetectResult {
-  throw new Error('detectFormat not implemented yet');
-}
+export const detectFormat = detectFormatImpl;
 
 export function parse(_bytes: Uint8Array, _fileName: string): GaebDocument {
   throw new Error('parse not implemented yet');
