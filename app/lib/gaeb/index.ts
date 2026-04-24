@@ -26,6 +26,17 @@ export { validateGaebXml33WithXsd } from './validate-xsd';
 export type { XsdValidationOptions } from './validate-xsd';
 export { buildAuditLog, auditLogFileName } from './audit';
 export type { AuditLogOptions } from './audit';
+export {
+  buildPositionListWorkbook,
+  buildPositionListCsv,
+  docToRows,
+  POSITION_LIST_COLUMNS,
+} from './excel';
+export type {
+  PositionListRow,
+  DocToRowsOptions,
+  BookEntry,
+} from './excel';
 
 export interface ConvertResult {
   doc: GaebDocument;
