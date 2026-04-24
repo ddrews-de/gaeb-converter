@@ -1,9 +1,9 @@
 /**
  * Public façade of the GAEB2GAEB converter library.
  *
- * Real implementations land in subsequent steps of the plan
- * (see docs/IMPLEMENTATION_PLAN.md). The stubs below fix the public surface
- * so that UI wiring and tests can be implemented against it incrementally.
+ * `parse` routes a GAEB file of any supported generation into the shared
+ * `GaebDocument` model; `serialize` emits GAEB DA XML 3.3; `convert`
+ * combines them and computes the matching `.x8x` target file name.
  */
 
 import type { GaebDocument } from './types';
@@ -12,6 +12,7 @@ import { decode } from './encoding';
 import { parseGaebXml } from './parsers/gaebXml';
 import { parseGaeb90 } from './parsers/gaeb90';
 import { parseGaeb2000 } from './parsers/gaeb2000';
+import { serializeGaebXml33 } from './serializer/gaebXml33';
 
 export * from './types';
 export { FormatDetectionError } from './detect';
@@ -56,13 +57,34 @@ export function parse(bytes: Uint8Array, fileName: string): GaebDocument {
   throw new Error(`Parser for ${detected.generation} not implemented yet.`);
 }
 
-export function serialize(_doc: GaebDocument): string {
-  throw new Error('serialize not implemented yet');
+export function serialize(doc: GaebDocument): string {
+  return serializeGaebXml33(doc);
 }
 
 export function convert(
-  _bytes: Uint8Array,
-  _fileName: string,
+  bytes: Uint8Array,
+  fileName: string,
 ): ConvertResult {
-  throw new Error('convert not implemented yet');
+  const doc = parse(bytes, fileName);
+  const xml = serialize(doc);
+  const targetFileName = toXmlFileName(fileName, doc.da);
+  return { doc, xml, targetFileName };
+}
+
+function toXmlFileName(fileName: string, da: GaebDocument['da']): string {
+  // Preserve the base name; rewrite the extension to .x8N where N matches
+  // the detected DA number. Examples:
+  //   "Los 1.d83"  -> "Los 1.x83"
+  //   "Los 1.P83"  -> "Los 1.X83"
+  //   "Los 1.x83"  -> "Los 1.x83"  (round-trip, lower-case extension kept)
+  //   "project.gaeb" -> "project.x<da>"
+  const match = fileName.match(/^(.*)\.([dpxDPX])(8[1-6])$/);
+  if (match) {
+    const letter = match[2];
+    const xLetter = letter === letter.toUpperCase() ? 'X' : 'x';
+    return `${match[1]}.${xLetter}${da}`;
+  }
+  const dotIndex = fileName.lastIndexOf('.');
+  const base = dotIndex >= 0 ? fileName.slice(0, dotIndex) : fileName;
+  return `${base}.x${da}`;
 }
