@@ -223,6 +223,14 @@ function handleKV(
       currentItem.unitPrice = parseGermanNumber(value);
     } else if (key === 'GB' || key === 'GP') {
       currentItem.totalPrice = parseGermanNumber(value);
+    } else {
+      const componentKey = priceComponentKey(key);
+      if (componentKey) {
+        const num = parseGermanNumber(value);
+        if (num !== undefined) {
+          (currentItem.priceComponents ??= {})[componentKey] = num;
+        }
+      }
     }
     return;
   }
@@ -249,6 +257,31 @@ function handleKV(
       message: `Key [${key}] outside of any known section.`,
       line: lineNumber,
     });
+  }
+}
+
+/**
+ * Maps a GAEB 2000 [Key] to the matching BoqItem.priceComponents slot.
+ * Accepts the two conventions we see in the wild: explicit German labels
+ * ([EPLohn] / [EPStoff] / [EPGeraet] / [EPSonst]) and indexed positional
+ * keys ([EPAnteil1] … [EPAnteil4], same labor/material/equipment/other
+ * order as GAEB DA XML 3.3).
+ */
+function priceComponentKey(
+  key: string,
+): 'labor' | 'material' | 'equipment' | 'other' | null {
+  switch (key) {
+    case 'EPLohn': return 'labor';
+    case 'EPStoff': return 'material';
+    case 'EPGeraet':
+    case 'EPGerät': return 'equipment';
+    case 'EPSonst':
+    case 'EPSonstiges': return 'other';
+    case 'EPAnteil1': return 'labor';
+    case 'EPAnteil2': return 'material';
+    case 'EPAnteil3': return 'equipment';
+    case 'EPAnteil4': return 'other';
+    default: return null;
   }
 }
 

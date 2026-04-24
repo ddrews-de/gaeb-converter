@@ -259,6 +259,19 @@ export function parseGaeb90(text: string, daHint?: DANumber): GaebDocument {
         break;
       }
 
+      case '22': {
+        // Preisanteile: four fixed 11-char fields with implied 2 decimals,
+        // in the canonical labor / material / equipment / other order. The
+        // record begins with the same 9-char OZ field as 21; we ignore it
+        // because the context (currentItem) already tells us whose price
+        // components these are.
+        if (!currentItem) break;
+        const body = line.slice(2).slice(OZ_WIDTH);
+        const components = parsePriceComponents(body);
+        if (components) currentItem.priceComponents = components;
+        break;
+      }
+
       case '31':
         // Category close; hierarchy is already OZ-driven so no-op.
         break;
@@ -332,6 +345,33 @@ function splitOz(ozField: string): string[] {
   const trimmed = ozField.trim();
   if (!trimmed) return [];
   return trimmed.split(/\s+/);
+}
+
+/**
+ * Parses four 11-character fixed-width price component fields out of a
+ * record-22 payload (after the 9-char OZ prefix has been stripped). Each
+ * field holds an integer with 2 implied decimal places; missing / blank
+ * fields are simply dropped from the result.
+ *
+ * Order by convention: labor → material → equipment → other.
+ */
+function parsePriceComponents(
+  body: string,
+): BoqItem['priceComponents'] | undefined {
+  // Some exporters write the four fields space-separated rather than
+  // strictly column-aligned; a token-based split is tolerant of both.
+  const tokens = body.trim().split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return undefined;
+
+  const keys: Array<keyof NonNullable<BoqItem['priceComponents']>> = [
+    'labor', 'material', 'equipment', 'other',
+  ];
+  const result: NonNullable<BoqItem['priceComponents']> = {};
+  tokens.slice(0, keys.length).forEach((tok, i) => {
+    if (!/^\d+$/.test(tok)) return;
+    result[keys[i]] = Number(tok) / 100;
+  });
+  return Object.keys(result).length > 0 ? result : undefined;
 }
 
 function parseQuantityAndUnit(rest: string): { qty?: number; qu?: string } {
