@@ -37,9 +37,9 @@ import type {
   DANumber,
   GaebDocument,
   ItemType,
-  LongTextBlock,
   ProjectInfo,
 } from '../types';
+import { parseLongTextLine } from './gaeb90-longtext';
 
 const OZ_WIDTH = 9;
 const ART_WIDTH = 3;
@@ -224,8 +224,10 @@ export function parseGaeb90(text: string, daHint?: DANumber): GaebDocument {
         if (!currentItem) break;
         const paragraph = cleanLongTextLine(line.slice(2));
         if (!paragraph) break;
+        const runs = parseLongTextLine(paragraph);
+        if (runs.length === 0) break;
         if (!currentItem.longText) currentItem.longText = [];
-        currentItem.longText.push(makeParagraph(paragraph));
+        currentItem.longText.push({ kind: 'paragraph', runs });
         break;
       }
 
@@ -336,10 +338,6 @@ function cleanLongTextLine(raw: string): string {
   // 26-lines are visually indented by 3 leading spaces. Preserve the real
   // content and strip only that indent, not legitimate whitespace inside.
   return raw.replace(/^ {0,3}/, '').trimEnd();
-}
-
-function makeParagraph(text: string): LongTextBlock {
-  return { kind: 'paragraph', runs: [{ text }] };
 }
 
 function truncate(s: string, max: number): string {

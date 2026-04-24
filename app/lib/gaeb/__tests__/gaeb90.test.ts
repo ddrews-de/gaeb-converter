@@ -153,6 +153,80 @@ describe('parseGaeb90 (synthetic)', () => {
     );
   });
 
+  it('keeps plain-text long-text as a single run when no control codes are present', () => {
+    const src = [
+      line('00        83L                                                 11PPPPI0090', 1),
+      line('11 1       N    X', 2),
+      line('21 1  10   NNN         00000001000psch', 3),
+      line('25Kurztext', 4),
+      line('26   reiner Text ohne Formatierung', 5),
+      line('99', 6),
+    ].join('\n');
+    const doc = parseGaeb90(src);
+    const items = flatItems(doc.award.boq);
+    expect(items[0].longText).toHaveLength(1);
+    expect(items[0].longText![0].runs).toHaveLength(1);
+    expect(items[0].longText![0].runs[0]).toEqual({
+      text: 'reiner Text ohne Formatierung',
+    });
+  });
+
+  it('splits a 26-line with ~B~…~N~ into bold and normal runs', () => {
+    const src = [
+      line('00        83L                                                 11PPPPI0090', 1),
+      line('11 1       N    X', 2),
+      line('21 1  10   NNN         00000001000psch', 3),
+      line('25Kurztext', 4),
+      line('26   Start ~B~fett~N~ Ende', 5),
+      line('99', 6),
+    ].join('\n');
+    const runs = flatItems(parseGaeb90(src).award.boq)[0].longText![0].runs;
+    expect(runs).toEqual([
+      { text: 'Start ' },
+      { text: 'fett', bold: true },
+      { text: ' Ende' },
+    ]);
+  });
+
+  it('stacks bold + italic (~B~ then ~K~) and resets on ~N~', () => {
+    const src = [
+      line('00        83L                                                 11PPPPI0090', 1),
+      line('11 1       N    X', 2),
+      line('21 1  10   NNN         00000001000psch', 3),
+      line('25Kurztext', 4),
+      line('26   ~B~bold~K~fett-kursiv~N~normal', 5),
+      line('99', 6),
+    ].join('\n');
+    const runs = flatItems(parseGaeb90(src).award.boq)[0].longText![0].runs;
+    expect(runs).toEqual([
+      { text: 'bold', bold: true },
+      { text: 'fett-kursiv', bold: true, italic: true },
+      { text: 'normal' },
+    ]);
+  });
+
+  it('handles underline (~U~) and preserves flags across multiple 26-lines', () => {
+    const src = [
+      line('00        83L                                                 11PPPPI0090', 1),
+      line('11 1       N    X', 2),
+      line('21 1  10   NNN         00000001000psch', 3),
+      line('25Kurztext', 4),
+      line('26   ~U~unterstrichen~N~ normal', 5),
+      line('26   zweite Zeile ~B~fett~N~', 6),
+      line('99', 7),
+    ].join('\n');
+    const longText = flatItems(parseGaeb90(src).award.boq)[0].longText!;
+    expect(longText).toHaveLength(2);
+    expect(longText[0].runs).toEqual([
+      { text: 'unterstrichen', underline: true },
+      { text: ' normal' },
+    ]);
+    expect(longText[1].runs).toEqual([
+      { text: 'zweite Zeile ' },
+      { text: 'fett', bold: true },
+    ]);
+  });
+
   it('records a warning for unknown record kinds', () => {
     const src = [
       line('00        83L               X                               M', 1),
