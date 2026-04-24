@@ -20,6 +20,8 @@ export type { DetectResult } from './detect';
 export { GaebXmlParseError } from './parsers/gaebXml';
 export { Gaeb90ParseError } from './parsers/gaeb90';
 export { Gaeb2000ParseError } from './parsers/gaeb2000';
+export { validateGaebXml33 } from './validate';
+export type { ValidationIssue, ValidationResult } from './validate';
 
 export interface ConvertResult {
   doc: GaebDocument;
