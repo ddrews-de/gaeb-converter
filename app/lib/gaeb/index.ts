@@ -11,12 +11,14 @@ import { detectFormat as detectFormatImpl } from './detect';
 import { decode } from './encoding';
 import { parseGaebXml } from './parsers/gaebXml';
 import { parseGaeb90 } from './parsers/gaeb90';
+import { parseGaeb2000 } from './parsers/gaeb2000';
 
 export * from './types';
 export { FormatDetectionError } from './detect';
 export type { DetectResult } from './detect';
 export { GaebXmlParseError } from './parsers/gaebXml';
 export { Gaeb90ParseError } from './parsers/gaeb90';
+export { Gaeb2000ParseError } from './parsers/gaeb2000';
 
 export interface ConvertResult {
   doc: GaebDocument;
@@ -45,9 +47,13 @@ export function parse(bytes: Uint8Array, fileName: string): GaebDocument {
     return doc;
   }
 
-  throw new Error(
-    `Parser for ${detected.generation} not implemented yet (plan step 7).`,
-  );
+  if (detected.generation === 'gaeb2000') {
+    const doc = parseGaeb2000(text, detected.da);
+    doc.sourceEncoding = encoding;
+    return doc;
+  }
+
+  throw new Error(`Parser for ${detected.generation} not implemented yet.`);
 }
 
 export function serialize(_doc: GaebDocument): string {
