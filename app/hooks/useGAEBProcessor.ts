@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import { GAEBParser, GAEBData } from '../lib/gaeb-parser';
+import { readGaebFile } from '../lib/gaeb/encoding';
 
 interface UseGAEBProcessorReturn {
   processedFiles: GAEBData[];
@@ -30,11 +31,8 @@ export function useGAEBProcessor(): UseGAEBProcessorReturn {
         throw new Error(`Unsupported file type: ${fileExtension}. Please use .gaeb, .d83, .p83, or .x83 files.`);
       }
 
-      // Read file content
-      const content = await readFileAsText(file);
-      
-      // Parse GAEB content
-      const gaebData = GAEBParser.parse(content, file.name);
+      const { text } = await readGaebFile(file);
+      const gaebData = GAEBParser.parse(text, file.name);
       
       // Add to processed files
       setProcessedFiles(prev => {
@@ -72,26 +70,3 @@ export function useGAEBProcessor(): UseGAEBProcessorReturn {
   };
 }
 
-// Helper function to read file as text
-function readFileAsText(file: File): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    
-    reader.onload = (e) => {
-      const result = e.target?.result;
-      if (typeof result === 'string') {
-        resolve(result);
-      } else {
-        reject(new Error('Failed to read file as text'));
-      }
-    };
-    
-    reader.onerror = () => {
-      reject(new Error('Failed to read file'));
-    };
-    
-    // Try reading as text first
-    // For binary GAEB files, we might need different encoding handling
-    reader.readAsText(file, 'utf-8');
-  });
-}
