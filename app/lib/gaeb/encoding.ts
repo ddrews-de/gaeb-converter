@@ -43,10 +43,24 @@ export function decode(
 
   let text = decodeWith(bytes, target);
 
-  if (encoding === 'auto' && target === 'windows-1252' && looksDoubleEncoded(text)) {
-    const utf8Text = decodeWith(bytes, 'utf-8');
-    if (!utf8Text.includes('�')) {
-      return { text: normalizeNewlines(utf8Text), encoding: 'utf-8', bytes };
+  if (encoding === 'auto' && target === 'windows-1252') {
+    if (looksDoubleEncoded(text)) {
+      const utf8Text = decodeWith(bytes, 'utf-8');
+      if (!utf8Text.includes('�')) {
+        return { text: normalizeNewlines(utf8Text), encoding: 'utf-8', bytes };
+      }
+    }
+    // Many GAEB 90 files produced by DOS-era tools are CP437, not Windows-1252.
+    // Heuristics to detect this from the byte stream:
+    //   1. Any byte in 0x80–0x9F range (Windows-1252 mostly has punctuation
+    //      or unassigned there; CP437 has umlauts and line-drawing glyphs),
+    //   2. OR CP437 decoding yields more German umlauts than Win1252 did.
+    if (looksLikeCp437(bytes) || hasMoreGermanChars(bytes, text)) {
+      return {
+        text: normalizeNewlines(decodeWith(bytes, 'cp437')),
+        encoding: 'cp437',
+        bytes,
+      };
     }
   }
 
@@ -55,6 +69,31 @@ export function decode(
   }
 
   return { text: normalizeNewlines(text), encoding: target, bytes };
+}
+
+const UMLAUT_RE = /[äöüÄÖÜß]/g;
+
+function looksLikeCp437(bytes: Uint8Array): boolean {
+  // Bytes 0x80–0x8F are reserved / unassigned in Windows-1252 (with just two
+  // exceptions: 0x80 = €, 0x8A = Š, 0x8C = Œ etc. — but most are unassigned
+  // and decode to the Latin-1 control range U+0080–U+008F). If we see even a
+  // single 0x81 / 0x83 / 0x85 / 0x88 / 0x8D / 0x8F byte, the file is almost
+  // certainly CP437 rather than Windows-1252.
+  for (let i = 0; i < Math.min(bytes.length, 16384); i++) {
+    const b = bytes[i];
+    if (b === 0x81 || b === 0x83 || b === 0x85 || b === 0x88 || b === 0x8d || b === 0x8f) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function hasMoreGermanChars(bytes: Uint8Array, win1252Text: string): boolean {
+  const winCount = (win1252Text.match(UMLAUT_RE) ?? []).length;
+  if (winCount > 10) return false;
+  const cp437Text = decodeWith(bytes, 'cp437');
+  const cpCount = (cp437Text.match(UMLAUT_RE) ?? []).length;
+  return cpCount > winCount * 3 && cpCount > 3;
 }
 
 export async function readGaebFile(file: File): Promise<DecodedFile> {

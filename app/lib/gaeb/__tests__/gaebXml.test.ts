@@ -190,12 +190,12 @@ describe('façade parse() routes XML files to the XML parser', () => {
     expect(doc.da).toBe(83);
   });
 
-  it('throws a clear "not implemented" error for GAEB 90 / 2000 until those steps land', () => {
+  it('throws a clear "not implemented" error for GAEB 2000 until step 7 lands', () => {
     const bytes = new Uint8Array(
-      readFileSync(join(TEST_DATA_DIR, 'LV_Los01.D83')),
+      readFileSync(join(TEST_DATA_DIR, 'LV_Los01.P83')),
     );
-    expect(() => facadeParse(bytes, 'LV_Los01.D83')).toThrow(
-      /Parser for gaeb90 not implemented yet/,
+    expect(() => facadeParse(bytes, 'LV_Los01.P83')).toThrow(
+      /Parser for gaeb2000 not implemented yet/,
     );
   });
 });
