@@ -64,6 +64,38 @@ npm run test:watch   # Vitest im Watch-Modus
   Node-Testlauf
 - `xlsx` 0.18 für den Excel-Export
 
+## HTTP API
+
+Neben der Browser-UI bietet das Projekt einen `POST /api/convert`-Endpoint für
+Batch- und CLI-Einsatz. Zwei Eingabeformen werden akzeptiert:
+
+**Raw-Body + `x-filename`-Header** (scriptbar):
+
+```bash
+curl -X POST \
+  --data-binary @TestData/LV_Los01.D83 \
+  -H "x-filename: LV_Los01.D83" \
+  http://localhost:3000/api/convert \
+  -o LV_Los01.X83
+```
+
+**multipart/form-data** (`curl -F`):
+
+```bash
+curl -X POST \
+  -F "file=@TestData/LV_Los01.P83" \
+  http://localhost:3000/api/convert \
+  -o LV_Los01.X83
+```
+
+Ausgabe ist `application/xml` mit passendem `Content-Disposition`-Header (die
+DA-Nummer bleibt erhalten, `.d83`/`.p83` → `.x83` usw.). Fehler kommen als
+JSON: `{ "error": "...", "code": "INVALID_INPUT"|"UNRECOGNIZED_FORMAT"|"INTERNAL_ERROR" }`.
+
+Die Daten werden nur im Speicher verarbeitet — es wird nichts auf Platte
+gespeichert. Für Privacy-sensible Setups dockerisiert laufen lassen und die
+Route per Reverse-Proxy abschirmen.
+
 ## Docker
 
 ```bash
