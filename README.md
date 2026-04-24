@@ -84,11 +84,36 @@ if (!result.valid) {
 Geprüft werden u. a. Root-Element + Namespace, `<GAEBInfo><Version>`,
 `<Award>` mit erkennbarer DA-Nummer (Namespace oder `<DP>`), jede
 `<BoQCtgy>` hat `RNoPart` + `<LblTx>`, jedes `<Item>` hat `RNoPart`,
-`<Qty>`, `<QU>` und `<Description>`. Keine echte XSD-Validierung — die
-offiziellen GAEB-Schemas werden vom GAEB Bundesverband nicht frei
-redistribuiert, und dieses Modul ist bewusst schemalos gehalten. Für
-konformitätskritische Setups kann `libxmljs2` + lokal abgelegte XSDs
-nachgerüstet werden, ohne die Public-API zu brechen.
+`<Qty>`, `<QU>` und `<Description>`.
+
+### Strikte XSD-Validierung (optional)
+
+Für konformitätskritische Setups gibt es `validateGaebXml33WithXsd()` als
+zusätzlichen strikten Validator via `libxmljs2` + lokal abgelegtem XSD-Set.
+Weder die Library noch die Schemas werden mitgeliefert — der GAEB
+Bundesverband gewährt für die XSDs keine Redistribution.
+
+```bash
+# Einmalig installieren (native Dep, baut libxml2)
+npm install libxmljs2
+
+# XSDs vom Bundesverband in ein lokales Verzeichnis legen,
+# Master-Datei als GAEB_DA_XML_3.3.xsd benennen.
+export GAEB_XSD_DIR=/path/to/schemas
+```
+
+```ts
+import { validateGaebXml33WithXsd } from '@/lib/gaeb';
+
+const result = await validateGaebXml33WithXsd(xml, {
+  xsdDir: process.env.GAEB_XSD_DIR!,
+});
+```
+
+Ist `libxmljs2` nicht installiert, resolved die Funktion trotzdem — mit
+einem einzelnen `ValidationResult`-Error, der genau die nachzurüstenden
+Schritte nennt. So bleibt der schemalose Validator der Default und das
+native Modul eine opt-in Erweiterung.
 
 ## HTTP API
 
