@@ -3,6 +3,8 @@
 import { useState, useCallback } from 'react';
 import { GAEBParser, GAEBData } from '../lib/gaeb-parser';
 import { readGaebFile } from '../lib/gaeb/encoding';
+import { parse as parseNew } from '../lib/gaeb';
+import { toViewModel } from '../lib/gaeb/legacy/toViewModel';
 
 interface UseGAEBProcessorReturn {
   processedFiles: GAEBData[];
@@ -31,8 +33,8 @@ export function useGAEBProcessor(): UseGAEBProcessorReturn {
         throw new Error(`Unsupported file type: ${fileExtension}. Please use .gaeb, .d83, .p83, or .x83 files.`);
       }
 
-      const { text } = await readGaebFile(file);
-      const gaebData = GAEBParser.parse(text, file.name);
+      const { text, bytes } = await readGaebFile(file);
+      const gaebData = parseThroughNewPipeline(bytes, text, file.name);
       
       // Add to processed files
       setProcessedFiles(prev => {
@@ -70,3 +72,25 @@ export function useGAEBProcessor(): UseGAEBProcessorReturn {
   };
 }
 
+/**
+ * Tries the new parse pipeline first; falls back to the legacy heuristic
+ * parser for GAEB 90 / GAEB 2000 inputs until the dedicated parsers land
+ * (plan steps 6 and 7). This keeps the viewer functional end-to-end
+ * throughout the migration.
+ */
+function parseThroughNewPipeline(
+  bytes: Uint8Array,
+  text: string,
+  fileName: string,
+): GAEBData {
+  try {
+    const doc = parseNew(bytes, fileName);
+    return toViewModel(doc, fileName, text);
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    if (/not implemented yet/.test(msg)) {
+      return GAEBParser.parse(text, fileName);
+    }
+    throw err;
+  }
+}
