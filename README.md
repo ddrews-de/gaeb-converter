@@ -1,28 +1,74 @@
 # GAEB Converter
 
 Konvertiert GAEB-Leistungsverzeichnisse der Generationen **GAEB 90** (`.d8x`) und
-**GAEB 2000** (`.p8x`) lokal im Browser in modernes **GAEB DA XML 3.3** (`.x8x`).
-Alle Verarbeitung läuft clientseitig – es werden keine LV-Daten an einen Server
-übertragen.
+**GAEB 2000** (`.p8x`) lokal im Browser oder via HTTP-Endpoint in modernes
+**GAEB DA XML 3.3** (`.x8x`). Eingangsseitig werden zusätzlich GAEB DA XML 3.1
+und 3.2 verstanden. Alle Verarbeitung läuft standardmäßig clientseitig — es
+werden keine LV-Daten an einen fremden Server übertragen.
 
 ## Features
 
-- ✅ Upload (Drag & Drop) von GAEB 90, GAEB 2000 und GAEB DA XML (Versionen
-  3.1, 3.2, 3.3) — DA 81 – 86
-- ✅ Encoding-Auto-Detection: UTF-8, Windows-1252 und **CP437** (alte DOS-Exporte).
-  Umlaute überleben den Round-Trip.
-- ✅ Strukturierter Parser pro Generation, keine Heuristik mehr
-- ✅ Download als **GAEB DA XML 3.3** mit erhaltener DA-Nummer
-  (`LV_Los01.d83` → `LV_Los01.x83`)
-- ✅ Viewer mit Kurz-/Langtext, Menge/Einheit/Preis und hierarchischer Gliederung
-- ✅ Excel-/CSV-Export im Produktionslisten-Format
-- ✅ 136 Vitest-Cases inkl. Round-Trip-Tests gegen echte LVs
-- ✅ Docker-Setup (Multi-Stage, `node:22-alpine`, Standalone Output, ~150 MB)
+### Eingabe
+
+- Upload (Drag & Drop) von GAEB 90, GAEB 2000 und GAEB DA XML (Versionen 3.1 /
+  3.2 / 3.3), DA-Nummern 81–86
+- Generische Endung `.gaeb`: Generation und DA-Nummer werden per Magic-Byte-
+  Sniffing erkannt
+- Encoding-Auto-Detection UTF-8 / Windows-1252 / **CP437** (alte DOS-Exporte —
+  Umlaute überleben den Round-Trip)
+- Strukturierter Parser pro Generation, keine Heuristik
+- GAEB-90-**Langtext-Steuercodes** (`~B~`/`~K~`/`~U~`/`~N~`) als Fett/Kursiv/
+  Unterstrichen geparst
+- `T0`/`T1`/`T9`-**Preamble-Blöcke** vor dem eigentlichen GAEB-90-LV werden
+  übersprungen (Flechtingen-Dialekt)
+- **Preisanteile** Lohn / Stoff / Gerät / Sonstige in allen drei Parsern (GAEB-90
+  Satz 22, GAEB-2000 `[EPLohn]`/`[EPStoff]`/`[EPGeraet]`/`[EPSonst]` bzw.
+  `[EPAnteil1..4]`, XML `<UPComp Label="…">`)
+
+### Ausgabe
+
+- Download als **GAEB DA XML 3.3** mit erhaltener DA-Nummer
+  (`LV_Los01.d83` → `LV_Los01.X83`)
+- **Konvertierungsprotokoll** `<base>.audit.txt` mit Header-Metadaten,
+  BoQ-Baum und nach Severity gruppierten Warnungen
+- **Positionsliste** als XLSX oder CSV mit eigenen Spalten für EP, GP und die
+  vier Preisanteile
+- **Produktionsliste** (Legacy-Werkstatt-Tracking) als XLSX oder CSV
+
+### UI
+
+- Viewer mit Kurz-/Langtext, Menge/Einheit/Preis und hierarchischer Gliederung
+- Per-File-Cards mit Severity-Badges (Fehler / Warnungen / Hinweise) und
+  prominenten Inline-Warnungen, default-geöffnet bei Fehlern
+- WebWorker für die Parse+Convert-Pipeline — UI bleibt bei großen LVs
+  interaktiv; synchroner Fallback in Umgebungen ohne `Worker`
+
+### Validierung
+
+- Schemaloser Struktur-Validator `validateGaebXml33()` immer verfügbar
+- Optionale strikte XSD-Validierung über `validateGaebXml33WithXsd()` mit
+  `libxmljs2` + lokal abgelegten GAEB-3.3-XSDs (beides opt-in)
+
+### HTTP-API
+
+- `POST /api/convert` akzeptiert Raw-Body+`x-filename`-Header oder
+  `multipart/form-data`, antwortet mit `application/xml` + passendem
+  `Content-Disposition`-Filename
+- Fehler als JSON `{ error, code }` (`INVALID_INPUT` / `UNRECOGNIZED_FORMAT` /
+  `INTERNAL_ERROR`)
+- Daten nur im Speicher, kein Disk-Schreibvorgang
+
+### Infrastruktur
+
+- Docker-Setup (Multi-Stage, `node:22-alpine`, Standalone Output, ~150 MB,
+  Non-Root-User)
+- 187 Vitest-Unit- und Round-Trip-Tests (+ 2 optionale XSD-Tests, skipped ohne
+  Schemas) und 4 Playwright-E2E-Tests für den Browser-Flow
 
 ## Unterstützte Formate
 
-| DA | Zweck | GAEB 90 (in) | GAEB 2000 (in) | GAEB DA XML (in/out) |
-|----|-------|:---:|:---:|:---:|
+| DA | Zweck               | GAEB 90 (in) | GAEB 2000 (in) | GAEB DA XML (in/out) |
+|----|---------------------|:---:|:---:|:---:|
 | 81 | Kostenanschlag      | `.d81` | `.p81` | `.x81` |
 | 82 | Kostenberechnung    | `.d82` | `.p82` | `.x82` |
 | 83 | LV-Ausschreibung    | `.d83` | `.p83` | `.x83` |
@@ -30,11 +76,8 @@ Alle Verarbeitung läuft clientseitig – es werden keine LV-Daten an einen Serv
 | 85 | Nebenangebot        | `.d85` | `.p85` | `.x85` |
 | 86 | Auftragserteilung   | `.d86` | `.p86` | `.x86` |
 
-Zusätzlich wird die generische Endung `.gaeb` akzeptiert; Generation und
-DA-Nummer werden per Magic-Byte-Sniffing erkannt.
-
-Eingabeseitig werden auch **GAEB DA XML 3.1** und **3.2** verstanden. Der
-Export ist immer 3.3, die DA-Nummer bleibt erhalten.
+Plus `.gaeb` mit Magic-Sniffing. Eingangsseitig außerdem GAEB DA XML 3.1 und
+3.2. Der Export ist immer 3.3; die DA-Nummer bleibt erhalten.
 
 ## Schnellstart
 
@@ -53,8 +96,8 @@ npm run start        # Production-Server
 npm run lint         # ESLint
 npm test             # Vitest einmalig
 npm run test:watch   # Vitest im Watch-Modus
-npm run test:e2e     # Playwright End-to-End (benötigt einmalig
-                     #   `npx playwright install chromium`)
+npm run test:e2e     # Playwright End-to-End
+                     #   (einmalig: `npx playwright install chromium`)
 ```
 
 ## Tech-Stack
@@ -62,67 +105,15 @@ npm run test:e2e     # Playwright End-to-End (benötigt einmalig
 - Next.js 16 (App Router, Standalone Output)
 - React 19, TypeScript 5
 - Tailwind CSS 4
-- Vitest 4 für Unit- und Round-Trip-Tests, `@xmldom/xmldom` als DOMParser im
-  Node-Testlauf
-- Playwright 1.59 für browserbasierte End-to-End-Tests (Upload → Convert →
-  Download-Buttons)
 - `xlsx` 0.18 für den Excel-Export
-
-## Validierung
-
-Der Library-Export `validateGaebXml33(xml)` prüft GAEB-DA-XML-3.3-Output
-schemalos auf strukturelle Korrektheit. Nützlich nach `serialize()` oder als
-Sanity-Check für fremde XML-Dateien, bevor sie durch den Parser laufen:
-
-```ts
-import { validateGaebXml33, serialize, parse } from '@/lib/gaeb';
-
-const result = validateGaebXml33(xml);
-if (!result.valid) {
-  for (const issue of result.issues) {
-    console.error(`[${issue.severity}] ${issue.path}: ${issue.message}`);
-  }
-}
-```
-
-Geprüft werden u. a. Root-Element + Namespace, `<GAEBInfo><Version>`,
-`<Award>` mit erkennbarer DA-Nummer (Namespace oder `<DP>`), jede
-`<BoQCtgy>` hat `RNoPart` + `<LblTx>`, jedes `<Item>` hat `RNoPart`,
-`<Qty>`, `<QU>` und `<Description>`.
-
-### Strikte XSD-Validierung (optional)
-
-Für konformitätskritische Setups gibt es `validateGaebXml33WithXsd()` als
-zusätzlichen strikten Validator via `libxmljs2` + lokal abgelegtem XSD-Set.
-Weder die Library noch die Schemas werden mitgeliefert — der GAEB
-Bundesverband gewährt für die XSDs keine Redistribution.
-
-```bash
-# Einmalig installieren (native Dep, baut libxml2)
-npm install libxmljs2
-
-# XSDs vom Bundesverband in ein lokales Verzeichnis legen,
-# Master-Datei als GAEB_DA_XML_3.3.xsd benennen.
-export GAEB_XSD_DIR=/path/to/schemas
-```
-
-```ts
-import { validateGaebXml33WithXsd } from '@/lib/gaeb';
-
-const result = await validateGaebXml33WithXsd(xml, {
-  xsdDir: process.env.GAEB_XSD_DIR!,
-});
-```
-
-Ist `libxmljs2` nicht installiert, resolved die Funktion trotzdem — mit
-einem einzelnen `ValidationResult`-Error, der genau die nachzurüstenden
-Schritte nennt. So bleibt der schemalose Validator der Default und das
-native Modul eine opt-in Erweiterung.
+- Vitest 4 für Unit- und Round-Trip-Tests, `@xmldom/xmldom` als `DOMParser`-
+  Polyfill im Node-Testlauf
+- Playwright 1.59 für browserbasierte End-to-End-Tests
 
 ## HTTP API
 
-Neben der Browser-UI bietet das Projekt einen `POST /api/convert`-Endpoint für
-Batch- und CLI-Einsatz. Zwei Eingabeformen werden akzeptiert:
+`POST /api/convert` — gleicher Conversion-Flow wie die Browser-UI, nur
+skriptbar. Zwei Eingabeformen:
 
 **Raw-Body + `x-filename`-Header** (scriptbar):
 
@@ -143,13 +134,63 @@ curl -X POST \
   -o LV_Los01.X83
 ```
 
-Ausgabe ist `application/xml` mit passendem `Content-Disposition`-Header (die
-DA-Nummer bleibt erhalten, `.d83`/`.p83` → `.x83` usw.). Fehler kommen als
-JSON: `{ "error": "...", "code": "INVALID_INPUT"|"UNRECOGNIZED_FORMAT"|"INTERNAL_ERROR" }`.
+Antwort: `application/xml` mit `Content-Disposition: attachment; filename=…`,
+DA-Nummer bleibt erhalten. Fehler als JSON:
 
-Die Daten werden nur im Speicher verarbeitet — es wird nichts auf Platte
-gespeichert. Für Privacy-sensible Setups dockerisiert laufen lassen und die
-Route per Reverse-Proxy abschirmen.
+```json
+{ "error": "...", "code": "INVALID_INPUT" | "UNRECOGNIZED_FORMAT" | "INTERNAL_ERROR" }
+```
+
+Die Daten werden nur im Speicher verarbeitet — nichts landet auf Platte. Für
+Privacy-sensible Setups dockerisiert laufen lassen und die Route per
+Reverse-Proxy abschirmen.
+
+## Validierung
+
+### Schemalos (immer verfügbar)
+
+`validateGaebXml33(xml)` prüft GAEB-DA-XML-3.3-Output schemalos auf
+strukturelle Korrektheit. Nützlich nach `serialize()` oder als Sanity-Check
+für fremde XML-Dateien:
+
+```ts
+import { validateGaebXml33 } from '@/lib/gaeb';
+
+const result = validateGaebXml33(xml);
+if (!result.valid) {
+  for (const issue of result.issues) {
+    console.error(`[${issue.severity}] ${issue.path}: ${issue.message}`);
+  }
+}
+```
+
+Geprüft werden u. a. Root-Element + Namespace, `<GAEBInfo><Version>`,
+`<Award>` mit erkennbarer DA-Nummer (Namespace oder `<DP>`), jede
+`<BoQCtgy>` hat `RNoPart` + `<LblTx>`, jedes `<Item>` hat `RNoPart`,
+`<Qty>`, `<QU>` und `<Description>`.
+
+### Strikte XSD-Validierung (optional)
+
+`validateGaebXml33WithXsd()` — echter XSD-Check via `libxmljs2`. Weder die
+Library noch die GAEB-3.3-XSDs werden mitgeliefert (der GAEB Bundesverband
+gewährt keine Redistribution).
+
+```bash
+npm install libxmljs2                  # native libxml2-Binding
+export GAEB_XSD_DIR=/path/to/schemas   # Master-Datei als GAEB_DA_XML_3.3.xsd
+```
+
+```ts
+import { validateGaebXml33WithXsd } from '@/lib/gaeb';
+
+const result = await validateGaebXml33WithXsd(xml, {
+  xsdDir: process.env.GAEB_XSD_DIR!,
+});
+```
+
+Fehlt `libxmljs2`, resolved die Funktion trotzdem — mit einem einzelnen
+Error, der die nachzurüstenden Schritte nennt. Schemalose Prüfung bleibt der
+Default.
 
 ## Docker
 
@@ -163,79 +204,100 @@ Troubleshooting in [`DOCKER.md`](DOCKER.md).
 ## Architektur
 
 ```
-Upload (FileUpload)
-    │  ArrayBuffer
-    ▼
-encoding.ts ── TextDecoder(windows-1252 / cp437 / utf-8, auto-detect)
-    │
-    ▼
-detect.ts ── Endung + Magic-Sniff ──► { generation, da }
-    │
-    ├─► parsers/gaeb90.ts     (Satzkennungen 00/01/02/03/08/11/12/20/21/25/26/27/31/99)
-    ├─► parsers/gaeb2000.ts   (#begin[Section]/[Key]value[end] Schlüssel-Wert-Format)
-    └─► parsers/gaebXml.ts    (GAEB DA XML 3.1/3.2/3.3 via DOMParser)
-             │
-             ▼
-      GaebDocument (gemeinsames Domain-Modell, types.ts)
-             │
-             ├─► serializer/gaebXml33.ts ──► GAEB DA XML 3.3 (Blob-Download)
-             └─► legacy/toViewModel.ts   ──► Viewer + Excel-Export
+                      ┌─────────────────────────────┐
+Browser-UI            │  app/api/convert/route.ts   │  HTTP API
+ (app/page.tsx)       └──────────────┬──────────────┘
+  │                                  │
+  ▼                                  │
+FileUpload ─► useGAEBProcessor ─► runConvert (worker/run.ts)
+                                     │
+                                     ▼
+                       worker/convert.worker.ts
+                                     │
+                                     ▼
+               ┌─────────────────────┴───────────────────────┐
+               │  app/lib/gaeb/index.ts  (parse / serialize / convert)  │
+               └─────────────────────┬───────────────────────┘
+                                     │
+                          ┌──────────┴──────────┐
+                          ▼                     ▼
+            encoding.ts (win1252 /     detect.ts (Endung +
+              cp437 / utf-8)              Magic-Sniff)
+                                     │
+     ┌───────────────────────────────┼──────────────────────────────┐
+     ▼                               ▼                              ▼
+parsers/gaeb90.ts               parsers/gaeb2000.ts           parsers/gaebXml.ts
+(Sätze 00/01/02/03/08/11/12/    (#begin[Section] /            (GAEB DA XML 3.1
+ 20/21/22/25/26/27/31/99,       [Key]value[end])               / 3.2 / 3.3 via
+ Preamble-Skip + Steuercodes)                                   DOMParser)
+     └───────────────────────────────┼──────────────────────────────┘
+                                     ▼
+                    GaebDocument  (types.ts — gemeinsames Modell)
+                                     │
+      ┌──────────────┬───────────────┼───────────────┬──────────────┐
+      ▼              ▼               ▼               ▼              ▼
+serializer/       audit.ts        excel.ts       validate.ts    legacy/
+gaebXml33.ts    (.audit.txt)    (Positionsliste  (schemaloser   toViewModel.ts
+(3.3-XML)                        XLSX/CSV)        Struktur-     (GAEBViewer +
+                                                  Check)         Produktions-
+                                                                  liste)
+                                                 │
+                                                 └─► validate-xsd.ts
+                                                     (optional via libxmljs2)
 ```
 
 Alle Module leben unter `app/lib/gaeb/`. Öffentlicher Einstiegspunkt ist
 `app/lib/gaeb/index.ts` mit `parse(bytes, fileName)`, `serialize(doc)` und
-`convert(bytes, fileName)`.
+`convert(bytes, fileName)` sowie den Hilfsfunktionen `buildAuditLog`,
+`buildPositionListWorkbook`, `validateGaebXml33` und
+`validateGaebXml33WithXsd`.
 
 ## Tests
 
 ```bash
-npm test
+npm test              # Unit + Round-Trip (Vitest)
+npm run test:e2e      # Browser-Tests (Playwright, Chromium)
 ```
 
+**Vitest (13 Suites / 187 passed / 2 skipped):**
 - Synthetische Fixtures pro Modul
 - Round-Trip-Tests gegen die echten LVs im Ordner `TestData/`
 - Cross-Version-Parity zwischen GAEB XML 3.1, 3.2 und 3.3 desselben LVs
-- End-to-end: `.d83`/`.p83` → `GaebDocument` → `GAEB DA XML 3.3` → wieder parsen,
-  Item-Zähler stimmen überein; Umlaute aus CP437-Quellen landen intakt im XML
+- End-to-end: `.d83`/`.p83` → `GaebDocument` → `GAEB DA XML 3.3` → wieder
+  parsen, Item-Zähler stimmen überein; Umlaute aus CP437-Quellen landen
+  intakt im XML
+- Die 2 skipped Tests sind die strikten XSD-Validator-Cases; sie laufen
+  automatisch, sobald `GAEB_XSD_DIR` gesetzt und `libxmljs2` installiert ist
 
-Zusätzlich liegen unter `e2e/` Playwright-Specs, die den Upload-Flow gegen
-eine echte Browser-Instanz fahren (Datei-Upload per `<input type="file">`,
-XML- und Protokoll-Download, Positionsliste-Export). Einmalige Installation
-der Browser: `npx playwright install chromium`. Start: `npm run test:e2e`
-(fährt automatisch `npm run dev` hoch).
+**Playwright (`e2e/`, 4 Specs):** Upload per `<input type="file">`,
+XML-Download, Audit-Log-Download, Positionsliste-Export — jeweils mit
+echtem Browser-Download-Event. Einmalig: `npx playwright install chromium`.
+`npm run test:e2e` fährt automatisch `npm run dev` hoch.
 
 ## Grenzen der Konvertierung
 
-- **Langtext-Formatierung** (Fett/Kursiv) wird best-effort übernommen. Inline
-  `<span style="font-weight:bold">` im XML-Zweig funktioniert durchgehend;
-  Steuercodes in GAEB-90-Langtexten (`~B~`, `~K~`, `~U~`) werden derzeit nicht
-  interpretiert.
-- Das Dialekt-Fixture **Flechtingen GS AA.d83** nutzt `T0`/`T1`-Text-Baseline-
-  Records statt Satz 00 und wird daher nur mit Warnings geparst; das Standard-
-  GAEB-90-Layout der beiden `LV_Los0x.D83`-Fixtures funktioniert vollständig.
+- **Preisanteile** werden in allen drei Generationen gelesen und wieder
+  serialisiert. Weitergehende DA-84-spezifische Bieterinformationen
+  (Zuschlagsfaktoren, Angebots-Metadaten) sind aktuell nicht modelliert.
 - **REB-Binärformate** (`.d11`, `.d12` – Aufmaß) werden nicht unterstützt.
-- **XSD-Validierung** gegen das offizielle GAEB-3.3-Schema ist nicht integriert
-  (Schema nicht frei redistributierbar); Strukturprüfung erfolgt per
-  Round-Trip-Test.
-- **Bieterangaben (DA 84/85)** werden als LV durchgereicht. Preise und Preis-
-  anteile im Bieter-Block sind noch nicht vollständig modelliert.
+- **ÖNORM B2063** (österreichisches LV-Format) wird bewusst nicht importiert
+  — ist eigene Format-Familie, bei echtem Bedarf separat anzugehen.
+- **Strikte XSD-Konformität** ist nur mit lokal nachgerüsteten GAEB-Schemas
+  prüfbar; die schemalose Strukturvalidierung deckt die häufigsten Fehler
+  ab, ersetzt aber keinen offiziellen Validator.
 
 ## Roadmap
 
-- [ ] Interpretation von GAEB-90-Steuercodes (`~B~`/`~K~`/`~U~`) für
-  Fett/Kursiv/Unterstrichen im Langtext
-- [ ] Preisanteile Lohn/Stoff/Gerät/Sonstige (`<UPComp>` im XML)
-- [ ] WebWorker für LVs > 50 MB
-- [ ] Optionale Server-Route (`app/api/convert`) für Batch-Konvertierung
-- [ ] XSD-Validierung (lokales Schema)
-- [ ] ÖNORM B2063 Import
-- [ ] Unterstützung des `T0`/`T1`-GAEB-90-Text-Baseline-Dialekts
+Die im Next-Steps-Plan definierten Epics 1–6 sind umgesetzt. Offen:
+
+- [ ] **ÖNORM B2063 Import** (eigene Format-Familie, bei echtem Bedarf)
+- [ ] DA-84-Bieter-Metadaten (Zuschlagsfaktoren etc.) vollständig modellieren
+- [ ] GAEB-90-REB (`.d11`/`.d12`) Aufmaß-Formate
 
 ## Dokumentation
 
-- [`docs/IMPLEMENTATION_PLAN.md`](docs/IMPLEMENTATION_PLAN.md) – ursprünglicher
-  Implementierungsplan. Die meisten Schritte sind umgesetzt; verbleibende
-  Punkte sind in der Roadmap oben gespiegelt.
+- [`docs/IMPLEMENTATION_PLAN.md`](docs/IMPLEMENTATION_PLAN.md) – der ursprüngliche
+  Implementierungsplan und der Next-Steps-Plan für die offenen Roadmap-Epics.
 - [`DOCKER.md`](DOCKER.md) – Docker-Deployment, Compose, Scaling,
   Troubleshooting.
 
