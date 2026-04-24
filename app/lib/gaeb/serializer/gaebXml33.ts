@@ -14,6 +14,7 @@ import type {
   BoqNode,
   GaebDocument,
   ItemType,
+  PriceComponents,
   ProjectInfo,
 } from '../types';
 import { renderDescription } from './longtext';
@@ -137,6 +138,11 @@ function renderItem(item: BoqItem, indent: string): string {
     lines.push(`${indent} <UP>${formatNumber(item.unitPrice)}</UP>`);
   if (item.totalPrice !== undefined)
     lines.push(`${indent} <IT>${formatNumber(item.totalPrice)}</IT>`);
+  if (item.priceComponents) {
+    for (const line of renderPriceComponents(item.priceComponents, indent + ' ')) {
+      lines.push(line);
+    }
+  }
 
   const desc = renderDescription(
     { shortText: item.shortText, longText: item.longText },
@@ -146,6 +152,29 @@ function renderItem(item: BoqItem, indent: string): string {
 
   lines.push(`${indent}</Item>`);
   return lines.join('\n');
+}
+
+/**
+ * Emits <UPComp> children of an <Item> in the canonical order
+ * (labor / material / equipment / other) with a German Label attribute
+ * so GAEB validators and human readers can tell the components apart.
+ */
+function renderPriceComponents(pc: PriceComponents, indent: string): string[] {
+  const entries: Array<[keyof PriceComponents, string]> = [
+    ['labor', 'Lohn'],
+    ['material', 'Stoff'],
+    ['equipment', 'Gerät'],
+    ['other', 'Sonstiges'],
+  ];
+  const out: string[] = [];
+  for (const [key, label] of entries) {
+    const value = pc[key];
+    if (value === undefined) continue;
+    out.push(
+      `${indent}<UPComp Label="${xmlEscape(label)}">${formatNumber(value)}</UPComp>`,
+    );
+  }
+  return out;
 }
 
 function itemTypeTag(t: ItemType): string | null {
