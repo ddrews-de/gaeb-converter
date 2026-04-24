@@ -66,6 +66,14 @@ export function parseGaeb90(text: string, daHint?: DANumber): GaebDocument {
   let currentItem: BoqItem | null = null;
   let unknownRecordCount = 0;
 
+  // Some exporters prefix the actual LV with a free-form T0/T1/T9 text block
+  // (frei formatierte Baubeschreibung). That content has no counterpart in
+  // the structured domain model — we skip it until the first numeric record
+  // (00 / 01 / 11 / 21 / …) appears and record a single info warning so the
+  // user knows text context was dropped.
+  let inPreamble = true;
+  let preambleLineCount = 0;
+
   for (let i = 0; i < lines.length; i++) {
     const raw = lines[i];
     if (!raw) continue;
@@ -73,6 +81,26 @@ export function parseGaeb90(text: string, daHint?: DANumber): GaebDocument {
     const line = stripTrailer(raw);
     if (line.length < 2) continue;
     const kind = line.slice(0, 2);
+
+    if (inPreamble) {
+      if (/^\d\d$/.test(kind)) {
+        inPreamble = false;
+        if (preambleLineCount > 0) {
+          warnings.push({
+            severity: 'info',
+            code: 'T_PREAMBLE_SKIPPED',
+            message: `Skipped ${preambleLineCount} lines of T0/T1/T9 preamble text before the first structured record.`,
+          });
+        }
+      } else if (/^T[0-9]$/.test(kind)) {
+        preambleLineCount++;
+        continue;
+      } else {
+        // Any other unexpected leading record kind — stop preamble detection
+        // immediately and let the normal switch handle (and warn about) it.
+        inPreamble = false;
+      }
+    }
 
     switch (kind) {
       case '00': {

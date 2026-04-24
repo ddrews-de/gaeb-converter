@@ -227,6 +227,31 @@ describe('parseGaeb90 (synthetic)', () => {
     ]);
   });
 
+  it('skips a T0/T1/T9 preamble block and continues with the 00-record LV', () => {
+    const src = [
+      line('T0Projekt: Demo', 1),
+      line('T1Baubeschreibung Zeile 1', 2),
+      line('T1Baubeschreibung Zeile 2', 3),
+      line('T9', 4),
+      line('00        83L                                                 11PPPPI0090', 5),
+      line('01Demo Projekt                            01.04.26', 6),
+      line('11 1       N    Kategorie', 7),
+      line('21 1  10   NNN         00000001000psch', 8),
+      line('25Pos 1', 9),
+      line('99', 10),
+    ].join('\n');
+    const doc = parseGaeb90(src);
+    expect(doc.da).toBe(83);
+    expect(doc.prjInfo.name).toBe('Demo Projekt');
+    expect(flatItems(doc.award.boq)).toHaveLength(1);
+    expect(flatCategories(doc.award.boq)[0].label).toBe('Kategorie');
+    const preambleWarning = doc.warnings.find(
+      w => w.code === 'T_PREAMBLE_SKIPPED',
+    );
+    expect(preambleWarning).toBeDefined();
+    expect(preambleWarning!.message).toMatch(/Skipped 4 lines/);
+  });
+
   it('records a warning for unknown record kinds', () => {
     const src = [
       line('00        83L               X                               M', 1),
@@ -257,6 +282,19 @@ describe('parseGaeb90 against real TestData', () => {
       expect(item.shortText.length).toBeGreaterThan(0);
       expect(item.itemType).toBe('normal');
     }
+  });
+
+  it('parses Flechtingen GS AA.d83 (513-line T0/T1 preamble before 00-record LV)', () => {
+    const doc = parseGaeb90(readFixtureAsText('Flechtingen GS AA.d83'));
+    expect(doc.da).toBe(83);
+    const items = flatItems(doc.award.boq);
+    expect(items.length).toBeGreaterThan(0);
+    const preambleWarning = doc.warnings.find(
+      w => w.code === 'T_PREAMBLE_SKIPPED',
+    );
+    expect(preambleWarning).toBeDefined();
+    // The fixture has 513 T-records before the first structured record.
+    expect(preambleWarning!.message).toMatch(/513/);
   });
 
   it('parses LV_Los02.D83 with nested hierarchy (Bereich > Abschnitt > Pos.)', () => {
