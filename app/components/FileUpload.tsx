@@ -1,11 +1,14 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { useGAEBProcessor } from '../hooks/useGAEBProcessor';
-import { GAEBData } from '../lib/gaeb-parser';
+import {
+  SUPPORTED_GAEB_EXTENSIONS,
+  useGAEBProcessor,
+  type ProcessedFile,
+} from '../hooks/useGAEBProcessor';
 
 interface FileUploadProps {
-  onFileProcessed?: (data: GAEBData) => void;
+  onFileProcessed?: (processed: ProcessedFile) => void;
 }
 
 interface UploadedFile {
@@ -13,7 +16,7 @@ interface UploadedFile {
   name: string;
   size: string;
   status: 'uploading' | 'processing' | 'completed' | 'error';
-  gaebData?: GAEBData;
+  processed?: ProcessedFile;
   error?: string;
 }
 
@@ -31,12 +34,12 @@ export default function FileUpload({ onFileProcessed }: FileUploadProps) {
   };
 
   const handleFile = useCallback(async (file: File) => {
-    // Check if it's a GAEB file (common extensions: .gaeb, .d83, .p83, .x83)
-    const validExtensions = ['.gaeb', '.d83', '.p83', '.x83'];
     const fileExtension = file.name.toLowerCase().slice(file.name.lastIndexOf('.'));
-    
-    if (!validExtensions.includes(fileExtension)) {
-      alert('Please select a valid GAEB file (.gaeb, .d83, .p83, .x83)');
+
+    if (!SUPPORTED_GAEB_EXTENSIONS.includes(fileExtension)) {
+      alert(
+        `Please select a valid GAEB file. Supported extensions: ${SUPPORTED_GAEB_EXTENSIONS.join(', ')}`,
+      );
       return;
     }
 
@@ -55,21 +58,16 @@ export default function FileUpload({ onFileProcessed }: FileUploadProps) {
         prev.map(f => f.file === file ? { ...f, status: 'processing' } : f)
       );
 
-      // Process the GAEB file using the hook
-      const gaebData = await processFile(file);
-      
-      // Update status to completed
-      setUploadedFiles(prev => 
-        prev.map(f => f.file === file ? { 
-          ...f, 
-          status: 'completed', 
-          gaebData 
-        } : f)
+      const processed = await processFile(file);
+
+      setUploadedFiles(prev =>
+        prev.map(f =>
+          f.file === file ? { ...f, status: 'completed', processed } : f,
+        ),
       );
 
-      // Call the callback with processed data
       if (onFileProcessed) {
-        onFileProcessed(gaebData);
+        onFileProcessed(processed);
       }
 
     } catch (error) {
@@ -159,12 +157,12 @@ export default function FileUpload({ onFileProcessed }: FileUploadProps) {
       >
         <input
           type="file"
-          accept=".gaeb,.d83,.p83,.x83"
+          accept={SUPPORTED_GAEB_EXTENSIONS.join(',')}
           onChange={handleFileInput}
           className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
           multiple
         />
-        
+
         <div className="space-y-4">
           <div className="text-6xl">📁</div>
           <div>
@@ -175,7 +173,7 @@ export default function FileUpload({ onFileProcessed }: FileUploadProps) {
               Drag and drop your GAEB files here, or click to browse
             </p>
             <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
-              Supported formats: .gaeb, .d83, .p83, .x83
+              GAEB 90 (.d8x), GAEB 2000 (.p8x), GAEB DA XML (.x8x) — DA 81–86
             </p>
           </div>
           <button
