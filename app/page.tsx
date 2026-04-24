@@ -5,6 +5,7 @@ import FileUpload from './components/FileUpload';
 import GAEBViewer from './components/GAEBViewer';
 import ExportComponent from './components/ExportComponent';
 import ConvertDownload from './components/ConvertDownload';
+import PositionListExport from './components/PositionListExport';
 import type { ProcessedFile } from './hooks/useGAEBProcessor';
 
 export default function Home() {
@@ -57,6 +58,7 @@ export default function Home() {
         )}
 
         <ConvertDownload files={processedFiles} />
+        <PositionListExport files={processedFiles} />
         <GAEBViewer data={viewModels} />
         <ExportComponent data={viewModels} />
 
