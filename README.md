@@ -53,6 +53,8 @@ npm run start        # Production-Server
 npm run lint         # ESLint
 npm test             # Vitest einmalig
 npm run test:watch   # Vitest im Watch-Modus
+npm run test:e2e     # Playwright End-to-End (benötigt einmalig
+                     #   `npx playwright install chromium`)
 ```
 
 ## Tech-Stack
@@ -62,6 +64,8 @@ npm run test:watch   # Vitest im Watch-Modus
 - Tailwind CSS 4
 - Vitest 4 für Unit- und Round-Trip-Tests, `@xmldom/xmldom` als DOMParser im
   Node-Testlauf
+- Playwright 1.59 für browserbasierte End-to-End-Tests (Upload → Convert →
+  Download-Buttons)
 - `xlsx` 0.18 für den Excel-Export
 
 ## Validierung
@@ -193,6 +197,12 @@ npm test
 - Cross-Version-Parity zwischen GAEB XML 3.1, 3.2 und 3.3 desselben LVs
 - End-to-end: `.d83`/`.p83` → `GaebDocument` → `GAEB DA XML 3.3` → wieder parsen,
   Item-Zähler stimmen überein; Umlaute aus CP437-Quellen landen intakt im XML
+
+Zusätzlich liegen unter `e2e/` Playwright-Specs, die den Upload-Flow gegen
+eine echte Browser-Instanz fahren (Datei-Upload per `<input type="file">`,
+XML- und Protokoll-Download, Positionsliste-Export). Einmalige Installation
+der Browser: `npx playwright install chromium`. Start: `npm run test:e2e`
+(fährt automatisch `npm run dev` hoch).
 
 ## Grenzen der Konvertierung
 
