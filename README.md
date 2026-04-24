@@ -64,6 +64,32 @@ npm run test:watch   # Vitest im Watch-Modus
   Node-Testlauf
 - `xlsx` 0.18 für den Excel-Export
 
+## Validierung
+
+Der Library-Export `validateGaebXml33(xml)` prüft GAEB-DA-XML-3.3-Output
+schemalos auf strukturelle Korrektheit. Nützlich nach `serialize()` oder als
+Sanity-Check für fremde XML-Dateien, bevor sie durch den Parser laufen:
+
+```ts
+import { validateGaebXml33, serialize, parse } from '@/lib/gaeb';
+
+const result = validateGaebXml33(xml);
+if (!result.valid) {
+  for (const issue of result.issues) {
+    console.error(`[${issue.severity}] ${issue.path}: ${issue.message}`);
+  }
+}
+```
+
+Geprüft werden u. a. Root-Element + Namespace, `<GAEBInfo><Version>`,
+`<Award>` mit erkennbarer DA-Nummer (Namespace oder `<DP>`), jede
+`<BoQCtgy>` hat `RNoPart` + `<LblTx>`, jedes `<Item>` hat `RNoPart`,
+`<Qty>`, `<QU>` und `<Description>`. Keine echte XSD-Validierung — die
+offiziellen GAEB-Schemas werden vom GAEB Bundesverband nicht frei
+redistribuiert, und dieses Modul ist bewusst schemalos gehalten. Für
+konformitätskritische Setups kann `libxmljs2` + lokal abgelegte XSDs
+nachgerüstet werden, ohne die Public-API zu brechen.
+
 ## HTTP API
 
 Neben der Browser-UI bietet das Projekt einen `POST /api/convert`-Endpoint für
