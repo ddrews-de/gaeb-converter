@@ -161,6 +161,74 @@ describe('serializeGaebXml33 (synthetic)', () => {
     expect(xml.match(/<LumpSumItem>Yes<\/LumpSumItem>/g) ?? []).toHaveLength(1);
   });
 
+  it('emits <UPComp Label="…"> elements for priceComponents and round-trips them', () => {
+    const doc = miniDoc();
+    const item = doc.award.boq[0].kind === 'ctgy'
+      ? (doc.award.boq[0].children[0] as BoqItem)
+      : null;
+    if (!item) throw new Error('unexpected test setup');
+    item.unitPrice = 145.5;
+    item.priceComponents = {
+      labor: 45,
+      material: 80,
+      equipment: 18.5,
+      other: 2,
+    };
+
+    const xml = serializeGaebXml33(doc);
+    expect(xml).toContain('<UPComp Label="Lohn">45.000</UPComp>');
+    expect(xml).toContain('<UPComp Label="Stoff">80.000</UPComp>');
+    expect(xml).toContain('<UPComp Label="Gerät">18.5</UPComp>');
+    expect(xml).toContain('<UPComp Label="Sonstiges">2.000</UPComp>');
+
+    const parsed = parseGaebXml(xml);
+    const flattened = flatItems(parsed.award.boq);
+    expect(flattened[0].priceComponents).toEqual({
+      labor: 45,
+      material: 80,
+      equipment: 18.5,
+      other: 2,
+    });
+  });
+
+  it('omits the <UPComp> block when only some components are set', () => {
+    const doc = miniDoc();
+    const item = (doc.award.boq[0] as { children: BoqItem[] }).children[0];
+    item.priceComponents = { labor: 30, material: 70 };
+    const xml = serializeGaebXml33(doc);
+    expect(xml).toContain('<UPComp Label="Lohn">30.000</UPComp>');
+    expect(xml).toContain('<UPComp Label="Stoff">70.000</UPComp>');
+    expect(xml).not.toContain('Gerät');
+    expect(xml).not.toContain('Sonstiges');
+
+    const parsed = parseGaebXml(xml);
+    const first = flatItems(parsed.award.boq)[0];
+    expect(first.priceComponents).toEqual({ labor: 30, material: 70 });
+  });
+
+  it('parses positional <UPComp> children when no Label attribute is present', () => {
+    const xml = `<?xml version="1.0"?>
+<GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">
+  <Award><BoQ><BoQBody><Itemlist>
+    <Item RNoPart="1">
+      <Qty>1</Qty><QU>St</QU>
+      <UPComp>10.00</UPComp>
+      <UPComp>20.00</UPComp>
+      <UPComp>5.00</UPComp>
+      <UPComp>2.00</UPComp>
+    </Item>
+  </Itemlist></BoQBody></BoQ></Award>
+</GAEB>`;
+    const parsed = parseGaebXml(xml);
+    const first = flatItems(parsed.award.boq)[0];
+    expect(first.priceComponents).toEqual({
+      labor: 10,
+      material: 20,
+      equipment: 5,
+      other: 2,
+    });
+  });
+
   it('preserves nested BoQCtgy hierarchy when serialized', () => {
     const doc: GaebDocument = {
       ...miniDoc(),

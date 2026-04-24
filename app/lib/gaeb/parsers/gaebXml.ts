@@ -19,6 +19,7 @@ import type {
   GaebDocument,
   ItemType,
   LongTextBlock,
+  PriceComponents,
   ProjectInfo,
   TextRun,
 } from '../types';
@@ -220,6 +221,7 @@ function readItem(itemEl: Element, warnings: ConversionWarning[]): BoqItem {
 
   const itemType = readItemType(itemEl);
   const { shortText, longText } = readDescription(itemEl, warnings);
+  const priceComponents = readPriceComponents(itemEl);
 
   const isBedarfsposition =
     textOfFirstChild(itemEl, 'Provisional')?.toLowerCase() === 'yes'
@@ -236,9 +238,50 @@ function readItem(itemEl: Element, warnings: ConversionWarning[]): BoqItem {
     qu,
     unitPrice,
     totalPrice,
+    priceComponents,
     itemType,
     isBedarfsposition,
   };
+}
+
+/**
+ * Reads <UPComp> price-component children of an <Item>. GAEB 3.3 allows
+ * either a `Label` attribute ("Lohn" / "Stoff" / "Gerät" / "Sonstiges") or
+ * a positional ordering where the first four children are labor / material
+ * / equipment / other. We handle both, preferring Label when present.
+ *
+ * The numeric value lives either in the element's text content or in a
+ * nested <UP> child depending on exporter, so we try both.
+ */
+function readPriceComponents(itemEl: Element): PriceComponents | undefined {
+  const comps = elementChildren(itemEl).filter(el => el.localName === 'UPComp');
+  if (comps.length === 0) return undefined;
+
+  const result: PriceComponents = {};
+  comps.forEach((el, index) => {
+    const label = (el.getAttribute('Label') ?? '').toLowerCase();
+    const key = pickKey(label, index);
+    if (!key) return;
+
+    const inner = firstChildByLocalName(el, 'UP');
+    const raw = inner ? inner.textContent : el.textContent;
+    const value = parseNumber((raw ?? '').trim());
+    if (value !== undefined) result[key] = value;
+  });
+
+  return Object.keys(result).length > 0 ? result : undefined;
+}
+
+function pickKey(
+  label: string,
+  index: number,
+): keyof PriceComponents | null {
+  if (label.includes('lohn') || label === 'labor') return 'labor';
+  if (label.includes('stoff') || label === 'material') return 'material';
+  if (label.includes('ger') || label === 'equipment') return 'equipment';
+  if (label.includes('sonst') || label === 'other') return 'other';
+  // Positional fallback (0 labor, 1 material, 2 equipment, 3 other).
+  return (['labor', 'material', 'equipment', 'other'] as const)[index] ?? null;
 }
 
 function readItemType(itemEl: Element): ItemType {
