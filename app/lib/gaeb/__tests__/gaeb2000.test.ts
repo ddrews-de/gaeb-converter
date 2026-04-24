@@ -142,6 +142,66 @@ describe('parseGaeb2000 (synthetic)', () => {
     expect(items[2].qty).toBe(42);
   });
 
+  it('reads price components from [EPLohn]/[EPStoff]/[EPGeraet]/[EPSonst]', () => {
+    const src = `#begin[GAEB]
+ #begin[Vergabe]
+  [DP]84[end]
+  #begin[LV]
+   #begin[LVBereich]
+    [OZ]01[end]
+    #begin[Position]
+     [OZ]010010[end]
+     [ME]m²[end]
+     [Menge]5,000[end]
+     [EP]145,50[end]
+     [EPLohn]45,00[end]
+     [EPStoff]80,00[end]
+     [EPGeraet]18,50[end]
+     [EPSonst]2,00[end]
+    #end[Position]
+   #end[LVBereich]
+  #end[LV]
+ #end[Vergabe]
+#end[GAEB]`;
+    const item = flatItems(parseGaeb2000(src).award.boq)[0];
+    expect(item.unitPrice).toBe(145.5);
+    expect(item.priceComponents).toEqual({
+      labor: 45,
+      material: 80,
+      equipment: 18.5,
+      other: 2,
+    });
+  });
+
+  it('reads price components from the positional [EPAnteil1..4] keys', () => {
+    const src = `#begin[GAEB]
+ #begin[Vergabe]
+  [DP]84[end]
+  #begin[LV]
+   #begin[LVBereich]
+    [OZ]01[end]
+    #begin[Position]
+     [OZ]010010[end]
+     [ME]m²[end]
+     [Menge]1,000[end]
+     [EPAnteil1]10,00[end]
+     [EPAnteil2]20,00[end]
+     [EPAnteil3]5,00[end]
+     [EPAnteil4]2,00[end]
+    #end[Position]
+   #end[LVBereich]
+  #end[LV]
+ #end[Vergabe]
+#end[GAEB]`;
+    const item = flatItems(parseGaeb2000(src).award.boq)[0];
+    expect(item.priceComponents).toEqual({
+      labor: 10,
+      material: 20,
+      equipment: 5,
+      other: 2,
+    });
+  });
+
   it('defaults DA to 83 and records a warning when Vergabe has no DP', () => {
     const noDp = `#begin[GAEB]
  #begin[Vergabe]

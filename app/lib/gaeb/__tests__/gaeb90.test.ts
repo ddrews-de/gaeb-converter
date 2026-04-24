@@ -252,6 +252,37 @@ describe('parseGaeb90 (synthetic)', () => {
     expect(preambleWarning!.message).toMatch(/Skipped 4 lines/);
   });
 
+  it('parses record 22 into priceComponents (labor/material/equipment/other)', () => {
+    const src = [
+      line('00        83L                                                 11PPPPI0090', 1),
+      line('11 1       N    X', 2),
+      line('21 1  10   NNN         00000001000psch', 3),
+      line('25Kurztext', 4),
+      line('22 1  10         00004500 00008000 00001850 00000200', 5),
+      line('99', 6),
+    ].join('\n');
+    const item = flatItems(parseGaeb90(src).award.boq)[0];
+    expect(item.priceComponents).toEqual({
+      labor: 45,
+      material: 80,
+      equipment: 18.5,
+      other: 2,
+    });
+  });
+
+  it('accepts partial record-22 components', () => {
+    const src = [
+      line('00        83L                                                 11PPPPI0090', 1),
+      line('11 1       N    X', 2),
+      line('21 1  10   NNN         00000001000psch', 3),
+      line('25Kurztext', 4),
+      line('22 1  10         00003000 00007000', 5),
+      line('99', 6),
+    ].join('\n');
+    const item = flatItems(parseGaeb90(src).award.boq)[0];
+    expect(item.priceComponents).toEqual({ labor: 30, material: 70 });
+  });
+
   it('records a warning for unknown record kinds', () => {
     const src = [
       line('00        83L               X                               M', 1),
