@@ -2,6 +2,7 @@
 
 import type { ProcessedFile } from '../hooks/useGAEBProcessor';
 import type { ConversionWarning, Generation } from '../lib/gaeb';
+import { auditLogFileName, buildAuditLog } from '../lib/gaeb';
 
 interface ConvertDownloadProps {
   files: ProcessedFile[];
@@ -27,16 +28,28 @@ function targetFormatTag(file: ProcessedFile): string {
   return `X${file.doc.da}`;
 }
 
-function downloadXml(file: ProcessedFile): void {
-  const blob = new Blob([file.xml], { type: 'application/xml;charset=utf-8' });
+function triggerDownload(content: string, fileName: string, mime: string): void {
+  const blob = new Blob([content], { type: `${mime};charset=utf-8` });
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement('a');
   anchor.href = url;
-  anchor.download = file.targetFileName;
+  anchor.download = fileName;
   document.body.appendChild(anchor);
   anchor.click();
   anchor.remove();
   setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
+function downloadXml(file: ProcessedFile): void {
+  triggerDownload(file.xml, file.targetFileName, 'application/xml');
+}
+
+function downloadAuditLog(file: ProcessedFile): void {
+  const log = buildAuditLog(file.doc, {
+    sourceFileName: file.viewModel.fileName,
+    targetFileName: file.targetFileName,
+  });
+  triggerDownload(log, auditLogFileName(file.targetFileName), 'text/plain');
 }
 
 type SeverityCounts = Record<ConversionWarning['severity'], number>;
@@ -134,13 +147,23 @@ export default function ConvertDownload({ files }: ConvertDownloadProps) {
                   </p>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={() => downloadXml(file)}
-                  className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                >
-                  Als GAEB DA XML 3.3 herunterladen
-                </button>
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <button
+                    type="button"
+                    onClick={() => downloadXml(file)}
+                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  >
+                    Als GAEB DA XML 3.3 herunterladen
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => downloadAuditLog(file)}
+                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    title="Text-Protokoll mit Zusammenfassung, BoQ-Baum und Warnungen"
+                  >
+                    Protokoll (.txt)
+                  </button>
+                </div>
               </div>
 
               {hasAny && (

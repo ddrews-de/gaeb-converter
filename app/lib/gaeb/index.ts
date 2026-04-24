@@ -24,6 +24,8 @@ export { validateGaebXml33 } from './validate';
 export type { ValidationIssue, ValidationResult } from './validate';
 export { validateGaebXml33WithXsd } from './validate-xsd';
 export type { XsdValidationOptions } from './validate-xsd';
+export { buildAuditLog, auditLogFileName } from './audit';
+export type { AuditLogOptions } from './audit';
 
 export interface ConvertResult {
   doc: GaebDocument;
