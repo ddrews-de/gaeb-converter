@@ -3,9 +3,9 @@
 import { useState, useCallback } from 'react';
 import type { GAEBData } from '../lib/gaeb-parser';
 import type { GaebDocument } from '../lib/gaeb';
-import { convert } from '../lib/gaeb';
 import { readGaebFile } from '../lib/gaeb/encoding';
 import { toViewModel } from '../lib/gaeb/legacy/toViewModel';
+import { runConvert } from '../lib/gaeb/worker/run';
 
 /**
  * Full set of GAEB extensions supported end-to-end (parse + serialize).
@@ -64,7 +64,7 @@ export function useGAEBProcessor(): UseGAEBProcessorReturn {
       }
 
       const { text, bytes } = await readGaebFile(file);
-      const { doc, xml, targetFileName } = convert(bytes, file.name);
+      const { doc, xml, targetFileName } = await runConvert(bytes, file.name);
       const viewModel = toViewModel(doc, file.name, text);
       const processed: ProcessedFile = { viewModel, doc, xml, targetFileName };
 
