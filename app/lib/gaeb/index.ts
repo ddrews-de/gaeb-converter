@@ -22,8 +22,11 @@ export { Gaeb90ParseError } from './parsers/gaeb90';
 export { Gaeb2000ParseError } from './parsers/gaeb2000';
 export { validateGaebXml33 } from './validate';
 export type { ValidationIssue, ValidationResult } from './validate';
-export { validateGaebXml33WithXsd } from './validate-xsd';
-export type { XsdValidationOptions } from './validate-xsd';
+// Note: `validateGaebXml33WithXsd` is *not* re-exported here on purpose.
+// It depends on `node:fs` and the optional `libxmljs2` package, both of
+// which are Node-only and would force `node:fs` into the browser bundle.
+// Server-side callers (API routes, CLI) should import it directly:
+//     import { validateGaebXml33WithXsd } from '@/lib/gaeb/validate-xsd';
 export { buildAuditLog, auditLogFileName } from './audit';
 export type { AuditLogOptions } from './audit';
 export {
