@@ -65,7 +65,7 @@ test.describe('GAEB Converter — upload → convert → download', () => {
     expect(content).toContain('Bill of quantities');
   });
 
-  test('position-list export button offers an xlsx/csv download', async ({
+  test('position-list export button offers a CSV download', async ({
     page,
   }) => {
     await page.goto('/');
@@ -80,9 +80,9 @@ test.describe('GAEB Converter — upload → convert → download', () => {
 
     const downloadPromise = page.waitForEvent('download');
     await page
-      .getByRole('button', { name: 'Positionsliste exportieren' })
+      .getByRole('button', { name: 'Positionsliste exportieren (.csv)' })
       .click();
     const download = await downloadPromise;
-    expect(download.suggestedFilename()).toMatch(/GAEB_Positionsliste_.*\.xlsx$/);
+    expect(download.suggestedFilename()).toMatch(/GAEB_Positionsliste_.*\.csv$/);
   });
 });

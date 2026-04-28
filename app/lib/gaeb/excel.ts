@@ -1,18 +1,14 @@
 /**
- * XLSX / CSV export that reads directly from the `GaebDocument` domain
- * model. Exposes price components (labor / material / equipment / other)
- * as dedicated columns, next to qty / QU / EP / GP — useful for DA 84/86
- * bidder documents that carry a split unit price.
+ * CSV export of the position list directly from the `GaebDocument`
+ * domain model. Includes dedicated columns for the four price components
+ * (labor / material / equipment / other) for DA 84/86 bidder documents.
  *
- * Built on ExcelJS — replaces the previous `xlsx` dependency, which had
- * unpatched prototype-pollution and ReDoS advisories on its npm-published
- * version (the SheetJS team only ships fixes via their own CDN).
- *
- * The legacy ExcelExporter (app/lib/excel-exporter.ts) also uses ExcelJS
- * and stays focused on the workshop-tracking "Produktionsliste" shape.
+ * No third-party spreadsheet library — XLSX support has been removed
+ * because every available browser-side option pulled native Node deps
+ * into the bundle. CSV is library-free, opens cleanly in Excel /
+ * LibreOffice / Numbers, and keeps the bundle small.
  */
 
-import ExcelJS from 'exceljs';
 import type { BoqItem, BoqNode, GaebDocument } from './types';
 
 export interface PositionListRow {
@@ -58,23 +54,6 @@ export const POSITION_LIST_COLUMNS: Array<keyof PositionListRow> = [
   'Bedarf',
 ];
 
-const COLUMN_WIDTHS: Record<keyof PositionListRow, number> = {
-  'Pos. Nr.': 12,
-  Kategorie: 32,
-  Kurztext: 32,
-  Menge: 10,
-  Einheit: 8,
-  EP: 12,
-  GP: 12,
-  'Lohn-Anteil': 12,
-  'Stoff-Anteil': 12,
-  'Geräte-Anteil': 12,
-  'Sonstige-Anteil': 14,
-  Langtext: 48,
-  'Pos.-Typ': 10,
-  Bedarf: 8,
-};
-
 export function docToRows(
   doc: GaebDocument,
   options: DocToRowsOptions = {},
@@ -95,27 +74,7 @@ export function docToRows(
   return rows;
 }
 
-export function buildPositionListWorkbook(
-  entries: BookEntry[],
-  options: DocToRowsOptions = {},
-): ExcelJS.Workbook {
-  const wb = new ExcelJS.Workbook();
-  for (const entry of entries) {
-    const ws = wb.addWorksheet(truncateSheetName(entry.fileName));
-    ws.columns = POSITION_LIST_COLUMNS.map(col => ({
-      header: col,
-      key: col,
-      width: COLUMN_WIDTHS[col],
-    }));
-    for (const row of docToRows(entry.doc, options)) {
-      ws.addRow(row);
-    }
-  }
-  return wb;
-}
-
-/** Emits CSV for the single entry. CSV is single-sheet, so callers that
- *  need multi-file should use the XLSX path. */
+/** Emits a CSV string for a single entry with the standard column header. */
 export function buildPositionListCsv(
   entry: BookEntry,
   options: DocToRowsOptions = {},
@@ -165,9 +124,4 @@ function itemToRow(
 
 function formatNumber(n: number): string {
   return n.toLocaleString('de-DE', { maximumFractionDigits: 3 });
-}
-
-function truncateSheetName(name: string): string {
-  // Excel forbids * ? : / \ [ ] and caps length at 31 chars per sheet.
-  return name.replace(/[*?:/\\[\]]/g, '_').slice(0, 31);
 }

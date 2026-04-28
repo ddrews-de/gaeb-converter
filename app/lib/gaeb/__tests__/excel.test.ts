@@ -4,7 +4,6 @@ import { describe, expect, it } from 'vitest';
 import {
   POSITION_LIST_COLUMNS,
   buildPositionListCsv,
-  buildPositionListWorkbook,
   docToRows,
 } from '../excel';
 import { parseGaebXml } from '../parsers/gaebXml';
@@ -107,44 +106,33 @@ describe('docToRows', () => {
   });
 });
 
-describe('buildPositionListWorkbook', () => {
-  it('creates one sheet per entry with the expected header order', () => {
-    const wb = buildPositionListWorkbook([
-      { fileName: 'demo.x83', doc: miniDoc() },
-    ]);
-    const names = wb.worksheets.map(ws => ws.name);
-    expect(names).toEqual(['demo.x83']);
-    const sheet = wb.getWorksheet('demo.x83')!;
-    const headers = sheet.columns!.map(c => c.header as string);
-    expect(headers).toEqual(POSITION_LIST_COLUMNS);
-  });
-
-  it('sanitizes sheet names (strips forbidden chars, max 31 chars)', () => {
-    const entry = {
-      fileName: 'some:weird*name/with?illegal\\chars[01]toolongtooloooooong',
-      doc: miniDoc(),
-    };
-    const wb = buildPositionListWorkbook([entry]);
-    const name = wb.worksheets[0].name;
-    expect(name.length).toBeLessThanOrEqual(31);
-    expect(/[*?:/\\[\]]/.test(name)).toBe(false);
-  });
-
-  it('returns an empty workbook for an empty entry list', () => {
-    const wb = buildPositionListWorkbook([]);
-    expect(wb.worksheets).toHaveLength(0);
-  });
-});
-
 describe('buildPositionListCsv', () => {
+  it('emits a header row that matches POSITION_LIST_COLUMNS exactly', () => {
+    const csv = buildPositionListCsv({ fileName: 'x', doc: miniDoc() });
+    const headerLine = csv.split('\n')[0];
+    // The Pos.-Typ column header contains a period that is not "special" in
+    // CSV, so no quoting expected for any of these names.
+    expect(headerLine.split(',')).toEqual(POSITION_LIST_COLUMNS);
+  });
+
   it('emits a header row and one row per item', () => {
     const csv = buildPositionListCsv({ fileName: 'x', doc: miniDoc() });
     const lines = csv.split('\n').filter(Boolean);
-    expect(lines[0]).toContain('Pos. Nr.');
-    expect(lines[0]).toContain('Lohn-Anteil');
     expect(lines).toHaveLength(3); // header + 2 items
     expect(lines[1]).toContain('1.10');
     expect(lines[2]).toContain('1.2.30');
+  });
+
+  it('quotes cells that contain commas, quotes or line breaks', () => {
+    const doc = miniDoc();
+    // Mutate the first item's short text to force quoting.
+    const root = doc.award.boq[0];
+    if (root.kind !== 'ctgy') throw new Error('unexpected fixture');
+    const first = root.children[0];
+    if (first.kind !== 'item') throw new Error('unexpected fixture');
+    first.shortText = 'Beton, "C25/30"';
+    const csv = buildPositionListCsv({ fileName: 'x', doc });
+    expect(csv).toContain('"Beton, ""C25/30"""');
   });
 });
 
