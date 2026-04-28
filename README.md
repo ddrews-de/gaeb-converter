@@ -181,13 +181,16 @@ export GAEB_XSD_DIR=/path/to/schemas   # Master-Datei als GAEB_DA_XML_3.3.xsd
 ```
 
 ```ts
-import { validateGaebXml33WithXsd } from '@/lib/gaeb';
+// Wichtig: direkt aus dem Submodul importieren (nicht aus '@/lib/gaeb'),
+// weil dieses Modul `node:fs` braucht und sonst im Browser-Bundle landet.
+import { validateGaebXml33WithXsd } from '@/lib/gaeb/validate-xsd';
 
 const result = await validateGaebXml33WithXsd(xml, {
   xsdDir: process.env.GAEB_XSD_DIR!,
 });
 ```
 
+Nur in serverseitigen Umgebungen (API-Routen, CLI, Node-Tests) verfügbar.
 Fehlt `libxmljs2`, resolved die Funktion trotzdem — mit einem einzelnen
 Error, der die nachzurüstenden Schritte nennt. Schemalose Prüfung bleibt der
 Default.
