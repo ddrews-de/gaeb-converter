@@ -1,7 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import * as XLSX from 'xlsx';
 import {
   POSITION_LIST_COLUMNS,
   buildPositionListCsv,
@@ -113,12 +112,11 @@ describe('buildPositionListWorkbook', () => {
     const wb = buildPositionListWorkbook([
       { fileName: 'demo.x83', doc: miniDoc() },
     ]);
-    expect(wb.SheetNames).toEqual(['demo.x83']);
-    const sheet = wb.Sheets['demo.x83'];
-    const headerRow = XLSX.utils.sheet_to_json<string[]>(sheet, {
-      header: 1,
-    })[0] as string[];
-    expect(headerRow).toEqual(POSITION_LIST_COLUMNS);
+    const names = wb.worksheets.map(ws => ws.name);
+    expect(names).toEqual(['demo.x83']);
+    const sheet = wb.getWorksheet('demo.x83')!;
+    const headers = sheet.columns!.map(c => c.header as string);
+    expect(headers).toEqual(POSITION_LIST_COLUMNS);
   });
 
   it('sanitizes sheet names (strips forbidden chars, max 31 chars)', () => {
@@ -127,14 +125,14 @@ describe('buildPositionListWorkbook', () => {
       doc: miniDoc(),
     };
     const wb = buildPositionListWorkbook([entry]);
-    const name = wb.SheetNames[0];
+    const name = wb.worksheets[0].name;
     expect(name.length).toBeLessThanOrEqual(31);
     expect(/[*?:/\\[\]]/.test(name)).toBe(false);
   });
 
   it('returns an empty workbook for an empty entry list', () => {
     const wb = buildPositionListWorkbook([]);
-    expect(wb.SheetNames).toEqual([]);
+    expect(wb.worksheets).toHaveLength(0);
   });
 });
 

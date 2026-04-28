@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import * as XLSX from 'xlsx';
 import type { ProcessedFile } from '../hooks/useGAEBProcessor';
 import {
   buildPositionListCsv,
@@ -55,10 +54,10 @@ export default function PositionListExport({ files }: PositionListExportProps) {
     );
   }, 0);
 
-  const handleExport = () => {
+  const handleExport = async () => {
     if (format === 'xlsx') {
       const wb = buildPositionListWorkbook(entries, { includeLongText });
-      const buffer = XLSX.write(wb, { type: 'array', bookType: 'xlsx' });
+      const buffer = await wb.xlsx.writeBuffer();
       downloadBlob(
         new Blob([buffer], {
           type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
