@@ -98,6 +98,7 @@ npm test             # Vitest einmalig
 npm run test:watch   # Vitest im Watch-Modus
 npm run test:e2e     # Playwright End-to-End
                      #   (einmalig: `npx playwright install chromium`)
+npm run convert -- … # CLI-Konverter (siehe Abschnitt unten)
 ```
 
 ## Tech-Stack
@@ -108,6 +109,38 @@ npm run test:e2e     # Playwright End-to-End
 - Vitest 4 für Unit- und Round-Trip-Tests, `@xmldom/xmldom` als `DOMParser`-
   Polyfill im Node-Testlauf
 - Playwright 1.59 für browserbasierte End-to-End-Tests
+
+## CLI
+
+Für skriptbare Konvertierung ohne Browser oder HTTP-Stack gibt es ein
+schlankes Kommandozeilen-Tool, das die gleiche `convert()`-Façade nutzt:
+
+```bash
+# Direkt ausführen
+npx tsx scripts/cli.ts LV_Los01.D83 out.X83
+
+# Per npm-Script
+npm run convert -- LV_Los01.D83 out.X83
+
+# Stdin → Stdout
+cat LV_Los01.D83 | npm run convert -- -i LV_Los01.D83 - - > out.X83
+```
+
+**Flags:**
+
+| Flag | Bedeutung |
+|------|-----------|
+| `--audit` | Schreibt zusätzlich `<base>.audit.txt` mit Header, BoQ-Baum und Warnungen |
+| `--validate` | Validiert das XML strukturlos und beendet mit Exit 1 bei Fehlern |
+| `--quiet` | Unterdrückt Info-Meldungen auf stderr (nur Fehler bleiben sichtbar) |
+| `-i`, `--input-name` | Dateiname für die Format-Detection (nötig bei stdin) |
+| `-h`, `--help` | Zeigt die Hilfe |
+
+**Exit-Codes:** `0` Erfolg, `1` Anwenderfehler (falsche Args, Format nicht
+erkannt, Validation fehlgeschlagen), `2` interner Parser-/Serializer-Fehler.
+
+Output-Default: `<base>.x<DA>` neben der Eingabe; `-` als Output-Pfad
+streamt nach stdout.
 
 ## HTTP API
 
