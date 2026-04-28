@@ -4,12 +4,15 @@
  * as dedicated columns, next to qty / QU / EP / GP — useful for DA 84/86
  * bidder documents that carry a split unit price.
  *
- * The legacy ExcelExporter (app/lib/excel-exporter.ts) remains the source
- * for the "Produktionsliste" (workshop tracking) output, which is a
- * different spreadsheet shape and stays unchanged here.
+ * Built on ExcelJS — replaces the previous `xlsx` dependency, which had
+ * unpatched prototype-pollution and ReDoS advisories on its npm-published
+ * version (the SheetJS team only ships fixes via their own CDN).
+ *
+ * The legacy ExcelExporter (app/lib/excel-exporter.ts) also uses ExcelJS
+ * and stays focused on the workshop-tracking "Produktionsliste" shape.
  */
 
-import * as XLSX from 'xlsx';
+import ExcelJS from 'exceljs';
 import type { BoqItem, BoqNode, GaebDocument } from './types';
 
 export interface PositionListRow {
@@ -55,6 +58,23 @@ export const POSITION_LIST_COLUMNS: Array<keyof PositionListRow> = [
   'Bedarf',
 ];
 
+const COLUMN_WIDTHS: Record<keyof PositionListRow, number> = {
+  'Pos. Nr.': 12,
+  Kategorie: 32,
+  Kurztext: 32,
+  Menge: 10,
+  Einheit: 8,
+  EP: 12,
+  GP: 12,
+  'Lohn-Anteil': 12,
+  'Stoff-Anteil': 12,
+  'Geräte-Anteil': 12,
+  'Sonstige-Anteil': 14,
+  Langtext: 48,
+  'Pos.-Typ': 10,
+  Bedarf: 8,
+};
+
 export function docToRows(
   doc: GaebDocument,
   options: DocToRowsOptions = {},
@@ -78,39 +98,41 @@ export function docToRows(
 export function buildPositionListWorkbook(
   entries: BookEntry[],
   options: DocToRowsOptions = {},
-): XLSX.WorkBook {
-  const wb = XLSX.utils.book_new();
-  if (entries.length === 0) return wb;
-
+): ExcelJS.Workbook {
+  const wb = new ExcelJS.Workbook();
   for (const entry of entries) {
-    const rows = docToRows(entry.doc, options);
-    const worksheet = XLSX.utils.json_to_sheet(rows, {
-      header: POSITION_LIST_COLUMNS as string[],
-    });
-    worksheet['!cols'] = POSITION_LIST_COLUMNS.map(col => ({
-      wch: col === 'Kurztext' || col === 'Kategorie' ? 32 :
-           col === 'Langtext' ? 48 :
-           col === 'Pos. Nr.' ? 12 :
-           col.endsWith('-Anteil') || col === 'EP' || col === 'GP' ? 12 :
-           col === 'Menge' ? 10 :
-           10,
+    const ws = wb.addWorksheet(truncateSheetName(entry.fileName));
+    ws.columns = POSITION_LIST_COLUMNS.map(col => ({
+      header: col,
+      key: col,
+      width: COLUMN_WIDTHS[col],
     }));
-    XLSX.utils.book_append_sheet(wb, worksheet, truncateSheetName(entry.fileName));
+    for (const row of docToRows(entry.doc, options)) {
+      ws.addRow(row);
+    }
   }
   return wb;
 }
 
-/** Emits CSV for the first entry. CSV is single-sheet, so multiple files
- *  would collide — callers that need multi-file should use XLSX. */
+/** Emits CSV for the single entry. CSV is single-sheet, so callers that
+ *  need multi-file should use the XLSX path. */
 export function buildPositionListCsv(
   entry: BookEntry,
   options: DocToRowsOptions = {},
 ): string {
   const rows = docToRows(entry.doc, options);
-  const worksheet = XLSX.utils.json_to_sheet(rows, {
-    header: POSITION_LIST_COLUMNS as string[],
-  });
-  return XLSX.utils.sheet_to_csv(worksheet);
+  const lines: string[] = [POSITION_LIST_COLUMNS.map(csvCell).join(',')];
+  for (const row of rows) {
+    lines.push(POSITION_LIST_COLUMNS.map(col => csvCell(row[col])).join(','));
+  }
+  return lines.join('\n') + '\n';
+}
+
+function csvCell(value: string): string {
+  if (value === '' || value === undefined) return '';
+  const needsQuotes = /[",\n\r]/.test(value);
+  const escaped = value.replace(/"/g, '""');
+  return needsQuotes ? `"${escaped}"` : escaped;
 }
 
 function itemToRow(
