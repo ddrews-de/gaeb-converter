@@ -31,9 +31,9 @@ werden keine LV-Daten an einen fremden Server übertragen.
   (`LV_Los01.d83` → `LV_Los01.X83`)
 - **Konvertierungsprotokoll** `<base>.audit.txt` mit Header-Metadaten,
   BoQ-Baum und nach Severity gruppierten Warnungen
-- **Positionsliste** als XLSX oder CSV mit eigenen Spalten für EP, GP und die
-  vier Preisanteile
-- **Produktionsliste** (Legacy-Werkstatt-Tracking) als XLSX oder CSV
+- **Positionsliste als CSV** mit eigenen Spalten für EP, GP und die vier
+  Preisanteile (Lohn / Stoff / Gerät / Sonstige); öffnet sich nativ in
+  Excel, LibreOffice und Numbers
 
 ### UI
 
@@ -105,7 +105,6 @@ npm run test:e2e     # Playwright End-to-End
 - Next.js 16 (App Router, Standalone Output)
 - React 19, TypeScript 5
 - Tailwind CSS 4
-- `xlsx` 0.18 für den Excel-Export
 - Vitest 4 für Unit- und Round-Trip-Tests, `@xmldom/xmldom` als `DOMParser`-
   Polyfill im Node-Testlauf
 - Playwright 1.59 für browserbasierte End-to-End-Tests
@@ -241,12 +240,12 @@ parsers/gaeb90.ts               parsers/gaeb2000.ts           parsers/gaebXml.ts
       ▼              ▼               ▼               ▼              ▼
 serializer/       audit.ts        excel.ts       validate.ts    legacy/
 gaebXml33.ts    (.audit.txt)    (Positionsliste  (schemaloser   toViewModel.ts
-(3.3-XML)                        XLSX/CSV)        Struktur-     (GAEBViewer +
-                                                  Check)         Produktions-
-                                                                  liste)
+(3.3-XML)                        CSV)             Struktur-     (GAEBViewer)
+                                                  Check)
                                                  │
                                                  └─► validate-xsd.ts
-                                                     (optional via libxmljs2)
+                                                     (optional via libxmljs2,
+                                                      server-only)
 ```
 
 Alle Module leben unter `app/lib/gaeb/`. Öffentlicher Einstiegspunkt ist

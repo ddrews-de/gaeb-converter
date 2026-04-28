@@ -30,7 +30,6 @@ export type { ValidationIssue, ValidationResult } from './validate';
 export { buildAuditLog, auditLogFileName } from './audit';
 export type { AuditLogOptions } from './audit';
 export {
-  buildPositionListWorkbook,
   buildPositionListCsv,
   docToRows,
   POSITION_LIST_COLUMNS,

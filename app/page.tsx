@@ -3,7 +3,6 @@
 import { useMemo, useState } from 'react';
 import FileUpload from './components/FileUpload';
 import GAEBViewer from './components/GAEBViewer';
-import ExportComponent from './components/ExportComponent';
 import ConvertDownload from './components/ConvertDownload';
 import PositionListExport from './components/PositionListExport';
 import type { ProcessedFile } from './hooks/useGAEBProcessor';
@@ -60,7 +59,6 @@ export default function Home() {
         <ConvertDownload files={processedFiles} />
         <PositionListExport files={processedFiles} />
         <GAEBViewer data={viewModels} />
-        <ExportComponent data={viewModels} />
 
         <footer className="mt-16 text-center">
           <div className="text-sm text-gray-500 dark:text-gray-400">
