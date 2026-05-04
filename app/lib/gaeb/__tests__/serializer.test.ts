@@ -160,6 +160,25 @@ describe('serializeGaebXml33 (synthetic)', () => {
     expect(lblAt).toBeGreaterThan(nameAt);
   });
 
+  it('emits <DetailTxt> before <OutlineText> inside <CompleteText>', () => {
+    // The 3.3 XSD requires DetailTxt (or ComplTSA/ComplTSB) to appear
+    // before OutlineText. Emitting them the other way around makes
+    // libxml's schema check reject every Item with both texts.
+    const xml = serializeGaebXml33(miniDoc());
+    const detailAt = xml.indexOf('<DetailTxt>');
+    const outlineAt = xml.indexOf('<OutlineText>');
+    expect(detailAt).toBeGreaterThan(0);
+    expect(outlineAt).toBeGreaterThan(detailAt);
+  });
+
+  it('wraps OutlineText content in <OutlTxt><TextOutlTxt>', () => {
+    // The 3.3 schema layers OutlineText > OutlTxt > TextOutlTxt > p > span;
+    // the previously-emitted shape skipped the OutlTxt level.
+    const xml = serializeGaebXml33(miniDoc());
+    expect(xml).toMatch(/<OutlineText>\s*<OutlTxt>\s*<TextOutlTxt>/);
+    expect(xml).toMatch(/<\/TextOutlTxt>\s*<\/OutlTxt>\s*<\/OutlineText>/);
+  });
+
   it('emits at least one <BoQBkdn> inside <BoQInfo>', () => {
     // The 3.3 XSD requires at least one BoQBkdn entry that describes the
     // OZ layout. We emit the canonical Bereich(2) + Item(4) + Index(1)

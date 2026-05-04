@@ -2,21 +2,25 @@
  * Serializes Kurztext / Langtext into the GAEB DA XML 3.3
  * `<Description><CompleteText>…</CompleteText></Description>` subtree.
  *
- * The shape mirrors what real 3.3 exports emit:
+ * The shape mirrors what real 3.3 exports emit. Important: the schema
+ * enforces DetailTxt **before** OutlineText, and OutlineText wraps the
+ * paragraph content in <OutlTxt><TextOutlTxt> (two levels):
  *
  *   <Description>
  *     <CompleteText>
- *       <OutlineText>
- *         <TextOutlTxt>
- *           <p><span>Kurztext</span></p>
- *         </TextOutlTxt>
- *       </OutlineText>
  *       <DetailTxt>
  *         <Text>
  *           <p><span>paragraph 1</span></p>
  *           <p><span>paragraph 2</span></p>
  *         </Text>
  *       </DetailTxt>
+ *       <OutlineText>
+ *         <OutlTxt>
+ *           <TextOutlTxt>
+ *             <p><span>Kurztext</span></p>
+ *           </TextOutlTxt>
+ *         </OutlTxt>
+ *       </OutlineText>
  *     </CompleteText>
  *   </Description>
  *
@@ -42,11 +46,13 @@ export function renderDescription(
   if (!hasShort && !hasLong) return '';
 
   const inner: string[] = [];
-  if (hasShort) {
-    inner.push(renderOutlineText(desc.shortText, indent + '   '));
-  }
+  // The 3.3 XSD enforces DetailTxt (or its short-text-shape variants
+  // ComplTSA/ComplTSB) before OutlineText. Emit DetailTxt first.
   if (hasLong) {
     inner.push(renderDetailTxt(desc.longText!, indent + '   '));
+  }
+  if (hasShort) {
+    inner.push(renderOutlineText(desc.shortText, indent + '   '));
   }
 
   return [
@@ -61,11 +67,13 @@ export function renderDescription(
 function renderOutlineText(shortText: string, indent: string): string {
   return [
     `${indent}<OutlineText>`,
-    `${indent} <TextOutlTxt>`,
-    `${indent}  <p>`,
-    `${indent}   <span>${xmlEscape(shortText)}</span>`,
-    `${indent}  </p>`,
-    `${indent} </TextOutlTxt>`,
+    `${indent} <OutlTxt>`,
+    `${indent}  <TextOutlTxt>`,
+    `${indent}   <p>`,
+    `${indent}    <span>${xmlEscape(shortText)}</span>`,
+    `${indent}   </p>`,
+    `${indent}  </TextOutlTxt>`,
+    `${indent} </OutlTxt>`,
     `${indent}</OutlineText>`,
   ].join('\n');
 }
