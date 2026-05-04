@@ -160,6 +160,19 @@ describe('serializeGaebXml33 (synthetic)', () => {
     expect(lblAt).toBeGreaterThan(nameAt);
   });
 
+  it('emits at least one <BoQBkdn> inside <BoQInfo>', () => {
+    // The 3.3 XSD requires at least one BoQBkdn entry that describes the
+    // OZ layout. We emit the canonical Bereich(2) + Item(4) + Index(1)
+    // trio.
+    const xml = serializeGaebXml33(miniDoc());
+    const matches = Array.from(xml.matchAll(/<BoQBkdn>/g));
+    expect(matches.length).toBe(3);
+    expect(xml).toContain('<Type>BoQLevel</Type>');
+    expect(xml).toContain('<LblBoQBkdn>Bereich</LblBoQBkdn>');
+    expect(xml).toContain('<Type>Item</Type>');
+    expect(xml).toContain('<Type>Index</Type>');
+  });
+
   it('emits <Date> and <OutlCompl> inside <BoQInfo>', () => {
     // The 3.3 XSD demands at least one of CPVCode / CONo / Date /
     // OutlCompl after Name/LblBoQ. We always emit both Date and

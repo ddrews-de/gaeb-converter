@@ -375,11 +375,15 @@ function parsePriceComponents(
 }
 
 function parseQuantityAndUnit(rest: string): { qty?: number; qu?: string } {
-  // Expected trailing shape: "<spaces><digits><unit>" where <digits> has 3
-  // implied decimal places. Real files use 11-digit qty fields but we stay
-  // agnostic about the exact width — grab whatever digit run appears right
-  // before the unit token.
-  const match = rest.match(/(\d+)\s*([^\s\d][^\s]*)\s*$/);
+  // Expected shape: "<spaces><digits><unit>[trailing markers]". Real files
+  // use 11-digit qty fields with 3 implied decimal places. The unit token
+  // sits flush against the qty (no whitespace). Some exporters tack on
+  // additional flag characters after a gap (e.g. "X" for Stundenlohn);
+  // those must not block qty/QU recognition, so we deliberately match the
+  // first qty+unit run anywhere in `rest` rather than anchoring on $.
+  // The minimum 4-digit qty length keeps us from latching onto stray
+  // single digits earlier in the field.
+  const match = rest.match(/(\d{4,})([^\s\d][^\s]*)/);
   if (!match) return {};
   const qty = Number(match[1]) / 1000;
   const qu = match[2];

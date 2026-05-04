@@ -120,6 +120,22 @@ function renderAward(
   // OutlCompl=AllTxt declares that every item carries its full long-text
   // content — true for our serializer output.
   lines.push('    <OutlCompl>AllTxt</OutlCompl>');
+  // BoQBkdn defines the OZ-mask layout. The 3.3 XSD requires at least one
+  // entry. We emit the canonical Bereich(2) + Item(4) + Index(1) trio that
+  // matches the most common GAEB 90 OZ mask (e.g. "11PPPPI0090").
+  for (const bkdn of defaultBoQBreakdown()) {
+    lines.push('    <BoQBkdn>');
+    lines.push(`     <Type>${bkdn.type}</Type>`);
+    if (bkdn.label) {
+      lines.push(`     <LblBoQBkdn>${xmlEscape(bkdn.label)}</LblBoQBkdn>`);
+    }
+    lines.push(`     <Length>${bkdn.length}</Length>`);
+    lines.push(`     <Num>${bkdn.num}</Num>`);
+    if (bkdn.alignment) {
+      lines.push(`     <Alignment>${bkdn.alignment}</Alignment>`);
+    }
+    lines.push('    </BoQBkdn>');
+  }
   lines.push('   </BoQInfo>');
   lines.push('   <BoQBody>');
   for (const node of doc.award.boq) {
@@ -129,6 +145,22 @@ function renderAward(
   lines.push('  </BoQ>');
   lines.push(' </Award>');
   return lines.join('\n');
+}
+
+interface BoqBreakdown {
+  type: 'BoQLevel' | 'Item' | 'Index';
+  label?: string;
+  length: number;
+  num: 'Yes' | 'No';
+  alignment?: 'left' | 'right';
+}
+
+function defaultBoQBreakdown(): BoqBreakdown[] {
+  return [
+    { type: 'BoQLevel', label: 'Bereich', length: 2, num: 'Yes' },
+    { type: 'Item', length: 4, num: 'Yes' },
+    { type: 'Index', length: 1, num: 'No', alignment: 'left' },
+  ];
 }
 
 function boqIdentifier(prj: ProjectInfo): string {

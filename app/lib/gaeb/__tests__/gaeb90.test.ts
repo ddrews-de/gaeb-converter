@@ -328,6 +328,21 @@ describe('parseGaeb90 against real TestData', () => {
     expect(preambleWarning!.message).toMatch(/513/);
   });
 
+  it('parses an item whose record-21 line carries a trailing flag char (e.g. X for Stundenlohn)', () => {
+    // Real customer fixtures (LV 39656) put extra flag markers like "X"
+    // after the qty+unit; the regex must still recognise the qty + unit.
+    const src = [
+      line('00        83L                                                 11PPPPI0090', 1),
+      line('11 1       N    X', 2),
+      line('21 1  10   NNN         00000000500h       X', 3),
+      line('25Stundenlohnposition', 4),
+      line('99', 5),
+    ].join('\n');
+    const items = flatItems(parseGaeb90(src).award.boq);
+    expect(items[0].qty).toBe(0.5);
+    expect(items[0].qu).toBe('h');
+  });
+
   it('parses LV_Los02.D83 with nested hierarchy (Bereich > Abschnitt > Pos.)', () => {
     const doc = parseGaeb90(readFixtureAsText('LV_Los02.D83'));
     expect(doc.da).toBe(83);
