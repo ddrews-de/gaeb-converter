@@ -60,8 +60,11 @@ interface LibXmlDoc {
 async function loadLibXmlJs2(): Promise<LibXmlJs2 | null> {
   try {
     // `libxmljs2` is an optional peer dependency — not in package.json, so
-    // TypeScript can't resolve its types at build time.
-    // @ts-expect-error optional peer dependency
+    // TypeScript may or may not resolve its types depending on whether the
+    // user installed it. `@ts-ignore` is permissive in either direction
+    // (`@ts-expect-error` would itself error when the package *is* present).
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore optional peer dependency
     const mod = (await import('libxmljs2')) as unknown;
     const candidate =
       (mod as { default?: LibXmlJs2 }).default ?? (mod as LibXmlJs2);
