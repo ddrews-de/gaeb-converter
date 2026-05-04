@@ -212,8 +212,8 @@ gewährt keine Redistribution).
 **Setup:**
 
 ```bash
-# 1. Native libxml2-Binding installieren
-npm install libxmljs2
+# 1. Native libxml2-Binding installieren (nicht in package.json — optional)
+npm install libxmljs2 --no-save
 
 # 2. Schemas von gaeb.de herunterladen und in ./schemas/ entpacken
 #    https://www.gaeb.de/de/service/downloads/gaeb-datenaustausch/
@@ -223,6 +223,13 @@ npm install libxmljs2
 # 3. Optional: anderen Pfad nutzen
 export GAEB_XSD_DIR=/path/to/schemas
 ```
+
+`--no-save` hält die Library außerhalb von `package.json`, sodass das Default-
+Setup ohne native Build-Schritte auskommt. Die Installation gibt **eine**
+Deprecation-Warning aus (`prebuild-install@7.1.3` — von libxmljs2 hartcodiert,
+hat keinen aktiven Replacement, kein Security-Issue). Der `glob`-Override im
+Repo-`package.json` blendet die zweite Warning aus, die `libxmljs2` sonst über
+ein altes `glob` verursachen würde.
 
 **Verwendung:**
 

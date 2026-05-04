@@ -23,7 +23,8 @@
     "react-dom": "19.2.0"
   },
   "overrides": {
-    "postcss": "^8.5.10"
+    "postcss": "^8.5.10",
+    "glob": "^13.0.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.59.1",

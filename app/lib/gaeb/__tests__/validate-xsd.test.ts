@@ -54,18 +54,37 @@ describe('resolveXsdDir', () => {
 
 const xsdDir = process.env.GAEB_XSD_DIR;
 
-describe('validateGaebXml33WithXsd (no libxmljs2 installed)', () => {
-  it('returns a dependency-missing error when libxmljs2 is not available', async () => {
-    const result = await validateGaebXml33WithXsd('<doc/>', {
-      xsdDir: '/tmp/does-not-exist',
-      da: 83,
+async function libxmljs2IsInstalled(): Promise<boolean> {
+  try {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore optional peer dependency
+    await import('libxmljs2');
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+const libxmljs2Installed = await libxmljs2IsInstalled();
+
+// This test verifies the graceful-degradation path that fires when the
+// optional libxmljs2 native dep isn't installed. It can't run when the
+// dep *is* installed in node_modules, so we skip it in that case.
+describe.skipIf(libxmljs2Installed)(
+  'validateGaebXml33WithXsd (no libxmljs2 installed)',
+  () => {
+    it('returns a dependency-missing error when libxmljs2 is not available', async () => {
+      const result = await validateGaebXml33WithXsd('<doc/>', {
+        xsdDir: '/tmp/does-not-exist',
+        da: 83,
+      });
+      expect(result.valid).toBe(false);
+      expect(result.issues).toHaveLength(1);
+      expect(result.issues[0].severity).toBe('error');
+      expect(result.issues[0].message).toMatch(/libxmljs2.*is not installed/);
     });
-    expect(result.valid).toBe(false);
-    expect(result.issues).toHaveLength(1);
-    expect(result.issues[0].severity).toBe('error');
-    expect(result.issues[0].message).toMatch(/libxmljs2.*is not installed/);
-  });
-});
+  },
+);
 
 // Strict tests run only when libxmljs2 is installed AND the GAEB schemas
 // are reachable via GAEB_XSD_DIR. CI without those skips the whole block.
