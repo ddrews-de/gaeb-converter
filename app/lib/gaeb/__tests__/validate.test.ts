@@ -97,6 +97,34 @@ describe('validateGaebXml33 — error detection', () => {
     expect(errors.some(e => e.message.includes('<Item>') && e.message.includes('ID'))).toBe(true);
   });
 
+  it('flags <OutlineText> appearing before <DetailTxt> inside <CompleteText>', () => {
+    const result = validateGaebXml33(`<?xml version="1.0"?>
+<GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">
+  <Award><DP>83</DP><BoQ ID="B1"><BoQBody>
+    <Itemlist>
+      <Item ID="I1" RNoPart="1">
+        <Qty>1</Qty><QU>St</QU>
+        <Description>
+          <CompleteText>
+            <OutlineText/>
+            <DetailTxt/>
+          </CompleteText>
+        </Description>
+      </Item>
+    </Itemlist>
+  </BoQBody></BoQ></Award>
+</GAEB>`);
+    expect(result.valid).toBe(false);
+    expect(
+      result.issues.some(
+        i =>
+          i.severity === 'error' &&
+          i.message.includes('<OutlineText>') &&
+          i.message.includes('after'),
+      ),
+    ).toBe(true);
+  });
+
   it('flags <LblBoQ> appearing before <Name> in <BoQInfo>', () => {
     const result = validateGaebXml33(`<?xml version="1.0"?>
 <GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">

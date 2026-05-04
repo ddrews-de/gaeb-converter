@@ -316,12 +316,33 @@ function validateItem(item: Element, path: string, issues: ValidationIssue[]): v
       message: '<Item> missing <QU>.',
     });
   }
-  if (!firstByLocalName(item, 'Description')) {
+  const description = firstByLocalName(item, 'Description');
+  if (!description) {
     issues.push({
       severity: 'warning',
       path: `${labelPath}/Description`,
       message: '<Item> missing <Description>.',
     });
+  } else {
+    // Inside <CompleteText> the schema enforces DetailTxt (or ComplTSA/
+    // ComplTSB) before OutlineText. Emitting them in reverse order is a
+    // common round-trip mistake and the XSD rejects every offending item.
+    const completeText = firstByLocalName(description, 'CompleteText');
+    if (completeText) {
+      const children = elementChildren(completeText);
+      const detailIdx = children.findIndex(c =>
+        ['DetailTxt', 'ComplTSA', 'ComplTSB'].includes(c.localName),
+      );
+      const outlineIdx = children.findIndex(c => c.localName === 'OutlineText');
+      if (outlineIdx >= 0 && detailIdx >= 0 && outlineIdx < detailIdx) {
+        issues.push({
+          severity: 'error',
+          path: `${labelPath}/Description/CompleteText`,
+          message:
+            '<CompleteText>: <OutlineText> must appear after <DetailTxt> / <ComplTSA> / <ComplTSB>.',
+        });
+      }
+    }
   }
 }
 
