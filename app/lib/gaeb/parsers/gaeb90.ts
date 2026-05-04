@@ -144,7 +144,7 @@ export function parseGaeb90(text: string, daHint?: DANumber): GaebDocument {
         const body = line.slice(2);
         const ozField = body.slice(0, OZ_WIDTH);
         const rest = body.slice(OZ_WIDTH);
-        const ozParts = splitOz(ozField);
+        const ozParts = splitOz(ozField, oZMask);
         if (ozParts.length === 0) {
           warnings.push({
             severity: 'warn',
@@ -213,7 +213,7 @@ export function parseGaeb90(text: string, daHint?: DANumber): GaebDocument {
       case '21': {
         const body = line.slice(2);
         const ozField = body.slice(0, OZ_WIDTH);
-        const ozParts = splitOz(ozField);
+        const ozParts = splitOz(ozField, oZMask);
         const art = body.slice(OZ_WIDTH, OZ_WIDTH + ART_WIDTH);
         const bedarfKz = body.charAt(OZ_WIDTH + ART_WIDTH);
         const rest = body.slice(OZ_WIDTH + ART_WIDTH + 1);
@@ -341,10 +341,73 @@ function stripTrailer(raw: string): string {
   return trimmed;
 }
 
-function splitOz(ozField: string): string[] {
+/**
+ * Splits a 9-character OZ field into its hierarchical segments.
+ *
+ * Two cases occur in real GAEB-90 files:
+ *
+ *   1. Whitespace-padded layouts like " 1  10   " (LV_Los01.D83 with mask
+ *      "11PPPPI0090"): the segments are visually separated by spaces.
+ *
+ *   2. Compact layouts like "01010010" (LV 39656.D83 with mask
+ *      "1122PPPPI90"): the digits sit flush against each other and only
+ *      the OZ mask tells us where one level ends.
+ *
+ * We always slice positionally via the mask so both layouts behave
+ * identically. Each run of identical characters in the mask defines one
+ * level (length = run length); trailing digit runs after the first letter
+ * (e.g. "0090" / "90" suffix) are reserved control chars and skipped.
+ *
+ * Without a mask we fall back to whitespace splitting.
+ */
+export function splitOz(ozField: string, mask: string = ''): string[] {
+  if (mask) {
+    const segments = parseMaskSegments(mask);
+    if (segments.length > 0) {
+      const sliced = slicePositional(ozField, segments)
+        .map(p => p.trim())
+        .filter(p => p.length > 0);
+      if (sliced.length > 0) return sliced;
+    }
+  }
   const trimmed = ozField.trim();
   if (!trimmed) return [];
   return trimmed.split(/\s+/);
+}
+
+function parseMaskSegments(mask: string): number[] {
+  const segments: number[] = [];
+  let i = 0;
+  let seenLetter = false;
+  while (i < mask.length) {
+    const ch = mask[i];
+    let j = i;
+    while (j < mask.length && mask[j] === ch) j++;
+    const length = j - i;
+    if (/[A-Za-z]/.test(ch)) {
+      segments.push(length);
+      seenLetter = true;
+    } else if (/\d/.test(ch) && !seenLetter) {
+      // Leading digit run — counts as a level (e.g. "11" / "22" prefix
+      // in 1122PPPPI90 marks two-character bereich/abschnitt levels).
+      segments.push(length);
+    } else {
+      // Trailing digit suffix after letters (control codes); stop.
+      break;
+    }
+    i = j;
+  }
+  return segments;
+}
+
+function slicePositional(s: string, segments: number[]): string[] {
+  const out: string[] = [];
+  let pos = 0;
+  for (const length of segments) {
+    out.push(s.slice(pos, pos + length));
+    pos += length;
+  }
+  return out;
 }
 
 /**
