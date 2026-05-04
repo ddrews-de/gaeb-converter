@@ -43,6 +43,10 @@ function renderGAEBInfo(doc: GaebDocument): string {
   return [
     ' <GAEBInfo>',
     '  <Version>3.3</Version>',
+    // VersDate is the schema-version date; required by the GAEB DA XML 3.3
+    // XSD between <Version> and <Date>. The 3.3 schema family ships as
+    // 2021-05.
+    '  <VersDate>2021-05</VersDate>',
     `  <Date>${xmlEscape(toIsoDate(date))}</Date>`,
     `  <ProgSystem>${xmlEscape(PROG_SYSTEM)}</ProgSystem>`,
     ' </GAEBInfo>',
@@ -64,8 +68,13 @@ function renderAward(doc: GaebDocument): string {
   // is redundant but harmless — and lets tools that bound to the 3.1-style
   // schema still find the number.
   lines.push(`  <DP>${doc.da}</DP>`);
+  // <Cur> belongs inside <AwardInfo>, not directly under <Award>. The 3.3
+  // XSD allows AwardInfo / OWN / Requester / CnstSite / AddText / BoQ /
+  // WgChange under Award — Cur is not in that list.
   if (doc.prjInfo.currency) {
-    lines.push(`  <Cur>${xmlEscape(doc.prjInfo.currency)}</Cur>`);
+    lines.push('  <AwardInfo>');
+    lines.push(`   <Cur>${xmlEscape(doc.prjInfo.currency)}</Cur>`);
+    lines.push('  </AwardInfo>');
   }
   lines.push('  <BoQ>');
   lines.push('   <BoQInfo>');
