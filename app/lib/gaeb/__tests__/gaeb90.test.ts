@@ -328,6 +328,32 @@ describe('parseGaeb90 against real TestData', () => {
     expect(preambleWarning!.message).toMatch(/513/);
   });
 
+  it('parses items whose OZ is compact (no whitespace) by slicing per the OZ mask', () => {
+    // LV 39656 uses mask "1122PPPPI90" with flush-packed OZ values
+    // ("01010010" = Bereich 01 + Abschnitt 01 + Position 0010). Without
+    // mask-aware slicing the whole token would land in one segment and
+    // the item would attach to the BoQ root instead of its ctgy.
+    const src = [
+      line('00        83L                                                 1122PPPPI90', 1),
+      line('1101       N    Bereich', 2),
+      line('110101     N    Abschnitt', 3),
+      line('2101010010 NNN         00000001000St', 4),
+      line('25Item', 5),
+      line('99', 6),
+    ].join('\n');
+    const doc = parseGaeb90(src);
+    const top = doc.award.boq.filter(n => n.kind === 'ctgy') as BoqCtgy[];
+    expect(top).toHaveLength(1);
+    expect(top[0].rNoPart).toBe('01');
+    const inner = top[0].children.filter(n => n.kind === 'ctgy') as BoqCtgy[];
+    expect(inner).toHaveLength(1);
+    expect(inner[0].rNoPart).toBe('01');
+    const items = flatItems(doc.award.boq);
+    expect(items).toHaveLength(1);
+    expect(items[0].rNoFull).toBe('01.01.0010');
+    expect(items[0].rNoPart).toBe('0010');
+  });
+
   it('parses an item whose record-21 line carries a trailing flag char (e.g. X for Stundenlohn)', () => {
     // Real customer fixtures (LV 39656) put extra flag markers like "X"
     // after the qty+unit; the regex must still recognise the qty + unit.
