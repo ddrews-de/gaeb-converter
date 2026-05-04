@@ -27,13 +27,34 @@ import {
 
 const PROG_SYSTEM = 'gaeb-converter';
 
+/**
+ * Per-serialization context for generating the deterministic xs:ID strings
+ * that the 3.3 XSD requires on `<BoQ>`, `<BoQCtgy>` and `<Item>`. The IDs
+ * follow the `R` + alphanumeric scheme that production GAEB exporters
+ * use, so the output round-trips through other validators that do
+ * pattern-style ID checks.
+ */
+function createIdContext(): { next(prefix: string): string } {
+  let counter = 0;
+  // Random seed keeps IDs unique across multiple convert() calls in the
+  // same process; the counter keeps them unique within one document.
+  const seed = Math.random().toString(36).slice(2, 8).toUpperCase().padEnd(6, 'A');
+  return {
+    next(prefix: string): string {
+      const n = (counter++).toString(36).toUpperCase().padStart(6, '0');
+      return `R${prefix}${seed}${n}`;
+    },
+  };
+}
+
 export function serializeGaebXml33(doc: GaebDocument): string {
+  const ctx = createIdContext();
   const body: string[] = [];
   body.push(XML_PROLOG);
   body.push(`<GAEB xmlns="${xmlEscape(gaebXml33Namespace(doc.da))}">`);
   body.push(renderGAEBInfo(doc));
   body.push(renderPrjInfo(doc.prjInfo));
-  body.push(renderAward(doc));
+  body.push(renderAward(doc, ctx));
   body.push('</GAEB>');
   return body.join('\n') + '\n';
 }
@@ -62,7 +83,10 @@ function renderPrjInfo(prj: ProjectInfo): string {
   return lines.join('\n');
 }
 
-function renderAward(doc: GaebDocument): string {
+function renderAward(
+  doc: GaebDocument,
+  ctx: { next(prefix: string): string },
+): string {
   const lines: string[] = [' <Award>'];
   // DA XML 3.3 carries the DA both in the namespace URL and in <DP>, which
   // is redundant but harmless — and lets tools that bound to the 3.1-style
@@ -76,15 +100,22 @@ function renderAward(doc: GaebDocument): string {
     lines.push(`   <Cur>${xmlEscape(doc.prjInfo.currency)}</Cur>`);
     lines.push('  </AwardInfo>');
   }
-  lines.push('  <BoQ>');
+  // <BoQ ID="…"> is mandatory per the 3.3 XSD.
+  const boqId = ctx.next('B');
+  lines.push(`  <BoQ ID="${xmlEscape(boqId)}">`);
   lines.push('   <BoQInfo>');
+  // Inside <BoQInfo> the schema enforces <Name> first, then <LblBoQ>.
+  // <Name> is the BoQ identifier (e.g. "01" for a Los); fall back to a
+  // truncated project name if no dedicated identifier exists.
+  const boqName = boqIdentifier(doc.prjInfo);
+  lines.push(`    <Name>${xmlEscape(boqName)}</Name>`);
   if (doc.prjInfo.label) {
     lines.push(`    <LblBoQ>${xmlEscape(doc.prjInfo.label)}</LblBoQ>`);
   }
   lines.push('   </BoQInfo>');
   lines.push('   <BoQBody>');
   for (const node of doc.award.boq) {
-    lines.push(renderNode(node, '    '));
+    lines.push(renderNode(node, '    ', ctx));
   }
   lines.push('   </BoQBody>');
   lines.push('  </BoQ>');
@@ -92,16 +123,38 @@ function renderAward(doc: GaebDocument): string {
   return lines.join('\n');
 }
 
-function renderNode(node: BoqNode, indent: string): string {
-  return node.kind === 'ctgy'
-    ? renderCategory(node, indent)
-    : renderItem(node, indent);
+function boqIdentifier(prj: ProjectInfo): string {
+  // BoQInfo/Name has a strict pattern in the schema (no spaces, short).
+  // Use the explicit project name if it already looks like an identifier;
+  // otherwise compose a stable fallback.
+  if (prj.name && /^[A-Za-z0-9_.-]{1,16}$/.test(prj.name)) return prj.name;
+  if (prj.name) {
+    const slug = prj.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 16);
+    if (slug) return slug;
+  }
+  return 'BoQ';
 }
 
-function renderCategory(ctgy: BoqCtgy, indent: string): string {
+function renderNode(
+  node: BoqNode,
+  indent: string,
+  ctx: { next(prefix: string): string },
+): string {
+  return node.kind === 'ctgy'
+    ? renderCategory(node, indent, ctx)
+    : renderItem(node, indent, ctx);
+}
+
+function renderCategory(
+  ctgy: BoqCtgy,
+  indent: string,
+  ctx: { next(prefix: string): string },
+): string {
   const lines: string[] = [];
-  const attrs = ctgy.rNoPart ? ` RNoPart="${xmlEscape(ctgy.rNoPart)}"` : '';
-  lines.push(`${indent}<BoQCtgy${attrs}>`);
+  // <BoQCtgy ID="…"> is mandatory per the 3.3 XSD.
+  const id = ctx.next('C');
+  const rNoAttr = ctgy.rNoPart ? ` RNoPart="${xmlEscape(ctgy.rNoPart)}"` : '';
+  lines.push(`${indent}<BoQCtgy ID="${xmlEscape(id)}"${rNoAttr}>`);
   if (ctgy.label) {
     lines.push(`${indent} <LblTx>`);
     lines.push(`${indent}  <p>`);
@@ -119,12 +172,12 @@ function renderCategory(ctgy: BoqCtgy, indent: string): string {
   }
 
   for (const sub of subCats) {
-    lines.push(renderCategory(sub, indent + '  '));
+    lines.push(renderCategory(sub, indent + '  ', ctx));
   }
   if (items.length > 0) {
     lines.push(`${indent}  <Itemlist>`);
     for (const item of items) {
-      lines.push(renderItem(item, indent + '   '));
+      lines.push(renderItem(item, indent + '   ', ctx));
     }
     lines.push(`${indent}  </Itemlist>`);
   }
@@ -133,10 +186,16 @@ function renderCategory(ctgy: BoqCtgy, indent: string): string {
   return lines.join('\n');
 }
 
-function renderItem(item: BoqItem, indent: string): string {
+function renderItem(
+  item: BoqItem,
+  indent: string,
+  ctx: { next(prefix: string): string },
+): string {
   const lines: string[] = [];
-  const attrs = item.rNoPart ? ` RNoPart="${xmlEscape(item.rNoPart)}"` : '';
-  lines.push(`${indent}<Item${attrs}>`);
+  // <Item ID="…"> is mandatory per the 3.3 XSD.
+  const id = ctx.next('I');
+  const rNoAttr = item.rNoPart ? ` RNoPart="${xmlEscape(item.rNoPart)}"` : '';
+  lines.push(`${indent}<Item ID="${xmlEscape(id)}"${rNoAttr}>`);
 
   const typeTag = itemTypeTag(item.itemType);
   if (typeTag) lines.push(`${indent} <${typeTag}>Yes</${typeTag}>`);

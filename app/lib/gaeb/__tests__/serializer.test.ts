@@ -139,6 +139,27 @@ describe('serializeGaebXml33 (synthetic)', () => {
     expect(xml).not.toMatch(/<Award>\s*<DP>83<\/DP>\s*<Cur>/);
   });
 
+  it('emits the mandatory ID attribute on <BoQ>, <BoQCtgy> and <Item>', () => {
+    const xml = serializeGaebXml33(miniDoc());
+    expect(xml).toMatch(/<BoQ ID="[^"]+">/);
+    expect(xml).toMatch(/<BoQCtgy ID="[^"]+"[^>]*RNoPart="1"/);
+    expect(xml).toMatch(/<Item ID="[^"]+"[^>]*RNoPart="10"/);
+    // Every emitted ID is unique within the document.
+    const ids = Array.from(xml.matchAll(/\bID="([^"]+)"/g)).map(m => m[1]);
+    const unique = new Set(ids);
+    expect(unique.size).toBe(ids.length);
+  });
+
+  it('emits <Name> before <LblBoQ> inside <BoQInfo>', () => {
+    // The 3.3 schema enforces <Name> first; without it, <LblBoQ> is
+    // rejected as an unexpected element.
+    const xml = serializeGaebXml33(miniDoc());
+    const nameAt = xml.indexOf('<Name>');
+    const lblAt = xml.indexOf('<LblBoQ>');
+    expect(nameAt).toBeGreaterThan(0);
+    expect(lblAt).toBeGreaterThan(nameAt);
+  });
+
   it('round-trips: parse(serialize(doc)) yields an equivalent GaebDocument', () => {
     const before = miniDoc();
     const xml = serializeGaebXml33(before);
