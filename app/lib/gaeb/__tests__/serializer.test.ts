@@ -116,6 +116,29 @@ describe('serializeGaebXml33 (synthetic)', () => {
     expect(xml).toContain('<LblPrj>Mini LV</LblPrj>');
   });
 
+  it('emits <VersDate> between <Version> and <Date> in <GAEBInfo>', () => {
+    // The 3.3 XSD requires <VersDate> right after <Version>; without it,
+    // <Date> is rejected as an unexpected element. The schema-version date
+    // for the 3.3 schema family is 2021-05.
+    const xml = serializeGaebXml33(miniDoc());
+    const versionAt = xml.indexOf('<Version>3.3</Version>');
+    const versDateAt = xml.indexOf('<VersDate>2021-05</VersDate>');
+    const dateAt = xml.indexOf('<Date>');
+    expect(versionAt).toBeGreaterThan(0);
+    expect(versDateAt).toBeGreaterThan(versionAt);
+    expect(dateAt).toBeGreaterThan(versDateAt);
+  });
+
+  it('places <Cur> inside <AwardInfo>, not directly under <Award>', () => {
+    // The 3.3 XSD allows AwardInfo / OWN / Requester / CnstSite / AddText /
+    // BoQ / WgChange under <Award> — <Cur> is not in that list.
+    const xml = serializeGaebXml33(miniDoc());
+    expect(xml).toContain('<AwardInfo>');
+    expect(xml).toContain('<Cur>EUR</Cur>');
+    // No <Cur> as a direct child of <Award>.
+    expect(xml).not.toMatch(/<Award>\s*<DP>83<\/DP>\s*<Cur>/);
+  });
+
   it('round-trips: parse(serialize(doc)) yields an equivalent GaebDocument', () => {
     const before = miniDoc();
     const xml = serializeGaebXml33(before);
