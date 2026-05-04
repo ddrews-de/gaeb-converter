@@ -148,7 +148,8 @@ function validateRoot(root: Element, issues: ValidationIssue[]): void {
     });
   }
 
-  // <BoQInfo> must contain <Name> before <LblBoQ>.
+  // <BoQInfo> must contain <Name> before <LblBoQ> and at least one of
+  // CPVCode / CONo / Date / OutlCompl after them.
   const boqInfo = firstByLocalName(boq, 'BoQInfo');
   if (boqInfo) {
     const children = elementChildren(boqInfo);
@@ -165,6 +166,17 @@ function validateRoot(root: Element, issues: ValidationIssue[]): void {
         severity: 'error',
         path: '/GAEB/Award/BoQ/BoQInfo',
         message: '<BoQInfo>: <Name> must appear before <LblBoQ>.',
+      });
+    }
+
+    const REQUIRED_ANY = ['CPVCode', 'CONo', 'Date', 'OutlCompl'];
+    const hasAny = children.some(c => REQUIRED_ANY.includes(c.localName));
+    if (!hasAny) {
+      issues.push({
+        severity: 'error',
+        path: '/GAEB/Award/BoQ/BoQInfo',
+        message:
+          '<BoQInfo> needs at least one of <CPVCode>, <CONo>, <Date>, <OutlCompl>.',
       });
     }
   }
