@@ -179,6 +179,16 @@ function validateRoot(root: Element, issues: ValidationIssue[]): void {
           '<BoQInfo> needs at least one of <CPVCode>, <CONo>, <Date>, <OutlCompl>.',
       });
     }
+
+    // BoQInfo also requires at least one <BoQBkdn> describing the OZ layout.
+    const hasBkdn = children.some(c => c.localName === 'BoQBkdn');
+    if (!hasBkdn) {
+      issues.push({
+        severity: 'error',
+        path: '/GAEB/Award/BoQ/BoQInfo',
+        message: '<BoQInfo> is missing <BoQBkdn> (OZ layout descriptor).',
+      });
+    }
   }
 
   const body = firstByLocalName(boq, 'BoQBody');
