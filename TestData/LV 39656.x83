@@ -16,15 +16,32 @@
   <AwardInfo>
    <Cur>EUR</Cur>
   </AwardInfo>
-  <BoQ ID="RBU0EI3G000000">
+  <BoQ ID="RBY9419L000000">
    <BoQInfo>
     <Name>Unterhaltsreinig</Name>
     <LblBoQ>Unterhaltsreinigung und Hygienemateriallieferung</LblBoQ>
     <Date>2026-04-07</Date>
     <OutlCompl>AllTxt</OutlCompl>
+    <BoQBkdn>
+     <Type>BoQLevel</Type>
+     <LblBoQBkdn>Bereich</LblBoQBkdn>
+     <Length>2</Length>
+     <Num>Yes</Num>
+    </BoQBkdn>
+    <BoQBkdn>
+     <Type>Item</Type>
+     <Length>4</Length>
+     <Num>Yes</Num>
+    </BoQBkdn>
+    <BoQBkdn>
+     <Type>Index</Type>
+     <Length>1</Length>
+     <Num>No</Num>
+     <Alignment>left</Alignment>
+    </BoQBkdn>
    </BoQInfo>
    <BoQBody>
-    <BoQCtgy ID="RCU0EI3G000001" RNoPart="01">
+    <BoQCtgy ID="RCY9419L000001" RNoPart="01">
      <LblTx>
       <p>
        <span>Bereich Reinigung</span>
@@ -33,7 +50,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <BoQCtgy ID="RCU0EI3G000002" RNoPart="0101">
+    <BoQCtgy ID="RCY9419L000002" RNoPart="0101">
      <LblTx>
       <p>
        <span>Abschnitt Unterhaltsreingung Haus 1</span>
@@ -42,7 +59,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <Item ID="RIU0EI3G000003" RNoPart="01010010">
+    <Item ID="RIY9419L000003" RNoPart="01010010">
      <Qty>16239.7</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -121,7 +138,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000004" RNoPart="01010020">
+    <Item ID="RIY9419L000004" RNoPart="01010020">
      <Qty>2563.6</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -197,7 +214,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000005" RNoPart="01010030">
+    <Item ID="RIY9419L000005" RNoPart="01010030">
      <Qty>3340.48</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -273,7 +290,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000006" RNoPart="01010040">
+    <Item ID="RIY9419L000006" RNoPart="01010040">
      <Qty>8200.17</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -385,7 +402,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000007" RNoPart="01010050">
+    <Item ID="RIY9419L000007" RNoPart="01010050">
      <Qty>5705.23</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -497,7 +514,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000008" RNoPart="01010060">
+    <Item ID="RIY9419L000008" RNoPart="01010060">
      <Qty>6924.32</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -579,7 +596,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000009" RNoPart="01010070">
+    <Item ID="RIY9419L000009" RNoPart="01010070">
      <Qty>2522.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -658,7 +675,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000A" RNoPart="01010080">
+    <Item ID="RIY9419L00000A" RNoPart="01010080">
      <Qty>8288.02</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -752,7 +769,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000B" RNoPart="01010090">
+    <Item ID="RIY9419L00000B" RNoPart="01010090">
      <Qty>8288.02</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -846,7 +863,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000C" RNoPart="01010100">
+    <Item ID="RIY9419L00000C" RNoPart="01010100">
      <Qty>9602.32</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -904,7 +921,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000D" RNoPart="01010110">
+    <Item ID="RIY9419L00000D" RNoPart="01010110">
      <Qty>3002.48</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -971,7 +988,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000E" RNoPart="01010120">
+    <Item ID="RIY9419L00000E" RNoPart="01010120">
      <Qty>3930.66</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1053,7 +1070,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <BoQCtgy ID="RCU0EI3G00000F" RNoPart="0102">
+    <BoQCtgy ID="RCY9419L00000F" RNoPart="0102">
      <LblTx>
       <p>
        <span>Abschnitt Grundreinigung Haus 1</span>
@@ -1062,7 +1079,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <Item ID="RIU0EI3G00000G" RNoPart="01020010">
+    <Item ID="RIY9419L00000G" RNoPart="01020010">
      <Qty>32.67</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1114,7 +1131,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000H" RNoPart="01020020">
+    <Item ID="RIY9419L00000H" RNoPart="01020020">
      <Qty>22.73</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1163,7 +1180,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000I" RNoPart="01020030">
+    <Item ID="RIY9419L00000I" RNoPart="01020030">
      <Qty>66.58</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1227,7 +1244,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000J" RNoPart="01020040">
+    <Item ID="RIY9419L00000J" RNoPart="01020040">
      <Qty>24.25</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1291,7 +1308,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000K" RNoPart="01020050">
+    <Item ID="RIY9419L00000K" RNoPart="01020050">
      <Qty>92.33</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1358,7 +1375,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <BoQCtgy ID="RCU0EI3G00000L" RNoPart="0103">
+    <BoQCtgy ID="RCY9419L00000L" RNoPart="0103">
      <LblTx>
       <p>
        <span>Abschnitt Unterhaltsreingung Haus 4</span>
@@ -1367,7 +1384,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <Item ID="RIU0EI3G00000M" RNoPart="01030010">
+    <Item ID="RIY9419L00000M" RNoPart="01030010">
      <Qty>24596.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1452,7 +1469,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000N" RNoPart="01030020">
+    <Item ID="RIY9419L00000N" RNoPart="01030020">
      <Qty>7748.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1528,7 +1545,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000O" RNoPart="01030030">
+    <Item ID="RIY9419L00000O" RNoPart="01030030">
      <Qty>1456.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1607,7 +1624,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000P" RNoPart="01030040">
+    <Item ID="RIY9419L00000P" RNoPart="01030040">
      <Qty>1612.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1689,7 +1706,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000Q" RNoPart="01030050">
+    <Item ID="RIY9419L00000Q" RNoPart="01030050">
      <Qty>9516.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1768,7 +1785,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000R" RNoPart="01030060">
+    <Item ID="RIY9419L00000R" RNoPart="01030060">
      <Qty>3848.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1847,7 +1864,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000S" RNoPart="01030070">
+    <Item ID="RIY9419L00000S" RNoPart="01030070">
      <Qty>6777.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -1959,7 +1976,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000T" RNoPart="01030080">
+    <Item ID="RIY9419L00000T" RNoPart="01030080">
      <Qty>26104.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2071,7 +2088,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000U" RNoPart="01030090">
+    <Item ID="RIY9419L00000U" RNoPart="01030090">
      <Qty>6968.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2135,7 +2152,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000V" RNoPart="01030100">
+    <Item ID="RIY9419L00000V" RNoPart="01030100">
      <Qty>50128.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2217,7 +2234,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000W" RNoPart="01030110">
+    <Item ID="RIY9419L00000W" RNoPart="01030110">
      <Qty>19552.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2296,7 +2313,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000X" RNoPart="01030120">
+    <Item ID="RIY9419L00000X" RNoPart="01030120">
      <Qty>44304.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2396,7 +2413,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000Y" RNoPart="01030130">
+    <Item ID="RIY9419L00000Y" RNoPart="01030130">
      <Qty>29367.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2496,7 +2513,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00000Z" RNoPart="01030140">
+    <Item ID="RIY9419L00000Z" RNoPart="01030140">
      <Qty>4056.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2590,7 +2607,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000010" RNoPart="01030150">
+    <Item ID="RIY9419L000010" RNoPart="01030150">
      <Qty>1040.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2645,7 +2662,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000011" RNoPart="01030160">
+    <Item ID="RIY9419L000011" RNoPart="01030160">
      <Qty>3432.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2697,7 +2714,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000012" RNoPart="01030170">
+    <Item ID="RIY9419L000012" RNoPart="01030170">
      <Qty>2340.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2743,7 +2760,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000013" RNoPart="01030180">
+    <Item ID="RIY9419L000013" RNoPart="01030180">
      <Qty>5720.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2801,7 +2818,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000014" RNoPart="01030190">
+    <Item ID="RIY9419L000014" RNoPart="01030190">
      <Qty>6024.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2883,7 +2900,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000015" RNoPart="01030200">
+    <Item ID="RIY9419L000015" RNoPart="01030200">
      <Qty>8785.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -2965,7 +2982,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <BoQCtgy ID="RCU0EI3G000016" RNoPart="0104">
+    <BoQCtgy ID="RCY9419L000016" RNoPart="0104">
      <LblTx>
       <p>
        <span>Abschnitt Grundreinigung Haus 4</span>
@@ -2974,7 +2991,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <Item ID="RIU0EI3G000017" RNoPart="01040010">
+    <Item ID="RIY9419L000017" RNoPart="01040010">
      <Qty>27.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -3026,7 +3043,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000018" RNoPart="01040020">
+    <Item ID="RIY9419L000018" RNoPart="01040020">
      <Qty>104.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -3075,7 +3092,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G000019" RNoPart="01040030">
+    <Item ID="RIY9419L000019" RNoPart="01040030">
      <Qty>482.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -3139,7 +3156,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001A" RNoPart="01040040">
+    <Item ID="RIY9419L00001A" RNoPart="01040040">
      <Qty>188.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -3203,7 +3220,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001B" RNoPart="01040050">
+    <Item ID="RIY9419L00001B" RNoPart="01040050">
      <Qty>117.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -3252,7 +3269,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001C" RNoPart="01040060">
+    <Item ID="RIY9419L00001C" RNoPart="01040060">
      <Qty>55.000</Qty>
      <QU>m²/a</QU>
      <Description>
@@ -3322,7 +3339,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <BoQCtgy ID="RCU0EI3G00001D" RNoPart="0105">
+    <BoQCtgy ID="RCY9419L00001D" RNoPart="0105">
      <LblTx>
       <p>
        <span>Abschnitt Stundenverrechnungssätze der Gebäudereinigung</span>
@@ -3331,7 +3348,9 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <Item ID="RIU0EI3G00001E" RNoPart="01050010">
+    <Item ID="RIY9419L00001E" RNoPart="01050010">
+     <Qty>0.5</Qty>
+     <QU>h</QU>
      <Description>
       <CompleteText>
         <OutlineText>
@@ -3447,7 +3466,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <BoQCtgy ID="RCU0EI3G00001F" RNoPart="02">
+    <BoQCtgy ID="RCY9419L00001F" RNoPart="02">
      <LblTx>
       <p>
        <span>Bereich Sonstige Leistungen</span>
@@ -3456,7 +3475,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <BoQCtgy ID="RCU0EI3G00001G" RNoPart="0201">
+    <BoQCtgy ID="RCY9419L00001G" RNoPart="0201">
      <LblTx>
       <p>
        <span>Abschnitt Schmutzfangmattenservice</span>
@@ -3465,7 +3484,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <Item ID="RIU0EI3G00001H" RNoPart="02010010">
+    <Item ID="RIY9419L00001H" RNoPart="02010010">
      <Qty>6.000</Qty>
      <QU>Mon</QU>
      <Description>
@@ -3511,7 +3530,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001I" RNoPart="02010020">
+    <Item ID="RIY9419L00001I" RNoPart="02010020">
      <Qty>6.000</Qty>
      <QU>Mon</QU>
      <Description>
@@ -3557,7 +3576,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001J" RNoPart="02010030">
+    <Item ID="RIY9419L00001J" RNoPart="02010030">
      <Qty>6.000</Qty>
      <QU>Mon</QU>
      <Description>
@@ -3603,7 +3622,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001K" RNoPart="02010040">
+    <Item ID="RIY9419L00001K" RNoPart="02010040">
      <Qty>6.000</Qty>
      <QU>Mon</QU>
      <Description>
@@ -3649,7 +3668,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <BoQCtgy ID="RCU0EI3G00001L" RNoPart="0202">
+    <BoQCtgy ID="RCY9419L00001L" RNoPart="0202">
      <LblTx>
       <p>
        <span>Abschnitt Lieferung von Verbrauchs- und Hygieneartikeln Haus 1</span>
@@ -3658,7 +3677,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <Item ID="RIU0EI3G00001M" RNoPart="02020010">
+    <Item ID="RIY9419L00001M" RNoPart="02020010">
      <Qty>10.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -3713,7 +3732,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001N" RNoPart="02020020">
+    <Item ID="RIY9419L00001N" RNoPart="02020020">
      <Qty>10.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -3771,7 +3790,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001O" RNoPart="02020030">
+    <Item ID="RIY9419L00001O" RNoPart="02020030">
      <Qty>2.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -3817,7 +3836,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001P" RNoPart="02020040">
+    <Item ID="RIY9419L00001P" RNoPart="02020040">
      <Qty>3.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -3878,7 +3897,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001Q" RNoPart="02020050">
+    <Item ID="RIY9419L00001Q" RNoPart="02020050">
      <Qty>4.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -3927,7 +3946,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <BoQCtgy ID="RCU0EI3G00001R" RNoPart="0203">
+    <BoQCtgy ID="RCY9419L00001R" RNoPart="0203">
      <LblTx>
       <p>
        <span>Abschnitt Lieferung von Verbrauchs- und Hygieneartikeln Haus 4</span>
@@ -3936,7 +3955,7 @@
      <BoQBody>
      </BoQBody>
     </BoQCtgy>
-    <Item ID="RIU0EI3G00001S" RNoPart="02030010">
+    <Item ID="RIY9419L00001S" RNoPart="02030010">
      <Qty>12.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -3991,7 +4010,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001T" RNoPart="02030020">
+    <Item ID="RIY9419L00001T" RNoPart="02030020">
      <Qty>12.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -4049,7 +4068,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001U" RNoPart="02030030">
+    <Item ID="RIY9419L00001U" RNoPart="02030030">
      <Qty>3.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -4095,7 +4114,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001V" RNoPart="02030040">
+    <Item ID="RIY9419L00001V" RNoPart="02030040">
      <Qty>4.000</Qty>
      <QU>VE/a</QU>
      <Description>
@@ -4156,7 +4175,7 @@
       </CompleteText>
      </Description>
     </Item>
-    <Item ID="RIU0EI3G00001W" RNoPart="02030050">
+    <Item ID="RIY9419L00001W" RNoPart="02030050">
      <Qty>13.000</Qty>
      <QU>VE/a</QU>
      <Description>
