@@ -131,7 +131,9 @@ cat LV_Los01.D83 | npm run convert -- -i LV_Los01.D83 - - > out.X83
 | Flag | Bedeutung |
 |------|-----------|
 | `--audit` | Schreibt zusätzlich `<base>.audit.txt` mit Header, BoQ-Baum und Warnungen |
-| `--validate` | Validiert das XML strukturlos und beendet mit Exit 1 bei Fehlern |
+| `--validate` | Schemalose Strukturvalidierung; Exit 1 bei Fehlern |
+| `--validate-xsd [dir]` | Strikte XSD-Validierung via `libxmljs2`; löst das Schema automatisch aus der DA-Nummer auf. `dir` optional (Default `$GAEB_XSD_DIR` / `./schemas`) |
+| `--xsd-dir <dir>` | Schema-Wurzel-Pfad (Shortcut, nutzbar mit `--validate-xsd`) |
 | `--quiet` | Unterdrückt Info-Meldungen auf stderr (nur Fehler bleiben sichtbar) |
 | `-i`, `--input-name` | Dateiname für die Format-Detection (nötig bei stdin) |
 | `-h`, `--help` | Zeigt die Hilfe |
@@ -207,25 +209,49 @@ Geprüft werden u. a. Root-Element + Namespace, `<GAEBInfo><Version>`,
 Library noch die GAEB-3.3-XSDs werden mitgeliefert (der GAEB Bundesverband
 gewährt keine Redistribution).
 
+**Setup:**
+
 ```bash
-npm install libxmljs2                  # native libxml2-Binding
-export GAEB_XSD_DIR=/path/to/schemas   # Master-Datei als GAEB_DA_XML_3.3.xsd
+# 1. Native libxml2-Binding installieren
+npm install libxmljs2
+
+# 2. Schemas von gaeb.de herunterladen und in ./schemas/ entpacken
+#    https://www.gaeb.de/de/service/downloads/gaeb-datenaustausch/
+#    Für DA 81–86 reicht das Paket "2021-05_Leistungsverzeichnis".
+#    Details + erwartete Verzeichnisstruktur in schemas/README.md.
+
+# 3. Optional: anderen Pfad nutzen
+export GAEB_XSD_DIR=/path/to/schemas
 ```
+
+**Verwendung:**
 
 ```ts
 // Wichtig: direkt aus dem Submodul importieren (nicht aus '@/lib/gaeb'),
 // weil dieses Modul `node:fs` braucht und sonst im Browser-Bundle landet.
 import { validateGaebXml33WithXsd } from '@/lib/gaeb/validate-xsd';
 
-const result = await validateGaebXml33WithXsd(xml, {
-  xsdDir: process.env.GAEB_XSD_DIR!,
-});
+// DA-Nummer aus dem geparsten Dokument — der Validator wählt automatisch
+// das passende XSD aus dem Leistungsverzeichnis-Bundle.
+const result = await validateGaebXml33WithXsd(xml, { da: doc.da });
+```
+
+Defaults: `xsdDir` = `$GAEB_XSD_DIR` oder `./schemas`. Über `masterFileName`
+lässt sich ein expliziter Schema-Pfad relativ zu `xsdDir` setzen, falls die
+DA-Auto-Auflösung nicht greift (z. B. für Mengen-, Rechnungs- oder
+Zeitvertragsschemas).
+
+CLI-Flag: `--validate-xsd [dir]` — direkt im Konverter-Lauf:
+
+```bash
+npm install libxmljs2
+npm run convert -- LV_Los01.D83 out.X83 --validate-xsd
 ```
 
 Nur in serverseitigen Umgebungen (API-Routen, CLI, Node-Tests) verfügbar.
 Fehlt `libxmljs2`, resolved die Funktion trotzdem — mit einem einzelnen
-Error, der die nachzurüstenden Schritte nennt. Schemalose Prüfung bleibt der
-Default.
+Error, der die nachzurüstenden Schritte nennt. Schemalose Prüfung
+(`--validate`) bleibt der Default und braucht keine externen Schemas.
 
 ## Docker
 
@@ -235,6 +261,11 @@ docker-compose up -d --build
 
 Multi-Stage-Build, Non-Root-User (`nextjs:nodejs`), EXPOSE 3000. Details und
 Troubleshooting in [`DOCKER.md`](DOCKER.md).
+
+Das mitgelieferte `docker-compose.yml` mountet außerdem `./schemas` per
+Default read-only nach `/schemas` im Container und setzt `GAEB_XSD_DIR`
+darauf — wenn lokal XSDs liegen, ist die strikte Validierung sofort
+verfügbar (siehe [`schemas/README.md`](schemas/README.md)).
 
 ## Architektur
 

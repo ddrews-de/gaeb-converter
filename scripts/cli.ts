@@ -44,6 +44,7 @@ import {
   convert,
   validateGaebXml33,
 } from '../app/lib/gaeb';
+import { validateGaebXml33WithXsd } from '../app/lib/gaeb/validate-xsd';
 
 interface CliArgs {
   inputPath: string | '-';
@@ -51,6 +52,8 @@ interface CliArgs {
   inputName: string | null;
   audit: boolean;
   validate: boolean;
+  validateXsd: boolean;
+  xsdDir: string | null;
   quiet: boolean;
 }
 
@@ -139,6 +142,23 @@ async function main(): Promise<number> {
     }
   }
 
+  if (args.validateXsd) {
+    const verdict = await validateGaebXml33WithXsd(xml, {
+      da: doc.da,
+      ...(args.xsdDir ? { xsdDir: args.xsdDir } : {}),
+    });
+    for (const issue of verdict.issues) {
+      process.stderr.write(`[${issue.severity}] ${issue.path}: ${issue.message}\n`);
+    }
+    if (!verdict.valid) {
+      process.stderr.write('gaeb-convert: XSD validation reported errors\n');
+      return 1;
+    }
+    if (!args.quiet) {
+      process.stderr.write('gaeb-convert: XSD validation OK\n');
+    }
+  }
+
   return 0;
 }
 
@@ -149,6 +169,8 @@ function parseArgs(argv: string[]): CliArgs {
     inputName: null,
     audit: false,
     validate: false,
+    validateXsd: false,
+    xsdDir: null,
     quiet: false,
   };
   const positional: string[] = [];
@@ -166,6 +188,18 @@ function parseArgs(argv: string[]): CliArgs {
         break;
       case '--validate':
         out.validate = true;
+        break;
+      case '--validate-xsd':
+        out.validateXsd = true;
+        // Optional directory argument; only consume the next token if it
+        // doesn't look like another flag or a positional path.
+        if (argv[i + 1] && !argv[i + 1].startsWith('-')) {
+          out.xsdDir = argv[++i];
+        }
+        break;
+      case '--xsd-dir':
+        out.xsdDir = argv[++i];
+        if (!out.xsdDir) throw new Error('--xsd-dir requires a value');
         break;
       case '--quiet':
         out.quiet = true;
@@ -270,13 +304,21 @@ Arguments:
                     next to the input. Use '-' to stream to stdout.
 
 Flags:
-  --audit           Also write a '<output>.audit.txt' summary file.
-  --validate        Validate the XML output structurally and exit 1
-                    if any error-level issue is found.
-  --quiet           Suppress informational stderr output.
-  -i, --input-name  File name to use for format detection (required
-                    when reading from stdin).
-  -h, --help        Show this help.
+  --audit             Also write a '<output>.audit.txt' summary file.
+  --validate          Schemaless structural validation of the XML output.
+                      Exits 1 if any error-level issue is found.
+  --validate-xsd [d]  Strict XSD validation via libxmljs2. Picks the right
+                      schema for the document's DA number from the GAEB
+                      bundle. Optional [d] overrides the schema directory;
+                      defaults to $GAEB_XSD_DIR or ./schemas.
+                      Requires 'npm install libxmljs2' and the official
+                      schemas (see schemas/README.md).
+  --xsd-dir <dir>     Schema directory shortcut (also useful with
+                      --validate-xsd when [d] is omitted).
+  --quiet             Suppress informational stderr output.
+  -i, --input-name    File name to use for format detection (required
+                      when reading from stdin).
+  -h, --help          Show this help.
 
 Exit codes:
   0  success

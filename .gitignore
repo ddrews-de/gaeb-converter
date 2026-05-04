@@ -43,3 +43,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# GAEB schemas (not redistributable; keep README and structure only)
+/schemas/**/*.xsd
+/schemas/**/*.zip

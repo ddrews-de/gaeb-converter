@@ -10,6 +10,15 @@ services:
     environment:
       - NODE_ENV=production
       - NEXT_TELEMETRY_DISABLED=1
+      # Where the GAEB DA XML 3.3 XSDs live inside the container. Mount
+      # the host's schemas/ folder onto /schemas (see volumes below) and
+      # the strict XSD validator picks them up automatically.
+      - GAEB_XSD_DIR=/schemas
+    volumes:
+      # Optional: mount the local schemas/ directory if you want strict
+      # XSD validation. The directory is read-only inside the container.
+      # See schemas/README.md for the expected layout / download links.
+      - ./schemas:/schemas:ro
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]

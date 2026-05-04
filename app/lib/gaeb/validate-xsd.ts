@@ -1,39 +1,46 @@
 /**
- * Strict XSD-based GAEB DA XML 3.3 validation (Option A).
+ * Strict XSD-based GAEB DA XML 3.3 validation.
  *
  * Complements the schemaless `validateGaebXml33()` with a real XSD check
  * via the libxml2 C-library (exposed through the `libxmljs2` npm package).
- * Neither the library nor the GAEB DA XML 3.3 schemas are bundled with
- * this project — the Bundesverband does not grant redistribution rights
- * for the XSDs. To use this function in production:
+ * Neither the library nor the GAEB DA XML 3.3 schemas are bundled — the
+ * GAEB Bundesverband does not grant redistribution rights for the XSDs.
  *
  *   1. npm install libxmljs2
- *   2. Place the licensed XSD set in a directory of your choice,
- *      with a master file named `GAEB_DA_XML_3.3.xsd`.
- *   3. Call validateGaebXml33WithXsd(xml, { xsdDir: '/path/to/schemas' }).
+ *   2. Download the schema bundles from
+ *      https://www.gaeb.de/de/service/downloads/gaeb-datenaustausch/
+ *      and extract them into ./schemas/ (or any directory of your choice).
+ *      The Zip names become subfolders (e.g. 2021-05_Leistungsverzeichnis/).
+ *      See ./schemas/README.md for the expected layout.
+ *   3. Call validateGaebXml33WithXsd(xml, { da: 83 }) — the right XSD is
+ *      resolved automatically based on the DA number. Override the lookup
+ *      via masterFileName / xsdDir if needed.
  *
- * If libxmljs2 is not installed, the function still resolves — but with
- * a ValidationResult that carries a single actionable error telling the
- * caller exactly how to enable the feature. This lets the schemaless
- * validator continue to ship without pulling in a native build step.
+ * If libxmljs2 is not installed, the function still resolves — but with a
+ * ValidationResult that carries a single actionable error pointing the
+ * caller at the install steps. This lets the schemaless validator keep
+ * shipping without forcing a native build.
  */
 
 import { promises as fs } from 'node:fs';
 import { join } from 'node:path';
+import type { DANumber } from './types';
 import type { ValidationIssue, ValidationResult } from './validate';
 
+export const DEFAULT_XSD_DIR = './schemas';
+
 export interface XsdValidationOptions {
-  /** Directory containing GAEB_DA_XML_3.3.xsd and any imported XSDs. */
-  xsdDir: string;
-  /** Master XSD filename; defaults to GAEB_DA_XML_3.3.xsd. */
+  /** Root directory containing the GAEB schema subfolders. Defaults to
+   *  $GAEB_XSD_DIR or ./schemas. */
+  xsdDir?: string;
+  /** DA number; lets the validator pick the right schema bundle and file
+   *  automatically. Required unless `masterFileName` is given. */
+  da?: DANumber;
+  /** Explicit path (relative to xsdDir) of the master XSD to load. Wins
+   *  over `da`-based resolution when present. */
   masterFileName?: string;
 }
 
-/**
- * Minimal structural view of the libxmljs2 API we rely on. Hand-rolled
- * rather than depending on @types/libxmljs2 so this file compiles even
- * when the optional package is not installed.
- */
 interface LibXmlJs2 {
   parseXml(
     src: string,
@@ -53,8 +60,7 @@ interface LibXmlDoc {
 async function loadLibXmlJs2(): Promise<LibXmlJs2 | null> {
   try {
     // `libxmljs2` is an optional peer dependency — not in package.json, so
-    // TypeScript can't resolve its types at build time. The dynamic import
-    // stays intentional; silence the module-resolution error here.
+    // TypeScript can't resolve its types at build time.
     // @ts-expect-error optional peer dependency
     const mod = (await import('libxmljs2')) as unknown;
     const candidate =
@@ -67,25 +73,59 @@ async function loadLibXmlJs2(): Promise<LibXmlJs2 | null> {
 }
 
 /**
- * Validates `xml` against a local copy of the GAEB DA XML 3.3 XSDs using
- * libxmljs2. Returns the same `ValidationResult` shape the schemaless
- * validator does, so downstream UI can render either source uniformly.
+ * Maps a DA number to the matching XSD path inside the schema root.
+ * Mirrors the Zip-folder layout published on gaeb.de — see schemas/README.md.
+ *
+ * Returns null when no mapping is known; callers can fall back to a manual
+ * `masterFileName` in that case.
+ */
+export function schemaForDa(da: DANumber): string | null {
+  // For LV-domain DA numbers (81–86) the Leistungsverzeichnis bundle applies.
+  if (da >= 81 && da <= 86) {
+    return `2021-05_Leistungsverzeichnis/GAEB_DA_XML_${da}_3.3_2021-05.xsd`;
+  }
+  return null;
+}
+
+export function resolveXsdDir(explicit?: string): string {
+  return explicit ?? process.env.GAEB_XSD_DIR ?? DEFAULT_XSD_DIR;
+}
+
+/**
+ * Validates `xml` against the GAEB DA XML 3.3 XSDs using libxmljs2.
+ * Returns the same `ValidationResult` shape as the schemaless validator.
  */
 export async function validateGaebXml33WithXsd(
   xml: string,
-  options: XsdValidationOptions,
+  options: XsdValidationOptions = {},
 ): Promise<ValidationResult> {
   const libxml = await loadLibXmlJs2();
   if (!libxml) {
+    return { valid: false, issues: [missingDependencyIssue()] };
+  }
+
+  const xsdDir = resolveXsdDir(options.xsdDir);
+
+  let masterFileName = options.masterFileName ?? null;
+  if (!masterFileName && options.da !== undefined) {
+    masterFileName = schemaForDa(options.da);
+  }
+  if (!masterFileName) {
     return {
       valid: false,
-      issues: [missingDependencyIssue()],
+      issues: [
+        {
+          severity: 'error',
+          path: '/',
+          message:
+            'No XSD selected: pass either `da` (auto-resolved) or ' +
+            '`masterFileName` (explicit path relative to xsdDir).',
+        },
+      ],
     };
   }
 
-  const { xsdDir, masterFileName = 'GAEB_DA_XML_3.3.xsd' } = options;
   const masterPath = join(xsdDir, masterFileName);
-
   let xsdSrc: string;
   try {
     xsdSrc = await fs.readFile(masterPath, 'utf-8');
@@ -96,18 +136,22 @@ export async function validateGaebXml33WithXsd(
         {
           severity: 'error',
           path: '/',
-          message: `Cannot read master XSD '${masterPath}': ${errMessage(err)}`,
+          message:
+            `Cannot read XSD '${masterPath}': ${errMessage(err)}. ` +
+            `Download the schemas from https://www.gaeb.de/de/service/downloads/gaeb-datenaustausch/ ` +
+            `and unpack them into '${xsdDir}' (see schemas/README.md).`,
         },
       ],
     };
   }
 
+  // libxml resolves relative <xs:include> / <xs:import> against this base.
+  const baseDir = join(xsdDir, ...masterFileName.split('/').slice(0, -1));
+  const baseUrl = baseDir.endsWith('/') ? baseDir : `${baseDir}/`;
+
   let xsdDoc: LibXmlDoc;
   try {
-    xsdDoc = libxml.parseXml(xsdSrc, {
-      baseUrl: xsdDir.endsWith('/') ? xsdDir : `${xsdDir}/`,
-      nonet: true,
-    });
+    xsdDoc = libxml.parseXml(xsdSrc, { baseUrl, nonet: true });
   } catch (err) {
     return {
       valid: false,
@@ -157,8 +201,8 @@ function missingDependencyIssue(): ValidationIssue {
     path: '/',
     message:
       'Optional dependency `libxmljs2` is not installed. ' +
-      'Run `npm install libxmljs2` and rerun; make sure the GAEB DA XML 3.3 ' +
-      'XSDs are reachable under the configured xsdDir.',
+      'Run `npm install libxmljs2` and place the GAEB DA XML 3.3 XSDs ' +
+      'under the configured xsdDir (see schemas/README.md for layout).',
   };
 }
 
