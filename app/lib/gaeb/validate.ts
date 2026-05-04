@@ -139,6 +139,36 @@ function validateRoot(root: Element, issues: ValidationIssue[]): void {
     return;
   }
 
+  // <BoQ ID="…"> is mandatory in the 3.3 schema.
+  if (!boq.getAttribute('ID')) {
+    issues.push({
+      severity: 'error',
+      path: '/GAEB/Award/BoQ',
+      message: '<BoQ> is missing the mandatory ID attribute.',
+    });
+  }
+
+  // <BoQInfo> must contain <Name> before <LblBoQ>.
+  const boqInfo = firstByLocalName(boq, 'BoQInfo');
+  if (boqInfo) {
+    const children = elementChildren(boqInfo);
+    const nameIdx = children.findIndex(c => c.localName === 'Name');
+    const lblIdx = children.findIndex(c => c.localName === 'LblBoQ');
+    if (lblIdx >= 0 && nameIdx === -1) {
+      issues.push({
+        severity: 'error',
+        path: '/GAEB/Award/BoQ/BoQInfo',
+        message: '<BoQInfo> has <LblBoQ> but no preceding <Name>.',
+      });
+    } else if (lblIdx >= 0 && nameIdx > lblIdx) {
+      issues.push({
+        severity: 'error',
+        path: '/GAEB/Award/BoQ/BoQInfo',
+        message: '<BoQInfo>: <Name> must appear before <LblBoQ>.',
+      });
+    }
+  }
+
   const body = firstByLocalName(boq, 'BoQBody');
   if (!body) {
     issues.push({
@@ -212,6 +242,14 @@ function validateCtgy(ctgy: Element, path: string, issues: ValidationIssue[]): v
       message: '<BoQCtgy> missing RNoPart attribute.',
     });
   }
+  // <BoQCtgy ID="…"> is mandatory in the 3.3 schema.
+  if (!ctgy.getAttribute('ID')) {
+    issues.push({
+      severity: 'error',
+      path: `${path}/BoQCtgy[${rNoPart ?? '?'}]`,
+      message: '<BoQCtgy> is missing the mandatory ID attribute.',
+    });
+  }
   const lbl = firstByLocalName(ctgy, 'LblTx');
   const lblText = lbl ? lbl.textContent?.trim() : '';
   if (!lblText) {
@@ -232,6 +270,14 @@ function validateItem(item: Element, path: string, issues: ValidationIssue[]): v
       severity: 'warning',
       path,
       message: '<Item> missing RNoPart attribute.',
+    });
+  }
+  // <Item ID="…"> is mandatory in the 3.3 schema.
+  if (!item.getAttribute('ID')) {
+    issues.push({
+      severity: 'error',
+      path: labelPath,
+      message: '<Item> is missing the mandatory ID attribute.',
     });
   }
   if (!firstByLocalName(item, 'Qty')) {

@@ -76,6 +76,43 @@ describe('validateGaebXml33 — error detection', () => {
     ).toBe(true);
   });
 
+  it('flags missing ID attributes on <BoQ>, <BoQCtgy> and <Item>', () => {
+    const result = validateGaebXml33(`<?xml version="1.0"?>
+<GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">
+  <Award><DP>83</DP><BoQ><BoQBody>
+    <BoQCtgy RNoPart="1">
+      <LblTx><p><span>Outer</span></p></LblTx>
+      <BoQBody>
+        <Itemlist>
+          <Item RNoPart="10"><Qty>1</Qty><QU>St</QU></Item>
+        </Itemlist>
+      </BoQBody>
+    </BoQCtgy>
+  </BoQBody></BoQ></Award>
+</GAEB>`);
+    expect(result.valid).toBe(false);
+    const errors = result.issues.filter(i => i.severity === 'error');
+    expect(errors.some(e => e.message.includes('<BoQ>') && e.message.includes('ID'))).toBe(true);
+    expect(errors.some(e => e.message.includes('<BoQCtgy>') && e.message.includes('ID'))).toBe(true);
+    expect(errors.some(e => e.message.includes('<Item>') && e.message.includes('ID'))).toBe(true);
+  });
+
+  it('flags <LblBoQ> appearing before <Name> in <BoQInfo>', () => {
+    const result = validateGaebXml33(`<?xml version="1.0"?>
+<GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">
+  <Award><DP>83</DP><BoQ ID="B1">
+    <BoQInfo><LblBoQ>oops</LblBoQ></BoQInfo>
+    <BoQBody/>
+  </BoQ></Award>
+</GAEB>`);
+    expect(result.valid).toBe(false);
+    expect(
+      result.issues.some(
+        i => i.severity === 'error' && i.message.includes('<Name>'),
+      ),
+    ).toBe(true);
+  });
+
   it('flags an Item without <Qty> or <QU> as an error', () => {
     const result = validateGaebXml33(`<?xml version="1.0"?>
 <GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">
@@ -98,7 +135,7 @@ describe('validateGaebXml33 — warnings do not fail validation', () => {
 <GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">
   <GAEBInfo><Version>3.3</Version></GAEBInfo>
   <PrjInfo><NamePrj>x</NamePrj></PrjInfo>
-  <Award><DP>83</DP><BoQ><BoQBody/></BoQ></Award>
+  <Award><DP>83</DP><BoQ ID="B1"><BoQBody/></BoQ></Award>
 </GAEB>`);
     expect(result.valid).toBe(true);
     expect(
@@ -112,9 +149,9 @@ describe('validateGaebXml33 — warnings do not fail validation', () => {
     const result = validateGaebXml33(`<?xml version="1.0"?>
 <GAEB xmlns="http://www.gaeb.de/GAEB_DA_XML/DA83/3.3">
   <GAEBInfo><Version>3.3</Version></GAEBInfo>
-  <Award><DP>83</DP><BoQ><BoQBody>
+  <Award><DP>83</DP><BoQ ID="B1"><BoQBody>
     <Itemlist>
-      <Item RNoPart="1">
+      <Item ID="I1" RNoPart="1">
         <Qty>1</Qty><QU>St</QU>
         <Description/>
       </Item>
