@@ -160,6 +160,22 @@ describe('serializeGaebXml33 (synthetic)', () => {
     expect(lblAt).toBeGreaterThan(nameAt);
   });
 
+  it('emits <Date> and <OutlCompl> inside <BoQInfo>', () => {
+    // The 3.3 XSD demands at least one of CPVCode / CONo / Date /
+    // OutlCompl after Name/LblBoQ. We always emit both Date and
+    // OutlCompl=AllTxt to mirror production exporter output.
+    const xml = serializeGaebXml33(miniDoc());
+    expect(xml).toContain('<OutlCompl>AllTxt</OutlCompl>');
+    // BoQInfo Date appears after LblBoQ and before </BoQInfo>.
+    const lblAt = xml.indexOf('<LblBoQ>');
+    const dateAt = xml.indexOf('<Date>', lblAt);
+    const outlAt = xml.indexOf('<OutlCompl>', lblAt);
+    const closeAt = xml.indexOf('</BoQInfo>', lblAt);
+    expect(dateAt).toBeGreaterThan(lblAt);
+    expect(outlAt).toBeGreaterThan(dateAt);
+    expect(closeAt).toBeGreaterThan(outlAt);
+  });
+
   it('round-trips: parse(serialize(doc)) yields an equivalent GaebDocument', () => {
     const before = miniDoc();
     const xml = serializeGaebXml33(before);

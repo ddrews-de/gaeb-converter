@@ -112,6 +112,14 @@ function renderAward(
   if (doc.prjInfo.label) {
     lines.push(`    <LblBoQ>${xmlEscape(doc.prjInfo.label)}</LblBoQ>`);
   }
+  // BoQInfo requires at least one of CPVCode / CONo / Date / OutlCompl
+  // after the optional Name/LblBoQ block. Date plus OutlCompl is the
+  // shape production exporters use (see TestData/LV_Los01.X83).
+  const boqDate = doc.prjInfo.creationDate ?? isoToday();
+  lines.push(`    <Date>${xmlEscape(toIsoDate(boqDate))}</Date>`);
+  // OutlCompl=AllTxt declares that every item carries its full long-text
+  // content — true for our serializer output.
+  lines.push('    <OutlCompl>AllTxt</OutlCompl>');
   lines.push('   </BoQInfo>');
   lines.push('   <BoQBody>');
   for (const node of doc.award.boq) {
